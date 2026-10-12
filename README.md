@@ -93,3 +93,7 @@ file the manifest and pages reference is inside the archive. Bump `version` in `
 * PDF is produced through Chrome's print dialog (choose *Save as PDF*), which keeps everything offline. Silent one-click PDF would need the `debugger` permission, so it is intentionally not used.
 * Gemini bulk export and ChatGPT/Claude e-mail/Notion/Google-Docs *direct* uploads are not included (they need private APIs or OAuth). Use **Copy → rich text** or the `.docx`/Markdown files instead.
 * Math inside `.docx` is stored as LaTeX text, not native Word equations.
+
+## License
+
+[MIT](LICENSE). Bundled KaTeX (`vendor/katex`) is MIT-licensed by its authors; see `vendor/katex/LICENSE`.
