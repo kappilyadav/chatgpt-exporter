@@ -1,0 +1,22 @@
+:root{color-scheme:light dark}
+html,body{margin:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+.toolbar{position:sticky;top:0;z-index:10;display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;padding:10px 16px;background:#1f2128;color:#eceef3;border-bottom:1px solid #383c47;font-size:13px}
+.toolbar .muted{color:#9aa0ac;margin-left:10px}
+.tb-controls{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;flex:1}
+.tb-controls label{display:flex;gap:6px;align-items:center;color:#c9ccd6}
+.tb-controls select,.tb-controls input[type=number]{background:#2a2d36;color:#eceef3;border:1px solid #444955;border-radius:6px;padding:4px 6px;font:inherit}
+.tb-controls input[type=number]{width:64px}
+.tb-controls input[type=checkbox]{accent-color:#8b5cf6}
+.tb-right{display:flex;gap:8px}
+.btn{padding:7px 14px;border-radius:8px;border:1px solid #444955;background:#2a2d36;color:#eceef3;cursor:pointer;font:600 13px inherit}
+.btn.primary{background:#8b5cf6;border-color:#8b5cf6;color:#fff}
+.status{padding:30px;text-align:center;color:#6b7280}
+.stage{padding:24px 0}
+#doc{margin:0 auto}
+.stage.screen #doc{max-width:900px;padding:32px 40px;box-shadow:0 4px 24px rgba(0,0,0,.25);border-radius:6px}
+@media print{
+  .no-print{display:none!important}
+  .stage{padding:0}
+  .stage.screen #doc{max-width:none;padding:0;box-shadow:none;border-radius:0}
+}

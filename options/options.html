@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chat Exporter — Settings</title>
+  <link rel="stylesheet" href="options.css" />
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Chat Exporter</h1>
+      <p class="muted">Settings are saved automatically and synced with your Chrome profile. Everything is processed locally in your browser.</p>
+    </header>
+    <div id="form" class="settings"></div>
+    <footer>
+      <button id="reset" class="btn">Reset to defaults</button>
+      <button id="shortcuts" class="btn">Keyboard shortcuts…</button>
+      <span id="saved" class="muted" aria-live="polite"></span>
+    </footer>
+  </div>
+  <script src="../src/core/ns.js"></script>
+  <script src="../src/core/i18n.js"></script>
+  <script src="../src/core/util.js"></script>
+  <script src="../src/core/settings.js"></script>
+  <script src="../src/ui/settings-form.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

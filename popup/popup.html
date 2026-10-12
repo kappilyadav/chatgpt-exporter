@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chat Exporter</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <div class="logo" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v10"/><path d="M7.5 10.5L12 15l4.5-4.5"/><path d="M5 19h14"/></svg>
+    </div>
+    <div>
+      <h1>Chat Exporter</h1>
+      <p id="site" class="muted">Checking tab…</p>
+    </div>
+  </header>
+
+  <main id="active" hidden>
+    <button id="select" class="btn primary">Select messages…</button>
+
+    <div class="row">
+      <select id="format" aria-label="Format"></select>
+      <button id="quick" class="btn">Quick export</button>
+    </div>
+    <div class="row">
+      <button id="copy" class="btn ghost">Copy as Markdown</button>
+      <button id="bulk" class="btn ghost">Export all chats…</button>
+    </div>
+    <p id="msg" class="muted small" role="status"></p>
+  </main>
+
+  <main id="inactive" hidden>
+    <p>Open a conversation on one of these sites, then click the extension again:</p>
+    <div class="links">
+      <a href="https://chatgpt.com/" target="_blank" rel="noreferrer">ChatGPT</a>
+      <a href="https://claude.ai/" target="_blank" rel="noreferrer">Claude</a>
+      <a href="https://gemini.google.com/" target="_blank" rel="noreferrer">Gemini</a>
+    </div>
+  </main>
+
+  <footer>
+    <button id="settings" class="link">Settings</button>
+    <button id="shortcuts" class="link">Keyboard shortcuts</button>
+  </footer>
+
+  <script src="../src/core/ns.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

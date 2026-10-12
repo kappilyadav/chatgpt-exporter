@@ -1,0 +1,99 @@
+{
+  "manifest_version": 3,
+  "name": "Chat Exporter for ChatGPT, Claude & Gemini",
+  "short_name": "Chat Exporter",
+  "version": "1.0.0",
+  "description": "Export ChatGPT, Claude & Gemini chats to PDF, Markdown, Word, HTML, Text, JSON, CSV or PNG. Select messages. 100% local.",
+  "minimum_chrome_version": "110",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "Chat Exporter",
+    "default_popup": "popup/popup.html"
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "downloads",
+    "contextMenus",
+    "clipboardWrite",
+    "unlimitedStorage"
+  ],
+  "host_permissions": [
+    "https://chatgpt.com/*",
+    "https://chat.openai.com/*",
+    "https://claude.ai/*",
+    "https://gemini.google.com/*",
+    "https://*.oaiusercontent.com/*",
+    "https://*.googleusercontent.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*",
+        "https://claude.ai/*",
+        "https://gemini.google.com/*"
+      ],
+      "js": [
+        "src/core/ns.js",
+        "src/core/i18n.js",
+        "src/core/util.js",
+        "src/core/settings.js",
+        "src/core/html2md.js",
+        "src/core/markdown.js",
+        "src/core/zip.js",
+        "src/core/assets.js",
+        "src/adapters/chatgpt.js",
+        "src/adapters/claude.js",
+        "src/adapters/gemini.js",
+        "src/exporters/common.js",
+        "src/exporters/htmlbuilder.js",
+        "src/exporters/markdown.js",
+        "src/exporters/text.js",
+        "src/exporters/json.js",
+        "src/exporters/csv.js",
+        "src/exporters/html.js",
+        "src/exporters/docx.js",
+        "src/exporters/pdf.js",
+        "src/exporters/index.js",
+        "src/ui/settings-form.js",
+        "src/ui/styles.js",
+        "src/ui/bulk.js",
+        "src/ui/panel.js",
+        "src/content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "commands": {
+    "toggle-panel": {
+      "suggested_key": {
+        "default": "Alt+Shift+S"
+      },
+      "description": "Open / close the Select Messages panel"
+    },
+    "quick-export": {
+      "suggested_key": {
+        "default": "Alt+Shift+E"
+      },
+      "description": "Quick export the current chat in the default format"
+    },
+    "export-pdf": {
+      "suggested_key": {
+        "default": "Alt+Shift+P"
+      },
+      "description": "Export the current chat as PDF"
+    }
+  }
+}

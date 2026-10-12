@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chat Exporter — Preview</title>
+  <link rel="stylesheet" href="../vendor/katex/katex.min.css" />
+  <link rel="stylesheet" href="print.css" />
+  <style id="page-style"></style>
+  <style id="doc-style"></style>
+</head>
+<body>
+  <div id="toolbar" class="toolbar no-print" hidden>
+    <div class="tb-left">
+      <strong id="tb-title">Preview</strong>
+      <span id="tb-hint" class="muted"></span>
+    </div>
+    <div id="tb-controls" class="tb-controls"></div>
+    <div class="tb-right">
+      <button id="tb-action" class="btn primary"></button>
+      <button id="tb-close" class="btn">Close</button>
+    </div>
+  </div>
+  <div id="status" class="status no-print">Preparing…</div>
+  <div id="stage" class="stage"><div id="doc"></div></div>
+
+  <script src="../src/core/ns.js"></script>
+  <script src="../src/core/i18n.js"></script>
+  <script src="../src/core/util.js"></script>
+  <script src="../src/core/settings.js"></script>
+  <script src="../src/core/markdown.js"></script>
+  <script src="../src/core/zip.js"></script>
+  <script src="../src/exporters/common.js"></script>
+  <script src="../src/exporters/htmlbuilder.js"></script>
+  <script src="../vendor/katex/katex.min.js"></script>
+  <script src="print.js"></script>
+</body>
+</html>
