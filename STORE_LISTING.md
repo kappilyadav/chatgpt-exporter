@@ -1,63 +1,99 @@
-# Chrome Web Store submission notes (not shipped in the zip)
+# Chrome Web Store listing: copy-paste kit (not shipped in the zip)
 
-## Listing
-- **Name (manifest, keyword-rich like the top competitor):** ChatGPT Exporter - Save ChatGPT to PDF, Markdown, Word
-- **Summary (<=132 chars):** Export ChatGPT chats to PDF, Markdown, Word, HTML, Text, JSON, CSV or PNG. Select messages, copy to Docs or Notion.
-- **Category:** Productivity
-- **Language:** English
-- **Single purpose:** Export the conversation currently open on chatgpt.com to a file or the clipboard.
-- **Privacy policy URL:** https://chatgptexporterfree.com/privacy
-- **Homepage / support URL:** https://chatgptexporterfree.com  /  https://chatgptexporterfree.com/help
+Research basis: the top competitor listing (ChatGPT Exporter - ChatGPT to PDF, MD, and more; ~200K users, 4.9 stars from 2.7K ratings) and Ubersuggest US keyword data (Oct 2026). The copy below is original; only the keyword strategy follows the market leader.
 
-## Detailed description (paste into the "Description" field)
-Export any ChatGPT conversation in one click. Save chats as PDF, Markdown, Word (.docx), HTML, plain text, JSON, CSV or a PNG image, or copy them straight into Google Docs, Word or Notion.
+## Keyword research (US monthly searches, SD = SEO difficulty)
+| Keyword | Volume | SD | Use in |
+| --- | --- | --- | --- |
+| chatgpt exporter | 1,600 | 44 | Name |
+| chatgpt to word or pdf chrome extension | 720 | 16 | Description opener |
+| how to save chatgpt conversation | 480 | 41 | Description |
+| chatgpt exporter chrome extension / browser extension | 390 each | 39 / 5 | Description |
+| chatgpt to word or pdf extension | 390 | 25 | Description |
+| save chatgpt conversation extension | 210 | 41 | Description |
+| how to save chatgpt conversation as pdf | 170 | 21 | Description / FAQ |
+| chatgpt to word extension | 110 | 25 | Description |
+| chatgpt to markdown (extension) | 90 | 27 | Description |
+| download chatgpt chat | 90 | 37 | Description |
+| save chatgpt conversation as pdf | 70 | 25 | Description |
+| chatgpt to word | 70 | 21 | Name |
 
-HOW IT WORKS
-Open a chat on chatgpt.com and use the SELECT and EXPORT buttons that appear in the corner. Pick a format and you are done. Everything is built inside your browser.
+Takeaways: "Word" is a bigger search than "Markdown" or "text", and the leader does NOT offer Word, so put Word in the name and first lines. Keep wording natural: the Store penalises keyword stuffing.
 
-FEATURES
-- 8 formats: PDF, Markdown, Word (.docx), HTML, Text, JSON, CSV and PNG
-- Select exactly which messages to export: tick them, Shift+click a range, or choose All / Questions / Answers
-- Copy as Markdown, text, JSON, CSV or rich text for Docs, Word and Notion
-- Bulk export many chats into a single ZIP
-- Keeps code blocks, tables, math (LaTeX), images, web sources, reasoning and Canvas documents
-- Customisable PDFs: page size, margins, light or dark theme, fonts, page numbers, table of contents
-- File-name templates, download sub-folder, date formats, your own name and labels
-- Right-click menu and keyboard shortcuts (Alt+Shift+S select, Alt+Shift+E quick export, Alt+Shift+P PDF)
-- Interface in English, Spanish, French, German, Portuguese, Hindi, Chinese and Japanese
+## Fields
+**Name** (manifest `name`, 53 chars, max 75):
+`ChatGPT Exporter: Save ChatGPT to PDF, Word & Markdown`
 
-PRIVACY
-Your conversations are converted locally in your browser and are never sent to us. No ads, no analytics, no remote code.
+**Summary** (manifest `description`, max 132):
+`Save ChatGPT chats as PDF, Word, Markdown, HTML, text, JSON, CSV or PNG. Pick messages, copy to Docs or Notion. Private.`
 
-FREE AND PRO
-The free plan includes a monthly number of exports. An optional account at chatgptexporterfree.com unlocks unlimited exports.
+**Category:** Productivity (Workflow & Planning if offered). **Language:** English.
+**Homepage URL:** https://chatgptexporterfree.com  **Support URL:** https://chatgptexporterfree.com/help
+**Privacy policy URL:** https://chatgptexporterfree.com/privacy
+**Single purpose:** Export the conversation currently open on chatgpt.com to a file or the clipboard.
 
-ChatGPT Exporter is an independent tool and is not affiliated with, endorsed by or sponsored by OpenAI. ChatGPT is a trademark of OpenAI.
+**Description** (paste as is):
 
-## Permission justifications (paste into the "Privacy practices" tab)
+```
+ChatGPT Exporter is a free Chrome extension that saves any ChatGPT conversation as a PDF, Word document (.docx), Markdown, HTML, text, JSON, CSV or PNG image. Open a chat, click Export, done. No copy-paste, no broken formatting.
+
+Looking for a way to save a ChatGPT conversation, turn ChatGPT into Word or PDF, or download a chat as Markdown for Notion or Obsidian? This is the quick way.
+
+★ WHAT YOU CAN DO
+• Export ChatGPT to PDF, Word (.docx), Markdown, HTML, Text, JSON, CSV or PNG
+• Choose exactly which messages to save: tick them, Shift+click a range, or pick All, Questions or Answers
+• Copy to the clipboard as Markdown, plain text, JSON, CSV or rich text, ready for Google Docs, Word or Notion
+• Bulk export: download many chats at once in a single ZIP
+• Right-click menu and keyboard shortcuts: Alt+Shift+S select, Alt+Shift+E quick export, Alt+Shift+P PDF
+
+★ KEEPS EVERYTHING INTACT
+Code blocks with language, tables, lists, links, images, math formulas (LaTeX), web-search sources, Deep Research citations, Canvas documents and the model's reasoning ("thought process"). Include or hide each one in settings.
+
+★ PDFs THAT LOOK GOOD
+Page size and orientation, margins, light or dark theme, font and size, page numbers, table of contents, page break per prompt, your name and date in the header.
+
+★ MAKE IT YOURS
+File-name templates, download sub-folder, date formats, custom labels for you and the AI, optional timestamps. Available in English, Spanish, French, German, Portuguese, Hindi, Chinese and Japanese.
+
+★ PRIVATE BY DESIGN
+Conversations are converted inside your browser and are never sent to our servers. No ads, no analytics, no remote code.
+
+★ FREE TO START
+The free plan includes monthly exports. An optional account at chatgptexporterfree.com unlocks unlimited exports.
+
+HOW TO USE
+1. Open any conversation on chatgpt.com
+2. Click SELECT to choose messages, or EXPORT to save the whole chat
+3. Pick a format. Your file downloads instantly
+
+FAQ
+Can I export ChatGPT to PDF? Yes. Choose PDF, then Save as PDF in the preview that opens.
+Can I save a ChatGPT conversation as a Word document? Yes. Choose Word (.docx).
+Does it work with Canvas, code and tables? Yes, they are preserved.
+Is my data safe? Everything runs locally in your browser.
+
+ChatGPT Exporter is an independent tool, not affiliated with, endorsed by or sponsored by OpenAI. ChatGPT is a trademark of OpenAI.
+```
+
+## Images to upload (store-assets/out/)
+Screenshots in this order (1280x800): 1-export-menu, 2-select-messages, 6-features, 3-formats, 4-pdf-themes (5-private optional). Small promo 440x280 and marquee 1400x560 included. Best upgrade: replace mock-ups with real captures of the extension on a live chat.
+
+## Permission justifications (Privacy practices tab)
 - **Host access chatgpt.com, chat.openai.com:** Adds the Select/Export buttons to ChatGPT pages and reads the conversation the user chooses to export.
 - **Host access *.oaiusercontent.com:** Fetches images from ChatGPT's own file servers so they can be embedded in exports.
 - **storage:** Saves user settings, the monthly free-plan export counter, the connected-account token and plan status, and temporarily holds data for the PDF/PNG render page.
 - **unlimitedStorage:** Very long conversations used for PDF/PNG rendering can exceed the default storage quota.
 - **downloads:** Saves the exported file to the user's computer.
 - **contextMenus:** Adds the right-click "Export this chat" menu.
-- **clipboardWrite:** Powers the Copy feature (Markdown, text, JSON, CSV, rich text).
+- **clipboardWrite:** Powers the Copy feature.
 - **externally_connectable (chatgptexporterfree.com):** Lets the extension's own website hand the extension a sign-in token when the user clicks "Connect extension".
-- **Remote code:** None. All extension code is bundled (KaTeX is bundled in vendor/). The exported HTML files reference a KaTeX CDN script for the user's own file; that is output, not extension code.
+- **Remote code:** None. All extension code is bundled (KaTeX in vendor/). Exported HTML files reference a KaTeX CDN script for the user's own file; that is output, not extension code.
 
-## Data disclosure (Privacy practices > "What user data do you collect?")
-Tick: **Authentication information** (account token / sign-in) and **Personally identifiable information** (email, name, only if the user creates an account).
-Do NOT tick: web history, user activity, website content. Conversation content is processed locally and not transmitted to the developer.
-Certify all three: not sold to third parties; not used for unrelated purposes; not used for creditworthiness/lending.
+## Data disclosure
+Tick **Authentication information** and **Personally identifiable information** (email, only if the user creates an account). Do NOT tick web history, user activity or website content. Certify all three statements: not sold, not used for unrelated purposes, not used for creditworthiness.
 
 ## Before you submit
-1. Set CHROME_STORE_URL and EXTENSION_ID in the website's src/config.ts once the listing exists (the extension ID appears in the developer dashboard).
-2. Upload dist/chat-exporter-1.1.0.zip (python scripts/package.py builds and verifies it).
-3. Store images are generated: `node store-assets/build.js` writes them to `store-assets/out/` (5 screenshots 1280x800, small promo 440x280, marquee 1400x560, all 24-bit PNG). The 128px store icon is `icons/icon128.png`.
-4. Deploy the website first: the privacy URL, the login/connect flow and /api/extension/status must be live, and Polar must be switched to live mode (see below).
-
-## Trademark risk
-The name starts with "ChatGPT". OpenAI's brand guidelines discourage product names that begin with its marks, and the Web Store can reject or remove such listings. Safer alternatives: "Exporter for ChatGPT", "Chat Exporter for ChatGPT". The website domain is not affected by this.
-
-## Go-live checklist for payments
-Polar is in sandbox mode. Before launch: create the two products in the live Polar org, put the live product IDs in wrangler.jsonc, set POLAR_SERVER=production, create a live access token and webhook, and set the Worker secrets.
+1. Deploy the website first: /privacy, /help, the connect flow and /api/extension/status must be live, and Polar switched to live mode (set live product IDs in wrangler.jsonc, POLAR_SERVER=production, live token and webhook, Worker secrets).
+2. Upload `dist/chat-exporter-1.1.0.zip` (`python scripts/package.py` builds and verifies it).
+3. After the listing exists, set CHROME_STORE_URL and EXTENSION_ID in the website's src/config.ts.
+4. If the name is rejected for the trademark, fall back to "Exporter for ChatGPT: Save Chats to PDF, Word & Markdown".

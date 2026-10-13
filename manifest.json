@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "ChatGPT Exporter - Save ChatGPT to PDF, Markdown, Word",
+  "name": "ChatGPT Exporter: Save ChatGPT to PDF, Word & Markdown",
   "short_name": "ChatGPT Exporter",
   "version": "1.1.0",
-  "description": "Export ChatGPT chats to PDF, Markdown, Word, HTML, Text, JSON, CSV or PNG. Select messages, copy to Docs or Notion.",
+  "description": "Save ChatGPT chats as PDF, Word, Markdown, HTML, text, JSON, CSV or PNG. Pick messages, copy to Docs or Notion. Private.",
   "minimum_chrome_version": "110",
   "homepage_url": "https://chatgptexporterfree.com",
   "icons": {
