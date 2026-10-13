@@ -85,6 +85,24 @@
       CE.settings.onChange(() => { P.applySettings(); P.render(); });
       P.applySettings();
       P.render();
+      P.watchMount();
+    },
+
+    /**
+     * ChatGPT is a single-page app that can rebuild <body> after we mount (hydration, route changes).
+     * That silently deletes our host element, so the buttons appear for a moment and vanish.
+     * Put the host back whenever it is detached.
+     */
+    ensureMounted() {
+      if (!P.host || P.host.isConnected) return;
+      try { (document.body || document.documentElement).appendChild(P.host); } catch (e) { /* page not ready yet */ }
+    },
+
+    watchMount() {
+      if (P._mountWatch || typeof MutationObserver === 'undefined') return;
+      P._mountWatch = new MutationObserver(() => P.ensureMounted());
+      P._mountWatch.observe(document.documentElement, { childList: true });
+      if (document.body) P._mountWatch.observe(document.body, { childList: true });
     },
 
     detectTheme() {
@@ -116,9 +134,10 @@
       $.expMain = h('button', { class: 'main', onclick: () => P.exportNow(CE.settings.get().format) });
       $.expCaret = h('button', { class: 'caret', html: ICONS.caret, title: t('exportAs'), onclick: (e) => P.toggleMenu('export', e.currentTarget.parentElement) });
       $.toggle = h('button', {
-        class: 'toggle', html: ICONS.chevR, title: 'Hide / show',
+        class: 'toggle', title: 'ChatGPT Exporter: show or hide the export buttons',
         onclick: () => CE.settings.set({ launcherCollapsed: !CE.settings.get().launcherCollapsed })
       });
+      $.toggle.append(h('img', { src: CE.ui.brandIcon, alt: 'ChatGPT Exporter', draggable: 'false' }));
       $.selSplit = h('div', { class: 'split' }, $.selMain, $.selCaret);
       $.expSplit = h('div', { class: 'split sec' }, $.expMain, $.expCaret);
       $.dock = h('div', { class: 'dock' }, $.toggle, $.selSplit, $.expSplit);
@@ -336,7 +355,7 @@
       $.bulkBtn.style.display = CE.pickAdapter() && CE.pickAdapter().supportsBulk ? '' : 'none';
       $.gearBtn.title = t('settings');
       $.fmt.value = s.format;
-      $.toggle.innerHTML = s.launcherCollapsed ? ICONS.chevL : ICONS.chevR;
+      $.toggle.setAttribute('aria-expanded', String(!s.launcherCollapsed));
 
       const settingsView = st.view === 'settings';
       $.settings.style.display = settingsView ? '' : 'none';
@@ -425,10 +444,20 @@
     },
 
     // ------------------------------------------------------------------ export
-    toast(msg, kind) {
+    toast(msg, kind, action) {
       const el = h('div', { class: 'toast' + (kind === 'err' ? ' err' : '') }, msg);
+      if (action) {
+        const btn = h('button', { class: 'toast-act', type: 'button' }, action.label);
+        btn.addEventListener('click', () => { action.onClick(); el.remove(); });
+        el.append(btn);
+      }
       P.toasts.append(el);
-      setTimeout(() => el.remove(), kind === 'err' ? 7000 : 3600);
+      setTimeout(() => el.remove(), action ? 12000 : kind === 'err' ? 7000 : 3600);
+    },
+
+    /** Free-plan limit reached: say so plainly and offer the upgrade. */
+    limitToast(e) {
+      P.toast(e.message, 'err', { label: 'See plans', onClick: () => CE.account.openSite('plans') });
     },
 
     /** Export using the panel selection when the panel is showing a conversation. */
@@ -453,7 +482,8 @@
         if (!preset || preset === 'none') preset = 'all';
         await P.doExport(convo, CE.presetIndexes(convo, preset), format, !!copy, false);
       } catch (e) {
-        P.toast(t('failed', { msg: CE.humanError(e) }), 'err');
+        if (e instanceof CE.LimitError) P.limitToast(e);
+        else P.toast(t('failed', { msg: CE.humanError(e) }), 'err');
       }
     },
 
@@ -472,7 +502,8 @@
         }
         if (fromPanel && s.closePanelAfterExport) P.close();
       } catch (e) {
-        P.toast(t('failed', { msg: CE.humanError(e) }), 'err');
+        if (e instanceof CE.LimitError) P.limitToast(e);
+        else P.toast(t('failed', { msg: CE.humanError(e) }), 'err');
       } finally {
         st.exporting = false;
         P.setBusy(!st.convo);

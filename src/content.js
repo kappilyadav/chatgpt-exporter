@@ -12,6 +12,7 @@
     // SPA navigation: all three sites change URL without reloading.
     let last = location.href;
     setInterval(() => {
+      CE.ui.panel.ensureMounted(); // safety net in case the page removed our UI without an observable mutation
       if (location.href !== last) {
         last = location.href;
         CE.ui.panel.onNavigate();

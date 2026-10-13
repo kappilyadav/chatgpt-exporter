@@ -7,10 +7,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-s
 .tb-controls label{display:flex;gap:6px;align-items:center;color:#c9ccd6}
 .tb-controls select,.tb-controls input[type=number]{background:#2a2d36;color:#eceef3;border:1px solid #444955;border-radius:6px;padding:4px 6px;font:inherit}
 .tb-controls input[type=number]{width:64px}
-.tb-controls input[type=checkbox]{accent-color:#8b5cf6}
+.tb-controls input[type=checkbox]{accent-color:#0a6cd6}
 .tb-right{display:flex;gap:8px}
 .btn{padding:7px 14px;border-radius:8px;border:1px solid #444955;background:#2a2d36;color:#eceef3;cursor:pointer;font:600 13px inherit}
-.btn.primary{background:#8b5cf6;border-color:#8b5cf6;color:#fff}
+.btn.primary{background:#0a6cd6;border-color:#0a6cd6;color:#fff}
 .status{padding:30px;text-align:center;color:#6b7280}
 .stage{padding:24px 0}
 #doc{margin:0 auto}

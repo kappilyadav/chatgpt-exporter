@@ -37,6 +37,8 @@ def main():
         elif os.path.isdir(top):
             for root, _, names in os.walk(top):
                 for n in names:
+                    if n in ('.DS_Store','Thumbs.db'):
+                        continue
                     files.append(os.path.join(root, n).replace(os.sep, '/'))
         else:
             sys.exit('missing: ' + top)
@@ -55,6 +57,7 @@ def main():
     names = z.namelist()
     assert names[0] == 'manifest.json', 'manifest.json must be at the zip root'
     assert not any('\\' in n or n.startswith('/') for n in names), 'bad path separators'
+    assert not any(n.endswith('.DS_Store') for n in names), '.DS_Store leaked'
     assert not any(re.search(r'(^|/)(test|scripts|\.git|dist|node_modules)/|README', n) for n in names), 'dev files leaked'
 
     m = json.loads(z.read('manifest.json'))

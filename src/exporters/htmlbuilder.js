@@ -21,9 +21,9 @@
     const base = mode === 'print' ? 11 * scale + 'pt' : 15 * scale + 'px';
     const wrap = s.pdfWrapCode !== false;
     return `
-.ce-body{--bg:#ffffff;--fg:#1f2328;--muted:#6b7280;--border:#e3e6ea;--user-bg:#f5f3ff;--user-bar:#8b5cf6;--ai-bar:#d1d5db;--code-bg:#f6f8fa;--link:#2563eb;--th-bg:#f3f4f6;--think-bg:#fafafa;
+.ce-body{--bg:#ffffff;--fg:#1f2328;--muted:#6b7280;--border:#e3e6ea;--user-bg:#eff6ff;--user-bar:#0a6cd6;--ai-bar:#d1d5db;--code-bg:#f6f8fa;--link:#2563eb;--th-bg:#f3f4f6;--think-bg:#fafafa;
   background:var(--bg);color:var(--fg);font-family:${FONTS[s.pdfFontFamily] || FONTS.sans};font-size:${base};line-height:1.6;margin:0;padding:${mode === 'image' ? '32px' : '0'};box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact;word-wrap:break-word;overflow-wrap:anywhere;}
-.ce-body.theme-dark{--bg:#16171b;--fg:#e8e8ea;--muted:#9ca3af;--border:#33363d;--user-bg:#211d33;--user-bar:#a78bfa;--ai-bar:#3f434c;--code-bg:#0e0f12;--link:#8ab4ff;--th-bg:#23252b;--think-bg:#1c1d22;}
+.ce-body.theme-dark{--bg:#16171b;--fg:#e8e8ea;--muted:#9ca3af;--border:#33363d;--user-bg:#14253f;--user-bar:#6db4ff;--ai-bar:#3f434c;--code-bg:#0e0f12;--link:#8ab4ff;--th-bg:#23252b;--think-bg:#1c1d22;}
 .ce-body *{box-sizing:border-box}
 .ce-body a{color:var(--link);text-decoration:none}
 .ce-body .doc-head{border-bottom:1px solid var(--border);padding-bottom:.8em;margin-bottom:1.4em}

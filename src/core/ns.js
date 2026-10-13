@@ -5,7 +5,12 @@
   if (CE.__nsLoaded) return;
   CE.__nsLoaded = true;
 
-  CE.VERSION = '1.0.0';
+  CE.VERSION = '1.1.0';
+
+  // Accounts and plans: the website owns sign-up, checkout and billing.
+  CE.SITE_URL = 'https://chatgptexporterfree.com';
+  // Free-plan monthly quota. "full" = every message of a chat; "single" = a chosen part of a chat.
+  CE.LIMITS = { full: 5, single: 7 };
   CE.adapters = CE.adapters || {};
   CE.exporters = CE.exporters || {};
   CE.ui = CE.ui || {};
@@ -34,7 +39,6 @@
     rememberSelection: true,
     closePanelAfterExport: false,
     showToasts: true,
-    autoLoadFullHistory: true,
 
     // content
     includeThoughts: true,
@@ -94,8 +98,7 @@
         { key: 'showLauncher', type: 'bool', label: 'Show Select / Export buttons on the chat page' },
         { key: 'rememberSelection', type: 'bool', label: 'Remember my selection preset (All / Questions / Answers)' },
         { key: 'closePanelAfterExport', type: 'bool', label: 'Close the side panel after export' },
-        { key: 'showToasts', type: 'bool', label: 'Show a confirmation after export' },
-        { key: 'autoLoadFullHistory', type: 'bool', label: 'Gemini: scroll up to load the full history before exporting' }
+        { key: 'showToasts', type: 'bool', label: 'Show a confirmation after export' }
       ]
     },
     {

@@ -3,19 +3,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Chat Exporter</title>
+  <title>ChatGPT Exporter</title>
   <link rel="stylesheet" href="popup.css" />
 </head>
 <body>
   <header>
-    <div class="logo" aria-hidden="true">
-      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v10"/><path d="M7.5 10.5L12 15l4.5-4.5"/><path d="M5 19h14"/></svg>
-    </div>
+    <img class="logo" src="../icons/icon48.png" width="38" height="38" alt="" />
     <div>
-      <h1>Chat Exporter</h1>
+      <h1>ChatGPT Exporter</h1>
       <p id="site" class="muted">Checking tab…</p>
     </div>
   </header>
+
+  <section id="plan" class="plan" hidden>
+    <p id="plan-text" class="small"></p>
+    <button id="plan-cta" class="btn primary small-btn"></button>
+  </section>
 
   <main id="active" hidden>
     <button id="select" class="btn primary">Select messages…</button>
@@ -32,11 +35,9 @@
   </main>
 
   <main id="inactive" hidden>
-    <p>Open a conversation on one of these sites, then click the extension again:</p>
+    <p>Open a ChatGPT conversation, then click the extension again:</p>
     <div class="links">
       <a href="https://chatgpt.com/" target="_blank" rel="noreferrer">ChatGPT</a>
-      <a href="https://claude.ai/" target="_blank" rel="noreferrer">Claude</a>
-      <a href="https://gemini.google.com/" target="_blank" rel="noreferrer">Gemini</a>
     </div>
   </main>
 
@@ -46,6 +47,7 @@
   </footer>
 
   <script src="../src/core/ns.js"></script>
+  <script src="../src/core/account.js"></script>
   <script src="popup.js"></script>
 </body>
 </html>

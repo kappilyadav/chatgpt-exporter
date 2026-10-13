@@ -38,6 +38,21 @@
    * @param {{convo, indexes:number[], format:string, copy?:boolean}} o
    */
   CE.runExport = async function (o) {
+    // Downloads use quota (copy to clipboard never does). Whole chat = "full", part of a chat = "single".
+    if (o.copy) return runExportInner(o);
+    const total = o.convo.messages.length;
+    const kind = new Set(o.indexes).size >= total ? 'full' : 'single';
+    const q = await CE.account.consume(kind, 1);
+    if (!q.ok) throw new CE.LimitError(q);
+    try {
+      return await runExportInner(o);
+    } catch (e) {
+      await CE.account.refund(kind, 1); // a failed export should not cost the user an export
+      throw e;
+    }
+  };
+
+  async function runExportInner(o) {
     const s = CE.settings.get();
     const fmt = CE.formatInfo(o.format);
     const ex = CE.exporters[fmt.id];
@@ -72,7 +87,7 @@
     const blob = res.blob || new Blob([res.text], { type: res.mime || fmt.mime });
     await U.saveBlob(blob, res.filename, s.downloadSubfolder);
     return { filename: res.filename, count: msgs.length, format: fmt };
-  };
+  }
 
   CE.humanError = (e) => String((e && e.message) || e || 'Unknown error');
 })(globalThis.CE);

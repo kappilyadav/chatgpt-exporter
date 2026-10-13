@@ -1,6 +1,6 @@
 /* Chat Exporter — DOM → Markdown converter.
  * Handles headings, lists, tables, fenced code (with language), KaTeX / data-math formulas,
- * links, images, quotes and <details>. Used for DOM scraping (Gemini, and fallbacks for ChatGPT / Claude).
+ * links, images, quotes and <details>. Used for DOM scraping (fallback for ChatGPT).
  */
 (function (CE) {
   'use strict';
@@ -66,7 +66,7 @@
       let m = /(?:^|\s)(?:language|lang|highlight-source|hljs)[-_:]([\w+#.-]+)/i.exec(cls);
       if (m && m[1] && !/^(plaintext|text|nohighlight)$/i.test(m[1])) return m[1].toLowerCase();
       if (code.getAttribute && code.getAttribute('data-language')) return code.getAttribute('data-language');
-      // header label next to the <pre> (ChatGPT / Gemini / Claude code-block chrome)
+      // header label next to the <pre> (ChatGPT code-block chrome)
       const wrap = pre.closest ? pre.closest('code-block, .code-block, [class*="code-block"]') : null;
       const scopes = [wrap, pre.parentElement, pre.parentElement && pre.parentElement.parentElement].filter(Boolean);
       for (const sc of scopes) {

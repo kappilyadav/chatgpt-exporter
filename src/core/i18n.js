@@ -42,7 +42,7 @@
     copyAs: 'Copy as {fmt}',
     quickExport: 'Quick export',
     openPanel: 'Select messages…',
-    unsupportedSite: 'Open ChatGPT, Claude or Gemini to export a conversation.',
+    unsupportedSite: 'Open ChatGPT to export a conversation.',
     selectedOf: '{a}/{b}',
     messages: 'messages'
   };

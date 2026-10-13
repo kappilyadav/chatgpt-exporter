@@ -1,4 +1,4 @@
-/* Chat Exporter — "Export multiple chats" dialog (ChatGPT & Claude): picks chats, builds one ZIP. */
+/* Chat Exporter — "Export multiple chats" dialog (ChatGPT): picks chats, builds one ZIP. */
 (function (CE) {
   'use strict';
   const U = CE.util;
@@ -122,6 +122,15 @@
       const ex = CE.exporters[format];
       const ids = B.state.items.filter((x) => B.state.selected.has(x.id));
       if (!ids.length) return;
+      // Every chat in the ZIP is a whole chat, so it uses one "full" export.
+      const q = await CE.account.consume('full', ids.length);
+      if (!q.ok) {
+        const left = Math.max(0, q.limit - q.used);
+        B.msg.textContent = 'Free plan: ' + left + ' full export' + (left === 1 ? '' : 's') + ' left this month, but you selected ' + ids.length + '. Select fewer chats or upgrade for unlimited.';
+        P.toast(CE.account.limitMessage(q), 'err', { label: 'See plans', onClick: () => CE.account.openSite('plans') });
+        return;
+      }
+      let used = 0;
       B.state.running = true;
       B.state.cancel = false;
       B.go.disabled = true;
@@ -150,6 +159,7 @@
             const stamp = U.formatDate(convo.updatedAt || convo.createdAt, 'YYYY-MM-DD');
             const base = U.sanitizeFilename((stamp ? stamp + ' ' : '') + convo.title, 'chat');
             files.push({ name: base + '.' + EXT[format], data, compress: format !== 'docx' });
+            used++;
           } catch (e) {
             errors.push(it.title + ': ' + CE.humanError(e));
           }
@@ -169,6 +179,7 @@
       } catch (e) {
         B.msg.textContent = t('failed', { msg: CE.humanError(e) });
       } finally {
+        if (used < ids.length) await CE.account.refund('full', ids.length - used); // skipped, failed or cancelled chats
         B.state.running = false;
         B.go.disabled = false;
         B.progress.classList.remove('on');

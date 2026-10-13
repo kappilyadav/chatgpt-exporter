@@ -1,16 +1,14 @@
-# Chat Exporter — ChatGPT · Claude · Gemini
+# ChatGPT Exporter
 
-A Manifest V3 Chrome extension that exports conversations from **ChatGPT**, **Claude** and **Gemini**.
-Everything runs locally in your browser: no server, no account, no analytics.
-
-It combines the feature sets of the two "ChatGPT Exporter" extensions it was modelled on, and extends them to Claude and Gemini.
+A Manifest V3 Chrome extension that exports **ChatGPT** conversations.
+Exports are built locally in your browser. An optional account (from chatgptexporterfree.com) unlocks unlimited exports; the free plan has a monthly quota.
 
 ## Install (developer mode)
 
 1. Open `chrome://extensions`
 2. Enable **Developer mode** (top right)
 3. Click **Load unpacked** and pick this folder (the one containing `manifest.json`)
-4. Open a chat on `chatgpt.com`, `claude.ai` or `gemini.google.com`
+4. Open a chat on `chatgpt.com`
 
 The page gets a **SELECT** and **EXPORT** button in the bottom-right corner. Reload any already-open chat tabs after installing.
 
@@ -22,7 +20,7 @@ The page gets a **SELECT** and **EXPORT** button in the bottom-right corner. Rel
 | **EXPORT** | Exports straight away with the current preset using the last-used format. The ▾ menu picks a format or copies to the clipboard. |
 | **Side panel** | Tick individual messages, **Shift+click** for a range, *All / Questions / Answers / None / Invert*, *Expand* long previews, pick a format, **Export**. |
 | **Copy** icon | Copies the selection (Markdown / text / JSON / CSV, or rich text for pasting into Google Docs, Word or Notion). |
-| **Box** icon | Bulk-export many chats into one ZIP (ChatGPT & Claude). |
+| **Box** icon | Bulk-export many chats into one ZIP. |
 | **Gear** icon | All settings (also available from the extension's options page). |
 | Right-click page | *Export this chat → …* context menu. |
 | Keyboard | `Alt+Shift+S` panel · `Alt+Shift+E` quick export · `Alt+Shift+P` PDF (rebind at `chrome://extensions/shortcuts`). |
@@ -43,8 +41,6 @@ The page gets a **SELECT** and **EXPORT** button in the bottom-right corner. Rel
 * Code blocks (with language), tables, lists, block quotes, links, images
 * Math (LaTeX / KaTeX)
 * ChatGPT: reasoning ("thought process"), web-search citations → numbered sources, Canvas documents, Deep Research reports, attachments, group-chat author names
-* Claude: extended thinking, artifacts (create / update / rewrite), web-search sources, attachments, the *currently selected* branch of edited messages
-* Gemini: thought process (auto-expanded), uploaded & generated images, full history (auto-scrolls to load older turns)
 
 ## Settings
 
@@ -59,10 +55,8 @@ Markdown front matter, JSON pretty-print, CSV delimiter, and all PDF options abo
 | Site | Primary source | Fallback |
 | --- | --- | --- |
 | ChatGPT | The site's own `/backend-api/conversation/{id}` call (your logged-in session) – exact Markdown, timestamps, citations | DOM scrape |
-| Claude | The site's own `/api/organizations/{org}/chat_conversations/{id}` call | DOM scrape |
-| Gemini | DOM (no stable JSON API) | – |
 
-No data leaves the browser. Requests only go to the site you are already on (and its image CDNs, to embed pictures).
+Conversation data stays in the browser. Requests go to chatgpt.com (and its image CDNs, to embed pictures); the account check only asks chatgptexporterfree.com whether your plan is active.
 
 ## Layout
 
@@ -70,7 +64,7 @@ No data leaves the browser. Requests only go to the site you are already on (and
 manifest.json            MV3 manifest
 background.js            context menu, shortcuts, downloads, cross-origin image fetch, print launcher
 src/core/                namespace+defaults, i18n, utils, settings, html→md, markdown engine, zip, assets
-src/adapters/            chatgpt.js · claude.js · gemini.js
+src/adapters/            chatgpt.js
 src/exporters/           markdown · text · json · csv · html · docx · pdf/png (render job) · index (pipeline)
 src/ui/                  dock + side panel, settings form, bulk export dialog, styles
 print/                   PDF / PNG render page (KaTeX bundled in vendor/katex)
@@ -89,9 +83,9 @@ file the manifest and pages reference is inside the archive. Bump `version` in `
 
 ## Known limits
 
-* The DOM selectors / private-API shapes of ChatGPT, Claude and Gemini change often. If a site update breaks reading, the exporter shows an error and falls back to DOM scraping; `src/adapters/*.js` is where to adjust.
+* The DOM selectors / private-API shapes of ChatGPT change often. If a site update breaks reading, the exporter shows an error and falls back to DOM scraping; `src/adapters/*.js` is where to adjust.
 * PDF is produced through Chrome's print dialog (choose *Save as PDF*), which keeps everything offline. Silent one-click PDF would need the `debugger` permission, so it is intentionally not used.
-* Gemini bulk export and ChatGPT/Claude e-mail/Notion/Google-Docs *direct* uploads are not included (they need private APIs or OAuth). Use **Copy → rich text** or the `.docx`/Markdown files instead.
+* ChatGPT e-mail/Notion/Google-Docs *direct* uploads are not included (they need private APIs or OAuth). Use **Copy → rich text** or the `.docx`/Markdown files instead.
 * Math inside `.docx` is stored as LaTeX text, not native Word equations.
 
 ## License

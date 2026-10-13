@@ -28,7 +28,27 @@
     return chrome.tabs.sendMessage(tabId, msg).catch((e) => ({ ok: false, error: String(e && e.message || e) }));
   }
 
+  async function showPlan() {
+    const a = await CE.account.get();
+    if (!a) return; // worker unreachable: stay quiet rather than show wrong numbers
+    const text = $('plan-text');
+    const cta = $('plan-cta');
+    if (a.pro) {
+      const name = a.plan === 'year' ? 'Year Plan' : a.plan === 'month' ? 'Month Plan' : 'Pro';
+      text.textContent = 'Pro · ' + name + ' · unlimited exports';
+      cta.textContent = 'Account';
+      cta.onclick = () => { CE.account.openSite('account'); window.close(); };
+    } else {
+      const left = (k) => Math.max(0, a.limits[k] - a.usage[k]);
+      text.textContent = 'Free · ' + left('full') + ' full and ' + left('single') + ' partial exports left this month';
+      cta.textContent = 'Upgrade';
+      cta.onclick = () => { CE.account.openSite('plans'); window.close(); };
+    }
+    $('plan').hidden = false;
+  }
+
   async function init() {
+    showPlan();
     const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
     tabId = tab && tab.id;
     let info = null;
@@ -39,7 +59,7 @@
       if (!info.bulk) $('bulk').style.display = 'none';
     } else {
       $('inactive').hidden = false;
-      $('site').textContent = 'ChatGPT · Claude · Gemini';
+      $('site').textContent = 'Works on chatgpt.com';
     }
   }
 
