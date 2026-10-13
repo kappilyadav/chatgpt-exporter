@@ -64,8 +64,8 @@ const panel = `<div class="panel" style="width:372px;right:0;top:0;bottom:0"><di
 const GRAD = 'linear-gradient(135deg,#0a4fb8 0%,#1a8cff 100%)';
 const frame = (title, sub, inner, w = 1280, h = 800) => `<!doctype html><meta charset=utf-8><style>${base}
 html,body{width:${w}px;height:${h}px}body{background:${GRAD};position:relative;color:#fff}
-.head{position:absolute;left:0;right:0;top:34px;text-align:center}.head h1{font-size:44px;font-weight:800;letter-spacing:-.02em}.head p{font-size:21px;opacity:.88;margin-top:8px}
-.win{position:absolute;left:90px;right:90px;top:158px;bottom:0;border-radius:16px 16px 0 0;overflow:hidden;box-shadow:0 20px 60px rgba(0,20,80,.5);background:#fff}
+.head{position:absolute;left:0;right:0;top:30px;text-align:center}.head h1{font-size:60px;font-weight:800;letter-spacing:-.03em;line-height:1.05}.head p{font-size:26px;opacity:.92;margin-top:10px;font-weight:500}
+.win{position:absolute;left:90px;right:90px;top:196px;bottom:0;border-radius:16px 16px 0 0;overflow:hidden;box-shadow:0 20px 60px rgba(0,20,80,.5);background:#fff}
 .bar{height:36px;background:#e8eaed;display:flex;align-items:center;gap:7px;padding:0 14px}.bar i{width:11px;height:11px;border-radius:50%;background:#c4c7cc}.bar span{margin-left:14px;background:#fff;border-radius:12px;padding:3px 16px;font-size:12px;color:#555}
 .vp{position:absolute;top:36px;left:0;right:0;bottom:0}</style>
 <div class="head"><h1>${title}</h1><p>${sub}</p></div>
@@ -81,9 +81,11 @@ const docPrev = (dark) => `<div style="position:absolute;inset:0;background:#e9e
 const privacy = `<div style="position:absolute;inset:0;background:#f4f6fb;display:flex;align-items:center;justify-content:center;gap:26px;color:#1f2330;padding:0 60px">
  ${[['🔒', 'Runs locally', 'Conversations are converted in your browser. Nothing is sent to our servers.'], ['👁', 'No tracking', 'No analytics, no ads, no remote code.'], ['⚡', 'Instant', 'Uses your logged-in session, so exports are exact and fast.']].map(c => `<div style="flex:1;background:#fff;border-radius:18px;padding:34px 26px;box-shadow:0 3px 14px rgba(20,40,90,.1)"><div style="font-size:42px">${c[0]}</div><div style="font-weight:800;font-size:23px;margin:12px 0 8px">${c[1]}</div><div style="font-size:16px;color:#4b5568;line-height:1.5">${c[2]}</div></div>`).join('')}</div>`;
 
+const feat = `<div style="position:absolute;inset:0;background:#f4f6fb;display:flex;align-items:center;padding:0 80px;gap:50px;color:#1f2330"><ul style="list-style:none;font-size:30px;font-weight:700;line-height:1.35;flex:1">${['Export to 8 formats','Pick only the messages you need','Copy to Docs, Word or Notion','Bulk export all your chats','Keeps code, tables, math &amp; images'].map(t=>`<li style="margin:12px 0"><span style="color:#0a6cd6">✓</span> ${t}</li>`).join('')}</ul><div style="width:320px;background:#fff;border-radius:16px;box-shadow:0 8px 30px rgba(20,40,90,.18);padding:20px 22px;font-size:15px"><div style="font-weight:800;font-size:18px;margin-bottom:12px">PDF settings</div>${['Page size|A4','Margins|Normal','Theme|Dark','Font size|14','Table of contents|On','Page numbers|On'].map(r=>`<div style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #e6e8ee"><span style="color:#6b7280">${r.split('|')[0]}</span><b>${r.split('|')[1]}</b></div>`).join('')}</div></div>`;
 const shots = {
   '1-export-menu': frame('Export any ChatGPT chat in one click', 'PDF, Markdown, Word, HTML, Text, JSON, CSV or PNG', chat(false) + dock(exportMenu)),
   '2-select-messages': frame('Pick exactly the messages you need', 'Tick messages, shift-click ranges, or filter questions and answers', chat(true) + dock() + `<div class="ce">${panel}</div>`),
+  '6-features': frame('Everything you need to export', 'Fast, flexible and private', feat),
   '3-formats': frame('8 formats, nothing left behind', 'Code, tables, math, images, sources and thought process are kept', grid),
   '4-pdf-themes': frame('Beautiful PDFs, light or dark', 'Page size, fonts, margins, table of contents and page numbers', docPrev()),
   '5-private': frame('Private by design', 'Your conversations never leave your browser', privacy)

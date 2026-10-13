@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "ChatGPT Exporter",
+  "name": "ChatGPT Exporter - Save ChatGPT to PDF, Markdown, Word",
   "short_name": "ChatGPT Exporter",
   "version": "1.1.0",
   "description": "Export ChatGPT chats to PDF, Markdown, Word, HTML, Text, JSON, CSV or PNG. Select messages, copy to Docs or Notion.",

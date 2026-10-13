@@ -1,7 +1,7 @@
 # Chrome Web Store submission notes (not shipped in the zip)
 
 ## Listing
-- **Name:** ChatGPT Exporter  (see "Trademark risk" below)
+- **Name (manifest, keyword-rich like the top competitor):** ChatGPT Exporter - Save ChatGPT to PDF, Markdown, Word
 - **Summary (<=132 chars):** Export ChatGPT chats to PDF, Markdown, Word, HTML, Text, JSON, CSV or PNG. Select messages, copy to Docs or Notion.
 - **Category:** Productivity
 - **Language:** English
