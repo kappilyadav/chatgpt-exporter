@@ -10,6 +10,13 @@
   const PUA_CITE = /[\s\S]*?/g;
   const PUA_ANY = /[-]/g;
 
+  // ChatGPT sometimes emits its own layout markup (<box>, <row>, <AsyncImage …/>) inside answers. Drop it, but never inside code fences.
+  const LAYOUT_TAG = /<\/?(?:box|row|column|stack|grid|flex|divider|AsyncImage)\b[^>]*>/gi;
+  function stripLayoutTags(text) {
+    if (!/<\/?(?:box|row|column|stack|grid|flex|divider|AsyncImage)\b/i.test(text)) return text;
+    return text.split(/(^```[\s\S]*?^```[^\n]*$)/m).map((chunk, i) => (i % 2 ? chunk : chunk.replace(LAYOUT_TAG, ''))).join('').replace(/\n{3,}/g, '\n\n');
+  }
+
   function applyReferences(text, meta, sources) {
     if (!text) return '';
     const addSource = (s) => {
@@ -26,6 +33,8 @@
     for (const ref of refs) {
       const matched = ref.matched_text;
       if (!matched) continue;
+      // Widgets (code blocks, tables, charts…) point at text that must stay in the message.
+      if (ref.type === 'client_defined_widget') continue;
       let replacement = '';
       const items = []
         .concat(ref.items || [])
@@ -60,7 +69,7 @@
       }
     }
     text = text.replace(/【[^】]*】/g, '').replace(PUA_CITE, '').replace(PUA_ANY, '');
-    return text;
+    return stripLayoutTags(text);
   }
 
   function parseConversation(data, settings) {

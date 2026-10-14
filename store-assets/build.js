@@ -95,7 +95,8 @@ img.i{width:${big ? 190 : 96}px;border-radius:${big ? 42 : 22}px;box-shadow:0 10
 .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.chips span{background:rgba(255,255,255,.18);padding:6px 14px;border-radius:99px;font-weight:700;font-size:17px}</style>
 ${big ? `<img class=i src="${ICON}"><div><h1>ChatGPT Exporter</h1><p>Save any ChatGPT chat as PDF, Markdown, Word &amp; more</p><div class=chips>${['PDF', 'Markdown', 'Word', 'HTML', 'JSON', 'CSV', 'PNG'].map(x => `<span>${x}</span>`).join('')}</div></div>` : `<img class=i src="${ICON}"><div><h1>ChatGPT Exporter</h1><p>Export chats to PDF, Markdown, Word &amp; more</p></div>`}`;
 
-const jobs = [...Object.entries(shots).map(([n, h]) => [n, h, 1280, 800]), ['promo-small-440x280', tile(440, 280, false), 440, 280], ['promo-marquee-1400x560', tile(1400, 560, true), 1400, 560]];
+// Screenshots now come from real captures: see compose.js. This file only builds the promo tiles.
+const jobs = [['promo-small-440x280', tile(440, 280, false), 440, 280], ['promo-marquee-1400x560', tile(1400, 560, true), 1400, 560]];
 const CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 for (const [n, html, w, h] of jobs) {
   const f = `${tmp}/${n}.html`; fs.writeFileSync(f, html);

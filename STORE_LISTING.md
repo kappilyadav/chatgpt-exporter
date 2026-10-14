@@ -76,7 +76,7 @@ ChatGPT Exporter is an independent tool, not affiliated with, endorsed by or spo
 ```
 
 ## Images to upload (store-assets/out/)
-Screenshots in this order (1280x800): 1-export-menu, 2-select-messages, 6-features, 3-formats, 4-pdf-themes (5-private optional). Small promo 440x280 and marquee 1400x560 included. Best upgrade: replace mock-ups with real captures of the extension on a live chat.
+Screenshots (1280x800, real captures of the extension running on chatgpt.com, composed by `node store-assets/compose.js`), in this order: 1-export-menu, 2-select-messages, 5-export-result, 3-pdf-settings, 4-formats, 6-private. Promo tiles: promo-small-440x280, promo-marquee-1400x560 (`node store-assets/build.js`).
 
 ## Permission justifications (Privacy practices tab)
 - **Host access chatgpt.com, chat.openai.com:** Adds the Select/Export buttons to ChatGPT pages and reads the conversation the user chooses to export.
