@@ -1,0 +1,42 @@
+<!doctype html><html class="dark" lang="en"><head><meta charset="utf-8"><title>Hash Map Collisions Explained - ChatGPT</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;height:100%}body{background:#212121;color:#ececec;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;overflow:hidden}
+.app{display:flex;height:100%}.side{width:56px;background:#171717;display:flex;flex-direction:column;align-items:center;gap:22px;padding-top:20px}.side i{width:20px;height:20px;border:2px solid #d0d0d0;border-radius:6px;opacity:.8}
+.main{flex:1;overflow:hidden;position:relative}.thread{width:720px;margin:0 auto;padding:30px 0 120px}
+.u{display:flex;justify-content:flex-end;margin:6px 0 26px}.u .whitespace-pre-wrap{background:#303030;padding:10px 18px;border-radius:22px;max-width:75%}
+.markdown h2{font-size:22px;margin:0 0 10px}.markdown h3{font-size:18px;margin:22px 0 8px}.markdown p{margin:0 0 12px}
+pre{background:#0d0d0d;border-radius:12px;padding:0;margin:14px 0;overflow:hidden}pre .bar{background:#2f2f2f;padding:8px 16px;font-size:13px;color:#b4b4b4;display:flex;justify-content:space-between}pre code{display:block;padding:16px;font:13.5px/1.6 ui-monospace,Menlo,Consolas,monospace;color:#e6e6e6;white-space:pre}
+.k{color:#c586c0}.f{color:#dcdcaa}.s{color:#ce9178}.n{color:#b5cea8}.c{color:#6a9955}
+table{border-collapse:collapse;width:100%;margin:10px 0 16px;font-size:15px}th{text-align:left;padding:8px 6px;border-bottom:1px solid #444}td{padding:9px 6px;border-bottom:1px solid #333}
+code.i{background:#333;padding:2px 6px;border-radius:6px;font:14px ui-monospace,Menlo,monospace}.math{font-family:"Times New Roman",serif;font-style:italic}
+.input{position:absolute;left:50%;transform:translateX(-50%);bottom:20px;width:720px;height:52px;border-radius:26px;background:#2f2f2f;color:#9a9a9a;padding:13px 22px}
+</style></head><body><div class="app"><div class="side"><i></i><i></i><i></i><i></i><i></i></div><div class="main"><div class="thread" id="thread">
+<div class="u" data-message-author-role="user" data-message-id="m1"><div class="whitespace-pre-wrap">Explain how a hash map handles collisions. Include a short Python example and a table comparing chaining vs open addressing.</div></div>
+<div data-message-author-role="assistant" data-message-id="m2"><div class="markdown">
+<h2>How a Hash Map Handles Collisions</h2>
+<p>A <strong>hash map</strong> stores data as <strong>key–value pairs</strong>. It uses a hash function to convert a key into an index in an underlying array. When two keys land in the same slot you get a <strong>collision</strong>.</p>
+<pre><div class="bar"><span>Python</span><span>Copy</span></div><code><span class="k">class</span> <span class="f">HashMap</span>:
+    <span class="k">def</span> <span class="f">__init__</span>(self, size=<span class="n">8</span>):
+        self.buckets = [[] <span class="k">for</span> _ <span class="k">in</span> <span class="f">range</span>(size)]
+
+    <span class="k">def</span> <span class="f">put</span>(self, key, value):
+        bucket = self.buckets[<span class="f">hash</span>(key) % <span class="f">len</span>(self.buckets)]
+        <span class="k">for</span> pair <span class="k">in</span> bucket:
+            <span class="k">if</span> pair[<span class="n">0</span>] == key:
+                pair[<span class="n">1</span>] = value
+                <span class="k">return</span>
+        bucket.<span class="f">append</span>([key, value])</code></pre>
+<h3>Chaining vs open addressing</h3>
+<table><tr><th>Operation</th><th>Chaining</th><th>Open addressing</th></tr><tr><td>Lookup (average)</td><td><span class="math">O(1)</span></td><td><span class="math">O(1)</span></td></tr><tr><td>Lookup (worst case)</td><td><span class="math">O(n)</span></td><td><span class="math">O(n)</span></td></tr><tr><td>Memory</td><td>Extra list nodes</td><td>Single array</td></tr></table>
+<p>The load factor <code class="i">n / m</code> decides when to resize the table.</p></div></div>
+<div class="u" data-message-author-role="user" data-message-id="m3"><div class="whitespace-pre-wrap">Great. Now show how to resize the table when it gets full.</div></div>
+<div data-message-author-role="assistant" data-message-id="m4"><div class="markdown"><h2>Resizing the table</h2><p>A hash map usually resizes when its load factor passes a threshold such as 0.75. It allocates a larger array and re-inserts every entry.</p></div></div>
+</div><div class="input">Ask ChatGPT</div></div></div>
+<script>
+// Stub of the chrome.* APIs the content scripts use, so the REAL extension code runs outside the extension.
+const mem={};const area={get:async(k)=>{if(k==null)return {...mem};if(typeof k==='string')return k in mem?{[k]:mem[k]}:{};const o={};(Array.isArray(k)?k:Object.keys(k)).forEach(x=>{if(x in mem)o[x]=mem[x]});return o},set:async(o)=>{Object.assign(mem,o)},remove:async()=>{}};
+window.chrome={storage:{sync:area,local:area,onChanged:{addListener(){}}},runtime:{lastError:null,sendMessage(m,cb){cb&&cb(null)},onMessage:{addListener(){}},getURL:x=>x}};
+</script>
+<script src="/src/core/ns.js"></script><script src="/src/core/i18n.js"></script><script src="/src/core/util.js"></script><script src="/src/core/settings.js"></script><script src="/src/core/account.js"></script><script src="/src/core/html2md.js"></script><script src="/src/core/markdown.js"></script><script src="/src/core/zip.js"></script><script src="/src/core/assets.js"></script><script src="/src/adapters/chatgpt.js"></script><script src="/src/exporters/common.js"></script><script src="/src/exporters/htmlbuilder.js"></script><script src="/src/exporters/markdown.js"></script><script src="/src/exporters/text.js"></script><script src="/src/exporters/json.js"></script><script src="/src/exporters/csv.js"></script><script src="/src/exporters/html.js"></script><script src="/src/exporters/docx.js"></script><script src="/src/exporters/pdf.js"></script><script src="/src/exporters/index.js"></script><script src="/src/ui/settings-form.js"></script><script src="/src/ui/styles.js"></script><script src="/src/ui/bulk.js"></script><script src="/src/ui/panel.js"></script>
+<script>CE.adapters.chatgpt.match=()=>true;</script><script src="/src/content.js"></script>
+</body></html>
