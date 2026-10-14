@@ -5,7 +5,7 @@
   if (CE.__nsLoaded) return;
   CE.__nsLoaded = true;
 
-  CE.VERSION = '1.1.1';
+  CE.VERSION = '1.1.2';
 
   // Accounts and plans: the website owns sign-up, checkout and billing.
   CE.SITE_URL = 'https://chatgptexporterfree.com';

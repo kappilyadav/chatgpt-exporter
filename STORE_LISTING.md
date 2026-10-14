@@ -24,8 +24,8 @@ Takeaways: "Word" is a bigger search than "Markdown" or "text", and the leader d
 **Name** (manifest `name`, 54 chars, max 75):
 `ChatGPT Exporter: Save ChatGPT to PDF, Word & Markdown`
 
-**Summary** (manifest `description`, 116 chars, max 132). Changed in 1.1.1 after the "excessive keywords" rejection (ref. Yellow Argon): the long format list was removed.
-`Save ChatGPT conversations as PDF, Word or Markdown files. Choose your messages, customize the layout, stay private.`
+**Summary** (manifest `description`, 123 chars, max 132). Rewritten twice after the "excessive keywords" rejection (Yellow Argon, flagged the format list in the Summary): it now has no format list at all.
+`Export any ChatGPT conversation to a clean, shareable file. Pick the messages you want, customize the layout, stay private.`
 
 **Category:** Productivity. **Language:** English.
 **Homepage URL:** https://chatgptexporterfree.com  **Support URL:** https://chatgptexporterfree.com/help
@@ -149,6 +149,6 @@ Tick **Authentication information** and **Personally identifiable information** 
 
 ## Before you submit
 1. Deploy the website first: /privacy, /help, the connect flow and /api/extension/status must be live, and Polar switched to live mode (set live product IDs in wrangler.jsonc, POLAR_SERVER=production, live token and webhook, Worker secrets).
-2. Upload `dist/chat-exporter-1.1.1.zip` (`python scripts/package.py` builds and verifies it).
+2. Upload `dist/chat-exporter-1.1.2.zip` (`python scripts/package.py` builds and verifies it).
 3. After the listing exists, set CHROME_STORE_URL and EXTENSION_ID in the website's src/config.ts.
 4. If the name is rejected for the trademark, fall back to "Exporter for ChatGPT: Save Chats to PDF, Word & Markdown".
