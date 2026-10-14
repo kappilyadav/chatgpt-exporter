@@ -77,77 +77,60 @@ ChatGPT Exporter is an independent tool, not affiliated with, endorsed by or spo
 ## Images to upload (store-assets/out/)
 Screenshots (1280x800, real captures of the extension running on chatgpt.com, rendered from the real extension code: `node store-assets/harness/capture.js` (3x renders on a mock chat page, needs puppeteer-core) then `node store-assets/compose.js` (2x render downsampled to 1280x800)), in this order: hero-1-features, hero-2-formats, 1-export-menu, 2-select-messages, 5-export-result, 3-pdf-settings, 4-formats, 6-private. Promo tiles: promo-small-440x280, promo-marquee-1400x560 (`node store-assets/promo.js`).
 
-## Long description (alternative, richer version: paste instead of the short one)
-Original text written from this extension's real features. Support email filled in.
+## Long description (alternative, more detailed: paste instead of the main one)
+Same compliance rules as above: formats are named once, no keyword lists, no search phrases. Both descriptions in this file are now the cleaned versions.
 
 ```
-Save ChatGPT conversations as clean, shareable files in one click. ChatGPT Exporter turns any chat on chatgpt.com into a PDF, Word document, Markdown, HTML, text, JSON, CSV or PNG image, and keeps your code, tables and math exactly as they should look.
+ChatGPT Exporter adds an Export button to chatgpt.com so you can save any conversation as a tidy, shareable file. Open a chat, click Export, pick a format, and your file downloads right away. Eight formats are supported, including PDF, Word and Markdown.
 
-Looking for a ChatGPT to Word or PDF Chrome extension? Wondering how to save a ChatGPT conversation, download a chat, or print a ChatGPT conversation without messy copy-paste? Install, open a chat, click Export.
+KEY FEATURES
 
-★ KEY FEATURES
+Export what you need
+• Tick individual messages or Shift+click to select a range
+• Presets for questions only, answers only, everything, none, or invert
+• Export many chats together as a single ZIP
 
-📄 8 EXPORT FORMATS
-• PDF, Word (.docx), Markdown, HTML, Text, JSON, CSV and PNG
-• Copy to the clipboard as Markdown, text, JSON, CSV or rich text for Google Docs, Word and Notion
-• Long chats exported as PNG are split into several images in one ZIP
+Content stays intact
+• Code blocks keep their language, and tables stay tables
+• Math formulas, images and links come through as they appear in the chat
+• Web-search sources and Deep Research citations become a numbered source list
+• Canvas documents and the model's reasoning can each be included or hidden
 
-✅ EXPORT ONLY WHAT YOU NEED
-• Tick individual messages, or Shift+click to select a range
-• One-click presets: All, Questions, Answers, None, Invert
-• Bulk export: save many chats at once in a single ZIP
-
-🖨️ PDFs YOU CAN CUSTOMIZE
+PDFs your way
 • Page size and orientation, margins, light or dark theme
-• Font family and font size, page numbers, table of contents
+• Font family and size, page numbers, table of contents
 • Start every prompt on a new page, wrap long code lines
-• Your name and email in the header, dates and per-message timestamps
+• Your name, dates and per-message timestamps in the header
 
-🔬 KEEPS RICH CONTENT INTACT
-• Code blocks with their language, tables, lists, links and images
-• Math formulas (LaTeX)
-• Web-search sources as a numbered list, Deep Research citations
-• Canvas documents and the model's reasoning ("thought process"), each of which you can include or hide
+Copy instead of download
+• Send the conversation to your clipboard and paste it into Google Docs, Word or Notion
 
-⚙️ MAKE IT YOURS
-• File-name templates: {title} {date} {time} {model} and more
-• Download into a sub-folder of your Downloads folder
-• Custom labels for you and the AI, date formats, role icons
-• Right-click menu and keyboard shortcuts: Alt+Shift+S select, Alt+Shift+E quick export, Alt+Shift+P PDF
+Make it yours
+• Name files with your own template and save into a sub-folder
+• Set your own labels for you and the AI
+• Right-click menu and keyboard shortcuts: Alt+Shift+S to select, Alt+Shift+E to export, Alt+Shift+P for a PDF
 • Interface in English, Spanish, French, German, Portuguese, Hindi, Chinese and Japanese
 
-🔒 PRIVATE BY DESIGN
-• Your conversations are converted inside your browser and are never sent to our servers
-• No ads, no analytics, no remote code
-• An optional account only checks your plan status
+PRIVATE BY DESIGN
+Conversations are converted inside your browser and are not sent to our servers. There are no ads, no analytics and no remote code. An optional account only checks your plan status.
 
-💰 FREE TO START
-• The free plan includes monthly exports
-• An optional account at chatgptexporterfree.com unlocks unlimited exports
+FREE TO START
+The free plan includes a monthly allowance of exports. An optional account on chatgptexporterfree.com unlocks unlimited exports.
 
-★ HOW TO USE
-1. Open any conversation on chatgpt.com
-2. Click EXPORT and pick a format, or click SELECT to choose messages
-3. Your file downloads instantly
+WHO IT HELPS
+• Professionals keeping brainstorms and client work as polished files
+• Students archiving study sessions with sources, formulas and tables
+• Developers keeping code with its language, or exporting data for analysis
+• Writers sending drafts to their favorite documents app
 
-★ WHO IT IS FOR
-• Professionals: keep brainstorms, meeting prep and client work as polished PDFs or Word files
-• Students: archive study sessions and research with sources, formulas and tables
-• Developers: keep code with its language, or export JSON and CSV for analysis
-• Writers and creators: send drafts to Markdown, Google Docs, Word or Notion
+HOW TO USE
+1. Open a conversation on chatgpt.com.
+2. Click EXPORT to choose a format, or SELECT to choose messages.
+3. Your file downloads instantly.
 
-★ FAQ
-Can I export only part of a conversation? Yes. Tick messages, or Shift+click a range.
-Are code, tables and math kept? Yes.
-Which browser does it need? Google Chrome.
-Is my data private? Conversion happens in your browser; chat content is not sent to our servers.
-Is it free? There is a free plan with monthly exports, and an optional account for unlimited exports.
+Questions? Visit https://chatgptexporterfree.com/help or write to support@chatgptexporterfree.com.
 
-Website: https://chatgptexporterfree.com
-Help: https://chatgptexporterfree.com/help
-Support: support@chatgptexporterfree.com
-
-ChatGPT Exporter is an independent tool and is not affiliated with, endorsed by or sponsored by OpenAI. ChatGPT is a trademark of OpenAI.
+ChatGPT Exporter is an independent tool, not affiliated with, endorsed by or sponsored by OpenAI. ChatGPT is a trademark of OpenAI.
 ```
 
 ## Permission justifications (Privacy practices tab)
