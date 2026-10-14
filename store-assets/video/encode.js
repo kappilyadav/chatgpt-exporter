@@ -32,9 +32,61 @@ const server = http.createServer((req, res) => {
       const src = off.createBufferSource(); src.buffer = buf; src.connect(off.destination); src.start(a.start);
     }
     const mix = await off.startRendering();
+
+    // ---- original background music (procedural, royalty-free): pad + bass + plucked arp + soft drums, C-Am-F-G at 104 bpm
+    async function buildMusic(total, dur) {
+      const ctx = new OfflineAudioContext(2, total, SR);
+      const bpm = 104, beat = 60 / bpm, bar = beat * 4, mtof = (m) => 440 * Math.pow(2, (m - 69) / 12);
+      const master = ctx.createGain(), lp = ctx.createBiquadFilter(), comp = ctx.createDynamicsCompressor();
+      lp.type = 'lowpass'; lp.frequency.value = 7000; comp.threshold.value = -24; comp.ratio.value = 3;
+      master.connect(lp); lp.connect(comp); comp.connect(ctx.destination);
+      const dl = ctx.createDelay(1), fb = ctx.createGain(), dlp = ctx.createBiquadFilter(), send = ctx.createGain();
+      dl.delayTime.value = beat * 0.75; fb.gain.value = 0.35; dlp.type = 'lowpass'; dlp.frequency.value = 3000; send.gain.value = 0.45;
+      send.connect(dl); dl.connect(dlp); dlp.connect(fb); fb.connect(dl); dlp.connect(master);
+      const nb = ctx.createBuffer(1, SR, SR), nd = nb.getChannelData(0); for (let i = 0; i < nd.length; i++) nd[i] = Math.random() * 2 - 1;
+      const env = (g, t, peak, a, d) => { g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(peak, t + a); g.gain.exponentialRampToValueAtTime(0.0001, t + a + d); };
+      const noise = (t, type, freq, peak, d, dest) => { const s = ctx.createBufferSource(), f = ctx.createBiquadFilter(), g = ctx.createGain(); s.buffer = nb; f.type = type; f.frequency.value = freq; s.connect(f); f.connect(g); g.connect(dest); env(g, t, peak, 0.002, d); s.start(t); s.stop(t + d + 0.05); };
+      const chords = [[60, 64, 67], [57, 60, 64], [53, 57, 60], [55, 59, 62]], roots = [36, 33, 29, 31], pattern = [0, 1, 2, 1, 0, 2, 1, 2];
+      for (let b = 0, n = Math.ceil(dur / bar) + 1; b < n; b++) {
+        const t0 = b * bar, ch = chords[b % 4], root = roots[b % 4];
+        for (const note of ch) for (const det of [-7, 7]) {
+          const o = ctx.createOscillator(), f = ctx.createBiquadFilter(), g = ctx.createGain();
+          o.type = 'sawtooth'; o.frequency.value = mtof(note); o.detune.value = det; f.type = 'lowpass'; f.frequency.value = 900;
+          o.connect(f); f.connect(g); g.connect(master);
+          g.gain.setValueAtTime(0, t0); g.gain.linearRampToValueAtTime(0.02, t0 + 0.4); g.gain.setValueAtTime(0.02, t0 + bar - 0.35); g.gain.linearRampToValueAtTime(0, t0 + bar + 0.3);
+          o.start(t0); o.stop(t0 + bar + 0.35);
+        }
+        for (let i = 0; i < 8; i++) {
+          const t = t0 + i * beat / 2;
+          const a = ctx.createOscillator(), ag = ctx.createGain(); a.type = 'triangle'; a.frequency.value = mtof(ch[pattern[i]] + 24);
+          a.connect(ag); ag.connect(master); ag.connect(send); env(ag, t, b < 1 ? 0.05 : 0.09, 0.004, 0.32); a.start(t); a.stop(t + 0.4);
+          if (b >= 1) { const o = ctx.createOscillator(), g = ctx.createGain(); o.type = 'triangle'; o.frequency.value = mtof(root + (i % 4 === 3 ? 12 : 0)); o.connect(g); g.connect(master); env(g, t, 0.2, 0.01, 0.3); o.start(t); o.stop(t + 0.4); }
+          if (b >= 2) {
+            if (i % 4 === 0) { const k = ctx.createOscillator(), g = ctx.createGain(); k.type = 'sine'; k.frequency.setValueAtTime(140, t); k.frequency.exponentialRampToValueAtTime(45, t + 0.12); k.connect(g); g.connect(master); env(g, t, 0.55, 0.003, 0.2); k.start(t); k.stop(t + 0.3); }
+            if (i % 2 === 1) noise(t, 'highpass', 7500, 0.05, 0.05, master);
+            if (i === 2 || i === 6) noise(t, 'bandpass', 1800, 0.1, 0.14, master);
+          }
+        }
+      }
+      return ctx.startRendering();
+    }
+    const music = await buildMusic(total, files.length / FPS);
+    const ML = music.getChannelData(0), MR = music.getChannelData(1);
+    let sum = 0, cnt = 0; for (let i = 0; i < ML.length; i += 7) { sum += ML[i] * ML[i]; cnt++; }
+    const MUSIC_RMS = 0.04, DUCK = 0.65;                       // about -28 dBFS, dipping ~3.7 dB under speech
+    const norm = MUSIC_RMS / Math.sqrt(sum / cnt);
+    const L = mix.getChannelData(0), R = mix.getChannelData(1), speech = timeline.audio.map((a) => [a.start, a.start + a.dur]);
+    let env = 1; const k = 1 - Math.exp(-1 / (SR * 0.18)), fadeOut = 2.8, fadeIn = 1.2, endT = total / SR;
+    for (let i = 0; i < total; i++) {
+      const t = i / SR, talking = speech.some(([a, b]) => t >= a - 0.1 && t <= b + 0.1);
+      env += ((talking ? DUCK : 1) - env) * k;
+      const fade = Math.min(1, t / fadeIn, (endT - t) / fadeOut);
+      const g = norm * env * Math.max(0, fade);
+      L[i] = Math.max(-1, Math.min(1, L[i] + ML[i] * g)); R[i] = Math.max(-1, Math.min(1, R[i] + MR[i] * g));
+    }
     const aenc = new AudioEncoder({ output: (c, m) => muxer.addAudioChunk(c, m), error: (e) => { throw e; } });
     aenc.configure({ codec: 'mp4a.40.2', sampleRate: SR, numberOfChannels: 2, bitrate: 128000 });
-    const L = mix.getChannelData(0), R = mix.getChannelData(1), CH = 4800;
+    const CH = 4800;
     for (let i = 0; i < total; i += CH) {
       const n = Math.min(CH, total - i), data = new Float32Array(n * 2);
       data.set(L.subarray(i, i + n), 0); data.set(R.subarray(i, i + n), n);
