@@ -79,7 +79,7 @@ ChatGPT Exporter is an independent tool, not affiliated with, endorsed by or spo
 Screenshots (1280x800, real captures of the extension running on chatgpt.com, rendered from the real extension code: `node store-assets/harness/capture.js` (3x renders on a mock chat page, needs puppeteer-core) then `node store-assets/compose.js` (2x render downsampled to 1280x800)), in this order: hero-1-features, hero-2-formats, 1-export-menu, 2-select-messages, 5-export-result, 3-pdf-settings, 4-formats, 6-private. Promo tiles: promo-small-440x280, promo-marquee-1400x560 (`node store-assets/promo.js`).
 
 ## Long description (alternative, richer version: paste instead of the short one)
-Original text written from this extension's real features. Replace [SUPPORT EMAIL] before using.
+Original text written from this extension's real features. Support email filled in.
 
 ```
 Save ChatGPT conversations as clean, shareable files in one click. ChatGPT Exporter turns any chat on chatgpt.com into a PDF, Word document, Markdown, HTML, text, JSON, CSV or PNG image, and keeps your code, tables and math exactly as they should look.
@@ -146,7 +146,7 @@ Is it free? There is a free plan with monthly exports, and an optional account f
 
 Website: https://chatgptexporterfree.com
 Help: https://chatgptexporterfree.com/help
-Support: [SUPPORT EMAIL]
+Support: support@chatgptexporterfree.com
 
 ChatGPT Exporter is an independent tool and is not affiliated with, endorsed by or sponsored by OpenAI. ChatGPT is a trademark of OpenAI.
 ```
