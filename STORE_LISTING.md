@@ -21,59 +21,58 @@ Research basis: the top competitor listing (ChatGPT Exporter - ChatGPT to PDF, M
 Takeaways: "Word" is a bigger search than "Markdown" or "text", and the leader does NOT offer Word, so put Word in the name and first lines. Keep wording natural: the Store penalises keyword stuffing.
 
 ## Fields
-**Name** (manifest `name`, 53 chars, max 75):
+**Name** (manifest `name`, 54 chars, max 75):
 `ChatGPT Exporter: Save ChatGPT to PDF, Word & Markdown`
 
-**Summary** (manifest `description`, max 132):
-`Save ChatGPT chats as PDF, Word, Markdown, HTML, text, JSON, CSV or PNG. Pick messages, copy to Docs or Notion. Private.`
+**Summary** (manifest `description`, 116 chars, max 132). Changed in 1.1.1 after the "excessive keywords" rejection (ref. Yellow Argon): the long format list was removed.
+`Save ChatGPT conversations as PDF, Word or Markdown files. Choose your messages, customize the layout, stay private.`
 
-**Category:** Productivity (Workflow & Planning if offered). **Language:** English.
+**Category:** Productivity. **Language:** English.
 **Homepage URL:** https://chatgptexporterfree.com  **Support URL:** https://chatgptexporterfree.com/help
 **Privacy policy URL:** https://chatgptexporterfree.com/privacy
 **Single purpose:** Export the conversation currently open on chatgpt.com to a file or the clipboard.
 
-**Description** (paste as is):
+**Description** (rewritten after the rejection; keep it natural, name the formats at most once, no keyword lists):
 
 ```
-ChatGPT Exporter is a free Chrome extension that saves any ChatGPT conversation as a PDF, Word document (.docx), Markdown, HTML, text, JSON, CSV or PNG image. Open a chat, click Export, done. No copy-paste, no broken formatting.
+ChatGPT Exporter adds an Export button to chatgpt.com so you can save any conversation as a tidy, shareable file. Open a chat, click Export, pick a format, and your file downloads right away. Eight formats are supported, including PDF, Word and Markdown.
 
-Looking for a way to save a ChatGPT conversation, turn ChatGPT into Word or PDF, or download a chat as Markdown for Notion or Obsidian? This is the quick way.
+SAVE JUST WHAT YOU NEED
+Tick individual messages, Shift+click to select a range, or use the presets for questions only, answers only, or everything. Need many chats at once? Export them together as a single ZIP.
 
-★ WHAT YOU CAN DO
-• Export ChatGPT to PDF, Word (.docx), Markdown, HTML, Text, JSON, CSV or PNG
-• Choose exactly which messages to save: tick them, Shift+click a range, or pick All, Questions or Answers
-• Copy to the clipboard as Markdown, plain text, JSON, CSV or rich text, ready for Google Docs, Word or Notion
-• Bulk export: download many chats at once in a single ZIP
-• Right-click menu and keyboard shortcuts: Alt+Shift+S select, Alt+Shift+E quick export, Alt+Shift+P PDF
+CONTENT STAYS INTACT
+Code blocks keep their language, tables stay tables, and math formulas, images and links come through as they appear in the chat. Web-search sources, Deep Research citations, Canvas documents and the model's reasoning can each be included or left out.
 
-★ KEEPS EVERYTHING INTACT
-Code blocks with language, tables, lists, links, images, math formulas (LaTeX), web-search sources, Deep Research citations, Canvas documents and the model's reasoning ("thought process"). Include or hide each one in settings.
+PDFS YOUR WAY
+Choose page size and orientation, margins, light or dark theme, font and size, page numbers, a table of contents, and whether each prompt starts on a new page. Add your name and a date to the header if you like.
 
-★ PDFs THAT LOOK GOOD
-Page size and orientation, margins, light or dark theme, font and size, page numbers, table of contents, page break per prompt, your name and date in the header.
+COPY INSTEAD OF DOWNLOAD
+Send the conversation straight to your clipboard and paste it into Google Docs, Word or Notion.
 
-★ MAKE IT YOURS
-File-name templates, download sub-folder, date formats, custom labels for you and the AI, optional timestamps. Available in English, Spanish, French, German, Portuguese, Hindi, Chinese and Japanese.
+MAKE IT YOURS
+Name files with your own template, save into a sub-folder, set your own labels, and use the right-click menu or keyboard shortcuts (Alt+Shift+S to select, Alt+Shift+E to export, Alt+Shift+P for a PDF). The interface is available in English, Spanish, French, German, Portuguese, Hindi, Chinese and Japanese.
 
-★ PRIVATE BY DESIGN
-Conversations are converted inside your browser and are never sent to our servers. No ads, no analytics, no remote code.
+PRIVATE BY DESIGN
+Conversations are converted inside your browser and are not sent to our servers. There are no ads, no analytics and no remote code.
 
-★ FREE TO START
-The free plan includes monthly exports. An optional account at chatgptexporterfree.com unlocks unlimited exports.
+FREE TO START
+The free plan includes a monthly allowance of exports. An optional account on chatgptexporterfree.com unlocks unlimited exports.
 
 HOW TO USE
-1. Open any conversation on chatgpt.com
-2. Click SELECT to choose messages, or EXPORT to save the whole chat
-3. Pick a format. Your file downloads instantly
+1. Open a conversation on chatgpt.com.
+2. Click EXPORT to choose a format, or SELECT to choose messages.
+3. Your file downloads instantly.
 
-FAQ
-Can I export ChatGPT to PDF? Yes. Choose PDF, then Save as PDF in the preview that opens.
-Can I save a ChatGPT conversation as a Word document? Yes. Choose Word (.docx).
-Does it work with Canvas, code and tables? Yes, they are preserved.
-Is my data safe? Everything runs locally in your browser.
+Questions? Visit https://chatgptexporterfree.com/help or write to support@chatgptexporterfree.com.
 
 ChatGPT Exporter is an independent tool, not affiliated with, endorsed by or sponsored by OpenAI. ChatGPT is a trademark of OpenAI.
 ```
+
+### Keyword rules to stay compliant (Spam and Placement policy)
+- Do not repeat the list of formats; name them once at most.
+- No "looking for X? how to Y?" keyword paragraphs.
+- No tags, hashtags or search phrases in the description.
+- Every claim must be true for this extension (ChatGPT only, desktop Chrome).
 
 ## Images to upload (store-assets/out/)
 Screenshots (1280x800, real captures of the extension running on chatgpt.com, rendered from the real extension code: `node store-assets/harness/capture.js` (3x renders on a mock chat page, needs puppeteer-core) then `node store-assets/compose.js` (2x render downsampled to 1280x800)), in this order: hero-1-features, hero-2-formats, 1-export-menu, 2-select-messages, 5-export-result, 3-pdf-settings, 4-formats, 6-private. Promo tiles: promo-small-440x280, promo-marquee-1400x560 (`node store-assets/promo.js`).
@@ -167,6 +166,6 @@ Tick **Authentication information** and **Personally identifiable information** 
 
 ## Before you submit
 1. Deploy the website first: /privacy, /help, the connect flow and /api/extension/status must be live, and Polar switched to live mode (set live product IDs in wrangler.jsonc, POLAR_SERVER=production, live token and webhook, Worker secrets).
-2. Upload `dist/chat-exporter-1.1.0.zip` (`python scripts/package.py` builds and verifies it).
+2. Upload `dist/chat-exporter-1.1.1.zip` (`python scripts/package.py` builds and verifies it).
 3. After the listing exists, set CHROME_STORE_URL and EXTENSION_ID in the website's src/config.ts.
 4. If the name is rejected for the trademark, fall back to "Exporter for ChatGPT: Save Chats to PDF, Word & Markdown".
