@@ -21,11 +21,11 @@ const tiles = {
   'promo-small-440x280': [440, 280, 1, page(440, 280, 0.5,
     `<img class=logo src="${raw('icon128.png')}" style="left:16px;top:14px;width:50px"><div class=y style="position:absolute;left:76px;top:22px;font-size:30px;line-height:1">ChatGPT Exporter</div>`
     + list(['PDF', 'Word', 'Markdown', 'HTML', 'Text', 'CSV'], 29, 18, 74, 1.1)
-    + el('menu.png', 228, 74, 0.6, 260) + el('select.png', 345, 74, 0.55, 260))],
+    + el('menu.png', 172, 78, 0.5, 260) + el('select.png', 268, 78, 0.45, 260))],
   'promo-marquee-1400x560': [1400, 560, 1, page(1400, 560, 1.6,
     `<img class=logo src="${raw('icon128.png')}" style="left:60px;top:36px;width:104px"><div class=y style="position:absolute;left:186px;top:58px;font-size:66px;line-height:1">ChatGPT Exporter</div>`
     + list(L, 52, 66, 176, 1.1)
-    + el('menu.png', 640, 180, 1.0, 380) + el('select.png', 860, 180, 1.0, 380) + el('settings-pdf.png', 1260, 180, 1.0, 380))]
+    + el('menu.png', 390, 180, 1.0, 380) + el('select.png', 602, 180, 1.0, 380) + el('settings-pdf.png', 1008, 180, 1.0, 380))]
 };
 for (const [n, [w, h, , html]] of Object.entries(tiles)) {
   const f = `${tmp}/${n}.html`; fs.writeFileSync(f, html);
