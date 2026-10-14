@@ -79,46 +79,61 @@ const OVERLAY = `
   const moveToEl = async (sel, idx = 0, sec = 0.9, dx = 0, dy = 0) => { const r = await rect(sel, idx); await moveTo(r.x + dx, r.y + dy, sec); return r; };
   async function click() { await ev((t) => { V.cur.click = t; }, t); await page.mouse.down(); await page.mouse.up(); await advance(0.25); }
 
-  // ---- scene 1: title
-  await setLayer('title', true); await wait(3.4); await setLayer('title', false); await wait(0.5);
-  // ---- scene 2: open a chat
-  await cap('Open any ChatGPT conversation'); mx = 700; my = 330; await ev(() => { V.cur.x = 700; V.cur.y = 330; V.cur.vis = 1; }); await wait(1.4);
+  // ---- scene timing is driven by the voiceover clips (audio/1.mp3 ... 8.mp3)
+  const AUDIO = path.join(__dirname, 'audio');
+  const dur = [1, 2, 3, 4, 5, 6, 7, 8].map((i) => parseFloat(require('child_process').execFileSync('afinfo', [`${AUDIO}/${i}.mp3`]).toString().match(/estimated duration: ([\d.]+)/)[1]));
+  const LEAD = 0.25, TAIL = 0.35;
+  const timeline = [];
+  let sceneEnd = 0;
+  const scene = async (i) => { timeline.push({ file: `${i + 1}.mp3`, start: +(t + LEAD).toFixed(3), dur: dur[i] }); sceneEnd = t + LEAD + dur[i] + TAIL; console.log('T', t.toFixed(1), 'scene', i + 1, 'audio', dur[i]); };
+  const untilEnd = async () => { if (t < sceneEnd) await wait(sceneEnd - t); else console.log('  (scene ran over by', (t - sceneEnd).toFixed(2), 's)'); };
+  const left = () => Math.max(0, sceneEnd - t);
+
+  // 1: title
+  await scene(0); await setLayer('title', true); await untilEnd();
+  // 2: open a chat, export menu with all formats
+  await scene(1); await setLayer('title', false); await cap('Open any ChatGPT conversation');
+  mx = 700; my = 330; await ev(() => { V.cur.x = 700; V.cur.y = 330; V.cur.vis = 1; }); await wait(2.4);
   await cap('One click: pick a format');
-  await moveToEl('.split', 1, 1.0, 54, 0); // caret side of EXPORT
+  await moveToEl('.split', 1, 1.0, 54, 0);
   const caret = await rect('.split', 1); await moveTo(caret.l + caret.w - 18, caret.y, 0.3); await click();
-  await wait(0.5);
-  for (const idx of [1, 3, 0, 2, 5, 7]) { await moveToEl('.menu.open button', idx, 0.55, -30, 0); await wait(0.25); }
-  await cap('8 formats: PDF, Word, Markdown & more'); await wait(1.0);
-  await moveTo(430, 250, 0.7); await click(); await wait(0.4);
-  // ---- scene 3: select messages
-  await cap('Pick exactly the messages you need');
+  await wait(0.6);
+  const items = [1, 3, 0, 2, 4, 5, 6, 7];
+  const per = Math.max(0.3, (left() - 0.3) / items.length - 0.55);
+  for (const idx of items) { await moveToEl('.menu.open button', idx, 0.55, -30, 0); await wait(per); }
+  await untilEnd();
+  // 3: "Eight formats. One menu."
+  await scene(2); await cap('8 formats: PDF, Word, Markdown & more');
+  await moveToEl('.menu.open button', 3, 0.8, -30, 0); await wait(Math.max(0, left() - 1.6));
+  await moveTo(430, 250, 0.7); await click(); await untilEnd();
+  // 4: select messages
+  await scene(3); await cap('Pick exactly the messages you need');
   await moveToEl('.split', 0, 1.0, -20, 0); await click();
   await ev(() => new Promise((r) => { const i = setInterval(() => { const s = document.getElementById('chat-exporter-root').shadowRoot; if (s.querySelectorAll('.row').length) { clearInterval(i); r(); } }, 100); }));
-  await wait(0.9);
-  await moveToEl('.presets button', 2, 1.0); await click(); await wait(0.9);
-  await moveToEl('.presets button', 1, 0.7); await click(); await wait(0.8);
-  await moveToEl('.list .row', 3, 0.8, 40, 0); await click(); await wait(0.5); await click(); await wait(0.5);
-  await moveToEl('.presets button', 0, 0.7); await click(); await wait(0.7);
-  // ---- scene 4: settings
-  await cap('Customise your PDF: size, theme, margins');
+  await wait(1.2);
+  await moveToEl('.presets button', 2, 1.0); await click(); await wait(1.2);
+  await moveToEl('.presets button', 1, 0.8); await click(); await wait(1.0);
+  await moveToEl('.list .row', 3, 0.8, 40, 0); await click(); await wait(0.6); await click(); await wait(0.6);
+  await moveToEl('.presets button', 0, 0.8); await click(); await untilEnd();
+  // 5: settings
+  await scene(4); await cap('Customise your PDF: size, theme, margins');
   const bars = await ev(() => document.getElementById('chat-exporter-root').shadowRoot.querySelectorAll('.p-bar .iconbtn').length);
-  await moveToEl('.p-bar .iconbtn', bars - 1, 0.9); await click(); await wait(0.8);
+  await moveToEl('.p-bar .iconbtn', bars - 1, 0.9); await click(); await wait(1.0);
   const off = await ev(() => { const r = document.getElementById('chat-exporter-root').shadowRoot; const st = r.querySelector('.settings'); const t = [...r.querySelectorAll('.cf-title')].find((e) => /PDF/i.test(e.textContent)); return t.getBoundingClientRect().top - st.getBoundingClientRect().top + st.scrollTop - 6; });
   await moveTo(mx - 90, my + 140, 0.8);
-  await advance(2.4, (p) => ev((o, p) => { const st = document.getElementById('chat-exporter-root').shadowRoot.querySelector('.settings'); st.scrollTop = o * p * p * (3 - 2 * p); }, off, p));
-  await wait(1.4);
-  await moveToEl('.cf-row select', 6, 0.9); await wait(1.0);
-  // close panel
-  await moveToEl('.p-head .iconbtn', 2, 0.8); await click(); await wait(0.4);
+  await advance(3.0, (p) => ev((o, p) => { const st = document.getElementById('chat-exporter-root').shadowRoot.querySelector('.settings'); st.scrollTop = o * p * p * (3 - 2 * p); }, off, p));
+  await wait(1.0);
+  await moveToEl('.cf-row select', 6, 0.9); await wait(Math.max(0, left() - 1.6));
+  await moveToEl('.p-head .iconbtn', 2, 0.8); await click(); await untilEnd();
   await ev(() => { V.cur.vis = 0; });
-  // ---- scene 5: result document
-  await setLayer('doc', true); await cap('Code, tables and math stay perfect');
-  await advance(5.4, (p) => ev((y) => { V.docY = y; }, 520 * p * p * (3 - 2 * p)));
-  await setLayer('doc', false); await cap(''); await wait(0.5);
-  // ---- scene 6: privacy
-  await setLayer('priv', true); await wait(4.6); await setLayer('priv', false); await wait(0.5);
-  // ---- scene 7: CTA
-  await setLayer('cta', true); await wait(4.6);
+  // 6: exported document
+  await scene(5); await setLayer('doc', true); await cap('Code, tables and math stay perfect');
+  await advance(Math.max(1, left() - 0.3), (p) => ev((y) => { V.docY = y; }, 520 * p * p * (3 - 2 * p))); await untilEnd();
+  // 7: privacy
+  await scene(6); await setLayer('doc', false); await cap(''); await setLayer('priv', true); await untilEnd();
+  // 8: call to action
+  await scene(7); await setLayer('priv', false); await setLayer('cta', true); await untilEnd(); await wait(0.5);
+  fs.writeFileSync(path.join(__dirname, 'timeline.json'), JSON.stringify({ fps: FPS, total: +t.toFixed(3), audio: timeline }, null, 1));
   console.log('frames', n, 'seconds', (n / FPS).toFixed(1));
   await browser.close(); server.close();
 })().catch((e) => { console.error(e); process.exit(1); });

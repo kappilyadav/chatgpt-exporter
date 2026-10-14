@@ -1,6 +1,6 @@
 # Voiceover script: ChatGPT Exporter explainer (50 s)
 
-Timed to `chatgpt-exporter-explainer.mp4`. Pace: about 140 words per minute, friendly and upbeat. Each line must finish at or before the end time shown, so read the timing column against a stopwatch while you record. Leave about half a second of silence at each scene change.
+The final video now uses your recordings (`audio/1.mp3` to `audio/8.mp3`, one per scene), and each scene is timed to its clip. The times in the table below are the original script targets. Pace: about 140 words per minute, friendly and upbeat. Each line must finish at or before the end time shown, so read the timing column against a stopwatch while you record. Leave about half a second of silence at each scene change.
 
 | Time | On screen | Say |
 | --- | --- | --- |
