@@ -29,6 +29,27 @@ const shots = {
     crop('menu.jpg', 1384, 170, 164, 450, 800, 165, 1.35)
     + `<ul class=f style="left:90px;top:210px;width:620px;font-size:34px"><li><b>PDF</b> · <b>Word</b> · <b>Markdown</b></li><li><b>HTML</b> · <b>Text</b> · <b>PNG</b></li><li><b>JSON</b> · <b>CSV</b></li><li style="font-size:26px;font-weight:600;opacity:.92;margin-top:30px">Or copy as rich text straight into Google Docs, Word or Notion</li></ul>`)
 };
+
+// ---- "reference style" shots: solid colour, big bold text, zoomed real UI crops bleeding off the bottom edge
+const SOLID = '#0b63c9', YEL = '#ffd23f';
+const solid = (body) => `<!doctype html><meta charset=utf-8><style>
+*{margin:0;padding:0;box-sizing:border-box}html,body{width:1280px;height:800px;overflow:hidden}
+body{background:${SOLID};font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;position:relative}
+.y{color:${YEL};font-weight:800;letter-spacing:-.01em;text-shadow:0 3px 0 #052e66}
+.bul{position:absolute;left:50px;top:36px;font-size:50px;line-height:1.2;width:1190px}.bul div{margin-bottom:2px}
+.shot{position:absolute;overflow:hidden;border-radius:14px 14px 0 0;box-shadow:0 0 0 3px rgba(255,255,255,.9),0 16px 40px rgba(0,20,70,.5);background:#000}
+.shot img{position:absolute;display:block}
+.logo{position:absolute;left:60px;top:40px;width:104px;border-radius:24px;box-shadow:0 6px 18px rgba(0,0,0,.35)}
+.t{position:absolute;left:186px;top:58px;font-size:56px;line-height:1}
+.list{position:absolute;left:60px;top:180px;font-size:66px;line-height:1.12}
+</style>${body}`;
+const crop2 = (n, x, y, w, h, l, t, s) => `<div class=shot style="left:${l}px;top:${t}px;width:${w * s}px;height:${h * s}px"><img src="${raw(n)}" style="width:${1568 * s}px;left:${-x * s}px;top:${-y * s}px"></div>`;
+shots['hero-1-features'] = solid(`<div class="bul y"><div>- Export to PDF, Word, Markdown, HTML ...</div><div>- Export only the messages you need</div><div>- Customise your PDF and file names</div><div>- Keeps code, tables, math and images</div></div>`
+  + crop2('menu.jpg', 1384, 168, 164, 380, 60, 325, 1.3) + crop2('select.jpg', 1212, 0, 356, 380, 305, 325, 1.3) + crop2('settings-pdf.jpg', 1212, 280, 356, 380, 785, 325, 1.3));
+shots['hero-2-formats'] = solid(`<img class=logo src="${raw('icon128.png')}"><div class="t y">ChatGPT Exporter</div>`
+  + `<div class="list y"><div>PDF</div><div>Word</div><div>Markdown</div><div>HTML</div><div>Text</div><div>CSV · JSON</div></div>`
+  + crop2('menu.jpg', 1384, 168, 164, 392, 620, 175, 1.6) + crop2('select.jpg', 1212, 0, 356, 600, 895, 175, 1.07));
+
 const privacy = page('Private by design', 'Your conversations never leave your browser',
   `<div style="position:absolute;left:70px;right:70px;top:200px;display:flex;gap:28px">${[['🔒', 'Runs locally', 'Chats are converted inside your browser. Nothing is sent to our servers.'], ['🚫', 'No tracking', 'No ads, no analytics and no remote code.'], ['⚡', 'Instant', 'Uses your logged-in session, so exports are exact and fast.']].map(c => `<div style="flex:1;background:#fff;color:#1f2330;border-radius:20px;padding:40px 30px;box-shadow:0 12px 36px rgba(0,25,90,.35)"><div style="font-size:54px">${c[0]}</div><div style="font-weight:800;font-size:30px;margin:14px 0 10px">${c[1]}</div><div style="font-size:21px;color:#4b5568;line-height:1.45">${c[2]}</div></div>`).join('')}</div>`);
 shots['6-private'] = privacy;
