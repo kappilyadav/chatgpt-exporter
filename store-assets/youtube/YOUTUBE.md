@@ -26,19 +26,17 @@ Alternates:
 
 ## 2. Video description (paste as is)
 ```
-ChatGPT Exporter is a free Chrome extension that exports any ChatGPT conversation to PDF, Word (.docx), Markdown, HTML, text, JSON, CSV or PNG in one click. In this 1-minute demo you will see how to save a ChatGPT conversation, pick only the messages you want, and customize your PDF.
+ChatGPT Exporter is a free Chrome extension that saves any ChatGPT conversation as a clean, shareable file in one click. In this one-minute demo you will see how to export a chat, pick only the messages you want, and customize your PDF.
 
 Add it to Chrome: [PASTE YOUR CHROME WEB STORE LINK HERE]
 Website: https://chatgptexporterfree.com
 
-Looking for a ChatGPT to Word or PDF Chrome extension? Need to know how to save a ChatGPT conversation, download a chat, or print a ChatGPT conversation without messy copy-paste? This is the quick way.
-
 WHAT YOU CAN DO
-- Export ChatGPT to PDF, Word, Markdown, HTML, text, JSON, CSV and PNG
-- Choose exactly which messages to export (questions only, answers only, or your own selection)
-- Copy to the clipboard for Google Docs, Word or Notion
-- Customize PDFs: page size, margins, light or dark theme, fonts, page numbers, table of contents
-- Keeps code blocks, tables, math formulas, images and sources
+- Export to eight formats, including PDF, Word and Markdown
+- Choose exactly which messages to save: questions only, answers only, or your own selection
+- Copy a chat to the clipboard for Google Docs, Word or Notion
+- Customize PDFs with page size, margins, theme, fonts, page numbers and a table of contents
+- Keep code blocks, tables, math, images and sources intact
 - Private: chats are converted in your browser and never sent to our servers
 
 CHAPTERS
@@ -88,9 +86,9 @@ Which export format do you use most: PDF, Word or Markdown? Tell me and I'll mak
 
 ## 7. Channel description (paste into About; under 1,000 characters)
 ```
-ChatGPT Exporter is a free Chrome extension that saves your ChatGPT conversations as PDF, Word, Markdown, HTML, text, JSON, CSV or PNG in one click.
+ChatGPT Exporter is a free Chrome extension that saves your ChatGPT conversations as clean, shareable files in one click.
 
-On this channel: quick tutorials and tips for exporting, saving, printing and organizing ChatGPT chats, such as how to save a ChatGPT conversation as a PDF, how to turn ChatGPT into a Word document, how to export only the messages you need, and how to keep code, tables and math perfectly formatted.
+On this channel: quick tutorials and tips for exporting, saving and organizing your ChatGPT chats, including how to export only the messages you need and how to keep code, tables and math perfectly formatted.
 
 Private by design: your chats are converted in your browser and never sent to our servers.
 
@@ -109,3 +107,6 @@ ChatGPT Exporter is an independent tool and is not affiliated with, endorsed by 
 - **Banner:** 2048x1152 with the safe area 1235x338 in the middle. You can reuse the marquee image (`store-assets/out/promo-marquee-1400x560.png`) as a starting point.
 - **Profile picture:** `icons/icon128.png` (square app icon; YouTube crops to a circle).
 - **Featured video:** set this explainer as the channel trailer for non-subscribers.
+
+
+> Compliance note: after the Chrome Web Store rejected the listing for excessive keywords, the video and channel descriptions were also cleaned. Name the formats once at most and avoid search-phrase paragraphs.
