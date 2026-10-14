@@ -24,9 +24,9 @@ const shots = {
     crop('select.jpg', 400, 0, 1168, 746, 56, 150, 0.87)),
   '3-pdf-settings': page('Customise your PDF', 'Page size, margins, theme, fonts, page numbers and more',
     `<ul class=f style="left:90px;top:230px;width:620px"><li><b>✓</b> A4, Letter or Legal</li><li><b>✓</b> Light or dark theme</li><li><b>✓</b> Margins and font size</li><li><b>✓</b> Page numbers</li><li><b>✓</b> Table of contents</li><li><b>✓</b> Page break per prompt</li></ul>`
-    + crop('settings-pdf.jpg', 1212, 66, 356, 676, 760, 150, 0.96)),
+    + crop('settings2.jpg', 971, 60, 555, 684, 640, 150, 0.95)),
   '4-formats': page('8 formats, nothing left behind', 'Code, tables, math, images and sources are kept',
-    crop('menu.jpg', 1384, 170, 164, 450, 800, 165, 1.35)
+    crop('menu2.jpg', 1215, 12, 263, 586, 800, 160, 1.0)
     + `<ul class=f style="left:90px;top:210px;width:620px;font-size:34px"><li><b>PDF</b> · <b>Word</b> · <b>Markdown</b></li><li><b>HTML</b> · <b>Text</b> · <b>PNG</b></li><li><b>JSON</b> · <b>CSV</b></li><li style="font-size:26px;font-weight:600;opacity:.92;margin-top:30px">Or copy as rich text straight into Google Docs, Word or Notion</li></ul>`)
 };
 
@@ -43,12 +43,12 @@ body{background:${SOLID};font-family:-apple-system,BlinkMacSystemFont,"Segoe UI"
 .t{position:absolute;left:186px;top:58px;font-size:56px;line-height:1}
 .list{position:absolute;left:60px;top:180px;font-size:66px;line-height:1.12}
 </style>${body}`;
-const crop2 = (n, x, y, w, h, l, t, s) => `<div class=shot style="left:${l}px;top:${t}px;width:${w * s}px;height:${h * s}px"><img src="${raw(n)}" style="width:${1568 * s}px;left:${-x * s}px;top:${-y * s}px"></div>`;
+const crop2 = (n, x, y, w, h, l, t, s) => `<div class=shot style="left:${l}px;top:${t}px;width:${w * s}px;height:${h * s}px"><img src="${raw(n)}" style="width:${1526 * s}px;left:${-x * s}px;top:${-y * s}px"></div>`;
 shots['hero-1-features'] = solid(`<div class="bul y"><div>- Export to PDF, Word, Markdown, HTML ...</div><div>- Export only the messages you need</div><div>- Customise your PDF and file names</div><div>- Keeps code, tables, math and images</div></div>`
-  + crop2('menu.jpg', 1384, 168, 164, 380, 60, 325, 1.3) + crop2('select.jpg', 1212, 0, 356, 380, 305, 325, 1.3) + crop2('settings-pdf.jpg', 1212, 280, 356, 380, 785, 325, 1.3));
+  + crop2('menu2.jpg', 1215, 12, 263, 560, 70, 320, 0.85) + crop2('select2.jpg', 971, 0, 555, 620, 330, 320, 0.8) + crop2('settings2.jpg', 971, 60, 555, 620, 800, 320, 0.8));
 shots['hero-2-formats'] = solid(`<img class=logo src="${raw('icon128.png')}"><div class="t y">ChatGPT Exporter</div>`
   + `<div class="list y"><div>PDF</div><div>Word</div><div>Markdown</div><div>HTML</div><div>Text</div><div>CSV · JSON</div></div>`
-  + crop2('menu.jpg', 1384, 168, 164, 392, 620, 175, 1.6) + crop2('select.jpg', 1212, 0, 356, 600, 895, 175, 1.07));
+  + crop2('menu2.jpg', 1215, 12, 263, 586, 560, 214, 1.0) + crop2('select2.jpg', 971, 0, 555, 784, 850, 214, 0.78));
 
 const privacy = page('Private by design', 'Your conversations never leave your browser',
   `<div style="position:absolute;left:70px;right:70px;top:200px;display:flex;gap:28px">${[['🔒', 'Runs locally', 'Chats are converted inside your browser. Nothing is sent to our servers.'], ['🚫', 'No tracking', 'No ads, no analytics and no remote code.'], ['⚡', 'Instant', 'Uses your logged-in session, so exports are exact and fast.']].map(c => `<div style="flex:1;background:#fff;color:#1f2330;border-radius:20px;padding:40px 30px;box-shadow:0 12px 36px rgba(0,25,90,.35)"><div style="font-size:54px">${c[0]}</div><div style="font-weight:800;font-size:30px;margin:14px 0 10px">${c[1]}</div><div style="font-size:21px;color:#4b5568;line-height:1.45">${c[2]}</div></div>`).join('')}</div>`);
