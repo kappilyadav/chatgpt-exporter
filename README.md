@@ -3,6 +3,9 @@
 A Manifest V3 Chrome extension that exports **ChatGPT** conversations.
 Exports are built locally in your browser. An optional account (from chatgptexporterfree.com) unlocks unlimited exports; the free plan has a monthly quota.
 
+Get the extension: https://chromewebstore.google.com/detail/obkhbkkjfndlphjfmhddogjbdkobhddm
+Website: https://chatgptexporterfree.com
+
 ## Install (developer mode)
 
 1. Open `chrome://extensions`
