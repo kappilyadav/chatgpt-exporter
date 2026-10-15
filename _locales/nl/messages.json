@@ -1,0 +1,578 @@
+{
+  "extName": {
+    "message": "ChatGPT Exporter: sla ChatGPT op als PDF, Word en Markdown"
+  },
+  "extDescription": {
+    "message": "Exporteer elk ChatGPT-gesprek naar een net, deelbaar bestand. Kies je berichten, pas de opmaak aan en blijf privé."
+  },
+  "extActionTitle": {
+    "message": "ChatGPT Exporter"
+  },
+  "cmdTogglePanel": {
+    "message": "Het paneel Berichten selecteren openen / sluiten"
+  },
+  "cmdQuickExport": {
+    "message": "Huidige chat snel exporteren in de standaardindeling"
+  },
+  "cmdExportPdf": {
+    "message": "Huidige chat exporteren als PDF"
+  },
+  "selectMessages": {
+    "message": "Berichten selecteren"
+  },
+  "select": {
+    "message": "Selecteren"
+  },
+  "export": {
+    "message": "Exporteren"
+  },
+  "exportAs": {
+    "message": "Exporteren als"
+  },
+  "all": {
+    "message": "Alle"
+  },
+  "allDefault": {
+    "message": "Alle (standaard)"
+  },
+  "questions": {
+    "message": "Vragen"
+  },
+  "answers": {
+    "message": "Antwoorden"
+  },
+  "none": {
+    "message": "Geen"
+  },
+  "invert": {
+    "message": "Omkeren"
+  },
+  "cancel": {
+    "message": "Annuleren"
+  },
+  "copy": {
+    "message": "Kopiëren"
+  },
+  "settings": {
+    "message": "Instellingen"
+  },
+  "expand": {
+    "message": "Uitklappen"
+  },
+  "back": {
+    "message": "Terug"
+  },
+  "refresh": {
+    "message": "Vernieuwen"
+  },
+  "retry": {
+    "message": "Opnieuw proberen"
+  },
+  "loading": {
+    "message": "Gesprek laden…"
+  },
+  "loadingHistory": {
+    "message": "Volledige geschiedenis laden…"
+  },
+  "tip": {
+    "message": "Tip: Shift+klik selecteert een reeks berichten."
+  },
+  "you": {
+    "message": "Jij"
+  },
+  "exportedN": {
+    "message": "{n} berichten geëxporteerd als {fmt}"
+  },
+  "copiedN": {
+    "message": "{n} berichten gekopieerd als {fmt}"
+  },
+  "nothingSelected": {
+    "message": "Selecteer eerst minstens één bericht."
+  },
+  "noConversation": {
+    "message": "Geen gesprek gevonden op deze pagina."
+  },
+  "failed": {
+    "message": "Exporteren mislukt: {msg}"
+  },
+  "pdfHint": {
+    "message": "Afdrukvoorbeeld wordt geopend: kies ‘Opslaan als pdf’."
+  },
+  "exportAll": {
+    "message": "Alle chats exporteren…"
+  },
+  "bulkTitle": {
+    "message": "Meerdere chats exporteren"
+  },
+  "searchChats": {
+    "message": "Chats zoeken"
+  },
+  "selectAll": {
+    "message": "Alles selecteren"
+  },
+  "exportZip": {
+    "message": "ZIP exporteren"
+  },
+  "progress": {
+    "message": "Exporteren {i} / {n}…"
+  },
+  "bulkDone": {
+    "message": "{n} chats geëxporteerd naar een ZIP-bestand"
+  },
+  "bulkUnsupported": {
+    "message": "Bulkexport is voor deze site nog niet beschikbaar. Open een chat en gebruik Exporteren."
+  },
+  "chatsFound": {
+    "message": "{n} chats"
+  },
+  "copyAs": {
+    "message": "Kopiëren als {fmt}"
+  },
+  "quickExport": {
+    "message": "Snel exporteren"
+  },
+  "openPanel": {
+    "message": "Berichten selecteren…"
+  },
+  "unsupportedSite": {
+    "message": "Open ChatGPT om een gesprek te exporteren."
+  },
+  "selectedOf": {
+    "message": "{a}/{b}"
+  },
+  "messages": {
+    "message": "berichten"
+  },
+  "richText": {
+    "message": "opgemaakte tekst"
+  },
+  "fmtText": {
+    "message": "Tekst"
+  },
+  "fmtPng": {
+    "message": "Afbeelding (PNG)"
+  },
+  "toggleTitle": {
+    "message": "De exportknoppen tonen of verbergen"
+  },
+  "autoBrowser": {
+    "message": "Automatisch (browser)"
+  },
+  "close": {
+    "message": "Sluiten"
+  },
+  "ctxExportChat": {
+    "message": "Deze chat exporteren"
+  },
+  "ctxExportAs": {
+    "message": "Exporteren als {fmt}"
+  },
+  "seePlans": {
+    "message": "Abonnementen bekijken"
+  },
+  "upgrade": {
+    "message": "Upgraden"
+  },
+  "accountHeading": {
+    "message": "Account"
+  },
+  "limitFull": {
+    "message": "Je hebt alle {limit} gratis volledige exports van deze maand gebruikt. Upgrade voor onbeperkt exporteren."
+  },
+  "limitPartial": {
+    "message": "Je hebt alle {limit} gratis gedeeltelijke exports van deze maand gebruikt. Upgrade voor onbeperkt exporteren."
+  },
+  "bulkFreeLeft": {
+    "message": "Gratis abonnement: je hebt deze maand nog {left} volledige exports, maar je hebt {n} chats geselecteerd. Selecteer minder chats of upgrade voor onbeperkt exporteren."
+  },
+  "tokenInvalidFormat": {
+    "message": "Dit lijkt geen geldig token te zijn."
+  },
+  "tokenExpired": {
+    "message": "Dit token is niet meer geldig. Maak een nieuw token aan via je account."
+  },
+  "serverUnreachable": {
+    "message": "De server is niet bereikbaar. Controleer je verbinding en probeer het opnieuw."
+  },
+  "notSignedIn": {
+    "message": "Niet ingelogd"
+  },
+  "sessionFailed": {
+    "message": "Sessieverzoek mislukt ({status})"
+  },
+  "popupChecking": {
+    "message": "Tabblad controleren…"
+  },
+  "conversationDetected": {
+    "message": "{name}-gesprek gevonden"
+  },
+  "openAConversation": {
+    "message": "{name}: open een gesprek"
+  },
+  "worksOn": {
+    "message": "Werkt op chatgpt.com"
+  },
+  "popupInactive": {
+    "message": "Open een ChatGPT-gesprek en klik daarna opnieuw op de extensie:"
+  },
+  "formatLabel": {
+    "message": "Indeling"
+  },
+  "keyboardShortcuts": {
+    "message": "Sneltoetsen"
+  },
+  "planPro": {
+    "message": "Pro · {plan} · onbeperkt exporteren"
+  },
+  "planYear": {
+    "message": "Jaarabonnement"
+  },
+  "planMonth": {
+    "message": "Maandabonnement"
+  },
+  "planProName": {
+    "message": "Pro"
+  },
+  "planFreeLeft": {
+    "message": "Gratis · nog {full} volledige en {single} gedeeltelijke exports deze maand"
+  },
+  "exporting": {
+    "message": "Exporteren…"
+  },
+  "doneSeePage": {
+    "message": "Klaar: zie de pagina voor details."
+  },
+  "copiedClipboard": {
+    "message": "Gekopieerd naar het klembord."
+  },
+  "failedShort": {
+    "message": "Mislukt"
+  },
+  "optionsTitle": {
+    "message": "ChatGPT Exporter: instellingen"
+  },
+  "optionsIntro": {
+    "message": "Instellingen worden automatisch opgeslagen en gesynchroniseerd met je Chrome-profiel. Alles wordt lokaal in je browser verwerkt."
+  },
+  "checking": {
+    "message": "Controleren…"
+  },
+  "connectWithToken": {
+    "message": "Verbinden met een token"
+  },
+  "tokenHelp": {
+    "message": "Gebruik dit als de website de extensie niet automatisch kon verbinden. Kopieer het token van je accountpagina."
+  },
+  "connect": {
+    "message": "Verbinden"
+  },
+  "resetDefaults": {
+    "message": "Standaardwaarden herstellen"
+  },
+  "keyboardShortcutsEllipsis": {
+    "message": "Sneltoetsen…"
+  },
+  "saved": {
+    "message": "Opgeslagen ✓"
+  },
+  "accountLoadFail": {
+    "message": "Je account kan op dit moment niet worden geladen."
+  },
+  "connectedAs": {
+    "message": "Verbonden als {email} · {plan}"
+  },
+  "planFreeShort": {
+    "message": "Gratis abonnement"
+  },
+  "planProUnlimited": {
+    "message": "{plan} · onbeperkt exporteren"
+  },
+  "manageBilling": {
+    "message": "Facturering beheren"
+  },
+  "disconnect": {
+    "message": "Verbinding verbreken"
+  },
+  "freeLeftConnect": {
+    "message": "Gratis abonnement · nog {full} volledige en {single} gedeeltelijke exports deze maand. Verbind je account als je hebt geüpgraded."
+  },
+  "connectAccount": {
+    "message": "Account verbinden"
+  },
+  "connecting": {
+    "message": "Verbinden…"
+  },
+  "connected": {
+    "message": "Verbonden."
+  },
+  "connectFail": {
+    "message": "Verbinden is niet gelukt."
+  },
+  "docContents": {
+    "message": "Inhoud"
+  },
+  "docThoughtProcess": {
+    "message": "Denkproces"
+  },
+  "docSources": {
+    "message": "Bronnen"
+  },
+  "docAttachments": {
+    "message": "Bijlagen"
+  },
+  "docExportedWith": {
+    "message": "Geëxporteerd met Chat Exporter"
+  },
+  "pvDocTitle": {
+    "message": "ChatGPT Exporter: voorbeeld"
+  },
+  "pvPreview": {
+    "message": "Voorbeeld"
+  },
+  "pvPreparing": {
+    "message": "Voorbereiden…"
+  },
+  "jobExpired": {
+    "message": "Deze exportopdracht is verlopen. Ga terug naar de chat en exporteer opnieuw."
+  },
+  "pvWidthPx": {
+    "message": "Breedte (px)"
+  },
+  "pvScale": {
+    "message": "Schaal"
+  },
+  "pvRendering": {
+    "message": "Deel {i} van {n} renderen…"
+  },
+  "pvPacking": {
+    "message": "{n} afbeeldingen inpakken…"
+  },
+  "pvSavedZip": {
+    "message": "{n} afbeeldingen opgeslagen als ZIP"
+  },
+  "pvSaved": {
+    "message": "{name} opgeslagen"
+  },
+  "pvFastNote": {
+    "message": "(1× om een lange chat snel te houden)"
+  },
+  "pvPrintSave": {
+    "message": "Afdrukken / Opslaan als pdf"
+  },
+  "pvChooseSave": {
+    "message": "Kies ‘Opslaan als pdf’ als bestemming."
+  },
+  "pvDownloadPng": {
+    "message": "PNG downloaden"
+  },
+  "pvFailed": {
+    "message": "Mislukt: {msg}"
+  },
+  "pvRenderFail": {
+    "message": "Deze export kon niet worden weergegeven: {msg}"
+  },
+  "sec_general": {
+    "message": "Algemeen"
+  },
+  "f_language": {
+    "message": "Interfacetaal"
+  },
+  "f_theme": {
+    "message": "Thema van het paneel"
+  },
+  "o_theme_auto": {
+    "message": "Automatisch"
+  },
+  "o_theme_dark": {
+    "message": "Donker"
+  },
+  "o_theme_light": {
+    "message": "Licht"
+  },
+  "f_showLauncher": {
+    "message": "Knoppen Selecteren / Exporteren op de chatpagina tonen"
+  },
+  "f_rememberSelection": {
+    "message": "Mijn selectievoorkeur onthouden (Alle / Vragen / Antwoorden)"
+  },
+  "f_closePanelAfterExport": {
+    "message": "Zijpaneel sluiten na het exporteren"
+  },
+  "f_showToasts": {
+    "message": "Na het exporteren een bevestiging tonen"
+  },
+  "sec_content": {
+    "message": "Inhoud"
+  },
+  "f_includeThoughts": {
+    "message": "Denkproces / redenering opnemen"
+  },
+  "f_includeSources": {
+    "message": "Bronnen en citaten van webzoekopdrachten opnemen"
+  },
+  "f_includeCanvas": {
+    "message": "Canvas / Artifacts opnemen"
+  },
+  "f_includeImages": {
+    "message": "Afbeeldingen opnemen"
+  },
+  "f_embedImages": {
+    "message": "Afbeeldingen insluiten in het bestand (PDF, HTML, Word, PNG)"
+  },
+  "f_includeToolOutputs": {
+    "message": "Toolaanroepen en uitvoer van de code-interpreter opnemen"
+  },
+  "f_includeTimestamps": {
+    "message": "Bij elk bericht een tijdstempel tonen"
+  },
+  "f_showRoleIcons": {
+    "message": "Rolpictogrammen / emoji tonen"
+  },
+  "f_userName": {
+    "message": "Je naam (getoond in de kop van de export)"
+  },
+  "f_userEmail": {
+    "message": "Je e-mailadres (getoond in de kop van de export)"
+  },
+  "f_userLabel": {
+    "message": "Label voor je berichten (standaard: Jij)"
+  },
+  "f_assistantLabel": {
+    "message": "Label voor berichten van de AI (standaard: naam van het platform)"
+  },
+  "f_showDate": {
+    "message": "De datum van het gesprek tonen"
+  },
+  "f_dateSource": {
+    "message": "Bron van de datum"
+  },
+  "o_dateSource_created": {
+    "message": "Aangemaakt"
+  },
+  "o_dateSource_updated": {
+    "message": "Laatst gewijzigd"
+  },
+  "o_dateSource_export": {
+    "message": "Tijdstip van export"
+  },
+  "f_dateFormat": {
+    "message": "Datumnotatie"
+  },
+  "o_dateFormat_locale": {
+    "message": "Taalinstelling van de browser"
+  },
+  "f_branding": {
+    "message": "Voettekst ‘Geëxporteerd met Chat Exporter’ toevoegen"
+  },
+  "sec_files": {
+    "message": "Bestanden"
+  },
+  "f_filenameTemplate": {
+    "message": "Sjabloon voor bestandsnaam — {title} {date} {time} {platform} {model} {id}"
+  },
+  "f_filenamePrefix": {
+    "message": "Voorvoegsel van bestandsnaam"
+  },
+  "f_downloadSubfolder": {
+    "message": "Submap voor downloads (in je map Downloads)"
+  },
+  "f_mdFrontMatter": {
+    "message": "YAML-frontmatter toevoegen"
+  },
+  "f_mdThinkingStyle": {
+    "message": "Stijl van het denkproces"
+  },
+  "o_mdThinkingStyle_blockquote": {
+    "message": "Citaatblok"
+  },
+  "o_mdThinkingStyle_details": {
+    "message": "Inklapbare <details>"
+  },
+  "sec_dataformats": {
+    "message": "JSON en CSV"
+  },
+  "f_jsonPretty": {
+    "message": "JSON opmaken"
+  },
+  "f_csvDelimiter": {
+    "message": "CSV-scheidingsteken"
+  },
+  "o_csvDelimiter_comma": {
+    "message": "Komma ,"
+  },
+  "o_csvDelimiter_semicolon": {
+    "message": "Puntkomma ;"
+  },
+  "o_csvDelimiter_tab": {
+    "message": "Tab"
+  },
+  "sec_pdf": {
+    "message": "PDF / HTML / Afbeelding"
+  },
+  "f_pdfTitle": {
+    "message": "Titel van de inhoud (leeg = chattitel)"
+  },
+  "f_pdfPageSize": {
+    "message": "Paginaformaat"
+  },
+  "f_pdfOrientation": {
+    "message": "Afdrukstand"
+  },
+  "o_pdfOrientation_portrait": {
+    "message": "Staand"
+  },
+  "o_pdfOrientation_landscape": {
+    "message": "Liggend"
+  },
+  "f_pdfTheme": {
+    "message": "Thema"
+  },
+  "o_pdfTheme_light": {
+    "message": "Licht"
+  },
+  "o_pdfTheme_dark": {
+    "message": "Donker"
+  },
+  "f_pdfMargins": {
+    "message": "Marges"
+  },
+  "o_pdfMargins_narrow": {
+    "message": "Smal"
+  },
+  "o_pdfMargins_normal": {
+    "message": "Normaal"
+  },
+  "o_pdfMargins_wide": {
+    "message": "Breed"
+  },
+  "f_pdfFontScale": {
+    "message": "Lettergrootte (% van de standaard)"
+  },
+  "f_pdfFontFamily": {
+    "message": "Lettertype"
+  },
+  "o_pdfFontFamily_sans": {
+    "message": "Schreefloos"
+  },
+  "o_pdfFontFamily_serif": {
+    "message": "Met schreef"
+  },
+  "o_pdfFontFamily_mono": {
+    "message": "Monospace"
+  },
+  "f_pdfPageNumbers": {
+    "message": "Paginanummers"
+  },
+  "f_pdfToc": {
+    "message": "Inhoudsopgave"
+  },
+  "f_pdfPageBreakPerPrompt": {
+    "message": "Elke prompt op een nieuwe pagina beginnen"
+  },
+  "f_pdfWrapCode": {
+    "message": "Lange coderegels laten omlopen"
+  },
+  "f_pdfAutoPrint": {
+    "message": "Het afdrukvenster automatisch openen"
+  }
+}

@@ -1,0 +1,578 @@
+{
+  "extName": {
+    "message": "ChatGPT Exporter: salvează ChatGPT în PDF, Word și Markdown"
+  },
+  "extDescription": {
+    "message": "Exportă orice conversație ChatGPT într-un fișier curat, ușor de partajat. Alege mesajele, personalizează aspectul, rămâi privat."
+  },
+  "extActionTitle": {
+    "message": "ChatGPT Exporter"
+  },
+  "cmdTogglePanel": {
+    "message": "Deschide / închide panoul Selectează mesaje"
+  },
+  "cmdQuickExport": {
+    "message": "Exportă rapid conversația curentă în formatul implicit"
+  },
+  "cmdExportPdf": {
+    "message": "Exportă conversația curentă ca PDF"
+  },
+  "selectMessages": {
+    "message": "Selectează mesaje"
+  },
+  "select": {
+    "message": "Selectează"
+  },
+  "export": {
+    "message": "Exportă"
+  },
+  "exportAs": {
+    "message": "Exportă ca"
+  },
+  "all": {
+    "message": "Toate"
+  },
+  "allDefault": {
+    "message": "Toate (implicit)"
+  },
+  "questions": {
+    "message": "Întrebări"
+  },
+  "answers": {
+    "message": "Răspunsuri"
+  },
+  "none": {
+    "message": "Niciunul"
+  },
+  "invert": {
+    "message": "Inversează"
+  },
+  "cancel": {
+    "message": "Anulează"
+  },
+  "copy": {
+    "message": "Copiază"
+  },
+  "settings": {
+    "message": "Setări"
+  },
+  "expand": {
+    "message": "Extinde"
+  },
+  "back": {
+    "message": "Înapoi"
+  },
+  "refresh": {
+    "message": "Reîmprospătează"
+  },
+  "retry": {
+    "message": "Reîncearcă"
+  },
+  "loading": {
+    "message": "Se încarcă conversația…"
+  },
+  "loadingHistory": {
+    "message": "Se încarcă tot istoricul…"
+  },
+  "tip": {
+    "message": "Sfat: Shift+clic selectează un interval de mesaje."
+  },
+  "you": {
+    "message": "Tu"
+  },
+  "exportedN": {
+    "message": "Mesaje exportate: {n} (format: {fmt})"
+  },
+  "copiedN": {
+    "message": "Mesaje copiate: {n} (format: {fmt})"
+  },
+  "nothingSelected": {
+    "message": "Selectează mai întâi cel puțin un mesaj."
+  },
+  "noConversation": {
+    "message": "Nu s-a găsit nicio conversație pe această pagină."
+  },
+  "failed": {
+    "message": "Exportul a eșuat: {msg}"
+  },
+  "pdfHint": {
+    "message": "Se deschide previzualizarea de imprimare — alege „Salvează ca PDF”."
+  },
+  "exportAll": {
+    "message": "Exportă toate conversațiile…"
+  },
+  "bulkTitle": {
+    "message": "Exportă mai multe conversații"
+  },
+  "searchChats": {
+    "message": "Caută conversații"
+  },
+  "selectAll": {
+    "message": "Selectează tot"
+  },
+  "exportZip": {
+    "message": "Exportă ZIP"
+  },
+  "progress": {
+    "message": "Se exportă {i} / {n}…"
+  },
+  "bulkDone": {
+    "message": "Conversații exportate într-un fișier ZIP: {n}"
+  },
+  "bulkUnsupported": {
+    "message": "Exportul în masă nu este încă disponibil pentru acest site. Deschide o conversație și folosește Exportă."
+  },
+  "chatsFound": {
+    "message": "Conversații: {n}"
+  },
+  "copyAs": {
+    "message": "Copiază ca {fmt}"
+  },
+  "quickExport": {
+    "message": "Export rapid"
+  },
+  "openPanel": {
+    "message": "Selectează mesaje…"
+  },
+  "unsupportedSite": {
+    "message": "Deschide ChatGPT pentru a exporta o conversație."
+  },
+  "selectedOf": {
+    "message": "{a}/{b}"
+  },
+  "messages": {
+    "message": "mesaje"
+  },
+  "richText": {
+    "message": "text formatat"
+  },
+  "fmtText": {
+    "message": "Text"
+  },
+  "fmtPng": {
+    "message": "Imagine (PNG)"
+  },
+  "toggleTitle": {
+    "message": "Afișează sau ascunde butoanele de export"
+  },
+  "autoBrowser": {
+    "message": "Automat (browser)"
+  },
+  "close": {
+    "message": "Închide"
+  },
+  "ctxExportChat": {
+    "message": "Exportă această conversație"
+  },
+  "ctxExportAs": {
+    "message": "Exportă ca {fmt}"
+  },
+  "seePlans": {
+    "message": "Vezi planurile"
+  },
+  "upgrade": {
+    "message": "Fă upgrade"
+  },
+  "accountHeading": {
+    "message": "Cont"
+  },
+  "limitFull": {
+    "message": "Ai folosit limita de exporturi gratuite ale conversațiilor întregi pentru luna aceasta ({limit}). Fă upgrade pentru exporturi nelimitate."
+  },
+  "limitPartial": {
+    "message": "Ai folosit limita de exporturi parțiale gratuite pentru luna aceasta ({limit}). Fă upgrade pentru exporturi nelimitate."
+  },
+  "bulkFreeLeft": {
+    "message": "Plan gratuit: luna aceasta mai ai exporturi ale conversațiilor întregi: {left}, dar ai selectat conversații: {n}. Selectează mai puține conversații sau fă upgrade pentru exporturi nelimitate."
+  },
+  "tokenInvalidFormat": {
+    "message": "Acesta nu pare un token valid."
+  },
+  "tokenExpired": {
+    "message": "Acest token nu mai este valid. Creează unul nou din contul tău."
+  },
+  "serverUnreachable": {
+    "message": "Serverul nu poate fi contactat. Verifică conexiunea și încearcă din nou."
+  },
+  "notSignedIn": {
+    "message": "Nu ești conectat"
+  },
+  "sessionFailed": {
+    "message": "Cererea de sesiune a eșuat ({status})"
+  },
+  "popupChecking": {
+    "message": "Se verifică fila…"
+  },
+  "conversationDetected": {
+    "message": "Conversație {name} detectată"
+  },
+  "openAConversation": {
+    "message": "{name} — deschide o conversație"
+  },
+  "worksOn": {
+    "message": "Funcționează pe chatgpt.com"
+  },
+  "popupInactive": {
+    "message": "Deschide o conversație ChatGPT, apoi fă din nou clic pe extensie:"
+  },
+  "formatLabel": {
+    "message": "Format"
+  },
+  "keyboardShortcuts": {
+    "message": "Comenzi rapide de la tastatură"
+  },
+  "planPro": {
+    "message": "Pro · {plan} · exporturi nelimitate"
+  },
+  "planYear": {
+    "message": "Plan anual"
+  },
+  "planMonth": {
+    "message": "Plan lunar"
+  },
+  "planProName": {
+    "message": "Pro"
+  },
+  "planFreeLeft": {
+    "message": "Gratuit · luna aceasta mai ai exporturi: complete {full}, parțiale {single}"
+  },
+  "exporting": {
+    "message": "Se exportă…"
+  },
+  "doneSeePage": {
+    "message": "Gata — vezi pagina pentru detalii."
+  },
+  "copiedClipboard": {
+    "message": "Copiat în clipboard."
+  },
+  "failedShort": {
+    "message": "Eșuat"
+  },
+  "optionsTitle": {
+    "message": "ChatGPT Exporter — Setări"
+  },
+  "optionsIntro": {
+    "message": "Setările se salvează automat și se sincronizează cu profilul tău Chrome. Totul este procesat local, în browserul tău."
+  },
+  "checking": {
+    "message": "Se verifică…"
+  },
+  "connectWithToken": {
+    "message": "Conectează cu un token"
+  },
+  "tokenHelp": {
+    "message": "Folosește această opțiune dacă site-ul nu a putut conecta extensia automat. Copiază tokenul din pagina contului tău."
+  },
+  "connect": {
+    "message": "Conectează"
+  },
+  "resetDefaults": {
+    "message": "Resetează la valorile implicite"
+  },
+  "keyboardShortcutsEllipsis": {
+    "message": "Comenzi rapide de la tastatură…"
+  },
+  "saved": {
+    "message": "Salvat ✓"
+  },
+  "accountLoadFail": {
+    "message": "Contul tău nu poate fi încărcat acum."
+  },
+  "connectedAs": {
+    "message": "Conectat ca {email} · {plan}"
+  },
+  "planFreeShort": {
+    "message": "Plan gratuit"
+  },
+  "planProUnlimited": {
+    "message": "{plan} · exporturi nelimitate"
+  },
+  "manageBilling": {
+    "message": "Gestionează facturarea"
+  },
+  "disconnect": {
+    "message": "Deconectează"
+  },
+  "freeLeftConnect": {
+    "message": "Plan gratuit · luna aceasta mai ai exporturi: complete {full}, parțiale {single}. Conectează-ți contul dacă ai făcut upgrade."
+  },
+  "connectAccount": {
+    "message": "Conectează contul"
+  },
+  "connecting": {
+    "message": "Se conectează…"
+  },
+  "connected": {
+    "message": "Conectat."
+  },
+  "connectFail": {
+    "message": "Conectarea nu a reușit."
+  },
+  "docContents": {
+    "message": "Cuprins"
+  },
+  "docThoughtProcess": {
+    "message": "Procesul de raționament"
+  },
+  "docSources": {
+    "message": "Surse"
+  },
+  "docAttachments": {
+    "message": "Atașamente"
+  },
+  "docExportedWith": {
+    "message": "Exportat cu Chat Exporter"
+  },
+  "pvDocTitle": {
+    "message": "ChatGPT Exporter — Previzualizare"
+  },
+  "pvPreview": {
+    "message": "Previzualizare"
+  },
+  "pvPreparing": {
+    "message": "Se pregătește…"
+  },
+  "jobExpired": {
+    "message": "Acest export a expirat. Întoarce-te la conversație și exportă din nou."
+  },
+  "pvWidthPx": {
+    "message": "Lățime (px)"
+  },
+  "pvScale": {
+    "message": "Scară"
+  },
+  "pvRendering": {
+    "message": "Se randează partea {i} din {n}…"
+  },
+  "pvPacking": {
+    "message": "Se împachetează imaginile: {n}…"
+  },
+  "pvSavedZip": {
+    "message": "Imagini salvate în ZIP: {n}"
+  },
+  "pvSaved": {
+    "message": "Salvat: {name}"
+  },
+  "pvFastNote": {
+    "message": "(1×, ca o conversație lungă să rămână rapidă)"
+  },
+  "pvPrintSave": {
+    "message": "Imprimă / Salvează ca PDF"
+  },
+  "pvChooseSave": {
+    "message": "Alege „Salvează ca PDF” ca destinație."
+  },
+  "pvDownloadPng": {
+    "message": "Descarcă PNG"
+  },
+  "pvFailed": {
+    "message": "Eșuat: {msg}"
+  },
+  "pvRenderFail": {
+    "message": "Acest export nu a putut fi randat: {msg}"
+  },
+  "sec_general": {
+    "message": "General"
+  },
+  "f_language": {
+    "message": "Limba interfeței"
+  },
+  "f_theme": {
+    "message": "Tema panoului"
+  },
+  "o_theme_auto": {
+    "message": "Automat"
+  },
+  "o_theme_dark": {
+    "message": "Întunecată"
+  },
+  "o_theme_light": {
+    "message": "Luminoasă"
+  },
+  "f_showLauncher": {
+    "message": "Afișează butoanele Selectează / Exportă pe pagina conversației"
+  },
+  "f_rememberSelection": {
+    "message": "Ține minte presetarea mea de selecție (Toate / Întrebări / Răspunsuri)"
+  },
+  "f_closePanelAfterExport": {
+    "message": "Închide panoul lateral după export"
+  },
+  "f_showToasts": {
+    "message": "Afișează o confirmare după export"
+  },
+  "sec_content": {
+    "message": "Conținut"
+  },
+  "f_includeThoughts": {
+    "message": "Include procesul de raționament"
+  },
+  "f_includeSources": {
+    "message": "Include sursele și citările din căutarea pe web"
+  },
+  "f_includeCanvas": {
+    "message": "Include Canvas / artefacte"
+  },
+  "f_includeImages": {
+    "message": "Include imaginile"
+  },
+  "f_embedImages": {
+    "message": "Încorporează imaginile în fișier (PDF, HTML, Word, PNG)"
+  },
+  "f_includeToolOutputs": {
+    "message": "Include apelurile de instrumente și rezultatele interpretorului de cod"
+  },
+  "f_includeTimestamps": {
+    "message": "Afișează data și ora la fiecare mesaj"
+  },
+  "f_showRoleIcons": {
+    "message": "Afișează pictogramele / emoji-urile rolurilor"
+  },
+  "f_userName": {
+    "message": "Numele tău (afișat în antetul exportului)"
+  },
+  "f_userEmail": {
+    "message": "E-mailul tău (afișat în antetul exportului)"
+  },
+  "f_userLabel": {
+    "message": "Eticheta mesajelor tale (implicit: Tu)"
+  },
+  "f_assistantLabel": {
+    "message": "Eticheta mesajelor AI (implicit: numele platformei)"
+  },
+  "f_showDate": {
+    "message": "Afișează data conversației"
+  },
+  "f_dateSource": {
+    "message": "Sursa datei"
+  },
+  "o_dateSource_created": {
+    "message": "Creare"
+  },
+  "o_dateSource_updated": {
+    "message": "Ultima modificare"
+  },
+  "o_dateSource_export": {
+    "message": "Ora exportului"
+  },
+  "f_dateFormat": {
+    "message": "Formatul datei"
+  },
+  "o_dateFormat_locale": {
+    "message": "Setările regionale ale browserului"
+  },
+  "f_branding": {
+    "message": "Adaugă subsolul „Exportat cu Chat Exporter”"
+  },
+  "sec_files": {
+    "message": "Fișiere"
+  },
+  "f_filenameTemplate": {
+    "message": "Șablon pentru numele fișierului — {title} {date} {time} {platform} {model} {id}"
+  },
+  "f_filenamePrefix": {
+    "message": "Prefix pentru numele fișierului"
+  },
+  "f_downloadSubfolder": {
+    "message": "Subfolder de descărcare (în folderul Descărcări)"
+  },
+  "f_mdFrontMatter": {
+    "message": "Adaugă YAML front matter"
+  },
+  "f_mdThinkingStyle": {
+    "message": "Stilul procesului de raționament"
+  },
+  "o_mdThinkingStyle_blockquote": {
+    "message": "Bloc de citat"
+  },
+  "o_mdThinkingStyle_details": {
+    "message": "<details> pliabil"
+  },
+  "sec_dataformats": {
+    "message": "JSON și CSV"
+  },
+  "f_jsonPretty": {
+    "message": "Formatează JSON"
+  },
+  "f_csvDelimiter": {
+    "message": "Delimitator CSV"
+  },
+  "o_csvDelimiter_comma": {
+    "message": "Virgulă ,"
+  },
+  "o_csvDelimiter_semicolon": {
+    "message": "Punct și virgulă ;"
+  },
+  "o_csvDelimiter_tab": {
+    "message": "Tab"
+  },
+  "sec_pdf": {
+    "message": "PDF / HTML / Imagine"
+  },
+  "f_pdfTitle": {
+    "message": "Titlul conținutului (gol = titlul conversației)"
+  },
+  "f_pdfPageSize": {
+    "message": "Dimensiunea paginii"
+  },
+  "f_pdfOrientation": {
+    "message": "Orientare"
+  },
+  "o_pdfOrientation_portrait": {
+    "message": "Portret"
+  },
+  "o_pdfOrientation_landscape": {
+    "message": "Peisaj"
+  },
+  "f_pdfTheme": {
+    "message": "Temă"
+  },
+  "o_pdfTheme_light": {
+    "message": "Luminoasă"
+  },
+  "o_pdfTheme_dark": {
+    "message": "Întunecată"
+  },
+  "f_pdfMargins": {
+    "message": "Margini"
+  },
+  "o_pdfMargins_narrow": {
+    "message": "Înguste"
+  },
+  "o_pdfMargins_normal": {
+    "message": "Normale"
+  },
+  "o_pdfMargins_wide": {
+    "message": "Late"
+  },
+  "f_pdfFontScale": {
+    "message": "Dimensiunea fontului (% din cea implicită)"
+  },
+  "f_pdfFontFamily": {
+    "message": "Familia de fonturi"
+  },
+  "o_pdfFontFamily_sans": {
+    "message": "Fără serife"
+  },
+  "o_pdfFontFamily_serif": {
+    "message": "Cu serife"
+  },
+  "o_pdfFontFamily_mono": {
+    "message": "Monospațiat"
+  },
+  "f_pdfPageNumbers": {
+    "message": "Numere de pagină"
+  },
+  "f_pdfToc": {
+    "message": "Cuprins"
+  },
+  "f_pdfPageBreakPerPrompt": {
+    "message": "Începe fiecare prompt pe o pagină nouă"
+  },
+  "f_pdfWrapCode": {
+    "message": "Împarte rândurile lungi de cod"
+  },
+  "f_pdfAutoPrint": {
+    "message": "Deschide automat fereastra de imprimare"
+  }
+}

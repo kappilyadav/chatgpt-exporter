@@ -11,7 +11,7 @@
     <img class="logo" src="../icons/icon48.png" width="38" height="38" alt="" />
     <div>
       <h1>ChatGPT Exporter</h1>
-      <p id="site" class="muted">Checking tab…</p>
+      <p id="site" class="muted" data-i18n="popupChecking">Checking tab…</p>
     </div>
   </header>
 
@@ -21,32 +21,34 @@
   </section>
 
   <main id="active" hidden>
-    <button id="select" class="btn primary">Select messages…</button>
+    <button id="select" class="btn primary" data-i18n="openPanel">Select messages…</button>
 
     <div class="row">
-      <select id="format" aria-label="Format"></select>
-      <button id="quick" class="btn">Quick export</button>
+      <select id="format" aria-label="Format" data-i18n-aria-label="formatLabel"></select>
+      <button id="quick" class="btn" data-i18n="quickExport">Quick export</button>
     </div>
     <div class="row">
-      <button id="copy" class="btn ghost">Copy as Markdown</button>
-      <button id="bulk" class="btn ghost">Export all chats…</button>
+      <button id="copy" class="btn ghost"></button>
+      <button id="bulk" class="btn ghost" data-i18n="exportAll">Export all chats…</button>
     </div>
     <p id="msg" class="muted small" role="status"></p>
   </main>
 
   <main id="inactive" hidden>
-    <p>Open a ChatGPT conversation, then click the extension again:</p>
+    <p data-i18n="popupInactive">Open a ChatGPT conversation, then click the extension again:</p>
     <div class="links">
       <a href="https://chatgpt.com/" target="_blank" rel="noreferrer">ChatGPT</a>
     </div>
   </main>
 
   <footer>
-    <button id="settings" class="link">Settings</button>
-    <button id="shortcuts" class="link">Keyboard shortcuts</button>
+    <button id="settings" class="link" data-i18n="settings">Settings</button>
+    <button id="shortcuts" class="link" data-i18n="keyboardShortcuts">Keyboard shortcuts</button>
   </footer>
 
   <script src="../src/core/ns.js"></script>
+  <script src="../src/core/locales.js"></script>
+  <script src="../src/core/i18n.js"></script>
   <script src="../src/core/account.js"></script>
   <script src="popup.js"></script>
 </body>

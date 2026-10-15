@@ -1,0 +1,578 @@
+{
+  "extName": {
+    "message": "ChatGPT Exporter: αποθηκεύστε το ChatGPT σε PDF, Word και Markdown"
+  },
+  "extDescription": {
+    "message": "Εξαγάγετε κάθε συνομιλία ChatGPT σε ένα καθαρό αρχείο για κοινοποίηση. Επιλέξτε μηνύματα, προσαρμόστε τη διάταξη, μείνετε ιδιωτικοί."
+  },
+  "extActionTitle": {
+    "message": "ChatGPT Exporter"
+  },
+  "cmdTogglePanel": {
+    "message": "Άνοιγμα / κλείσιμο του πίνακα Επιλογή μηνυμάτων"
+  },
+  "cmdQuickExport": {
+    "message": "Γρήγορη εξαγωγή της τρέχουσας συνομιλίας στην προεπιλεγμένη μορφή"
+  },
+  "cmdExportPdf": {
+    "message": "Εξαγωγή της τρέχουσας συνομιλίας ως PDF"
+  },
+  "selectMessages": {
+    "message": "Επιλογή μηνυμάτων"
+  },
+  "select": {
+    "message": "Επιλογή"
+  },
+  "export": {
+    "message": "Εξαγωγή"
+  },
+  "exportAs": {
+    "message": "Εξαγωγή ως"
+  },
+  "all": {
+    "message": "Όλα"
+  },
+  "allDefault": {
+    "message": "Όλα (προεπιλογή)"
+  },
+  "questions": {
+    "message": "Ερωτήσεις"
+  },
+  "answers": {
+    "message": "Απαντήσεις"
+  },
+  "none": {
+    "message": "Κανένα"
+  },
+  "invert": {
+    "message": "Αντιστροφή"
+  },
+  "cancel": {
+    "message": "Ακύρωση"
+  },
+  "copy": {
+    "message": "Αντιγραφή"
+  },
+  "settings": {
+    "message": "Ρυθμίσεις"
+  },
+  "expand": {
+    "message": "Ανάπτυξη"
+  },
+  "back": {
+    "message": "Πίσω"
+  },
+  "refresh": {
+    "message": "Ανανέωση"
+  },
+  "retry": {
+    "message": "Επανάληψη"
+  },
+  "loading": {
+    "message": "Φόρτωση συνομιλίας…"
+  },
+  "loadingHistory": {
+    "message": "Φόρτωση πλήρους ιστορικού…"
+  },
+  "tip": {
+    "message": "Συμβουλή: Το Shift+κλικ επιλέγει μια περιοχή μηνυμάτων."
+  },
+  "you": {
+    "message": "Εσείς"
+  },
+  "exportedN": {
+    "message": "Εξήχθησαν μηνύματα: {n} (μορφή: {fmt})"
+  },
+  "copiedN": {
+    "message": "Αντιγράφηκαν μηνύματα: {n} (μορφή: {fmt})"
+  },
+  "nothingSelected": {
+    "message": "Επιλέξτε πρώτα τουλάχιστον ένα μήνυμα."
+  },
+  "noConversation": {
+    "message": "Δεν βρέθηκε συνομιλία σε αυτήν τη σελίδα."
+  },
+  "failed": {
+    "message": "Η εξαγωγή απέτυχε: {msg}"
+  },
+  "pdfHint": {
+    "message": "Άνοιγμα προεπισκόπησης εκτύπωσης — επιλέξτε «Αποθήκευση ως PDF»."
+  },
+  "exportAll": {
+    "message": "Εξαγωγή όλων των συνομιλιών…"
+  },
+  "bulkTitle": {
+    "message": "Εξαγωγή πολλών συνομιλιών"
+  },
+  "searchChats": {
+    "message": "Αναζήτηση συνομιλιών"
+  },
+  "selectAll": {
+    "message": "Επιλογή όλων"
+  },
+  "exportZip": {
+    "message": "Εξαγωγή ZIP"
+  },
+  "progress": {
+    "message": "Εξαγωγή {i} / {n}…"
+  },
+  "bulkDone": {
+    "message": "Συνομιλίες που εξήχθησαν σε αρχείο ZIP: {n}"
+  },
+  "bulkUnsupported": {
+    "message": "Η μαζική εξαγωγή δεν είναι ακόμη διαθέσιμη για αυτόν τον ιστότοπο. Ανοίξτε μια συνομιλία και χρησιμοποιήστε την Εξαγωγή."
+  },
+  "chatsFound": {
+    "message": "Συνομιλίες: {n}"
+  },
+  "copyAs": {
+    "message": "Αντιγραφή ως {fmt}"
+  },
+  "quickExport": {
+    "message": "Γρήγορη εξαγωγή"
+  },
+  "openPanel": {
+    "message": "Επιλογή μηνυμάτων…"
+  },
+  "unsupportedSite": {
+    "message": "Ανοίξτε το ChatGPT για να εξαγάγετε μια συνομιλία."
+  },
+  "selectedOf": {
+    "message": "{a}/{b}"
+  },
+  "messages": {
+    "message": "μηνύματα"
+  },
+  "richText": {
+    "message": "μορφοποιημένο κείμενο"
+  },
+  "fmtText": {
+    "message": "Κείμενο"
+  },
+  "fmtPng": {
+    "message": "Εικόνα (PNG)"
+  },
+  "toggleTitle": {
+    "message": "Εμφάνιση ή απόκρυψη των κουμπιών εξαγωγής"
+  },
+  "autoBrowser": {
+    "message": "Αυτόματα (πρόγραμμα περιήγησης)"
+  },
+  "close": {
+    "message": "Κλείσιμο"
+  },
+  "ctxExportChat": {
+    "message": "Εξαγωγή αυτής της συνομιλίας"
+  },
+  "ctxExportAs": {
+    "message": "Εξαγωγή ως {fmt}"
+  },
+  "seePlans": {
+    "message": "Δείτε τα πλάνα"
+  },
+  "upgrade": {
+    "message": "Αναβάθμιση"
+  },
+  "accountHeading": {
+    "message": "Λογαριασμός"
+  },
+  "limitFull": {
+    "message": "Εξαντλήσατε το όριο δωρεάν εξαγωγών ολόκληρων συνομιλιών για αυτόν τον μήνα ({limit}). Αναβαθμίστε για απεριόριστες εξαγωγές."
+  },
+  "limitPartial": {
+    "message": "Εξαντλήσατε το όριο δωρεάν μερικών εξαγωγών για αυτόν τον μήνα ({limit}). Αναβαθμίστε για απεριόριστες εξαγωγές."
+  },
+  "bulkFreeLeft": {
+    "message": "Δωρεάν πλάνο: αυτόν τον μήνα απομένουν εξαγωγές ολόκληρων συνομιλιών: {left}, αλλά επιλέξατε συνομιλίες: {n}. Επιλέξτε λιγότερες συνομιλίες ή αναβαθμίστε για απεριόριστες εξαγωγές."
+  },
+  "tokenInvalidFormat": {
+    "message": "Αυτό δεν μοιάζει με έγκυρο διακριτικό."
+  },
+  "tokenExpired": {
+    "message": "Αυτό το διακριτικό δεν είναι πλέον έγκυρο. Δημιουργήστε ένα νέο από τον λογαριασμό σας."
+  },
+  "serverUnreachable": {
+    "message": "Δεν ήταν δυνατή η σύνδεση με τον διακομιστή. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά."
+  },
+  "notSignedIn": {
+    "message": "Δεν έχετε συνδεθεί"
+  },
+  "sessionFailed": {
+    "message": "Το αίτημα συνεδρίας απέτυχε ({status})"
+  },
+  "popupChecking": {
+    "message": "Έλεγχος καρτέλας…"
+  },
+  "conversationDetected": {
+    "message": "Εντοπίστηκε συνομιλία {name}"
+  },
+  "openAConversation": {
+    "message": "{name} — ανοίξτε μια συνομιλία"
+  },
+  "worksOn": {
+    "message": "Λειτουργεί στο chatgpt.com"
+  },
+  "popupInactive": {
+    "message": "Ανοίξτε μια συνομιλία ChatGPT και κάντε ξανά κλικ στην επέκταση:"
+  },
+  "formatLabel": {
+    "message": "Μορφή"
+  },
+  "keyboardShortcuts": {
+    "message": "Συντομεύσεις πληκτρολογίου"
+  },
+  "planPro": {
+    "message": "Pro · {plan} · απεριόριστες εξαγωγές"
+  },
+  "planYear": {
+    "message": "Ετήσιο πλάνο"
+  },
+  "planMonth": {
+    "message": "Μηνιαίο πλάνο"
+  },
+  "planProName": {
+    "message": "Pro"
+  },
+  "planFreeLeft": {
+    "message": "Δωρεάν · αυτόν τον μήνα απομένουν εξαγωγές: ολόκληρες {full}, μερικές {single}"
+  },
+  "exporting": {
+    "message": "Εξαγωγή…"
+  },
+  "doneSeePage": {
+    "message": "Ολοκληρώθηκε — δείτε τη σελίδα για λεπτομέρειες."
+  },
+  "copiedClipboard": {
+    "message": "Αντιγράφηκε στο πρόχειρο."
+  },
+  "failedShort": {
+    "message": "Απέτυχε"
+  },
+  "optionsTitle": {
+    "message": "ChatGPT Exporter — Ρυθμίσεις"
+  },
+  "optionsIntro": {
+    "message": "Οι ρυθμίσεις αποθηκεύονται αυτόματα και συγχρονίζονται με το προφίλ σας στο Chrome. Όλα επεξεργάζονται τοπικά στο πρόγραμμα περιήγησής σας."
+  },
+  "checking": {
+    "message": "Έλεγχος…"
+  },
+  "connectWithToken": {
+    "message": "Σύνδεση με διακριτικό"
+  },
+  "tokenHelp": {
+    "message": "Χρησιμοποιήστε το αν ο ιστότοπος δεν μπόρεσε να συνδέσει αυτόματα την επέκταση. Αντιγράψτε το διακριτικό από τη σελίδα του λογαριασμού σας."
+  },
+  "connect": {
+    "message": "Σύνδεση"
+  },
+  "resetDefaults": {
+    "message": "Επαναφορά προεπιλογών"
+  },
+  "keyboardShortcutsEllipsis": {
+    "message": "Συντομεύσεις πληκτρολογίου…"
+  },
+  "saved": {
+    "message": "Αποθηκεύτηκε ✓"
+  },
+  "accountLoadFail": {
+    "message": "Δεν ήταν δυνατή η φόρτωση του λογαριασμού σας αυτή τη στιγμή."
+  },
+  "connectedAs": {
+    "message": "Συνδεδεμένο ως {email} · {plan}"
+  },
+  "planFreeShort": {
+    "message": "Δωρεάν πλάνο"
+  },
+  "planProUnlimited": {
+    "message": "{plan} · απεριόριστες εξαγωγές"
+  },
+  "manageBilling": {
+    "message": "Διαχείριση χρέωσης"
+  },
+  "disconnect": {
+    "message": "Αποσύνδεση"
+  },
+  "freeLeftConnect": {
+    "message": "Δωρεάν πλάνο · αυτόν τον μήνα απομένουν εξαγωγές: ολόκληρες {full}, μερικές {single}. Συνδέστε τον λογαριασμό σας αν έχετε αναβαθμίσει."
+  },
+  "connectAccount": {
+    "message": "Σύνδεση λογαριασμού"
+  },
+  "connecting": {
+    "message": "Σύνδεση…"
+  },
+  "connected": {
+    "message": "Συνδέθηκε."
+  },
+  "connectFail": {
+    "message": "Η σύνδεση δεν ήταν δυνατή."
+  },
+  "docContents": {
+    "message": "Περιεχόμενα"
+  },
+  "docThoughtProcess": {
+    "message": "Διαδικασία σκέψης"
+  },
+  "docSources": {
+    "message": "Πηγές"
+  },
+  "docAttachments": {
+    "message": "Συνημμένα"
+  },
+  "docExportedWith": {
+    "message": "Εξαγωγή με το Chat Exporter"
+  },
+  "pvDocTitle": {
+    "message": "ChatGPT Exporter — Προεπισκόπηση"
+  },
+  "pvPreview": {
+    "message": "Προεπισκόπηση"
+  },
+  "pvPreparing": {
+    "message": "Προετοιμασία…"
+  },
+  "jobExpired": {
+    "message": "Αυτή η εργασία εξαγωγής έληξε. Επιστρέψτε στη συνομιλία και εξαγάγετε ξανά."
+  },
+  "pvWidthPx": {
+    "message": "Πλάτος (px)"
+  },
+  "pvScale": {
+    "message": "Κλίμακα"
+  },
+  "pvRendering": {
+    "message": "Απόδοση μέρους {i} από {n}…"
+  },
+  "pvPacking": {
+    "message": "Συσκευασία εικόνων: {n}…"
+  },
+  "pvSavedZip": {
+    "message": "Εικόνες που αποθηκεύτηκαν σε ZIP: {n}"
+  },
+  "pvSaved": {
+    "message": "Αποθηκεύτηκε: {name}"
+  },
+  "pvFastNote": {
+    "message": "(1×, ώστε μια μεγάλη συνομιλία να παραμένει γρήγορη)"
+  },
+  "pvPrintSave": {
+    "message": "Εκτύπωση / Αποθήκευση ως PDF"
+  },
+  "pvChooseSave": {
+    "message": "Επιλέξτε «Αποθήκευση ως PDF» ως προορισμό."
+  },
+  "pvDownloadPng": {
+    "message": "Λήψη PNG"
+  },
+  "pvFailed": {
+    "message": "Απέτυχε: {msg}"
+  },
+  "pvRenderFail": {
+    "message": "Δεν ήταν δυνατή η απόδοση αυτής της εξαγωγής: {msg}"
+  },
+  "sec_general": {
+    "message": "Γενικά"
+  },
+  "f_language": {
+    "message": "Γλώσσα διεπαφής"
+  },
+  "f_theme": {
+    "message": "Θέμα πίνακα"
+  },
+  "o_theme_auto": {
+    "message": "Αυτόματο"
+  },
+  "o_theme_dark": {
+    "message": "Σκούρο"
+  },
+  "o_theme_light": {
+    "message": "Φωτεινό"
+  },
+  "f_showLauncher": {
+    "message": "Εμφάνιση των κουμπιών Επιλογή / Εξαγωγή στη σελίδα της συνομιλίας"
+  },
+  "f_rememberSelection": {
+    "message": "Απομνημόνευση της προεπιλογής επιλογής μου (Όλα / Ερωτήσεις / Απαντήσεις)"
+  },
+  "f_closePanelAfterExport": {
+    "message": "Κλείσιμο του πλευρικού πίνακα μετά την εξαγωγή"
+  },
+  "f_showToasts": {
+    "message": "Εμφάνιση επιβεβαίωσης μετά την εξαγωγή"
+  },
+  "sec_content": {
+    "message": "Περιεχόμενο"
+  },
+  "f_includeThoughts": {
+    "message": "Συμπερίληψη διαδικασίας σκέψης"
+  },
+  "f_includeSources": {
+    "message": "Συμπερίληψη πηγών και παραπομπών αναζήτησης στον ιστό"
+  },
+  "f_includeCanvas": {
+    "message": "Συμπερίληψη Canvas / Artifacts"
+  },
+  "f_includeImages": {
+    "message": "Συμπερίληψη εικόνων"
+  },
+  "f_embedImages": {
+    "message": "Ενσωμάτωση εικόνων στο αρχείο (PDF, HTML, Word, PNG)"
+  },
+  "f_includeToolOutputs": {
+    "message": "Συμπερίληψη κλήσεων εργαλείων και εξόδου του διερμηνέα κώδικα"
+  },
+  "f_includeTimestamps": {
+    "message": "Εμφάνιση χρονοσήμανσης σε κάθε μήνυμα"
+  },
+  "f_showRoleIcons": {
+    "message": "Εμφάνιση εικονιδίων / emoji ρόλων"
+  },
+  "f_userName": {
+    "message": "Το όνομά σας (εμφανίζεται στην κεφαλίδα της εξαγωγής)"
+  },
+  "f_userEmail": {
+    "message": "Το email σας (εμφανίζεται στην κεφαλίδα της εξαγωγής)"
+  },
+  "f_userLabel": {
+    "message": "Ετικέτα για τα μηνύματά σας (προεπιλογή: Εσείς)"
+  },
+  "f_assistantLabel": {
+    "message": "Ετικέτα για τα μηνύματα της ΤΝ (προεπιλογή: όνομα πλατφόρμας)"
+  },
+  "f_showDate": {
+    "message": "Εμφάνιση ημερομηνίας συνομιλίας"
+  },
+  "f_dateSource": {
+    "message": "Πηγή ημερομηνίας"
+  },
+  "o_dateSource_created": {
+    "message": "Δημιουργία"
+  },
+  "o_dateSource_updated": {
+    "message": "Τελευταία τροποποίηση"
+  },
+  "o_dateSource_export": {
+    "message": "Ώρα εξαγωγής"
+  },
+  "f_dateFormat": {
+    "message": "Μορφή ημερομηνίας"
+  },
+  "o_dateFormat_locale": {
+    "message": "Τοπικές ρυθμίσεις προγράμματος περιήγησης"
+  },
+  "f_branding": {
+    "message": "Προσθήκη υποσέλιδου «Εξαγωγή με το Chat Exporter»"
+  },
+  "sec_files": {
+    "message": "Αρχεία"
+  },
+  "f_filenameTemplate": {
+    "message": "Πρότυπο ονόματος αρχείου — {title} {date} {time} {platform} {model} {id}"
+  },
+  "f_filenamePrefix": {
+    "message": "Πρόθεμα ονόματος αρχείου"
+  },
+  "f_downloadSubfolder": {
+    "message": "Υποφάκελος λήψης (μέσα στον φάκελο Λήψεις)"
+  },
+  "f_mdFrontMatter": {
+    "message": "Προσθήκη YAML front matter"
+  },
+  "f_mdThinkingStyle": {
+    "message": "Στυλ διαδικασίας σκέψης"
+  },
+  "o_mdThinkingStyle_blockquote": {
+    "message": "Μπλοκ παράθεσης"
+  },
+  "o_mdThinkingStyle_details": {
+    "message": "Αναδιπλούμενο <details>"
+  },
+  "sec_dataformats": {
+    "message": "JSON και CSV"
+  },
+  "f_jsonPretty": {
+    "message": "Μορφοποίηση JSON"
+  },
+  "f_csvDelimiter": {
+    "message": "Διαχωριστικό CSV"
+  },
+  "o_csvDelimiter_comma": {
+    "message": "Κόμμα ,"
+  },
+  "o_csvDelimiter_semicolon": {
+    "message": "Άνω τελεία ;"
+  },
+  "o_csvDelimiter_tab": {
+    "message": "Στηλοθέτης"
+  },
+  "sec_pdf": {
+    "message": "PDF / HTML / Εικόνα"
+  },
+  "f_pdfTitle": {
+    "message": "Τίτλος περιεχομένου (κενό = τίτλος συνομιλίας)"
+  },
+  "f_pdfPageSize": {
+    "message": "Μέγεθος σελίδας"
+  },
+  "f_pdfOrientation": {
+    "message": "Προσανατολισμός"
+  },
+  "o_pdfOrientation_portrait": {
+    "message": "Κατακόρυφος"
+  },
+  "o_pdfOrientation_landscape": {
+    "message": "Οριζόντιος"
+  },
+  "f_pdfTheme": {
+    "message": "Θέμα"
+  },
+  "o_pdfTheme_light": {
+    "message": "Φωτεινό"
+  },
+  "o_pdfTheme_dark": {
+    "message": "Σκούρο"
+  },
+  "f_pdfMargins": {
+    "message": "Περιθώρια"
+  },
+  "o_pdfMargins_narrow": {
+    "message": "Στενά"
+  },
+  "o_pdfMargins_normal": {
+    "message": "Κανονικά"
+  },
+  "o_pdfMargins_wide": {
+    "message": "Πλατιά"
+  },
+  "f_pdfFontScale": {
+    "message": "Μέγεθος γραμματοσειράς (% της προεπιλογής)"
+  },
+  "f_pdfFontFamily": {
+    "message": "Οικογένεια γραμματοσειράς"
+  },
+  "o_pdfFontFamily_sans": {
+    "message": "Χωρίς πατούρες"
+  },
+  "o_pdfFontFamily_serif": {
+    "message": "Με πατούρες"
+  },
+  "o_pdfFontFamily_mono": {
+    "message": "Σταθερού πλάτους"
+  },
+  "f_pdfPageNumbers": {
+    "message": "Αριθμοί σελίδων"
+  },
+  "f_pdfToc": {
+    "message": "Πίνακας περιεχομένων"
+  },
+  "f_pdfPageBreakPerPrompt": {
+    "message": "Έναρξη κάθε προτροπής σε νέα σελίδα"
+  },
+  "f_pdfWrapCode": {
+    "message": "Αναδίπλωση μεγάλων γραμμών κώδικα"
+  },
+  "f_pdfAutoPrint": {
+    "message": "Αυτόματο άνοιγμα του παραθύρου εκτύπωσης"
+  }
+}

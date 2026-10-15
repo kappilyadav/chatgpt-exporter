@@ -1,0 +1,578 @@
+{
+  "extName": {
+    "message": "ChatGPT Exporter: lưu ChatGPT sang PDF, Word và Markdown"
+  },
+  "extDescription": {
+    "message": "Xuất mọi cuộc trò chuyện ChatGPT thành tệp gọn gàng, dễ chia sẻ. Chọn tin nhắn, tùy chỉnh bố cục, giữ riêng tư."
+  },
+  "extActionTitle": {
+    "message": "ChatGPT Exporter"
+  },
+  "cmdTogglePanel": {
+    "message": "Mở / đóng bảng Chọn tin nhắn"
+  },
+  "cmdQuickExport": {
+    "message": "Xuất nhanh cuộc trò chuyện hiện tại theo định dạng mặc định"
+  },
+  "cmdExportPdf": {
+    "message": "Xuất cuộc trò chuyện hiện tại thành PDF"
+  },
+  "selectMessages": {
+    "message": "Chọn tin nhắn"
+  },
+  "select": {
+    "message": "Chọn"
+  },
+  "export": {
+    "message": "Xuất"
+  },
+  "exportAs": {
+    "message": "Xuất dưới dạng"
+  },
+  "all": {
+    "message": "Tất cả"
+  },
+  "allDefault": {
+    "message": "Tất cả (mặc định)"
+  },
+  "questions": {
+    "message": "Câu hỏi"
+  },
+  "answers": {
+    "message": "Câu trả lời"
+  },
+  "none": {
+    "message": "Không có"
+  },
+  "invert": {
+    "message": "Đảo chọn"
+  },
+  "cancel": {
+    "message": "Hủy"
+  },
+  "copy": {
+    "message": "Sao chép"
+  },
+  "settings": {
+    "message": "Cài đặt"
+  },
+  "expand": {
+    "message": "Mở rộng"
+  },
+  "back": {
+    "message": "Quay lại"
+  },
+  "refresh": {
+    "message": "Làm mới"
+  },
+  "retry": {
+    "message": "Thử lại"
+  },
+  "loading": {
+    "message": "Đang tải cuộc trò chuyện…"
+  },
+  "loadingHistory": {
+    "message": "Đang tải toàn bộ lịch sử…"
+  },
+  "tip": {
+    "message": "Mẹo: Shift+nhấp để chọn một dải tin nhắn."
+  },
+  "you": {
+    "message": "Bạn"
+  },
+  "exportedN": {
+    "message": "Đã xuất {n} tin nhắn dưới dạng {fmt}"
+  },
+  "copiedN": {
+    "message": "Đã sao chép {n} tin nhắn dưới dạng {fmt}"
+  },
+  "nothingSelected": {
+    "message": "Hãy chọn ít nhất một tin nhắn trước."
+  },
+  "noConversation": {
+    "message": "Không tìm thấy cuộc trò chuyện nào trên trang này."
+  },
+  "failed": {
+    "message": "Xuất thất bại: {msg}"
+  },
+  "pdfHint": {
+    "message": "Đang mở bản xem trước khi in — hãy chọn “Lưu dưới dạng PDF”."
+  },
+  "exportAll": {
+    "message": "Xuất tất cả cuộc trò chuyện…"
+  },
+  "bulkTitle": {
+    "message": "Xuất nhiều cuộc trò chuyện"
+  },
+  "searchChats": {
+    "message": "Tìm cuộc trò chuyện"
+  },
+  "selectAll": {
+    "message": "Chọn tất cả"
+  },
+  "exportZip": {
+    "message": "Xuất ZIP"
+  },
+  "progress": {
+    "message": "Đang xuất {i} / {n}…"
+  },
+  "bulkDone": {
+    "message": "Đã xuất {n} cuộc trò chuyện vào tệp ZIP"
+  },
+  "bulkUnsupported": {
+    "message": "Trang web này chưa hỗ trợ xuất hàng loạt. Hãy mở một cuộc trò chuyện và dùng Xuất."
+  },
+  "chatsFound": {
+    "message": "{n} cuộc trò chuyện"
+  },
+  "copyAs": {
+    "message": "Sao chép dưới dạng {fmt}"
+  },
+  "quickExport": {
+    "message": "Xuất nhanh"
+  },
+  "openPanel": {
+    "message": "Chọn tin nhắn…"
+  },
+  "unsupportedSite": {
+    "message": "Hãy mở ChatGPT để xuất một cuộc trò chuyện."
+  },
+  "selectedOf": {
+    "message": "{a}/{b}"
+  },
+  "messages": {
+    "message": "tin nhắn"
+  },
+  "richText": {
+    "message": "văn bản có định dạng"
+  },
+  "fmtText": {
+    "message": "Văn bản"
+  },
+  "fmtPng": {
+    "message": "Hình ảnh (PNG)"
+  },
+  "toggleTitle": {
+    "message": "Hiện hoặc ẩn các nút xuất"
+  },
+  "autoBrowser": {
+    "message": "Tự động (theo trình duyệt)"
+  },
+  "close": {
+    "message": "Đóng"
+  },
+  "ctxExportChat": {
+    "message": "Xuất cuộc trò chuyện này"
+  },
+  "ctxExportAs": {
+    "message": "Xuất dưới dạng {fmt}"
+  },
+  "seePlans": {
+    "message": "Xem các gói"
+  },
+  "upgrade": {
+    "message": "Nâng cấp"
+  },
+  "accountHeading": {
+    "message": "Tài khoản"
+  },
+  "limitFull": {
+    "message": "Bạn đã dùng hết {limit} lượt xuất toàn bộ cuộc trò chuyện miễn phí trong tháng này. Hãy nâng cấp để xuất không giới hạn."
+  },
+  "limitPartial": {
+    "message": "Bạn đã dùng hết {limit} lượt xuất một phần miễn phí trong tháng này. Hãy nâng cấp để xuất không giới hạn."
+  },
+  "bulkFreeLeft": {
+    "message": "Gói miễn phí: tháng này còn {left} lượt xuất toàn bộ, nhưng bạn đã chọn {n} cuộc trò chuyện. Hãy chọn ít cuộc trò chuyện hơn hoặc nâng cấp để xuất không giới hạn."
+  },
+  "tokenInvalidFormat": {
+    "message": "Đây không giống một mã thông báo hợp lệ."
+  },
+  "tokenExpired": {
+    "message": "Mã thông báo này không còn hợp lệ. Hãy tạo mã mới từ tài khoản của bạn."
+  },
+  "serverUnreachable": {
+    "message": "Không thể kết nối đến máy chủ. Hãy kiểm tra kết nối và thử lại."
+  },
+  "notSignedIn": {
+    "message": "Chưa đăng nhập"
+  },
+  "sessionFailed": {
+    "message": "Yêu cầu phiên thất bại ({status})"
+  },
+  "popupChecking": {
+    "message": "Đang kiểm tra tab…"
+  },
+  "conversationDetected": {
+    "message": "Đã phát hiện cuộc trò chuyện {name}"
+  },
+  "openAConversation": {
+    "message": "{name} — hãy mở một cuộc trò chuyện"
+  },
+  "worksOn": {
+    "message": "Hoạt động trên chatgpt.com"
+  },
+  "popupInactive": {
+    "message": "Hãy mở một cuộc trò chuyện ChatGPT, rồi nhấp vào tiện ích mở rộng lần nữa:"
+  },
+  "formatLabel": {
+    "message": "Định dạng"
+  },
+  "keyboardShortcuts": {
+    "message": "Phím tắt"
+  },
+  "planPro": {
+    "message": "Pro · {plan} · xuất không giới hạn"
+  },
+  "planYear": {
+    "message": "Gói năm"
+  },
+  "planMonth": {
+    "message": "Gói tháng"
+  },
+  "planProName": {
+    "message": "Pro"
+  },
+  "planFreeLeft": {
+    "message": "Miễn phí · tháng này còn {full} lượt xuất toàn bộ và {single} lượt xuất một phần"
+  },
+  "exporting": {
+    "message": "Đang xuất…"
+  },
+  "doneSeePage": {
+    "message": "Xong — xem trang để biết chi tiết."
+  },
+  "copiedClipboard": {
+    "message": "Đã sao chép vào bộ nhớ tạm."
+  },
+  "failedShort": {
+    "message": "Thất bại"
+  },
+  "optionsTitle": {
+    "message": "ChatGPT Exporter — Cài đặt"
+  },
+  "optionsIntro": {
+    "message": "Cài đặt được lưu tự động và đồng bộ với hồ sơ Chrome của bạn. Mọi thứ được xử lý cục bộ trong trình duyệt của bạn."
+  },
+  "checking": {
+    "message": "Đang kiểm tra…"
+  },
+  "connectWithToken": {
+    "message": "Kết nối bằng mã thông báo"
+  },
+  "tokenHelp": {
+    "message": "Dùng cách này nếu trang web không thể tự động kết nối tiện ích. Hãy sao chép mã thông báo từ trang tài khoản của bạn."
+  },
+  "connect": {
+    "message": "Kết nối"
+  },
+  "resetDefaults": {
+    "message": "Đặt lại mặc định"
+  },
+  "keyboardShortcutsEllipsis": {
+    "message": "Phím tắt…"
+  },
+  "saved": {
+    "message": "Đã lưu ✓"
+  },
+  "accountLoadFail": {
+    "message": "Hiện không thể tải tài khoản của bạn."
+  },
+  "connectedAs": {
+    "message": "Đã kết nối với tư cách {email} · {plan}"
+  },
+  "planFreeShort": {
+    "message": "Gói miễn phí"
+  },
+  "planProUnlimited": {
+    "message": "{plan} · xuất không giới hạn"
+  },
+  "manageBilling": {
+    "message": "Quản lý thanh toán"
+  },
+  "disconnect": {
+    "message": "Ngắt kết nối"
+  },
+  "freeLeftConnect": {
+    "message": "Gói miễn phí · tháng này còn {full} lượt xuất toàn bộ và {single} lượt xuất một phần. Hãy kết nối tài khoản nếu bạn đã nâng cấp."
+  },
+  "connectAccount": {
+    "message": "Kết nối tài khoản"
+  },
+  "connecting": {
+    "message": "Đang kết nối…"
+  },
+  "connected": {
+    "message": "Đã kết nối."
+  },
+  "connectFail": {
+    "message": "Không thể kết nối."
+  },
+  "docContents": {
+    "message": "Mục lục"
+  },
+  "docThoughtProcess": {
+    "message": "Quá trình suy luận"
+  },
+  "docSources": {
+    "message": "Nguồn"
+  },
+  "docAttachments": {
+    "message": "Tệp đính kèm"
+  },
+  "docExportedWith": {
+    "message": "Xuất bằng Chat Exporter"
+  },
+  "pvDocTitle": {
+    "message": "ChatGPT Exporter — Xem trước"
+  },
+  "pvPreview": {
+    "message": "Xem trước"
+  },
+  "pvPreparing": {
+    "message": "Đang chuẩn bị…"
+  },
+  "jobExpired": {
+    "message": "Tác vụ xuất này đã hết hạn. Hãy quay lại cuộc trò chuyện và xuất lại."
+  },
+  "pvWidthPx": {
+    "message": "Chiều rộng (px)"
+  },
+  "pvScale": {
+    "message": "Tỷ lệ"
+  },
+  "pvRendering": {
+    "message": "Đang dựng phần {i} trên {n}…"
+  },
+  "pvPacking": {
+    "message": "Đang đóng gói {n} hình ảnh…"
+  },
+  "pvSavedZip": {
+    "message": "Đã lưu {n} hình ảnh dưới dạng ZIP"
+  },
+  "pvSaved": {
+    "message": "Đã lưu {name}"
+  },
+  "pvFastNote": {
+    "message": "(1× để cuộc trò chuyện dài vẫn nhanh)"
+  },
+  "pvPrintSave": {
+    "message": "In / Lưu dưới dạng PDF"
+  },
+  "pvChooseSave": {
+    "message": "Hãy chọn “Lưu dưới dạng PDF” làm đích đến."
+  },
+  "pvDownloadPng": {
+    "message": "Tải PNG"
+  },
+  "pvFailed": {
+    "message": "Thất bại: {msg}"
+  },
+  "pvRenderFail": {
+    "message": "Không thể dựng bản xuất này: {msg}"
+  },
+  "sec_general": {
+    "message": "Chung"
+  },
+  "f_language": {
+    "message": "Ngôn ngữ giao diện"
+  },
+  "f_theme": {
+    "message": "Giao diện của bảng"
+  },
+  "o_theme_auto": {
+    "message": "Tự động"
+  },
+  "o_theme_dark": {
+    "message": "Tối"
+  },
+  "o_theme_light": {
+    "message": "Sáng"
+  },
+  "f_showLauncher": {
+    "message": "Hiện nút Chọn / Xuất trên trang trò chuyện"
+  },
+  "f_rememberSelection": {
+    "message": "Ghi nhớ cách chọn sẵn của tôi (Tất cả / Câu hỏi / Câu trả lời)"
+  },
+  "f_closePanelAfterExport": {
+    "message": "Đóng bảng bên sau khi xuất"
+  },
+  "f_showToasts": {
+    "message": "Hiện thông báo xác nhận sau khi xuất"
+  },
+  "sec_content": {
+    "message": "Nội dung"
+  },
+  "f_includeThoughts": {
+    "message": "Bao gồm quá trình suy luận"
+  },
+  "f_includeSources": {
+    "message": "Bao gồm nguồn và trích dẫn từ tìm kiếm web"
+  },
+  "f_includeCanvas": {
+    "message": "Bao gồm Canvas / Artifacts"
+  },
+  "f_includeImages": {
+    "message": "Bao gồm hình ảnh"
+  },
+  "f_embedImages": {
+    "message": "Nhúng hình ảnh vào tệp (PDF, HTML, Word, PNG)"
+  },
+  "f_includeToolOutputs": {
+    "message": "Bao gồm lệnh gọi công cụ và kết quả của trình thông dịch mã"
+  },
+  "f_includeTimestamps": {
+    "message": "Hiện dấu thời gian cho mỗi tin nhắn"
+  },
+  "f_showRoleIcons": {
+    "message": "Hiện biểu tượng / emoji vai trò"
+  },
+  "f_userName": {
+    "message": "Tên của bạn (hiện ở đầu bản xuất)"
+  },
+  "f_userEmail": {
+    "message": "Email của bạn (hiện ở đầu bản xuất)"
+  },
+  "f_userLabel": {
+    "message": "Nhãn cho tin nhắn của bạn (mặc định: Bạn)"
+  },
+  "f_assistantLabel": {
+    "message": "Nhãn cho tin nhắn của AI (mặc định: tên nền tảng)"
+  },
+  "f_showDate": {
+    "message": "Hiện ngày của cuộc trò chuyện"
+  },
+  "f_dateSource": {
+    "message": "Nguồn ngày"
+  },
+  "o_dateSource_created": {
+    "message": "Ngày tạo"
+  },
+  "o_dateSource_updated": {
+    "message": "Sửa đổi lần cuối"
+  },
+  "o_dateSource_export": {
+    "message": "Thời điểm xuất"
+  },
+  "f_dateFormat": {
+    "message": "Định dạng ngày"
+  },
+  "o_dateFormat_locale": {
+    "message": "Ngôn ngữ và khu vực của trình duyệt"
+  },
+  "f_branding": {
+    "message": "Thêm chân trang “Xuất bằng Chat Exporter”"
+  },
+  "sec_files": {
+    "message": "Tệp"
+  },
+  "f_filenameTemplate": {
+    "message": "Mẫu tên tệp — {title} {date} {time} {platform} {model} {id}"
+  },
+  "f_filenamePrefix": {
+    "message": "Tiền tố tên tệp"
+  },
+  "f_downloadSubfolder": {
+    "message": "Thư mục con tải xuống (bên trong thư mục Tải xuống)"
+  },
+  "f_mdFrontMatter": {
+    "message": "Thêm YAML front matter"
+  },
+  "f_mdThinkingStyle": {
+    "message": "Kiểu hiển thị quá trình suy luận"
+  },
+  "o_mdThinkingStyle_blockquote": {
+    "message": "Khối trích dẫn"
+  },
+  "o_mdThinkingStyle_details": {
+    "message": "<details> có thể thu gọn"
+  },
+  "sec_dataformats": {
+    "message": "JSON & CSV"
+  },
+  "f_jsonPretty": {
+    "message": "Định dạng đẹp cho JSON"
+  },
+  "f_csvDelimiter": {
+    "message": "Dấu phân tách CSV"
+  },
+  "o_csvDelimiter_comma": {
+    "message": "Dấu phẩy ,"
+  },
+  "o_csvDelimiter_semicolon": {
+    "message": "Dấu chấm phẩy ;"
+  },
+  "o_csvDelimiter_tab": {
+    "message": "Tab"
+  },
+  "sec_pdf": {
+    "message": "PDF / HTML / Hình ảnh"
+  },
+  "f_pdfTitle": {
+    "message": "Tiêu đề nội dung (để trống = tiêu đề cuộc trò chuyện)"
+  },
+  "f_pdfPageSize": {
+    "message": "Khổ trang"
+  },
+  "f_pdfOrientation": {
+    "message": "Hướng trang"
+  },
+  "o_pdfOrientation_portrait": {
+    "message": "Dọc"
+  },
+  "o_pdfOrientation_landscape": {
+    "message": "Ngang"
+  },
+  "f_pdfTheme": {
+    "message": "Giao diện"
+  },
+  "o_pdfTheme_light": {
+    "message": "Sáng"
+  },
+  "o_pdfTheme_dark": {
+    "message": "Tối"
+  },
+  "f_pdfMargins": {
+    "message": "Lề"
+  },
+  "o_pdfMargins_narrow": {
+    "message": "Hẹp"
+  },
+  "o_pdfMargins_normal": {
+    "message": "Vừa"
+  },
+  "o_pdfMargins_wide": {
+    "message": "Rộng"
+  },
+  "f_pdfFontScale": {
+    "message": "Cỡ chữ (% so với mặc định)"
+  },
+  "f_pdfFontFamily": {
+    "message": "Họ phông chữ"
+  },
+  "o_pdfFontFamily_sans": {
+    "message": "Không chân"
+  },
+  "o_pdfFontFamily_serif": {
+    "message": "Có chân"
+  },
+  "o_pdfFontFamily_mono": {
+    "message": "Đơn cách"
+  },
+  "f_pdfPageNumbers": {
+    "message": "Số trang"
+  },
+  "f_pdfToc": {
+    "message": "Mục lục"
+  },
+  "f_pdfPageBreakPerPrompt": {
+    "message": "Bắt đầu mỗi câu lệnh trên một trang mới"
+  },
+  "f_pdfWrapCode": {
+    "message": "Ngắt dòng cho các dòng mã dài"
+  },
+  "f_pdfAutoPrint": {
+    "message": "Tự động mở hộp thoại in"
+  }
+}

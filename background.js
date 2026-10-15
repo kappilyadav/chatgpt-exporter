@@ -1,5 +1,5 @@
 /* Chat Exporter — MV3 service worker: context menu, keyboard commands, downloads, print-page launcher. */
-importScripts('src/core/ns.js');
+importScripts('src/core/ns.js', 'src/core/locales.js', 'src/core/i18n.js');
 
 const SITE = CE.SITE_URL;
 const LIMITS = CE.LIMITS;
@@ -8,13 +8,14 @@ const GRACE_MS = 7 * 24 * 3600 * 1000; // keep honouring a Pro plan this long wh
 
 const SITES = ['https://chatgpt.com/*', 'https://chat.openai.com/*'];
 
-function buildMenus() {
+async function buildMenus() {
+  await CE.i18n.load(); // menu titles follow the language chosen in Settings
   chrome.contextMenus.removeAll(() => {
-    chrome.contextMenus.create({ id: 'ce-root', title: 'Export this chat', contexts: ['page'], documentUrlPatterns: SITES });
-    chrome.contextMenus.create({ id: 'ce-select', parentId: 'ce-root', title: 'Select messages…', contexts: ['page'], documentUrlPatterns: SITES });
+    chrome.contextMenus.create({ id: 'ce-root', title: CE.t('ctxExportChat'), contexts: ['page'], documentUrlPatterns: SITES });
+    chrome.contextMenus.create({ id: 'ce-select', parentId: 'ce-root', title: CE.t('openPanel'), contexts: ['page'], documentUrlPatterns: SITES });
     chrome.contextMenus.create({ id: 'ce-sep', parentId: 'ce-root', type: 'separator', contexts: ['page'], documentUrlPatterns: SITES });
     CE.FORMATS.forEach((f) => {
-      chrome.contextMenus.create({ id: 'ce-fmt:' + f.id, parentId: 'ce-root', title: 'Export as ' + f.label, contexts: ['page'], documentUrlPatterns: SITES });
+      chrome.contextMenus.create({ id: 'ce-fmt:' + f.id, parentId: 'ce-root', title: CE.t('ctxExportAs', { fmt: f.label }), contexts: ['page'], documentUrlPatterns: SITES });
     });
   });
 }
@@ -76,14 +77,15 @@ async function snapshot(force) {
 
 async function connect(token) {
   token = String(token || '').trim();
-  if (!/^cgx_[A-Za-z0-9_-]{20,90}$/.test(token)) return { ok: false, error: 'That does not look like a valid token.' };
+  await CE.i18n.load();
+  if (!/^cgx_[A-Za-z0-9_-]{20,90}$/.test(token)) return { ok: false, error: CE.t('tokenInvalidFormat') };
   try {
     const r = await fetchStatus(token);
-    if (r.invalid) return { ok: false, error: 'This token is no longer valid. Create a new one from your account.' };
+    if (r.invalid) return { ok: false, error: CE.t('tokenExpired') };
     await chrome.storage.local.set({ account: accountFrom(token, r.status) });
     return { ok: true, pro: !!r.status.pro, email: r.status.email };
   } catch (e) {
-    return { ok: false, error: 'Could not reach the server. Check your connection and try again.' };
+    return { ok: false, error: CE.t('serverUnreachable') };
   }
 }
 
@@ -114,6 +116,12 @@ chrome.runtime.onMessageExternal.addListener((msg, sender, respond) => {
 
 chrome.runtime.onInstalled.addListener(buildMenus);
 chrome.runtime.onStartup.addListener(buildMenus);
+// Rebuild the right-click menu when the interface language changes.
+chrome.storage.onChanged.addListener((changes) => {
+  const next = changes.settings && changes.settings.newValue && changes.settings.newValue.language;
+  const prev = changes.settings && changes.settings.oldValue && changes.settings.oldValue.language;
+  if (changes.settings && next !== prev) buildMenus();
+});
 
 chrome.contextMenus.onClicked.addListener((info, tab) => {
   if (!tab || tab.id == null) return;

@@ -1,0 +1,578 @@
+{
+  "extName": {
+    "message": "ChatGPT Exporter: spara ChatGPT som PDF, Word och Markdown"
+  },
+  "extDescription": {
+    "message": "Exportera valfri ChatGPT-konversation till en snygg, delbar fil. Välj meddelanden, anpassa layouten, behåll din integritet."
+  },
+  "extActionTitle": {
+    "message": "ChatGPT Exporter"
+  },
+  "cmdTogglePanel": {
+    "message": "Öppna / stäng panelen Välj meddelanden"
+  },
+  "cmdQuickExport": {
+    "message": "Snabbexportera den aktuella chatten i standardformatet"
+  },
+  "cmdExportPdf": {
+    "message": "Exportera den aktuella chatten som PDF"
+  },
+  "selectMessages": {
+    "message": "Välj meddelanden"
+  },
+  "select": {
+    "message": "Välj"
+  },
+  "export": {
+    "message": "Exportera"
+  },
+  "exportAs": {
+    "message": "Exportera som"
+  },
+  "all": {
+    "message": "Alla"
+  },
+  "allDefault": {
+    "message": "Alla (standard)"
+  },
+  "questions": {
+    "message": "Frågor"
+  },
+  "answers": {
+    "message": "Svar"
+  },
+  "none": {
+    "message": "Inga"
+  },
+  "invert": {
+    "message": "Invertera"
+  },
+  "cancel": {
+    "message": "Avbryt"
+  },
+  "copy": {
+    "message": "Kopiera"
+  },
+  "settings": {
+    "message": "Inställningar"
+  },
+  "expand": {
+    "message": "Expandera"
+  },
+  "back": {
+    "message": "Tillbaka"
+  },
+  "refresh": {
+    "message": "Uppdatera"
+  },
+  "retry": {
+    "message": "Försök igen"
+  },
+  "loading": {
+    "message": "Läser in konversationen…"
+  },
+  "loadingHistory": {
+    "message": "Läser in hela historiken…"
+  },
+  "tip": {
+    "message": "Tips: Skift+klick markerar ett intervall av meddelanden."
+  },
+  "you": {
+    "message": "Du"
+  },
+  "exportedN": {
+    "message": "{n} meddelanden exporterades som {fmt}"
+  },
+  "copiedN": {
+    "message": "{n} meddelanden kopierades som {fmt}"
+  },
+  "nothingSelected": {
+    "message": "Välj minst ett meddelande först."
+  },
+  "noConversation": {
+    "message": "Ingen konversation hittades på den här sidan."
+  },
+  "failed": {
+    "message": "Exporten misslyckades: {msg}"
+  },
+  "pdfHint": {
+    "message": "Öppnar utskriftsförhandsgranskningen — välj ”Spara som PDF”."
+  },
+  "exportAll": {
+    "message": "Exportera alla chattar…"
+  },
+  "bulkTitle": {
+    "message": "Exportera flera chattar"
+  },
+  "searchChats": {
+    "message": "Sök i chattar"
+  },
+  "selectAll": {
+    "message": "Markera alla"
+  },
+  "exportZip": {
+    "message": "Exportera ZIP"
+  },
+  "progress": {
+    "message": "Exporterar {i} / {n}…"
+  },
+  "bulkDone": {
+    "message": "{n} chattar exporterades till en ZIP-fil"
+  },
+  "bulkUnsupported": {
+    "message": "Massexport är inte tillgänglig för den här webbplatsen än. Öppna en chatt och använd Exportera."
+  },
+  "chatsFound": {
+    "message": "{n} chattar"
+  },
+  "copyAs": {
+    "message": "Kopiera som {fmt}"
+  },
+  "quickExport": {
+    "message": "Snabbexport"
+  },
+  "openPanel": {
+    "message": "Välj meddelanden…"
+  },
+  "unsupportedSite": {
+    "message": "Öppna ChatGPT för att exportera en konversation."
+  },
+  "selectedOf": {
+    "message": "{a}/{b}"
+  },
+  "messages": {
+    "message": "meddelanden"
+  },
+  "richText": {
+    "message": "formaterad text"
+  },
+  "fmtText": {
+    "message": "Text"
+  },
+  "fmtPng": {
+    "message": "Bild (PNG)"
+  },
+  "toggleTitle": {
+    "message": "Visa eller dölj exportknapparna"
+  },
+  "autoBrowser": {
+    "message": "Automatiskt (webbläsare)"
+  },
+  "close": {
+    "message": "Stäng"
+  },
+  "ctxExportChat": {
+    "message": "Exportera den här chatten"
+  },
+  "ctxExportAs": {
+    "message": "Exportera som {fmt}"
+  },
+  "seePlans": {
+    "message": "Visa abonnemang"
+  },
+  "upgrade": {
+    "message": "Uppgradera"
+  },
+  "accountHeading": {
+    "message": "Konto"
+  },
+  "limitFull": {
+    "message": "Du har använt alla {limit} gratis exporter av hela chattar den här månaden. Uppgradera för obegränsad export."
+  },
+  "limitPartial": {
+    "message": "Du har använt alla {limit} gratis delexporter den här månaden. Uppgradera för obegränsad export."
+  },
+  "bulkFreeLeft": {
+    "message": "Gratisabonnemang: du har {left} exporter av hela chattar kvar den här månaden, men du har valt {n} chattar. Välj färre chattar eller uppgradera för obegränsad export."
+  },
+  "tokenInvalidFormat": {
+    "message": "Det här ser inte ut som en giltig token."
+  },
+  "tokenExpired": {
+    "message": "Den här tokenen är inte längre giltig. Skapa en ny från ditt konto."
+  },
+  "serverUnreachable": {
+    "message": "Det gick inte att nå servern. Kontrollera anslutningen och försök igen."
+  },
+  "notSignedIn": {
+    "message": "Inte inloggad"
+  },
+  "sessionFailed": {
+    "message": "Sessionsbegäran misslyckades ({status})"
+  },
+  "popupChecking": {
+    "message": "Kontrollerar fliken…"
+  },
+  "conversationDetected": {
+    "message": "{name}-konversation hittades"
+  },
+  "openAConversation": {
+    "message": "{name} — öppna en konversation"
+  },
+  "worksOn": {
+    "message": "Fungerar på chatgpt.com"
+  },
+  "popupInactive": {
+    "message": "Öppna en ChatGPT-konversation och klicka sedan på tillägget igen:"
+  },
+  "formatLabel": {
+    "message": "Format"
+  },
+  "keyboardShortcuts": {
+    "message": "Kortkommandon"
+  },
+  "planPro": {
+    "message": "Pro · {plan} · obegränsad export"
+  },
+  "planYear": {
+    "message": "Årsabonnemang"
+  },
+  "planMonth": {
+    "message": "Månadsabonnemang"
+  },
+  "planProName": {
+    "message": "Pro"
+  },
+  "planFreeLeft": {
+    "message": "Gratis · {full} hela och {single} delexporter kvar den här månaden"
+  },
+  "exporting": {
+    "message": "Exporterar…"
+  },
+  "doneSeePage": {
+    "message": "Klart — se sidan för detaljer."
+  },
+  "copiedClipboard": {
+    "message": "Kopierat till Urklipp."
+  },
+  "failedShort": {
+    "message": "Misslyckades"
+  },
+  "optionsTitle": {
+    "message": "ChatGPT Exporter — Inställningar"
+  },
+  "optionsIntro": {
+    "message": "Inställningarna sparas automatiskt och synkroniseras med din Chrome-profil. Allt bearbetas lokalt i din webbläsare."
+  },
+  "checking": {
+    "message": "Kontrollerar…"
+  },
+  "connectWithToken": {
+    "message": "Anslut med en token"
+  },
+  "tokenHelp": {
+    "message": "Använd detta om webbplatsen inte kunde ansluta tillägget automatiskt. Kopiera tokenen från din kontosida."
+  },
+  "connect": {
+    "message": "Anslut"
+  },
+  "resetDefaults": {
+    "message": "Återställ till standard"
+  },
+  "keyboardShortcutsEllipsis": {
+    "message": "Kortkommandon…"
+  },
+  "saved": {
+    "message": "Sparat ✓"
+  },
+  "accountLoadFail": {
+    "message": "Det gick inte att läsa in ditt konto just nu."
+  },
+  "connectedAs": {
+    "message": "Ansluten som {email} · {plan}"
+  },
+  "planFreeShort": {
+    "message": "Gratisabonnemang"
+  },
+  "planProUnlimited": {
+    "message": "{plan} · obegränsad export"
+  },
+  "manageBilling": {
+    "message": "Hantera fakturering"
+  },
+  "disconnect": {
+    "message": "Koppla från"
+  },
+  "freeLeftConnect": {
+    "message": "Gratisabonnemang · {full} hela och {single} delexporter kvar den här månaden. Anslut ditt konto om du har uppgraderat."
+  },
+  "connectAccount": {
+    "message": "Anslut konto"
+  },
+  "connecting": {
+    "message": "Ansluter…"
+  },
+  "connected": {
+    "message": "Ansluten."
+  },
+  "connectFail": {
+    "message": "Det gick inte att ansluta."
+  },
+  "docContents": {
+    "message": "Innehåll"
+  },
+  "docThoughtProcess": {
+    "message": "Tankeprocess"
+  },
+  "docSources": {
+    "message": "Källor"
+  },
+  "docAttachments": {
+    "message": "Bilagor"
+  },
+  "docExportedWith": {
+    "message": "Exporterad med Chat Exporter"
+  },
+  "pvDocTitle": {
+    "message": "ChatGPT Exporter — Förhandsgranskning"
+  },
+  "pvPreview": {
+    "message": "Förhandsgranskning"
+  },
+  "pvPreparing": {
+    "message": "Förbereder…"
+  },
+  "jobExpired": {
+    "message": "Det här exportjobbet har gått ut. Gå tillbaka till chatten och exportera igen."
+  },
+  "pvWidthPx": {
+    "message": "Bredd (px)"
+  },
+  "pvScale": {
+    "message": "Skala"
+  },
+  "pvRendering": {
+    "message": "Renderar del {i} av {n}…"
+  },
+  "pvPacking": {
+    "message": "Packar {n} bilder…"
+  },
+  "pvSavedZip": {
+    "message": "{n} bilder sparades som ZIP"
+  },
+  "pvSaved": {
+    "message": "{name} sparades"
+  },
+  "pvFastNote": {
+    "message": "(1× för att hålla en lång chatt snabb)"
+  },
+  "pvPrintSave": {
+    "message": "Skriv ut / Spara som PDF"
+  },
+  "pvChooseSave": {
+    "message": "Välj ”Spara som PDF” som mål."
+  },
+  "pvDownloadPng": {
+    "message": "Ladda ned PNG"
+  },
+  "pvFailed": {
+    "message": "Misslyckades: {msg}"
+  },
+  "pvRenderFail": {
+    "message": "Den här exporten kunde inte renderas: {msg}"
+  },
+  "sec_general": {
+    "message": "Allmänt"
+  },
+  "f_language": {
+    "message": "Gränssnittsspråk"
+  },
+  "f_theme": {
+    "message": "Panelens tema"
+  },
+  "o_theme_auto": {
+    "message": "Automatiskt"
+  },
+  "o_theme_dark": {
+    "message": "Mörkt"
+  },
+  "o_theme_light": {
+    "message": "Ljust"
+  },
+  "f_showLauncher": {
+    "message": "Visa knapparna Välj / Exportera på chattsidan"
+  },
+  "f_rememberSelection": {
+    "message": "Kom ihåg min förinställda markering (Alla / Frågor / Svar)"
+  },
+  "f_closePanelAfterExport": {
+    "message": "Stäng sidopanelen efter export"
+  },
+  "f_showToasts": {
+    "message": "Visa en bekräftelse efter export"
+  },
+  "sec_content": {
+    "message": "Innehåll"
+  },
+  "f_includeThoughts": {
+    "message": "Ta med tankeprocess / resonemang"
+  },
+  "f_includeSources": {
+    "message": "Ta med källor och citat från webbsökning"
+  },
+  "f_includeCanvas": {
+    "message": "Ta med Canvas / artefakter"
+  },
+  "f_includeImages": {
+    "message": "Ta med bilder"
+  },
+  "f_embedImages": {
+    "message": "Bädda in bilder i filen (PDF, HTML, Word, PNG)"
+  },
+  "f_includeToolOutputs": {
+    "message": "Ta med verktygsanrop och utdata från kodtolken"
+  },
+  "f_includeTimestamps": {
+    "message": "Visa tidsstämpel för varje meddelande"
+  },
+  "f_showRoleIcons": {
+    "message": "Visa rollikoner / emojis"
+  },
+  "f_userName": {
+    "message": "Ditt namn (visas i exportens sidhuvud)"
+  },
+  "f_userEmail": {
+    "message": "Din e-postadress (visas i exportens sidhuvud)"
+  },
+  "f_userLabel": {
+    "message": "Etikett för dina meddelanden (standard: Du)"
+  },
+  "f_assistantLabel": {
+    "message": "Etikett för AI-meddelanden (standard: plattformens namn)"
+  },
+  "f_showDate": {
+    "message": "Visa konversationens datum"
+  },
+  "f_dateSource": {
+    "message": "Datumkälla"
+  },
+  "o_dateSource_created": {
+    "message": "Skapad"
+  },
+  "o_dateSource_updated": {
+    "message": "Senast ändrad"
+  },
+  "o_dateSource_export": {
+    "message": "Exporttid"
+  },
+  "f_dateFormat": {
+    "message": "Datumformat"
+  },
+  "o_dateFormat_locale": {
+    "message": "Webbläsarens språkinställning"
+  },
+  "f_branding": {
+    "message": "Lägg till sidfoten ”Exporterad med Chat Exporter”"
+  },
+  "sec_files": {
+    "message": "Filer"
+  },
+  "f_filenameTemplate": {
+    "message": "Mall för filnamn — {title} {date} {time} {platform} {model} {id}"
+  },
+  "f_filenamePrefix": {
+    "message": "Prefix för filnamn"
+  },
+  "f_downloadSubfolder": {
+    "message": "Undermapp för nedladdning (i mappen Nedladdningar)"
+  },
+  "f_mdFrontMatter": {
+    "message": "Lägg till YAML front matter"
+  },
+  "f_mdThinkingStyle": {
+    "message": "Stil för tankeprocessen"
+  },
+  "o_mdThinkingStyle_blockquote": {
+    "message": "Citatblock"
+  },
+  "o_mdThinkingStyle_details": {
+    "message": "Hopfällbar <details>"
+  },
+  "sec_dataformats": {
+    "message": "JSON och CSV"
+  },
+  "f_jsonPretty": {
+    "message": "Formatera JSON"
+  },
+  "f_csvDelimiter": {
+    "message": "CSV-avgränsare"
+  },
+  "o_csvDelimiter_comma": {
+    "message": "Komma ,"
+  },
+  "o_csvDelimiter_semicolon": {
+    "message": "Semikolon ;"
+  },
+  "o_csvDelimiter_tab": {
+    "message": "Tabb"
+  },
+  "sec_pdf": {
+    "message": "PDF / HTML / Bild"
+  },
+  "f_pdfTitle": {
+    "message": "Innehållets titel (tomt = chattens titel)"
+  },
+  "f_pdfPageSize": {
+    "message": "Sidstorlek"
+  },
+  "f_pdfOrientation": {
+    "message": "Orientering"
+  },
+  "o_pdfOrientation_portrait": {
+    "message": "Stående"
+  },
+  "o_pdfOrientation_landscape": {
+    "message": "Liggande"
+  },
+  "f_pdfTheme": {
+    "message": "Tema"
+  },
+  "o_pdfTheme_light": {
+    "message": "Ljust"
+  },
+  "o_pdfTheme_dark": {
+    "message": "Mörkt"
+  },
+  "f_pdfMargins": {
+    "message": "Marginaler"
+  },
+  "o_pdfMargins_narrow": {
+    "message": "Smala"
+  },
+  "o_pdfMargins_normal": {
+    "message": "Normala"
+  },
+  "o_pdfMargins_wide": {
+    "message": "Breda"
+  },
+  "f_pdfFontScale": {
+    "message": "Teckenstorlek (% av standard)"
+  },
+  "f_pdfFontFamily": {
+    "message": "Teckensnitt"
+  },
+  "o_pdfFontFamily_sans": {
+    "message": "Utan seriffer"
+  },
+  "o_pdfFontFamily_serif": {
+    "message": "Med seriffer"
+  },
+  "o_pdfFontFamily_mono": {
+    "message": "Fast breddsteg"
+  },
+  "f_pdfPageNumbers": {
+    "message": "Sidnummer"
+  },
+  "f_pdfToc": {
+    "message": "Innehållsförteckning"
+  },
+  "f_pdfPageBreakPerPrompt": {
+    "message": "Börja varje prompt på en ny sida"
+  },
+  "f_pdfWrapCode": {
+    "message": "Radbryt långa kodrader"
+  },
+  "f_pdfAutoPrint": {
+    "message": "Öppna utskriftsdialogen automatiskt"
+  }
+}

@@ -5,7 +5,7 @@
   if (CE.__nsLoaded) return;
   CE.__nsLoaded = true;
 
-  CE.VERSION = '1.1.2';
+  CE.VERSION = '1.2.0';
 
   // Accounts and plans: the website owns sign-up, checkout and billing.
   CE.SITE_URL = 'https://chatgptexporterfree.com';
@@ -22,10 +22,10 @@
     { id: 'pdf', label: 'PDF', ext: 'pdf', mime: 'application/pdf', copy: false },
     { id: 'html', label: 'HTML', ext: 'html', mime: 'text/html', copy: true },
     { id: 'docx', label: 'Word (.docx)', ext: 'docx', mime: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', copy: false },
-    { id: 'text', label: 'Text', ext: 'txt', mime: 'text/plain', copy: true },
+    { id: 'text', get label() { return CE.t ? CE.t('fmtText') : 'Text'; }, ext: 'txt', mime: 'text/plain', copy: true },
     { id: 'json', label: 'JSON', ext: 'json', mime: 'application/json', copy: true },
     { id: 'csv', label: 'CSV', ext: 'csv', mime: 'text/csv', copy: true },
-    { id: 'png', label: 'Image (PNG)', ext: 'png', mime: 'image/png', copy: false }
+    { id: 'png', get label() { return CE.t ? CE.t('fmtPng') : 'Image (PNG)'; }, ext: 'png', mime: 'image/png', copy: false }
   ];
 
   CE.DEFAULTS = {
@@ -93,7 +93,7 @@
   CE.SETTINGS_SCHEMA = [
     {
       id: 'general', title: 'General', fields: [
-        { key: 'language', type: 'select', label: 'Interface language', options: [['auto', 'Auto (browser)'], ['en', 'English'], ['es', 'Español'], ['fr', 'Français'], ['de', 'Deutsch'], ['pt', 'Português'], ['hi', 'हिन्दी'], ['zh', '中文'], ['ja', '日本語']] },
+        { key: 'language', type: 'select', label: 'Interface language', options: [['auto', 'Auto (browser)']] /* the language list is added by settings-form.js */ },
         { key: 'theme', type: 'select', label: 'Panel theme', options: [['auto', 'Auto'], ['dark', 'Dark'], ['light', 'Light']] },
         { key: 'showLauncher', type: 'bool', label: 'Show Select / Export buttons on the chat page' },
         { key: 'rememberSelection', type: 'bool', label: 'Remember my selection preset (All / Questions / Answers)' },

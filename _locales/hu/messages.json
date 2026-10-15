@@ -1,0 +1,578 @@
+{
+  "extName": {
+    "message": "ChatGPT Exporter: mentse a ChatGPT-t PDF, Word és Markdown formátumban"
+  },
+  "extDescription": {
+    "message": "Exportáljon ChatGPT-beszélgetést tiszta, megosztható fájlba. Válasszon üzeneteket, szabja testre a kinézetet, maradjon privát."
+  },
+  "extActionTitle": {
+    "message": "ChatGPT Exporter"
+  },
+  "cmdTogglePanel": {
+    "message": "Az Üzenetek kiválasztása panel megnyitása / bezárása"
+  },
+  "cmdQuickExport": {
+    "message": "Az aktuális csevegés gyors exportálása az alapértelmezett formátumban"
+  },
+  "cmdExportPdf": {
+    "message": "Az aktuális csevegés exportálása PDF-ként"
+  },
+  "selectMessages": {
+    "message": "Üzenetek kiválasztása"
+  },
+  "select": {
+    "message": "Kiválasztás"
+  },
+  "export": {
+    "message": "Exportálás"
+  },
+  "exportAs": {
+    "message": "Exportálás mint"
+  },
+  "all": {
+    "message": "Mind"
+  },
+  "allDefault": {
+    "message": "Mind (alapértelmezett)"
+  },
+  "questions": {
+    "message": "Kérdések"
+  },
+  "answers": {
+    "message": "Válaszok"
+  },
+  "none": {
+    "message": "Egyik sem"
+  },
+  "invert": {
+    "message": "Megfordítás"
+  },
+  "cancel": {
+    "message": "Mégse"
+  },
+  "copy": {
+    "message": "Másolás"
+  },
+  "settings": {
+    "message": "Beállítások"
+  },
+  "expand": {
+    "message": "Kibontás"
+  },
+  "back": {
+    "message": "Vissza"
+  },
+  "refresh": {
+    "message": "Frissítés"
+  },
+  "retry": {
+    "message": "Újra"
+  },
+  "loading": {
+    "message": "Beszélgetés betöltése…"
+  },
+  "loadingHistory": {
+    "message": "A teljes előzmény betöltése…"
+  },
+  "tip": {
+    "message": "Tipp: Shift+kattintással üzenettartományt jelölhet ki."
+  },
+  "you": {
+    "message": "Ön"
+  },
+  "exportedN": {
+    "message": "Exportált üzenetek: {n} (formátum: {fmt})"
+  },
+  "copiedN": {
+    "message": "Másolt üzenetek: {n} (formátum: {fmt})"
+  },
+  "nothingSelected": {
+    "message": "Először válasszon ki legalább egy üzenetet."
+  },
+  "noConversation": {
+    "message": "Ezen az oldalon nem található beszélgetés."
+  },
+  "failed": {
+    "message": "Az exportálás sikertelen: {msg}"
+  },
+  "pdfHint": {
+    "message": "Nyomtatási előnézet megnyitása — válassza a „Mentés PDF-ként” lehetőséget."
+  },
+  "exportAll": {
+    "message": "Összes csevegés exportálása…"
+  },
+  "bulkTitle": {
+    "message": "Több csevegés exportálása"
+  },
+  "searchChats": {
+    "message": "Keresés a csevegések között"
+  },
+  "selectAll": {
+    "message": "Összes kijelölése"
+  },
+  "exportZip": {
+    "message": "Exportálás ZIP-be"
+  },
+  "progress": {
+    "message": "Exportálás {i} / {n}…"
+  },
+  "bulkDone": {
+    "message": "ZIP-fájlba exportált csevegések: {n}"
+  },
+  "bulkUnsupported": {
+    "message": "A tömeges exportálás ezen az oldalon még nem érhető el. Nyisson meg egy csevegést, és használja az Exportálás gombot."
+  },
+  "chatsFound": {
+    "message": "Csevegések: {n}"
+  },
+  "copyAs": {
+    "message": "Másolás mint {fmt}"
+  },
+  "quickExport": {
+    "message": "Gyors exportálás"
+  },
+  "openPanel": {
+    "message": "Üzenetek kiválasztása…"
+  },
+  "unsupportedSite": {
+    "message": "Nyissa meg a ChatGPT-t egy beszélgetés exportálásához."
+  },
+  "selectedOf": {
+    "message": "{a}/{b}"
+  },
+  "messages": {
+    "message": "üzenet"
+  },
+  "richText": {
+    "message": "formázott szöveg"
+  },
+  "fmtText": {
+    "message": "Szöveg"
+  },
+  "fmtPng": {
+    "message": "Kép (PNG)"
+  },
+  "toggleTitle": {
+    "message": "Az exportálási gombok megjelenítése vagy elrejtése"
+  },
+  "autoBrowser": {
+    "message": "Automatikus (böngésző)"
+  },
+  "close": {
+    "message": "Bezárás"
+  },
+  "ctxExportChat": {
+    "message": "A csevegés exportálása"
+  },
+  "ctxExportAs": {
+    "message": "Exportálás mint {fmt}"
+  },
+  "seePlans": {
+    "message": "Csomagok megtekintése"
+  },
+  "upgrade": {
+    "message": "Frissítés"
+  },
+  "accountHeading": {
+    "message": "Fiók"
+  },
+  "limitFull": {
+    "message": "Elhasználta a havi ingyenes teljes csevegés-exportálási keretet ({limit}). Frissítsen a korlátlan exportáláshoz."
+  },
+  "limitPartial": {
+    "message": "Elhasználta a havi ingyenes részleges exportálási keretet ({limit}). Frissítsen a korlátlan exportáláshoz."
+  },
+  "bulkFreeLeft": {
+    "message": "Ingyenes csomag: ebben a hónapban még ennyi teljes exportálás maradt: {left}, de ennyi csevegést jelölt ki: {n}. Jelöljön ki kevesebb csevegést, vagy frissítsen a korlátlan exportáláshoz."
+  },
+  "tokenInvalidFormat": {
+    "message": "Ez nem tűnik érvényes tokennek."
+  },
+  "tokenExpired": {
+    "message": "Ez a token már nem érvényes. Hozzon létre újat a fiókjában."
+  },
+  "serverUnreachable": {
+    "message": "A szerver nem érhető el. Ellenőrizze a kapcsolatot, és próbálja újra."
+  },
+  "notSignedIn": {
+    "message": "Nincs bejelentkezve"
+  },
+  "sessionFailed": {
+    "message": "A munkamenet-kérés sikertelen ({status})"
+  },
+  "popupChecking": {
+    "message": "Lap ellenőrzése…"
+  },
+  "conversationDetected": {
+    "message": "{name}-beszélgetés felismerve"
+  },
+  "openAConversation": {
+    "message": "{name} — nyisson meg egy beszélgetést"
+  },
+  "worksOn": {
+    "message": "A chatgpt.com oldalon működik"
+  },
+  "popupInactive": {
+    "message": "Nyisson meg egy ChatGPT-beszélgetést, majd kattintson újra a bővítményre:"
+  },
+  "formatLabel": {
+    "message": "Formátum"
+  },
+  "keyboardShortcuts": {
+    "message": "Billentyűparancsok"
+  },
+  "planPro": {
+    "message": "Pro · {plan} · korlátlan exportálás"
+  },
+  "planYear": {
+    "message": "Éves csomag"
+  },
+  "planMonth": {
+    "message": "Havi csomag"
+  },
+  "planProName": {
+    "message": "Pro"
+  },
+  "planFreeLeft": {
+    "message": "Ingyenes · ebben a hónapban még maradt: {full} teljes és {single} részleges exportálás"
+  },
+  "exporting": {
+    "message": "Exportálás…"
+  },
+  "doneSeePage": {
+    "message": "Kész — a részleteket az oldalon láthatja."
+  },
+  "copiedClipboard": {
+    "message": "A vágólapra másolva."
+  },
+  "failedShort": {
+    "message": "Sikertelen"
+  },
+  "optionsTitle": {
+    "message": "ChatGPT Exporter — Beállítások"
+  },
+  "optionsIntro": {
+    "message": "A beállítások automatikusan mentődnek, és szinkronizálódnak a Chrome-profiljával. Minden feldolgozás helyben, a böngészőjében történik."
+  },
+  "checking": {
+    "message": "Ellenőrzés…"
+  },
+  "connectWithToken": {
+    "message": "Csatlakozás tokennel"
+  },
+  "tokenHelp": {
+    "message": "Akkor használja, ha a webhely nem tudta automatikusan csatlakoztatni a bővítményt. Másolja ki a tokent a fiókoldalról."
+  },
+  "connect": {
+    "message": "Csatlakozás"
+  },
+  "resetDefaults": {
+    "message": "Alapértelmezések visszaállítása"
+  },
+  "keyboardShortcutsEllipsis": {
+    "message": "Billentyűparancsok…"
+  },
+  "saved": {
+    "message": "Mentve ✓"
+  },
+  "accountLoadFail": {
+    "message": "A fiókja jelenleg nem tölthető be."
+  },
+  "connectedAs": {
+    "message": "Csatlakozva mint {email} · {plan}"
+  },
+  "planFreeShort": {
+    "message": "Ingyenes csomag"
+  },
+  "planProUnlimited": {
+    "message": "{plan} · korlátlan exportálás"
+  },
+  "manageBilling": {
+    "message": "Számlázás kezelése"
+  },
+  "disconnect": {
+    "message": "Leválasztás"
+  },
+  "freeLeftConnect": {
+    "message": "Ingyenes csomag · ebben a hónapban még maradt: {full} teljes és {single} részleges exportálás. Csatlakoztassa a fiókját, ha frissített."
+  },
+  "connectAccount": {
+    "message": "Fiók csatlakoztatása"
+  },
+  "connecting": {
+    "message": "Csatlakozás…"
+  },
+  "connected": {
+    "message": "Csatlakoztatva."
+  },
+  "connectFail": {
+    "message": "A csatlakozás nem sikerült."
+  },
+  "docContents": {
+    "message": "Tartalom"
+  },
+  "docThoughtProcess": {
+    "message": "Gondolatmenet"
+  },
+  "docSources": {
+    "message": "Források"
+  },
+  "docAttachments": {
+    "message": "Mellékletek"
+  },
+  "docExportedWith": {
+    "message": "Exportálva a Chat Exporterrel"
+  },
+  "pvDocTitle": {
+    "message": "ChatGPT Exporter — Előnézet"
+  },
+  "pvPreview": {
+    "message": "Előnézet"
+  },
+  "pvPreparing": {
+    "message": "Előkészítés…"
+  },
+  "jobExpired": {
+    "message": "Ez az exportálási feladat lejárt. Menjen vissza a csevegéshez, és exportáljon újra."
+  },
+  "pvWidthPx": {
+    "message": "Szélesség (px)"
+  },
+  "pvScale": {
+    "message": "Méretezés"
+  },
+  "pvRendering": {
+    "message": "{i}. rész renderelése ({n} részből)…"
+  },
+  "pvPacking": {
+    "message": "Képek csomagolása: {n}…"
+  },
+  "pvSavedZip": {
+    "message": "ZIP-be mentett képek: {n}"
+  },
+  "pvSaved": {
+    "message": "Mentve: {name}"
+  },
+  "pvFastNote": {
+    "message": "(1×, hogy a hosszú csevegés gyors maradjon)"
+  },
+  "pvPrintSave": {
+    "message": "Nyomtatás / Mentés PDF-ként"
+  },
+  "pvChooseSave": {
+    "message": "Célként válassza a „Mentés PDF-ként” lehetőséget."
+  },
+  "pvDownloadPng": {
+    "message": "PNG letöltése"
+  },
+  "pvFailed": {
+    "message": "Sikertelen: {msg}"
+  },
+  "pvRenderFail": {
+    "message": "Ezt az exportálást nem sikerült megjeleníteni: {msg}"
+  },
+  "sec_general": {
+    "message": "Általános"
+  },
+  "f_language": {
+    "message": "A felület nyelve"
+  },
+  "f_theme": {
+    "message": "A panel témája"
+  },
+  "o_theme_auto": {
+    "message": "Automatikus"
+  },
+  "o_theme_dark": {
+    "message": "Sötét"
+  },
+  "o_theme_light": {
+    "message": "Világos"
+  },
+  "f_showLauncher": {
+    "message": "A Kiválasztás / Exportálás gombok megjelenítése a csevegőoldalon"
+  },
+  "f_rememberSelection": {
+    "message": "Kijelölési előbeállításom megjegyzése (Mind / Kérdések / Válaszok)"
+  },
+  "f_closePanelAfterExport": {
+    "message": "Az oldalpanel bezárása exportálás után"
+  },
+  "f_showToasts": {
+    "message": "Visszajelzés megjelenítése exportálás után"
+  },
+  "sec_content": {
+    "message": "Tartalom"
+  },
+  "f_includeThoughts": {
+    "message": "Gondolatmenet felvétele"
+  },
+  "f_includeSources": {
+    "message": "Webes keresés forrásainak és hivatkozásainak felvétele"
+  },
+  "f_includeCanvas": {
+    "message": "Canvas / műtermékek felvétele"
+  },
+  "f_includeImages": {
+    "message": "Képek felvétele"
+  },
+  "f_embedImages": {
+    "message": "Képek beágyazása a fájlba (PDF, HTML, Word, PNG)"
+  },
+  "f_includeToolOutputs": {
+    "message": "Eszközhívások és a kódértelmező kimenetének felvétele"
+  },
+  "f_includeTimestamps": {
+    "message": "Időbélyeg megjelenítése minden üzenetnél"
+  },
+  "f_showRoleIcons": {
+    "message": "Szerepkör-ikonok / emojik megjelenítése"
+  },
+  "f_userName": {
+    "message": "Az Ön neve (az exportálás fejlécében jelenik meg)"
+  },
+  "f_userEmail": {
+    "message": "Az Ön e-mail-címe (az exportálás fejlécében jelenik meg)"
+  },
+  "f_userLabel": {
+    "message": "Az Ön üzeneteinek címkéje (alapértelmezett: Ön)"
+  },
+  "f_assistantLabel": {
+    "message": "Az MI-üzenetek címkéje (alapértelmezett: a platform neve)"
+  },
+  "f_showDate": {
+    "message": "A beszélgetés dátumának megjelenítése"
+  },
+  "f_dateSource": {
+    "message": "A dátum forrása"
+  },
+  "o_dateSource_created": {
+    "message": "Létrehozás"
+  },
+  "o_dateSource_updated": {
+    "message": "Utolsó módosítás"
+  },
+  "o_dateSource_export": {
+    "message": "Exportálás ideje"
+  },
+  "f_dateFormat": {
+    "message": "Dátumformátum"
+  },
+  "o_dateFormat_locale": {
+    "message": "A böngésző területi beállítása"
+  },
+  "f_branding": {
+    "message": "„Exportálva a Chat Exporterrel” lábléc hozzáadása"
+  },
+  "sec_files": {
+    "message": "Fájlok"
+  },
+  "f_filenameTemplate": {
+    "message": "Fájlnévsablon — {title} {date} {time} {platform} {model} {id}"
+  },
+  "f_filenamePrefix": {
+    "message": "Fájlnév előtagja"
+  },
+  "f_downloadSubfolder": {
+    "message": "Letöltési almappa (a Letöltések mappán belül)"
+  },
+  "f_mdFrontMatter": {
+    "message": "YAML front matter hozzáadása"
+  },
+  "f_mdThinkingStyle": {
+    "message": "A gondolatmenet stílusa"
+  },
+  "o_mdThinkingStyle_blockquote": {
+    "message": "Idézetblokk"
+  },
+  "o_mdThinkingStyle_details": {
+    "message": "Összecsukható <details>"
+  },
+  "sec_dataformats": {
+    "message": "JSON és CSV"
+  },
+  "f_jsonPretty": {
+    "message": "JSON formázása"
+  },
+  "f_csvDelimiter": {
+    "message": "CSV-elválasztó"
+  },
+  "o_csvDelimiter_comma": {
+    "message": "Vessző ,"
+  },
+  "o_csvDelimiter_semicolon": {
+    "message": "Pontosvessző ;"
+  },
+  "o_csvDelimiter_tab": {
+    "message": "Tabulátor"
+  },
+  "sec_pdf": {
+    "message": "PDF / HTML / Kép"
+  },
+  "f_pdfTitle": {
+    "message": "A tartalom címe (üres = a csevegés címe)"
+  },
+  "f_pdfPageSize": {
+    "message": "Oldalméret"
+  },
+  "f_pdfOrientation": {
+    "message": "Tájolás"
+  },
+  "o_pdfOrientation_portrait": {
+    "message": "Álló"
+  },
+  "o_pdfOrientation_landscape": {
+    "message": "Fekvő"
+  },
+  "f_pdfTheme": {
+    "message": "Téma"
+  },
+  "o_pdfTheme_light": {
+    "message": "Világos"
+  },
+  "o_pdfTheme_dark": {
+    "message": "Sötét"
+  },
+  "f_pdfMargins": {
+    "message": "Margók"
+  },
+  "o_pdfMargins_narrow": {
+    "message": "Keskeny"
+  },
+  "o_pdfMargins_normal": {
+    "message": "Normál"
+  },
+  "o_pdfMargins_wide": {
+    "message": "Széles"
+  },
+  "f_pdfFontScale": {
+    "message": "Betűméret (az alapértelmezett %-a)"
+  },
+  "f_pdfFontFamily": {
+    "message": "Betűcsalád"
+  },
+  "o_pdfFontFamily_sans": {
+    "message": "Talpatlan"
+  },
+  "o_pdfFontFamily_serif": {
+    "message": "Talpas"
+  },
+  "o_pdfFontFamily_mono": {
+    "message": "Egyenközű"
+  },
+  "f_pdfPageNumbers": {
+    "message": "Oldalszámok"
+  },
+  "f_pdfToc": {
+    "message": "Tartalomjegyzék"
+  },
+  "f_pdfPageBreakPerPrompt": {
+    "message": "Minden prompt új oldalon kezdődjön"
+  },
+  "f_pdfWrapCode": {
+    "message": "Hosszú kódsorok tördelése"
+  },
+  "f_pdfAutoPrint": {
+    "message": "A nyomtatási párbeszédpanel automatikus megnyitása"
+  }
+}

@@ -1,0 +1,578 @@
+{
+  "extName": {
+    "message": "ChatGPT Exporter: ChatGPT’yi PDF, Word ve Markdown olarak kaydet"
+  },
+  "extDescription": {
+    "message": "Her ChatGPT sohbetini temiz, paylaşılabilir bir dosyaya aktarın. Mesajları seçin, düzeni özelleştirin, gizli kalın."
+  },
+  "extActionTitle": {
+    "message": "ChatGPT Exporter"
+  },
+  "cmdTogglePanel": {
+    "message": "Mesaj Seç panelini aç / kapat"
+  },
+  "cmdQuickExport": {
+    "message": "Geçerli sohbeti varsayılan biçimde hızlıca dışa aktar"
+  },
+  "cmdExportPdf": {
+    "message": "Geçerli sohbeti PDF olarak dışa aktar"
+  },
+  "selectMessages": {
+    "message": "Mesaj Seç"
+  },
+  "select": {
+    "message": "Seç"
+  },
+  "export": {
+    "message": "Dışa aktar"
+  },
+  "exportAs": {
+    "message": "Şu olarak dışa aktar"
+  },
+  "all": {
+    "message": "Tümü"
+  },
+  "allDefault": {
+    "message": "Tümü (varsayılan)"
+  },
+  "questions": {
+    "message": "Sorular"
+  },
+  "answers": {
+    "message": "Yanıtlar"
+  },
+  "none": {
+    "message": "Hiçbiri"
+  },
+  "invert": {
+    "message": "Ters çevir"
+  },
+  "cancel": {
+    "message": "İptal"
+  },
+  "copy": {
+    "message": "Kopyala"
+  },
+  "settings": {
+    "message": "Ayarlar"
+  },
+  "expand": {
+    "message": "Genişlet"
+  },
+  "back": {
+    "message": "Geri"
+  },
+  "refresh": {
+    "message": "Yenile"
+  },
+  "retry": {
+    "message": "Yeniden dene"
+  },
+  "loading": {
+    "message": "Sohbet yükleniyor…"
+  },
+  "loadingHistory": {
+    "message": "Tüm geçmiş yükleniyor…"
+  },
+  "tip": {
+    "message": "İpucu: Shift+tıklama bir mesaj aralığını seçer."
+  },
+  "you": {
+    "message": "Sen"
+  },
+  "exportedN": {
+    "message": "{n} mesaj {fmt} olarak dışa aktarıldı"
+  },
+  "copiedN": {
+    "message": "{n} mesaj {fmt} olarak kopyalandı"
+  },
+  "nothingSelected": {
+    "message": "Önce en az bir mesaj seçin."
+  },
+  "noConversation": {
+    "message": "Bu sayfada sohbet bulunamadı."
+  },
+  "failed": {
+    "message": "Dışa aktarma başarısız: {msg}"
+  },
+  "pdfHint": {
+    "message": "Yazdırma önizlemesi açılıyor — “PDF olarak kaydet” seçeneğini seçin."
+  },
+  "exportAll": {
+    "message": "Tüm sohbetleri dışa aktar…"
+  },
+  "bulkTitle": {
+    "message": "Birden çok sohbeti dışa aktar"
+  },
+  "searchChats": {
+    "message": "Sohbetlerde ara"
+  },
+  "selectAll": {
+    "message": "Tümünü seç"
+  },
+  "exportZip": {
+    "message": "ZIP olarak dışa aktar"
+  },
+  "progress": {
+    "message": "Dışa aktarılıyor {i} / {n}…"
+  },
+  "bulkDone": {
+    "message": "{n} sohbet bir ZIP dosyasına aktarıldı"
+  },
+  "bulkUnsupported": {
+    "message": "Toplu dışa aktarma bu site için henüz kullanılamıyor. Bir sohbet açıp Dışa aktar’ı kullanın."
+  },
+  "chatsFound": {
+    "message": "{n} sohbet"
+  },
+  "copyAs": {
+    "message": "{fmt} olarak kopyala"
+  },
+  "quickExport": {
+    "message": "Hızlı dışa aktarma"
+  },
+  "openPanel": {
+    "message": "Mesaj seç…"
+  },
+  "unsupportedSite": {
+    "message": "Bir sohbeti dışa aktarmak için ChatGPT’yi açın."
+  },
+  "selectedOf": {
+    "message": "{a}/{b}"
+  },
+  "messages": {
+    "message": "mesaj"
+  },
+  "richText": {
+    "message": "zengin metin"
+  },
+  "fmtText": {
+    "message": "Metin"
+  },
+  "fmtPng": {
+    "message": "Görsel (PNG)"
+  },
+  "toggleTitle": {
+    "message": "Dışa aktarma düğmelerini göster veya gizle"
+  },
+  "autoBrowser": {
+    "message": "Otomatik (tarayıcı)"
+  },
+  "close": {
+    "message": "Kapat"
+  },
+  "ctxExportChat": {
+    "message": "Bu sohbeti dışa aktar"
+  },
+  "ctxExportAs": {
+    "message": "{fmt} olarak dışa aktar"
+  },
+  "seePlans": {
+    "message": "Planları gör"
+  },
+  "upgrade": {
+    "message": "Yükselt"
+  },
+  "accountHeading": {
+    "message": "Hesap"
+  },
+  "limitFull": {
+    "message": "Bu ayki {limit} ücretsiz tam sohbet dışa aktarma hakkınızın tamamını kullandınız. Sınırsız dışa aktarma için planınızı yükseltin."
+  },
+  "limitPartial": {
+    "message": "Bu ayki {limit} ücretsiz kısmi dışa aktarma hakkınızın tamamını kullandınız. Sınırsız dışa aktarma için planınızı yükseltin."
+  },
+  "bulkFreeLeft": {
+    "message": "Ücretsiz plan: bu ay {left} tam dışa aktarma hakkınız kaldı, ancak {n} sohbet seçtiniz. Daha az sohbet seçin veya sınırsız dışa aktarma için planınızı yükseltin."
+  },
+  "tokenInvalidFormat": {
+    "message": "Bu geçerli bir jetona benzemiyor."
+  },
+  "tokenExpired": {
+    "message": "Bu jeton artık geçerli değil. Hesabınızdan yeni bir tane oluşturun."
+  },
+  "serverUnreachable": {
+    "message": "Sunucuya ulaşılamadı. Bağlantınızı kontrol edip tekrar deneyin."
+  },
+  "notSignedIn": {
+    "message": "Oturum açılmadı"
+  },
+  "sessionFailed": {
+    "message": "Oturum isteği başarısız oldu ({status})"
+  },
+  "popupChecking": {
+    "message": "Sekme kontrol ediliyor…"
+  },
+  "conversationDetected": {
+    "message": "{name} sohbeti algılandı"
+  },
+  "openAConversation": {
+    "message": "{name} — bir sohbet açın"
+  },
+  "worksOn": {
+    "message": "chatgpt.com üzerinde çalışır"
+  },
+  "popupInactive": {
+    "message": "Bir ChatGPT sohbeti açın, ardından uzantıya yeniden tıklayın:"
+  },
+  "formatLabel": {
+    "message": "Biçim"
+  },
+  "keyboardShortcuts": {
+    "message": "Klavye kısayolları"
+  },
+  "planPro": {
+    "message": "Pro · {plan} · sınırsız dışa aktarma"
+  },
+  "planYear": {
+    "message": "Yıllık plan"
+  },
+  "planMonth": {
+    "message": "Aylık plan"
+  },
+  "planProName": {
+    "message": "Pro"
+  },
+  "planFreeLeft": {
+    "message": "Ücretsiz · bu ay {full} tam ve {single} kısmi dışa aktarma hakkı kaldı"
+  },
+  "exporting": {
+    "message": "Dışa aktarılıyor…"
+  },
+  "doneSeePage": {
+    "message": "Tamam — ayrıntılar için sayfaya bakın."
+  },
+  "copiedClipboard": {
+    "message": "Panoya kopyalandı."
+  },
+  "failedShort": {
+    "message": "Başarısız"
+  },
+  "optionsTitle": {
+    "message": "ChatGPT Exporter — Ayarlar"
+  },
+  "optionsIntro": {
+    "message": "Ayarlar otomatik olarak kaydedilir ve Chrome profilinizle eşitlenir. Her şey tarayıcınızda yerel olarak işlenir."
+  },
+  "checking": {
+    "message": "Kontrol ediliyor…"
+  },
+  "connectWithToken": {
+    "message": "Jetonla bağlan"
+  },
+  "tokenHelp": {
+    "message": "Web sitesi uzantıyı otomatik olarak bağlayamadıysa bunu kullanın. Jetonu hesap sayfanızdan kopyalayın."
+  },
+  "connect": {
+    "message": "Bağlan"
+  },
+  "resetDefaults": {
+    "message": "Varsayılanlara sıfırla"
+  },
+  "keyboardShortcutsEllipsis": {
+    "message": "Klavye kısayolları…"
+  },
+  "saved": {
+    "message": "Kaydedildi ✓"
+  },
+  "accountLoadFail": {
+    "message": "Hesabınız şu anda yüklenemedi."
+  },
+  "connectedAs": {
+    "message": "{email} olarak bağlandı · {plan}"
+  },
+  "planFreeShort": {
+    "message": "Ücretsiz plan"
+  },
+  "planProUnlimited": {
+    "message": "{plan} · sınırsız dışa aktarma"
+  },
+  "manageBilling": {
+    "message": "Faturalamayı yönet"
+  },
+  "disconnect": {
+    "message": "Bağlantıyı kes"
+  },
+  "freeLeftConnect": {
+    "message": "Ücretsiz plan · bu ay {full} tam ve {single} kısmi dışa aktarma hakkı kaldı. Planınızı yükselttiyseniz hesabınızı bağlayın."
+  },
+  "connectAccount": {
+    "message": "Hesabı bağla"
+  },
+  "connecting": {
+    "message": "Bağlanıyor…"
+  },
+  "connected": {
+    "message": "Bağlandı."
+  },
+  "connectFail": {
+    "message": "Bağlanılamadı."
+  },
+  "docContents": {
+    "message": "İçindekiler"
+  },
+  "docThoughtProcess": {
+    "message": "Düşünme süreci"
+  },
+  "docSources": {
+    "message": "Kaynaklar"
+  },
+  "docAttachments": {
+    "message": "Ekler"
+  },
+  "docExportedWith": {
+    "message": "Chat Exporter ile dışa aktarıldı"
+  },
+  "pvDocTitle": {
+    "message": "ChatGPT Exporter — Önizleme"
+  },
+  "pvPreview": {
+    "message": "Önizleme"
+  },
+  "pvPreparing": {
+    "message": "Hazırlanıyor…"
+  },
+  "jobExpired": {
+    "message": "Bu dışa aktarma işinin süresi doldu. Sohbete dönüp yeniden dışa aktarın."
+  },
+  "pvWidthPx": {
+    "message": "Genişlik (px)"
+  },
+  "pvScale": {
+    "message": "Ölçek"
+  },
+  "pvRendering": {
+    "message": "{i} / {n}. bölüm işleniyor…"
+  },
+  "pvPacking": {
+    "message": "{n} görsel paketleniyor…"
+  },
+  "pvSavedZip": {
+    "message": "{n} görsel ZIP olarak kaydedildi"
+  },
+  "pvSaved": {
+    "message": "{name} kaydedildi"
+  },
+  "pvFastNote": {
+    "message": "(uzun bir sohbetin hızlı kalması için 1×)"
+  },
+  "pvPrintSave": {
+    "message": "Yazdır / PDF olarak kaydet"
+  },
+  "pvChooseSave": {
+    "message": "Hedef olarak “PDF olarak kaydet” seçeneğini seçin."
+  },
+  "pvDownloadPng": {
+    "message": "PNG indir"
+  },
+  "pvFailed": {
+    "message": "Başarısız: {msg}"
+  },
+  "pvRenderFail": {
+    "message": "Bu dışa aktarma işlenemedi: {msg}"
+  },
+  "sec_general": {
+    "message": "Genel"
+  },
+  "f_language": {
+    "message": "Arayüz dili"
+  },
+  "f_theme": {
+    "message": "Panel teması"
+  },
+  "o_theme_auto": {
+    "message": "Otomatik"
+  },
+  "o_theme_dark": {
+    "message": "Koyu"
+  },
+  "o_theme_light": {
+    "message": "Açık"
+  },
+  "f_showLauncher": {
+    "message": "Sohbet sayfasında Seç / Dışa aktar düğmelerini göster"
+  },
+  "f_rememberSelection": {
+    "message": "Seçim ön ayarımı hatırla (Tümü / Sorular / Yanıtlar)"
+  },
+  "f_closePanelAfterExport": {
+    "message": "Dışa aktardıktan sonra yan paneli kapat"
+  },
+  "f_showToasts": {
+    "message": "Dışa aktardıktan sonra onay göster"
+  },
+  "sec_content": {
+    "message": "İçerik"
+  },
+  "f_includeThoughts": {
+    "message": "Düşünme sürecini / akıl yürütmeyi dahil et"
+  },
+  "f_includeSources": {
+    "message": "Web araması kaynaklarını ve alıntılarını dahil et"
+  },
+  "f_includeCanvas": {
+    "message": "Canvas / Yapıtları dahil et"
+  },
+  "f_includeImages": {
+    "message": "Görselleri dahil et"
+  },
+  "f_embedImages": {
+    "message": "Görselleri dosyaya göm (PDF, HTML, Word, PNG)"
+  },
+  "f_includeToolOutputs": {
+    "message": "Araç çağrılarını ve kod yorumlayıcı çıktısını dahil et"
+  },
+  "f_includeTimestamps": {
+    "message": "Her mesaj için zaman damgası göster"
+  },
+  "f_showRoleIcons": {
+    "message": "Rol simgelerini / emojilerini göster"
+  },
+  "f_userName": {
+    "message": "Adınız (dışa aktarma başlığında gösterilir)"
+  },
+  "f_userEmail": {
+    "message": "E-posta adresiniz (dışa aktarma başlığında gösterilir)"
+  },
+  "f_userLabel": {
+    "message": "Mesajlarınız için etiket (varsayılan: Sen)"
+  },
+  "f_assistantLabel": {
+    "message": "Yapay zekâ mesajları için etiket (varsayılan: platform adı)"
+  },
+  "f_showDate": {
+    "message": "Sohbet tarihini göster"
+  },
+  "f_dateSource": {
+    "message": "Tarih kaynağı"
+  },
+  "o_dateSource_created": {
+    "message": "Oluşturulma"
+  },
+  "o_dateSource_updated": {
+    "message": "Son değiştirilme"
+  },
+  "o_dateSource_export": {
+    "message": "Dışa aktarma zamanı"
+  },
+  "f_dateFormat": {
+    "message": "Tarih biçimi"
+  },
+  "o_dateFormat_locale": {
+    "message": "Tarayıcı yerel ayarı"
+  },
+  "f_branding": {
+    "message": "“Chat Exporter ile dışa aktarıldı” alt bilgisini ekle"
+  },
+  "sec_files": {
+    "message": "Dosyalar"
+  },
+  "f_filenameTemplate": {
+    "message": "Dosya adı şablonu — {title} {date} {time} {platform} {model} {id}"
+  },
+  "f_filenamePrefix": {
+    "message": "Dosya adı öneki"
+  },
+  "f_downloadSubfolder": {
+    "message": "İndirme alt klasörü (İndirilenler klasörünüzün içinde)"
+  },
+  "f_mdFrontMatter": {
+    "message": "YAML front matter ekle"
+  },
+  "f_mdThinkingStyle": {
+    "message": "Düşünme süreci stili"
+  },
+  "o_mdThinkingStyle_blockquote": {
+    "message": "Alıntı bloğu"
+  },
+  "o_mdThinkingStyle_details": {
+    "message": "Daraltılabilir <details>"
+  },
+  "sec_dataformats": {
+    "message": "JSON ve CSV"
+  },
+  "f_jsonPretty": {
+    "message": "JSON’u biçimlendir"
+  },
+  "f_csvDelimiter": {
+    "message": "CSV ayırıcısı"
+  },
+  "o_csvDelimiter_comma": {
+    "message": "Virgül ,"
+  },
+  "o_csvDelimiter_semicolon": {
+    "message": "Noktalı virgül ;"
+  },
+  "o_csvDelimiter_tab": {
+    "message": "Sekme"
+  },
+  "sec_pdf": {
+    "message": "PDF / HTML / Görsel"
+  },
+  "f_pdfTitle": {
+    "message": "İçerik başlığı (boş = sohbet başlığı)"
+  },
+  "f_pdfPageSize": {
+    "message": "Sayfa boyutu"
+  },
+  "f_pdfOrientation": {
+    "message": "Yönlendirme"
+  },
+  "o_pdfOrientation_portrait": {
+    "message": "Dikey"
+  },
+  "o_pdfOrientation_landscape": {
+    "message": "Yatay"
+  },
+  "f_pdfTheme": {
+    "message": "Tema"
+  },
+  "o_pdfTheme_light": {
+    "message": "Açık"
+  },
+  "o_pdfTheme_dark": {
+    "message": "Koyu"
+  },
+  "f_pdfMargins": {
+    "message": "Kenar boşlukları"
+  },
+  "o_pdfMargins_narrow": {
+    "message": "Dar"
+  },
+  "o_pdfMargins_normal": {
+    "message": "Normal"
+  },
+  "o_pdfMargins_wide": {
+    "message": "Geniş"
+  },
+  "f_pdfFontScale": {
+    "message": "Yazı tipi boyutu (varsayılanın %’si)"
+  },
+  "f_pdfFontFamily": {
+    "message": "Yazı tipi ailesi"
+  },
+  "o_pdfFontFamily_sans": {
+    "message": "Tırnaksız"
+  },
+  "o_pdfFontFamily_serif": {
+    "message": "Tırnaklı"
+  },
+  "o_pdfFontFamily_mono": {
+    "message": "Eş aralıklı"
+  },
+  "f_pdfPageNumbers": {
+    "message": "Sayfa numaraları"
+  },
+  "f_pdfToc": {
+    "message": "İçindekiler tablosu"
+  },
+  "f_pdfPageBreakPerPrompt": {
+    "message": "Her istemi yeni bir sayfada başlat"
+  },
+  "f_pdfWrapCode": {
+    "message": "Uzun kod satırlarını kaydır"
+  },
+  "f_pdfAutoPrint": {
+    "message": "Yazdırma penceresini otomatik aç"
+  }
+}

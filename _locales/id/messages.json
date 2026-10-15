@@ -1,0 +1,578 @@
+{
+  "extName": {
+    "message": "ChatGPT Exporter: simpan ChatGPT ke PDF, Word & Markdown"
+  },
+  "extDescription": {
+    "message": "Ekspor percakapan ChatGPT apa pun menjadi file rapi yang mudah dibagikan. Pilih pesan, atur tata letak, tetap privat."
+  },
+  "extActionTitle": {
+    "message": "ChatGPT Exporter"
+  },
+  "cmdTogglePanel": {
+    "message": "Buka / tutup panel Pilih Pesan"
+  },
+  "cmdQuickExport": {
+    "message": "Ekspor cepat obrolan saat ini dalam format default"
+  },
+  "cmdExportPdf": {
+    "message": "Ekspor obrolan saat ini sebagai PDF"
+  },
+  "selectMessages": {
+    "message": "Pilih Pesan"
+  },
+  "select": {
+    "message": "Pilih"
+  },
+  "export": {
+    "message": "Ekspor"
+  },
+  "exportAs": {
+    "message": "Ekspor sebagai"
+  },
+  "all": {
+    "message": "Semua"
+  },
+  "allDefault": {
+    "message": "Semua (default)"
+  },
+  "questions": {
+    "message": "Pertanyaan"
+  },
+  "answers": {
+    "message": "Jawaban"
+  },
+  "none": {
+    "message": "Tidak ada"
+  },
+  "invert": {
+    "message": "Balik"
+  },
+  "cancel": {
+    "message": "Batal"
+  },
+  "copy": {
+    "message": "Salin"
+  },
+  "settings": {
+    "message": "Pengaturan"
+  },
+  "expand": {
+    "message": "Perluas"
+  },
+  "back": {
+    "message": "Kembali"
+  },
+  "refresh": {
+    "message": "Segarkan"
+  },
+  "retry": {
+    "message": "Coba lagi"
+  },
+  "loading": {
+    "message": "Memuat percakapan…"
+  },
+  "loadingHistory": {
+    "message": "Memuat seluruh riwayat…"
+  },
+  "tip": {
+    "message": "Tips: Shift+klik memilih satu rentang pesan."
+  },
+  "you": {
+    "message": "Anda"
+  },
+  "exportedN": {
+    "message": "{n} pesan diekspor sebagai {fmt}"
+  },
+  "copiedN": {
+    "message": "{n} pesan disalin sebagai {fmt}"
+  },
+  "nothingSelected": {
+    "message": "Pilih setidaknya satu pesan terlebih dahulu."
+  },
+  "noConversation": {
+    "message": "Tidak ada percakapan di halaman ini."
+  },
+  "failed": {
+    "message": "Ekspor gagal: {msg}"
+  },
+  "pdfHint": {
+    "message": "Membuka pratinjau cetak — pilih “Simpan sebagai PDF”."
+  },
+  "exportAll": {
+    "message": "Ekspor semua obrolan…"
+  },
+  "bulkTitle": {
+    "message": "Ekspor beberapa obrolan"
+  },
+  "searchChats": {
+    "message": "Cari obrolan"
+  },
+  "selectAll": {
+    "message": "Pilih semua"
+  },
+  "exportZip": {
+    "message": "Ekspor ZIP"
+  },
+  "progress": {
+    "message": "Mengekspor {i} / {n}…"
+  },
+  "bulkDone": {
+    "message": "{n} obrolan diekspor ke file ZIP"
+  },
+  "bulkUnsupported": {
+    "message": "Ekspor massal belum tersedia untuk situs ini. Buka satu obrolan lalu gunakan Ekspor."
+  },
+  "chatsFound": {
+    "message": "{n} obrolan"
+  },
+  "copyAs": {
+    "message": "Salin sebagai {fmt}"
+  },
+  "quickExport": {
+    "message": "Ekspor cepat"
+  },
+  "openPanel": {
+    "message": "Pilih pesan…"
+  },
+  "unsupportedSite": {
+    "message": "Buka ChatGPT untuk mengekspor percakapan."
+  },
+  "selectedOf": {
+    "message": "{a}/{b}"
+  },
+  "messages": {
+    "message": "pesan"
+  },
+  "richText": {
+    "message": "teks kaya"
+  },
+  "fmtText": {
+    "message": "Teks"
+  },
+  "fmtPng": {
+    "message": "Gambar (PNG)"
+  },
+  "toggleTitle": {
+    "message": "Tampilkan atau sembunyikan tombol ekspor"
+  },
+  "autoBrowser": {
+    "message": "Otomatis (browser)"
+  },
+  "close": {
+    "message": "Tutup"
+  },
+  "ctxExportChat": {
+    "message": "Ekspor obrolan ini"
+  },
+  "ctxExportAs": {
+    "message": "Ekspor sebagai {fmt}"
+  },
+  "seePlans": {
+    "message": "Lihat paket"
+  },
+  "upgrade": {
+    "message": "Upgrade"
+  },
+  "accountHeading": {
+    "message": "Akun"
+  },
+  "limitFull": {
+    "message": "Anda sudah memakai semua {limit} ekspor obrolan penuh gratis bulan ini. Upgrade untuk ekspor tanpa batas."
+  },
+  "limitPartial": {
+    "message": "Anda sudah memakai semua {limit} ekspor parsial gratis bulan ini. Upgrade untuk ekspor tanpa batas."
+  },
+  "bulkFreeLeft": {
+    "message": "Paket gratis: sisa {left} ekspor penuh bulan ini, tetapi Anda memilih {n} obrolan. Pilih lebih sedikit obrolan atau upgrade untuk ekspor tanpa batas."
+  },
+  "tokenInvalidFormat": {
+    "message": "Ini tidak terlihat seperti token yang valid."
+  },
+  "tokenExpired": {
+    "message": "Token ini sudah tidak valid. Buat token baru dari akun Anda."
+  },
+  "serverUnreachable": {
+    "message": "Tidak dapat terhubung ke server. Periksa koneksi Anda lalu coba lagi."
+  },
+  "notSignedIn": {
+    "message": "Belum masuk"
+  },
+  "sessionFailed": {
+    "message": "Permintaan sesi gagal ({status})"
+  },
+  "popupChecking": {
+    "message": "Memeriksa tab…"
+  },
+  "conversationDetected": {
+    "message": "Percakapan {name} terdeteksi"
+  },
+  "openAConversation": {
+    "message": "{name} — buka sebuah percakapan"
+  },
+  "worksOn": {
+    "message": "Berfungsi di chatgpt.com"
+  },
+  "popupInactive": {
+    "message": "Buka percakapan ChatGPT, lalu klik ekstensi ini lagi:"
+  },
+  "formatLabel": {
+    "message": "Format"
+  },
+  "keyboardShortcuts": {
+    "message": "Pintasan keyboard"
+  },
+  "planPro": {
+    "message": "Pro · {plan} · ekspor tanpa batas"
+  },
+  "planYear": {
+    "message": "Paket Tahunan"
+  },
+  "planMonth": {
+    "message": "Paket Bulanan"
+  },
+  "planProName": {
+    "message": "Pro"
+  },
+  "planFreeLeft": {
+    "message": "Gratis · sisa {full} ekspor penuh dan {single} ekspor parsial bulan ini"
+  },
+  "exporting": {
+    "message": "Mengekspor…"
+  },
+  "doneSeePage": {
+    "message": "Selesai — lihat halaman untuk detailnya."
+  },
+  "copiedClipboard": {
+    "message": "Disalin ke papan klip."
+  },
+  "failedShort": {
+    "message": "Gagal"
+  },
+  "optionsTitle": {
+    "message": "ChatGPT Exporter — Pengaturan"
+  },
+  "optionsIntro": {
+    "message": "Pengaturan disimpan otomatis dan disinkronkan dengan profil Chrome Anda. Semuanya diproses secara lokal di browser Anda."
+  },
+  "checking": {
+    "message": "Memeriksa…"
+  },
+  "connectWithToken": {
+    "message": "Hubungkan dengan token"
+  },
+  "tokenHelp": {
+    "message": "Gunakan ini jika situs web tidak dapat menghubungkan ekstensi secara otomatis. Salin token dari halaman akun Anda."
+  },
+  "connect": {
+    "message": "Hubungkan"
+  },
+  "resetDefaults": {
+    "message": "Setel ulang ke default"
+  },
+  "keyboardShortcutsEllipsis": {
+    "message": "Pintasan keyboard…"
+  },
+  "saved": {
+    "message": "Tersimpan ✓"
+  },
+  "accountLoadFail": {
+    "message": "Akun Anda tidak dapat dimuat saat ini."
+  },
+  "connectedAs": {
+    "message": "Terhubung sebagai {email} · {plan}"
+  },
+  "planFreeShort": {
+    "message": "Paket gratis"
+  },
+  "planProUnlimited": {
+    "message": "{plan} · ekspor tanpa batas"
+  },
+  "manageBilling": {
+    "message": "Kelola penagihan"
+  },
+  "disconnect": {
+    "message": "Putuskan"
+  },
+  "freeLeftConnect": {
+    "message": "Paket gratis · sisa {full} ekspor penuh dan {single} ekspor parsial bulan ini. Hubungkan akun Anda jika sudah upgrade."
+  },
+  "connectAccount": {
+    "message": "Hubungkan akun"
+  },
+  "connecting": {
+    "message": "Menghubungkan…"
+  },
+  "connected": {
+    "message": "Terhubung."
+  },
+  "connectFail": {
+    "message": "Tidak dapat terhubung."
+  },
+  "docContents": {
+    "message": "Daftar isi"
+  },
+  "docThoughtProcess": {
+    "message": "Proses berpikir"
+  },
+  "docSources": {
+    "message": "Sumber"
+  },
+  "docAttachments": {
+    "message": "Lampiran"
+  },
+  "docExportedWith": {
+    "message": "Diekspor dengan Chat Exporter"
+  },
+  "pvDocTitle": {
+    "message": "ChatGPT Exporter — Pratinjau"
+  },
+  "pvPreview": {
+    "message": "Pratinjau"
+  },
+  "pvPreparing": {
+    "message": "Menyiapkan…"
+  },
+  "jobExpired": {
+    "message": "Tugas ekspor ini telah kedaluwarsa. Kembali ke obrolan lalu ekspor lagi."
+  },
+  "pvWidthPx": {
+    "message": "Lebar (px)"
+  },
+  "pvScale": {
+    "message": "Skala"
+  },
+  "pvRendering": {
+    "message": "Merender bagian {i} dari {n}…"
+  },
+  "pvPacking": {
+    "message": "Mengemas {n} gambar…"
+  },
+  "pvSavedZip": {
+    "message": "{n} gambar disimpan sebagai ZIP"
+  },
+  "pvSaved": {
+    "message": "{name} disimpan"
+  },
+  "pvFastNote": {
+    "message": "(1× agar obrolan panjang tetap cepat)"
+  },
+  "pvPrintSave": {
+    "message": "Cetak / Simpan sebagai PDF"
+  },
+  "pvChooseSave": {
+    "message": "Pilih “Simpan sebagai PDF” sebagai tujuan."
+  },
+  "pvDownloadPng": {
+    "message": "Unduh PNG"
+  },
+  "pvFailed": {
+    "message": "Gagal: {msg}"
+  },
+  "pvRenderFail": {
+    "message": "Ekspor ini tidak dapat dirender: {msg}"
+  },
+  "sec_general": {
+    "message": "Umum"
+  },
+  "f_language": {
+    "message": "Bahasa antarmuka"
+  },
+  "f_theme": {
+    "message": "Tema panel"
+  },
+  "o_theme_auto": {
+    "message": "Otomatis"
+  },
+  "o_theme_dark": {
+    "message": "Gelap"
+  },
+  "o_theme_light": {
+    "message": "Terang"
+  },
+  "f_showLauncher": {
+    "message": "Tampilkan tombol Pilih / Ekspor di halaman obrolan"
+  },
+  "f_rememberSelection": {
+    "message": "Ingat preset pilihan saya (Semua / Pertanyaan / Jawaban)"
+  },
+  "f_closePanelAfterExport": {
+    "message": "Tutup panel samping setelah ekspor"
+  },
+  "f_showToasts": {
+    "message": "Tampilkan konfirmasi setelah ekspor"
+  },
+  "sec_content": {
+    "message": "Konten"
+  },
+  "f_includeThoughts": {
+    "message": "Sertakan proses berpikir / penalaran"
+  },
+  "f_includeSources": {
+    "message": "Sertakan sumber & kutipan pencarian web"
+  },
+  "f_includeCanvas": {
+    "message": "Sertakan Canvas / Artifacts"
+  },
+  "f_includeImages": {
+    "message": "Sertakan gambar"
+  },
+  "f_embedImages": {
+    "message": "Sematkan gambar di dalam file (PDF, HTML, Word, PNG)"
+  },
+  "f_includeToolOutputs": {
+    "message": "Sertakan pemanggilan alat & output interpreter kode"
+  },
+  "f_includeTimestamps": {
+    "message": "Tampilkan stempel waktu di setiap pesan"
+  },
+  "f_showRoleIcons": {
+    "message": "Tampilkan ikon / emoji peran"
+  },
+  "f_userName": {
+    "message": "Nama Anda (ditampilkan di header ekspor)"
+  },
+  "f_userEmail": {
+    "message": "Email Anda (ditampilkan di header ekspor)"
+  },
+  "f_userLabel": {
+    "message": "Label untuk pesan Anda (default: Anda)"
+  },
+  "f_assistantLabel": {
+    "message": "Label untuk pesan AI (default: nama platform)"
+  },
+  "f_showDate": {
+    "message": "Tampilkan tanggal percakapan"
+  },
+  "f_dateSource": {
+    "message": "Sumber tanggal"
+  },
+  "o_dateSource_created": {
+    "message": "Dibuat"
+  },
+  "o_dateSource_updated": {
+    "message": "Terakhir diubah"
+  },
+  "o_dateSource_export": {
+    "message": "Waktu ekspor"
+  },
+  "f_dateFormat": {
+    "message": "Format tanggal"
+  },
+  "o_dateFormat_locale": {
+    "message": "Lokal browser"
+  },
+  "f_branding": {
+    "message": "Tambahkan footer “Diekspor dengan Chat Exporter”"
+  },
+  "sec_files": {
+    "message": "File"
+  },
+  "f_filenameTemplate": {
+    "message": "Templat nama file — {title} {date} {time} {platform} {model} {id}"
+  },
+  "f_filenamePrefix": {
+    "message": "Awalan nama file"
+  },
+  "f_downloadSubfolder": {
+    "message": "Subfolder unduhan (di dalam folder Unduhan Anda)"
+  },
+  "f_mdFrontMatter": {
+    "message": "Tambahkan YAML front matter"
+  },
+  "f_mdThinkingStyle": {
+    "message": "Gaya proses berpikir"
+  },
+  "o_mdThinkingStyle_blockquote": {
+    "message": "Blok kutipan"
+  },
+  "o_mdThinkingStyle_details": {
+    "message": "<details> yang dapat dilipat"
+  },
+  "sec_dataformats": {
+    "message": "JSON & CSV"
+  },
+  "f_jsonPretty": {
+    "message": "Rapikan format JSON"
+  },
+  "f_csvDelimiter": {
+    "message": "Pemisah CSV"
+  },
+  "o_csvDelimiter_comma": {
+    "message": "Koma ,"
+  },
+  "o_csvDelimiter_semicolon": {
+    "message": "Titik koma ;"
+  },
+  "o_csvDelimiter_tab": {
+    "message": "Tab"
+  },
+  "sec_pdf": {
+    "message": "PDF / HTML / Gambar"
+  },
+  "f_pdfTitle": {
+    "message": "Judul konten (kosong = judul obrolan)"
+  },
+  "f_pdfPageSize": {
+    "message": "Ukuran halaman"
+  },
+  "f_pdfOrientation": {
+    "message": "Orientasi"
+  },
+  "o_pdfOrientation_portrait": {
+    "message": "Potret"
+  },
+  "o_pdfOrientation_landscape": {
+    "message": "Lanskap"
+  },
+  "f_pdfTheme": {
+    "message": "Tema"
+  },
+  "o_pdfTheme_light": {
+    "message": "Terang"
+  },
+  "o_pdfTheme_dark": {
+    "message": "Gelap"
+  },
+  "f_pdfMargins": {
+    "message": "Margin"
+  },
+  "o_pdfMargins_narrow": {
+    "message": "Sempit"
+  },
+  "o_pdfMargins_normal": {
+    "message": "Normal"
+  },
+  "o_pdfMargins_wide": {
+    "message": "Lebar"
+  },
+  "f_pdfFontScale": {
+    "message": "Ukuran font (% dari default)"
+  },
+  "f_pdfFontFamily": {
+    "message": "Keluarga font"
+  },
+  "o_pdfFontFamily_sans": {
+    "message": "Sans-serif"
+  },
+  "o_pdfFontFamily_serif": {
+    "message": "Serif"
+  },
+  "o_pdfFontFamily_mono": {
+    "message": "Monospace"
+  },
+  "f_pdfPageNumbers": {
+    "message": "Nomor halaman"
+  },
+  "f_pdfToc": {
+    "message": "Daftar isi"
+  },
+  "f_pdfPageBreakPerPrompt": {
+    "message": "Mulai setiap prompt di halaman baru"
+  },
+  "f_pdfWrapCode": {
+    "message": "Bungkus baris kode yang panjang"
+  },
+  "f_pdfAutoPrint": {
+    "message": "Buka dialog cetak secara otomatis"
+  }
+}

@@ -1,0 +1,578 @@
+{
+  "extName": {
+    "message": "ChatGPT Exporter: ChatGPT を PDF・Word・Markdown で保存"
+  },
+  "extDescription": {
+    "message": "ChatGPT の会話を、きれいで共有しやすいファイルにエクスポート。メッセージを選び、レイアウトを調整し、プライバシーも守れます。"
+  },
+  "extActionTitle": {
+    "message": "ChatGPT Exporter"
+  },
+  "cmdTogglePanel": {
+    "message": "「メッセージを選択」パネルを開く / 閉じる"
+  },
+  "cmdQuickExport": {
+    "message": "現在のチャットを既定の形式ですばやくエクスポート"
+  },
+  "cmdExportPdf": {
+    "message": "現在のチャットを PDF としてエクスポート"
+  },
+  "selectMessages": {
+    "message": "メッセージを選択"
+  },
+  "select": {
+    "message": "選択"
+  },
+  "export": {
+    "message": "エクスポート"
+  },
+  "exportAs": {
+    "message": "形式を指定してエクスポート"
+  },
+  "all": {
+    "message": "すべて"
+  },
+  "allDefault": {
+    "message": "すべて（既定）"
+  },
+  "questions": {
+    "message": "質問"
+  },
+  "answers": {
+    "message": "回答"
+  },
+  "none": {
+    "message": "なし"
+  },
+  "invert": {
+    "message": "反転"
+  },
+  "cancel": {
+    "message": "キャンセル"
+  },
+  "copy": {
+    "message": "コピー"
+  },
+  "settings": {
+    "message": "設定"
+  },
+  "expand": {
+    "message": "展開"
+  },
+  "back": {
+    "message": "戻る"
+  },
+  "refresh": {
+    "message": "更新"
+  },
+  "retry": {
+    "message": "再試行"
+  },
+  "loading": {
+    "message": "会話を読み込み中…"
+  },
+  "loadingHistory": {
+    "message": "履歴をすべて読み込み中…"
+  },
+  "tip": {
+    "message": "ヒント: Shift+クリックで範囲を選択できます。"
+  },
+  "you": {
+    "message": "あなた"
+  },
+  "exportedN": {
+    "message": "{n} 件のメッセージを {fmt} でエクスポートしました"
+  },
+  "copiedN": {
+    "message": "{n} 件のメッセージを {fmt} でコピーしました"
+  },
+  "nothingSelected": {
+    "message": "先にメッセージを 1 件以上選択してください。"
+  },
+  "noConversation": {
+    "message": "このページに会話が見つかりません。"
+  },
+  "failed": {
+    "message": "エクスポートに失敗しました: {msg}"
+  },
+  "pdfHint": {
+    "message": "印刷プレビューを開いています。「PDF として保存」を選択してください。"
+  },
+  "exportAll": {
+    "message": "すべてのチャットをエクスポート…"
+  },
+  "bulkTitle": {
+    "message": "複数のチャットをエクスポート"
+  },
+  "searchChats": {
+    "message": "チャットを検索"
+  },
+  "selectAll": {
+    "message": "すべて選択"
+  },
+  "exportZip": {
+    "message": "ZIP でエクスポート"
+  },
+  "progress": {
+    "message": "エクスポート中 {i} / {n}…"
+  },
+  "bulkDone": {
+    "message": "{n} 件のチャットを ZIP ファイルにエクスポートしました"
+  },
+  "bulkUnsupported": {
+    "message": "このサイトでは一括エクスポートはまだ利用できません。チャットを開いて「エクスポート」を使ってください。"
+  },
+  "chatsFound": {
+    "message": "{n} 件のチャット"
+  },
+  "copyAs": {
+    "message": "{fmt} としてコピー"
+  },
+  "quickExport": {
+    "message": "クイックエクスポート"
+  },
+  "openPanel": {
+    "message": "メッセージを選択…"
+  },
+  "unsupportedSite": {
+    "message": "会話をエクスポートするには ChatGPT を開いてください。"
+  },
+  "selectedOf": {
+    "message": "{a}/{b}"
+  },
+  "messages": {
+    "message": "件のメッセージ"
+  },
+  "richText": {
+    "message": "リッチテキスト"
+  },
+  "fmtText": {
+    "message": "テキスト"
+  },
+  "fmtPng": {
+    "message": "画像（PNG）"
+  },
+  "toggleTitle": {
+    "message": "エクスポートボタンの表示 / 非表示"
+  },
+  "autoBrowser": {
+    "message": "自動（ブラウザの設定）"
+  },
+  "close": {
+    "message": "閉じる"
+  },
+  "ctxExportChat": {
+    "message": "このチャットをエクスポート"
+  },
+  "ctxExportAs": {
+    "message": "{fmt} としてエクスポート"
+  },
+  "seePlans": {
+    "message": "プランを見る"
+  },
+  "upgrade": {
+    "message": "アップグレード"
+  },
+  "accountHeading": {
+    "message": "アカウント"
+  },
+  "limitFull": {
+    "message": "今月の無料の全文エクスポート {limit} 回をすべて使い切りました。無制限にエクスポートするにはアップグレードしてください。"
+  },
+  "limitPartial": {
+    "message": "今月の無料の一部エクスポート {limit} 回をすべて使い切りました。無制限にエクスポートするにはアップグレードしてください。"
+  },
+  "bulkFreeLeft": {
+    "message": "無料プラン: 今月の全文エクスポートは残り {left} 回ですが、{n} 件のチャットを選択しています。選択を減らすか、アップグレードして無制限にエクスポートしてください。"
+  },
+  "tokenInvalidFormat": {
+    "message": "有効なトークンではないようです。"
+  },
+  "tokenExpired": {
+    "message": "このトークンは無効になりました。アカウントで新しいトークンを作成してください。"
+  },
+  "serverUnreachable": {
+    "message": "サーバーに接続できませんでした。接続を確認してもう一度お試しください。"
+  },
+  "notSignedIn": {
+    "message": "サインインしていません"
+  },
+  "sessionFailed": {
+    "message": "セッションのリクエストに失敗しました（{status}）"
+  },
+  "popupChecking": {
+    "message": "タブを確認中…"
+  },
+  "conversationDetected": {
+    "message": "{name} の会話を検出しました"
+  },
+  "openAConversation": {
+    "message": "{name} — 会話を開いてください"
+  },
+  "worksOn": {
+    "message": "chatgpt.com で動作します"
+  },
+  "popupInactive": {
+    "message": "ChatGPT の会話を開いてから、もう一度拡張機能をクリックしてください:"
+  },
+  "formatLabel": {
+    "message": "形式"
+  },
+  "keyboardShortcuts": {
+    "message": "キーボードショートカット"
+  },
+  "planPro": {
+    "message": "Pro · {plan} · エクスポート無制限"
+  },
+  "planYear": {
+    "message": "年間プラン"
+  },
+  "planMonth": {
+    "message": "月間プラン"
+  },
+  "planProName": {
+    "message": "Pro"
+  },
+  "planFreeLeft": {
+    "message": "無料 · 今月の残り: 全文エクスポート {full} 回、一部エクスポート {single} 回"
+  },
+  "exporting": {
+    "message": "エクスポート中…"
+  },
+  "doneSeePage": {
+    "message": "完了しました。詳細はページをご覧ください。"
+  },
+  "copiedClipboard": {
+    "message": "クリップボードにコピーしました。"
+  },
+  "failedShort": {
+    "message": "失敗しました"
+  },
+  "optionsTitle": {
+    "message": "ChatGPT Exporter — 設定"
+  },
+  "optionsIntro": {
+    "message": "設定は自動的に保存され、Chrome プロファイルと同期されます。すべての処理はお使いのブラウザ内で行われます。"
+  },
+  "checking": {
+    "message": "確認中…"
+  },
+  "connectWithToken": {
+    "message": "トークンで接続"
+  },
+  "tokenHelp": {
+    "message": "ウェブサイトが拡張機能を自動接続できなかった場合に使用します。アカウントページからトークンをコピーしてください。"
+  },
+  "connect": {
+    "message": "接続"
+  },
+  "resetDefaults": {
+    "message": "既定値に戻す"
+  },
+  "keyboardShortcutsEllipsis": {
+    "message": "キーボードショートカット…"
+  },
+  "saved": {
+    "message": "保存しました ✓"
+  },
+  "accountLoadFail": {
+    "message": "現在アカウントを読み込めません。"
+  },
+  "connectedAs": {
+    "message": "{email} として接続中 · {plan}"
+  },
+  "planFreeShort": {
+    "message": "無料プラン"
+  },
+  "planProUnlimited": {
+    "message": "{plan} · エクスポート無制限"
+  },
+  "manageBilling": {
+    "message": "お支払いの管理"
+  },
+  "disconnect": {
+    "message": "接続を解除"
+  },
+  "freeLeftConnect": {
+    "message": "無料プラン · 今月の残り: 全文エクスポート {full} 回、一部エクスポート {single} 回。アップグレード済みの場合はアカウントを接続してください。"
+  },
+  "connectAccount": {
+    "message": "アカウントを接続"
+  },
+  "connecting": {
+    "message": "接続中…"
+  },
+  "connected": {
+    "message": "接続しました。"
+  },
+  "connectFail": {
+    "message": "接続できませんでした。"
+  },
+  "docContents": {
+    "message": "目次"
+  },
+  "docThoughtProcess": {
+    "message": "思考プロセス"
+  },
+  "docSources": {
+    "message": "出典"
+  },
+  "docAttachments": {
+    "message": "添付ファイル"
+  },
+  "docExportedWith": {
+    "message": "Chat Exporter でエクスポート"
+  },
+  "pvDocTitle": {
+    "message": "ChatGPT Exporter — プレビュー"
+  },
+  "pvPreview": {
+    "message": "プレビュー"
+  },
+  "pvPreparing": {
+    "message": "準備中…"
+  },
+  "jobExpired": {
+    "message": "このエクスポートの有効期限が切れました。チャットに戻ってもう一度エクスポートしてください。"
+  },
+  "pvWidthPx": {
+    "message": "幅（px）"
+  },
+  "pvScale": {
+    "message": "倍率"
+  },
+  "pvRendering": {
+    "message": "{n} 件中 {i} 件目をレンダリング中…"
+  },
+  "pvPacking": {
+    "message": "{n} 枚の画像をまとめています…"
+  },
+  "pvSavedZip": {
+    "message": "{n} 枚の画像を ZIP として保存しました"
+  },
+  "pvSaved": {
+    "message": "{name} を保存しました"
+  },
+  "pvFastNote": {
+    "message": "（長いチャットでも速くするため 1×）"
+  },
+  "pvPrintSave": {
+    "message": "印刷 / PDF として保存"
+  },
+  "pvChooseSave": {
+    "message": "保存先として「PDF として保存」を選択してください。"
+  },
+  "pvDownloadPng": {
+    "message": "PNG をダウンロード"
+  },
+  "pvFailed": {
+    "message": "失敗しました: {msg}"
+  },
+  "pvRenderFail": {
+    "message": "このエクスポートをレンダリングできませんでした: {msg}"
+  },
+  "sec_general": {
+    "message": "一般"
+  },
+  "f_language": {
+    "message": "表示言語"
+  },
+  "f_theme": {
+    "message": "パネルのテーマ"
+  },
+  "o_theme_auto": {
+    "message": "自動"
+  },
+  "o_theme_dark": {
+    "message": "ダーク"
+  },
+  "o_theme_light": {
+    "message": "ライト"
+  },
+  "f_showLauncher": {
+    "message": "チャットページに「選択」/「エクスポート」ボタンを表示"
+  },
+  "f_rememberSelection": {
+    "message": "選択のプリセットを記憶（すべて / 質問 / 回答）"
+  },
+  "f_closePanelAfterExport": {
+    "message": "エクスポート後にサイドパネルを閉じる"
+  },
+  "f_showToasts": {
+    "message": "エクスポート後に確認メッセージを表示"
+  },
+  "sec_content": {
+    "message": "コンテンツ"
+  },
+  "f_includeThoughts": {
+    "message": "思考プロセス / 推論を含める"
+  },
+  "f_includeSources": {
+    "message": "ウェブ検索の出典と引用を含める"
+  },
+  "f_includeCanvas": {
+    "message": "Canvas / アーティファクトを含める"
+  },
+  "f_includeImages": {
+    "message": "画像を含める"
+  },
+  "f_embedImages": {
+    "message": "画像をファイルに埋め込む（PDF、HTML、Word、PNG）"
+  },
+  "f_includeToolOutputs": {
+    "message": "ツール呼び出しとコードインタープリターの出力を含める"
+  },
+  "f_includeTimestamps": {
+    "message": "各メッセージに日時を表示"
+  },
+  "f_showRoleIcons": {
+    "message": "ロールのアイコン / 絵文字を表示"
+  },
+  "f_userName": {
+    "message": "あなたの名前（エクスポートのヘッダーに表示）"
+  },
+  "f_userEmail": {
+    "message": "あなたのメールアドレス（エクスポートのヘッダーに表示）"
+  },
+  "f_userLabel": {
+    "message": "自分のメッセージのラベル（既定: あなた）"
+  },
+  "f_assistantLabel": {
+    "message": "AI のメッセージのラベル（既定: プラットフォーム名）"
+  },
+  "f_showDate": {
+    "message": "会話の日付を表示"
+  },
+  "f_dateSource": {
+    "message": "日付の基準"
+  },
+  "o_dateSource_created": {
+    "message": "作成日時"
+  },
+  "o_dateSource_updated": {
+    "message": "最終更新日時"
+  },
+  "o_dateSource_export": {
+    "message": "エクスポート日時"
+  },
+  "f_dateFormat": {
+    "message": "日付の形式"
+  },
+  "o_dateFormat_locale": {
+    "message": "ブラウザのロケール"
+  },
+  "f_branding": {
+    "message": "「Chat Exporter でエクスポート」のフッターを追加"
+  },
+  "sec_files": {
+    "message": "ファイル"
+  },
+  "f_filenameTemplate": {
+    "message": "ファイル名テンプレート — {title} {date} {time} {platform} {model} {id}"
+  },
+  "f_filenamePrefix": {
+    "message": "ファイル名の接頭辞"
+  },
+  "f_downloadSubfolder": {
+    "message": "ダウンロード先サブフォルダ（ダウンロードフォルダ内）"
+  },
+  "f_mdFrontMatter": {
+    "message": "YAML フロントマターを追加"
+  },
+  "f_mdThinkingStyle": {
+    "message": "思考プロセスのスタイル"
+  },
+  "o_mdThinkingStyle_blockquote": {
+    "message": "引用ブロック"
+  },
+  "o_mdThinkingStyle_details": {
+    "message": "折りたたみ式 <details>"
+  },
+  "sec_dataformats": {
+    "message": "JSON と CSV"
+  },
+  "f_jsonPretty": {
+    "message": "JSON を整形"
+  },
+  "f_csvDelimiter": {
+    "message": "CSV の区切り文字"
+  },
+  "o_csvDelimiter_comma": {
+    "message": "カンマ ,"
+  },
+  "o_csvDelimiter_semicolon": {
+    "message": "セミコロン ;"
+  },
+  "o_csvDelimiter_tab": {
+    "message": "タブ"
+  },
+  "sec_pdf": {
+    "message": "PDF / HTML / 画像"
+  },
+  "f_pdfTitle": {
+    "message": "コンテンツのタイトル（空欄 = チャットのタイトル）"
+  },
+  "f_pdfPageSize": {
+    "message": "ページサイズ"
+  },
+  "f_pdfOrientation": {
+    "message": "向き"
+  },
+  "o_pdfOrientation_portrait": {
+    "message": "縦"
+  },
+  "o_pdfOrientation_landscape": {
+    "message": "横"
+  },
+  "f_pdfTheme": {
+    "message": "テーマ"
+  },
+  "o_pdfTheme_light": {
+    "message": "ライト"
+  },
+  "o_pdfTheme_dark": {
+    "message": "ダーク"
+  },
+  "f_pdfMargins": {
+    "message": "余白"
+  },
+  "o_pdfMargins_narrow": {
+    "message": "狭い"
+  },
+  "o_pdfMargins_normal": {
+    "message": "標準"
+  },
+  "o_pdfMargins_wide": {
+    "message": "広い"
+  },
+  "f_pdfFontScale": {
+    "message": "フォントサイズ（既定に対する %）"
+  },
+  "f_pdfFontFamily": {
+    "message": "フォントの種類"
+  },
+  "o_pdfFontFamily_sans": {
+    "message": "ゴシック体"
+  },
+  "o_pdfFontFamily_serif": {
+    "message": "明朝体"
+  },
+  "o_pdfFontFamily_mono": {
+    "message": "等幅"
+  },
+  "f_pdfPageNumbers": {
+    "message": "ページ番号"
+  },
+  "f_pdfToc": {
+    "message": "目次"
+  },
+  "f_pdfPageBreakPerPrompt": {
+    "message": "プロンプトごとに新しいページから開始"
+  },
+  "f_pdfWrapCode": {
+    "message": "長いコード行を折り返す"
+  },
+  "f_pdfAutoPrint": {
+    "message": "印刷ダイアログを自動で開く"
+  }
+}

@@ -1,0 +1,578 @@
+{
+  "extName": {
+    "message": "ChatGPT Exporter: lagre ChatGPT som PDF, Word og Markdown"
+  },
+  "extDescription": {
+    "message": "Eksporter enhver ChatGPT-samtale til en ryddig, delbar fil. Velg meldinger, tilpass oppsettet, og behold personvernet."
+  },
+  "extActionTitle": {
+    "message": "ChatGPT Exporter"
+  },
+  "cmdTogglePanel": {
+    "message": "Åpne / lukk panelet Velg meldinger"
+  },
+  "cmdQuickExport": {
+    "message": "Eksporter den gjeldende chatten raskt i standardformatet"
+  },
+  "cmdExportPdf": {
+    "message": "Eksporter den gjeldende chatten som PDF"
+  },
+  "selectMessages": {
+    "message": "Velg meldinger"
+  },
+  "select": {
+    "message": "Velg"
+  },
+  "export": {
+    "message": "Eksporter"
+  },
+  "exportAs": {
+    "message": "Eksporter som"
+  },
+  "all": {
+    "message": "Alle"
+  },
+  "allDefault": {
+    "message": "Alle (standard)"
+  },
+  "questions": {
+    "message": "Spørsmål"
+  },
+  "answers": {
+    "message": "Svar"
+  },
+  "none": {
+    "message": "Ingen"
+  },
+  "invert": {
+    "message": "Snu"
+  },
+  "cancel": {
+    "message": "Avbryt"
+  },
+  "copy": {
+    "message": "Kopier"
+  },
+  "settings": {
+    "message": "Innstillinger"
+  },
+  "expand": {
+    "message": "Utvid"
+  },
+  "back": {
+    "message": "Tilbake"
+  },
+  "refresh": {
+    "message": "Oppdater"
+  },
+  "retry": {
+    "message": "Prøv igjen"
+  },
+  "loading": {
+    "message": "Laster samtalen…"
+  },
+  "loadingHistory": {
+    "message": "Laster hele historikken…"
+  },
+  "tip": {
+    "message": "Tips: Skift+klikk merker et område av meldinger."
+  },
+  "you": {
+    "message": "Du"
+  },
+  "exportedN": {
+    "message": "{n} meldinger eksportert som {fmt}"
+  },
+  "copiedN": {
+    "message": "{n} meldinger kopiert som {fmt}"
+  },
+  "nothingSelected": {
+    "message": "Velg minst én melding først."
+  },
+  "noConversation": {
+    "message": "Fant ingen samtale på denne siden."
+  },
+  "failed": {
+    "message": "Eksporten mislyktes: {msg}"
+  },
+  "pdfHint": {
+    "message": "Åpner utskriftsvisning — velg «Lagre som PDF»."
+  },
+  "exportAll": {
+    "message": "Eksporter alle chatter…"
+  },
+  "bulkTitle": {
+    "message": "Eksporter flere chatter"
+  },
+  "searchChats": {
+    "message": "Søk i chatter"
+  },
+  "selectAll": {
+    "message": "Merk alle"
+  },
+  "exportZip": {
+    "message": "Eksporter ZIP"
+  },
+  "progress": {
+    "message": "Eksporterer {i} / {n}…"
+  },
+  "bulkDone": {
+    "message": "{n} chatter eksportert til en ZIP-fil"
+  },
+  "bulkUnsupported": {
+    "message": "Masseeksport er ikke tilgjengelig for dette nettstedet ennå. Åpne en chat og bruk Eksporter."
+  },
+  "chatsFound": {
+    "message": "{n} chatter"
+  },
+  "copyAs": {
+    "message": "Kopier som {fmt}"
+  },
+  "quickExport": {
+    "message": "Hurtigeksport"
+  },
+  "openPanel": {
+    "message": "Velg meldinger…"
+  },
+  "unsupportedSite": {
+    "message": "Åpne ChatGPT for å eksportere en samtale."
+  },
+  "selectedOf": {
+    "message": "{a}/{b}"
+  },
+  "messages": {
+    "message": "meldinger"
+  },
+  "richText": {
+    "message": "formatert tekst"
+  },
+  "fmtText": {
+    "message": "Tekst"
+  },
+  "fmtPng": {
+    "message": "Bilde (PNG)"
+  },
+  "toggleTitle": {
+    "message": "Vis eller skjul eksportknappene"
+  },
+  "autoBrowser": {
+    "message": "Automatisk (nettleser)"
+  },
+  "close": {
+    "message": "Lukk"
+  },
+  "ctxExportChat": {
+    "message": "Eksporter denne chatten"
+  },
+  "ctxExportAs": {
+    "message": "Eksporter som {fmt}"
+  },
+  "seePlans": {
+    "message": "Se abonnementer"
+  },
+  "upgrade": {
+    "message": "Oppgrader"
+  },
+  "accountHeading": {
+    "message": "Konto"
+  },
+  "limitFull": {
+    "message": "Du har brukt alle {limit} gratis eksporter av hele chatter denne måneden. Oppgrader for ubegrenset eksport."
+  },
+  "limitPartial": {
+    "message": "Du har brukt alle {limit} gratis delvise eksporter denne måneden. Oppgrader for ubegrenset eksport."
+  },
+  "bulkFreeLeft": {
+    "message": "Gratisabonnement: du har {left} eksporter av hele chatter igjen denne måneden, men du har valgt {n} chatter. Velg færre chatter, eller oppgrader for ubegrenset eksport."
+  },
+  "tokenInvalidFormat": {
+    "message": "Dette ser ikke ut som et gyldig token."
+  },
+  "tokenExpired": {
+    "message": "Dette tokenet er ikke lenger gyldig. Opprett et nytt fra kontoen din."
+  },
+  "serverUnreachable": {
+    "message": "Kunne ikke nå serveren. Sjekk tilkoblingen og prøv igjen."
+  },
+  "notSignedIn": {
+    "message": "Ikke logget inn"
+  },
+  "sessionFailed": {
+    "message": "Øktforespørselen mislyktes ({status})"
+  },
+  "popupChecking": {
+    "message": "Sjekker fanen…"
+  },
+  "conversationDetected": {
+    "message": "{name}-samtale funnet"
+  },
+  "openAConversation": {
+    "message": "{name} — åpne en samtale"
+  },
+  "worksOn": {
+    "message": "Fungerer på chatgpt.com"
+  },
+  "popupInactive": {
+    "message": "Åpne en ChatGPT-samtale, og klikk deretter på utvidelsen igjen:"
+  },
+  "formatLabel": {
+    "message": "Format"
+  },
+  "keyboardShortcuts": {
+    "message": "Hurtigtaster"
+  },
+  "planPro": {
+    "message": "Pro · {plan} · ubegrenset eksport"
+  },
+  "planYear": {
+    "message": "Årsabonnement"
+  },
+  "planMonth": {
+    "message": "Månedsabonnement"
+  },
+  "planProName": {
+    "message": "Pro"
+  },
+  "planFreeLeft": {
+    "message": "Gratis · {full} hele og {single} delvise eksporter igjen denne måneden"
+  },
+  "exporting": {
+    "message": "Eksporterer…"
+  },
+  "doneSeePage": {
+    "message": "Ferdig — se siden for detaljer."
+  },
+  "copiedClipboard": {
+    "message": "Kopiert til utklippstavlen."
+  },
+  "failedShort": {
+    "message": "Mislyktes"
+  },
+  "optionsTitle": {
+    "message": "ChatGPT Exporter — Innstillinger"
+  },
+  "optionsIntro": {
+    "message": "Innstillingene lagres automatisk og synkroniseres med Chrome-profilen din. Alt behandles lokalt i nettleseren din."
+  },
+  "checking": {
+    "message": "Sjekker…"
+  },
+  "connectWithToken": {
+    "message": "Koble til med et token"
+  },
+  "tokenHelp": {
+    "message": "Bruk dette hvis nettstedet ikke kunne koble til utvidelsen automatisk. Kopier tokenet fra kontosiden din."
+  },
+  "connect": {
+    "message": "Koble til"
+  },
+  "resetDefaults": {
+    "message": "Tilbakestill til standard"
+  },
+  "keyboardShortcutsEllipsis": {
+    "message": "Hurtigtaster…"
+  },
+  "saved": {
+    "message": "Lagret ✓"
+  },
+  "accountLoadFail": {
+    "message": "Kontoen din kunne ikke lastes akkurat nå."
+  },
+  "connectedAs": {
+    "message": "Tilkoblet som {email} · {plan}"
+  },
+  "planFreeShort": {
+    "message": "Gratisabonnement"
+  },
+  "planProUnlimited": {
+    "message": "{plan} · ubegrenset eksport"
+  },
+  "manageBilling": {
+    "message": "Administrer fakturering"
+  },
+  "disconnect": {
+    "message": "Koble fra"
+  },
+  "freeLeftConnect": {
+    "message": "Gratisabonnement · {full} hele og {single} delvise eksporter igjen denne måneden. Koble til kontoen din hvis du har oppgradert."
+  },
+  "connectAccount": {
+    "message": "Koble til konto"
+  },
+  "connecting": {
+    "message": "Kobler til…"
+  },
+  "connected": {
+    "message": "Tilkoblet."
+  },
+  "connectFail": {
+    "message": "Kunne ikke koble til."
+  },
+  "docContents": {
+    "message": "Innhold"
+  },
+  "docThoughtProcess": {
+    "message": "Tankeprosess"
+  },
+  "docSources": {
+    "message": "Kilder"
+  },
+  "docAttachments": {
+    "message": "Vedlegg"
+  },
+  "docExportedWith": {
+    "message": "Eksportert med Chat Exporter"
+  },
+  "pvDocTitle": {
+    "message": "ChatGPT Exporter — Forhåndsvisning"
+  },
+  "pvPreview": {
+    "message": "Forhåndsvisning"
+  },
+  "pvPreparing": {
+    "message": "Forbereder…"
+  },
+  "jobExpired": {
+    "message": "Denne eksportjobben har utløpt. Gå tilbake til chatten og eksporter på nytt."
+  },
+  "pvWidthPx": {
+    "message": "Bredde (px)"
+  },
+  "pvScale": {
+    "message": "Skala"
+  },
+  "pvRendering": {
+    "message": "Gjengir del {i} av {n}…"
+  },
+  "pvPacking": {
+    "message": "Pakker {n} bilder…"
+  },
+  "pvSavedZip": {
+    "message": "{n} bilder lagret som ZIP"
+  },
+  "pvSaved": {
+    "message": "{name} lagret"
+  },
+  "pvFastNote": {
+    "message": "(1× for å holde en lang chat rask)"
+  },
+  "pvPrintSave": {
+    "message": "Skriv ut / Lagre som PDF"
+  },
+  "pvChooseSave": {
+    "message": "Velg «Lagre som PDF» som mål."
+  },
+  "pvDownloadPng": {
+    "message": "Last ned PNG"
+  },
+  "pvFailed": {
+    "message": "Mislyktes: {msg}"
+  },
+  "pvRenderFail": {
+    "message": "Denne eksporten kunne ikke gjengis: {msg}"
+  },
+  "sec_general": {
+    "message": "Generelt"
+  },
+  "f_language": {
+    "message": "Grensesnittspråk"
+  },
+  "f_theme": {
+    "message": "Panelets tema"
+  },
+  "o_theme_auto": {
+    "message": "Automatisk"
+  },
+  "o_theme_dark": {
+    "message": "Mørkt"
+  },
+  "o_theme_light": {
+    "message": "Lyst"
+  },
+  "f_showLauncher": {
+    "message": "Vis knappene Velg / Eksporter på chatsiden"
+  },
+  "f_rememberSelection": {
+    "message": "Husk min forhåndsvalgte markering (Alle / Spørsmål / Svar)"
+  },
+  "f_closePanelAfterExport": {
+    "message": "Lukk sidepanelet etter eksport"
+  },
+  "f_showToasts": {
+    "message": "Vis en bekreftelse etter eksport"
+  },
+  "sec_content": {
+    "message": "Innhold"
+  },
+  "f_includeThoughts": {
+    "message": "Ta med tankeprosess / resonnement"
+  },
+  "f_includeSources": {
+    "message": "Ta med kilder og sitater fra nettsøk"
+  },
+  "f_includeCanvas": {
+    "message": "Ta med Canvas / artefakter"
+  },
+  "f_includeImages": {
+    "message": "Ta med bilder"
+  },
+  "f_embedImages": {
+    "message": "Bygg inn bilder i filen (PDF, HTML, Word, PNG)"
+  },
+  "f_includeToolOutputs": {
+    "message": "Ta med verktøykall og utdata fra kodetolkeren"
+  },
+  "f_includeTimestamps": {
+    "message": "Vis tidsstempel for hver melding"
+  },
+  "f_showRoleIcons": {
+    "message": "Vis rolleikoner / emojier"
+  },
+  "f_userName": {
+    "message": "Navnet ditt (vises i eksportens topptekst)"
+  },
+  "f_userEmail": {
+    "message": "E-postadressen din (vises i eksportens topptekst)"
+  },
+  "f_userLabel": {
+    "message": "Etikett for meldingene dine (standard: Du)"
+  },
+  "f_assistantLabel": {
+    "message": "Etikett for KI-meldinger (standard: plattformens navn)"
+  },
+  "f_showDate": {
+    "message": "Vis samtalens dato"
+  },
+  "f_dateSource": {
+    "message": "Datokilde"
+  },
+  "o_dateSource_created": {
+    "message": "Opprettet"
+  },
+  "o_dateSource_updated": {
+    "message": "Sist endret"
+  },
+  "o_dateSource_export": {
+    "message": "Eksporttidspunkt"
+  },
+  "f_dateFormat": {
+    "message": "Datoformat"
+  },
+  "o_dateFormat_locale": {
+    "message": "Nettleserens språk og region"
+  },
+  "f_branding": {
+    "message": "Legg til bunnteksten «Eksportert med Chat Exporter»"
+  },
+  "sec_files": {
+    "message": "Filer"
+  },
+  "f_filenameTemplate": {
+    "message": "Mal for filnavn — {title} {date} {time} {platform} {model} {id}"
+  },
+  "f_filenamePrefix": {
+    "message": "Prefiks for filnavn"
+  },
+  "f_downloadSubfolder": {
+    "message": "Undermappe for nedlasting (i Nedlastinger-mappen)"
+  },
+  "f_mdFrontMatter": {
+    "message": "Legg til YAML front matter"
+  },
+  "f_mdThinkingStyle": {
+    "message": "Stil for tankeprosessen"
+  },
+  "o_mdThinkingStyle_blockquote": {
+    "message": "Sitatblokk"
+  },
+  "o_mdThinkingStyle_details": {
+    "message": "Sammenleggbar <details>"
+  },
+  "sec_dataformats": {
+    "message": "JSON og CSV"
+  },
+  "f_jsonPretty": {
+    "message": "Formater JSON"
+  },
+  "f_csvDelimiter": {
+    "message": "CSV-skilletegn"
+  },
+  "o_csvDelimiter_comma": {
+    "message": "Komma ,"
+  },
+  "o_csvDelimiter_semicolon": {
+    "message": "Semikolon ;"
+  },
+  "o_csvDelimiter_tab": {
+    "message": "Tabulator"
+  },
+  "sec_pdf": {
+    "message": "PDF / HTML / Bilde"
+  },
+  "f_pdfTitle": {
+    "message": "Innholdets tittel (tom = chattens tittel)"
+  },
+  "f_pdfPageSize": {
+    "message": "Sidestørrelse"
+  },
+  "f_pdfOrientation": {
+    "message": "Retning"
+  },
+  "o_pdfOrientation_portrait": {
+    "message": "Stående"
+  },
+  "o_pdfOrientation_landscape": {
+    "message": "Liggende"
+  },
+  "f_pdfTheme": {
+    "message": "Tema"
+  },
+  "o_pdfTheme_light": {
+    "message": "Lyst"
+  },
+  "o_pdfTheme_dark": {
+    "message": "Mørkt"
+  },
+  "f_pdfMargins": {
+    "message": "Marger"
+  },
+  "o_pdfMargins_narrow": {
+    "message": "Smale"
+  },
+  "o_pdfMargins_normal": {
+    "message": "Normale"
+  },
+  "o_pdfMargins_wide": {
+    "message": "Brede"
+  },
+  "f_pdfFontScale": {
+    "message": "Skriftstørrelse (% av standard)"
+  },
+  "f_pdfFontFamily": {
+    "message": "Skrifttype"
+  },
+  "o_pdfFontFamily_sans": {
+    "message": "Uten seriffer"
+  },
+  "o_pdfFontFamily_serif": {
+    "message": "Med seriffer"
+  },
+  "o_pdfFontFamily_mono": {
+    "message": "Fast tegnbredde"
+  },
+  "f_pdfPageNumbers": {
+    "message": "Sidetall"
+  },
+  "f_pdfToc": {
+    "message": "Innholdsfortegnelse"
+  },
+  "f_pdfPageBreakPerPrompt": {
+    "message": "Start hver prompt på en ny side"
+  },
+  "f_pdfWrapCode": {
+    "message": "Bryt lange kodelinjer"
+  },
+  "f_pdfAutoPrint": {
+    "message": "Åpne utskriftsdialogen automatisk"
+  }
+}

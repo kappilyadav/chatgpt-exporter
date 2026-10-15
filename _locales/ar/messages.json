@@ -1,0 +1,578 @@
+{
+  "extName": {
+    "message": "ChatGPT Exporter: احفظ ChatGPT بصيغة PDF وWord وMarkdown"
+  },
+  "extDescription": {
+    "message": "صدّر أي محادثة في ChatGPT إلى ملف أنيق وسهل المشاركة. اختر الرسائل، وخصّص التنسيق، وحافظ على خصوصيتك."
+  },
+  "extActionTitle": {
+    "message": "ChatGPT Exporter"
+  },
+  "cmdTogglePanel": {
+    "message": "فتح / إغلاق لوحة تحديد الرسائل"
+  },
+  "cmdQuickExport": {
+    "message": "تصدير المحادثة الحالية بسرعة بالصيغة الافتراضية"
+  },
+  "cmdExportPdf": {
+    "message": "تصدير المحادثة الحالية بصيغة PDF"
+  },
+  "selectMessages": {
+    "message": "تحديد الرسائل"
+  },
+  "select": {
+    "message": "تحديد"
+  },
+  "export": {
+    "message": "تصدير"
+  },
+  "exportAs": {
+    "message": "تصدير بصيغة"
+  },
+  "all": {
+    "message": "الكل"
+  },
+  "allDefault": {
+    "message": "الكل (افتراضي)"
+  },
+  "questions": {
+    "message": "الأسئلة"
+  },
+  "answers": {
+    "message": "الإجابات"
+  },
+  "none": {
+    "message": "لا شيء"
+  },
+  "invert": {
+    "message": "عكس التحديد"
+  },
+  "cancel": {
+    "message": "إلغاء"
+  },
+  "copy": {
+    "message": "نسخ"
+  },
+  "settings": {
+    "message": "الإعدادات"
+  },
+  "expand": {
+    "message": "توسيع"
+  },
+  "back": {
+    "message": "رجوع"
+  },
+  "refresh": {
+    "message": "تحديث"
+  },
+  "retry": {
+    "message": "إعادة المحاولة"
+  },
+  "loading": {
+    "message": "جارٍ تحميل المحادثة…"
+  },
+  "loadingHistory": {
+    "message": "جارٍ تحميل السجل الكامل…"
+  },
+  "tip": {
+    "message": "نصيحة: اضغط Shift مع النقر لتحديد نطاق من الرسائل."
+  },
+  "you": {
+    "message": "أنت"
+  },
+  "exportedN": {
+    "message": "تم تصدير {n} رسالة بصيغة {fmt}"
+  },
+  "copiedN": {
+    "message": "تم نسخ {n} رسالة بصيغة {fmt}"
+  },
+  "nothingSelected": {
+    "message": "حدّد رسالة واحدة على الأقل أولًا."
+  },
+  "noConversation": {
+    "message": "لم يتم العثور على محادثة في هذه الصفحة."
+  },
+  "failed": {
+    "message": "فشل التصدير: {msg}"
+  },
+  "pdfHint": {
+    "message": "جارٍ فتح معاينة الطباعة — اختر «حفظ بصيغة PDF»."
+  },
+  "exportAll": {
+    "message": "تصدير كل المحادثات…"
+  },
+  "bulkTitle": {
+    "message": "تصدير عدة محادثات"
+  },
+  "searchChats": {
+    "message": "البحث في المحادثات"
+  },
+  "selectAll": {
+    "message": "تحديد الكل"
+  },
+  "exportZip": {
+    "message": "تصدير ZIP"
+  },
+  "progress": {
+    "message": "جارٍ التصدير {i} / {n}…"
+  },
+  "bulkDone": {
+    "message": "تم تصدير {n} محادثة إلى ملف ZIP"
+  },
+  "bulkUnsupported": {
+    "message": "التصدير المجمّع غير متاح لهذا الموقع بعد. افتح محادثة واستخدم «تصدير»."
+  },
+  "chatsFound": {
+    "message": "{n} محادثة"
+  },
+  "copyAs": {
+    "message": "نسخ بصيغة {fmt}"
+  },
+  "quickExport": {
+    "message": "تصدير سريع"
+  },
+  "openPanel": {
+    "message": "تحديد الرسائل…"
+  },
+  "unsupportedSite": {
+    "message": "افتح ChatGPT لتصدير محادثة."
+  },
+  "selectedOf": {
+    "message": "{a}/{b}"
+  },
+  "messages": {
+    "message": "رسالة"
+  },
+  "richText": {
+    "message": "نص منسّق"
+  },
+  "fmtText": {
+    "message": "نص"
+  },
+  "fmtPng": {
+    "message": "صورة (PNG)"
+  },
+  "toggleTitle": {
+    "message": "إظهار أزرار التصدير أو إخفاؤها"
+  },
+  "autoBrowser": {
+    "message": "تلقائي (حسب المتصفح)"
+  },
+  "close": {
+    "message": "إغلاق"
+  },
+  "ctxExportChat": {
+    "message": "تصدير هذه المحادثة"
+  },
+  "ctxExportAs": {
+    "message": "تصدير بصيغة {fmt}"
+  },
+  "seePlans": {
+    "message": "عرض الخطط"
+  },
+  "upgrade": {
+    "message": "ترقية"
+  },
+  "accountHeading": {
+    "message": "الحساب"
+  },
+  "limitFull": {
+    "message": "لقد استنفدت حد التصدير المجاني الكامل للمحادثات لهذا الشهر ({limit}). قم بالترقية لتصدير غير محدود."
+  },
+  "limitPartial": {
+    "message": "لقد استنفدت حد التصدير الجزئي المجاني لهذا الشهر ({limit}). قم بالترقية لتصدير غير محدود."
+  },
+  "bulkFreeLeft": {
+    "message": "الخطة المجانية: المتبقي هذا الشهر من التصدير الكامل: {left}، لكنك حددت عدد محادثات: {n}. حدّد عددًا أقل من المحادثات أو قم بالترقية لتصدير غير محدود."
+  },
+  "tokenInvalidFormat": {
+    "message": "لا يبدو هذا رمزًا صالحًا."
+  },
+  "tokenExpired": {
+    "message": "لم يعد هذا الرمز صالحًا. أنشئ رمزًا جديدًا من حسابك."
+  },
+  "serverUnreachable": {
+    "message": "تعذّر الوصول إلى الخادم. تحقق من اتصالك وأعد المحاولة."
+  },
+  "notSignedIn": {
+    "message": "لم يتم تسجيل الدخول"
+  },
+  "sessionFailed": {
+    "message": "فشل طلب الجلسة ({status})"
+  },
+  "popupChecking": {
+    "message": "جارٍ فحص علامة التبويب…"
+  },
+  "conversationDetected": {
+    "message": "تم اكتشاف محادثة {name}"
+  },
+  "openAConversation": {
+    "message": "{name} — افتح محادثة"
+  },
+  "worksOn": {
+    "message": "يعمل على chatgpt.com"
+  },
+  "popupInactive": {
+    "message": "افتح محادثة في ChatGPT ثم انقر على الإضافة مرة أخرى:"
+  },
+  "formatLabel": {
+    "message": "الصيغة"
+  },
+  "keyboardShortcuts": {
+    "message": "اختصارات لوحة المفاتيح"
+  },
+  "planPro": {
+    "message": "Pro · {plan} · تصدير غير محدود"
+  },
+  "planYear": {
+    "message": "الخطة السنوية"
+  },
+  "planMonth": {
+    "message": "الخطة الشهرية"
+  },
+  "planProName": {
+    "message": "Pro"
+  },
+  "planFreeLeft": {
+    "message": "مجاني · المتبقي هذا الشهر: {full} تصدير كامل و{single} تصدير جزئي"
+  },
+  "exporting": {
+    "message": "جارٍ التصدير…"
+  },
+  "doneSeePage": {
+    "message": "تم — راجع الصفحة للتفاصيل."
+  },
+  "copiedClipboard": {
+    "message": "تم النسخ إلى الحافظة."
+  },
+  "failedShort": {
+    "message": "فشل"
+  },
+  "optionsTitle": {
+    "message": "ChatGPT Exporter — الإعدادات"
+  },
+  "optionsIntro": {
+    "message": "تُحفظ الإعدادات تلقائيًا وتُزامَن مع ملف Chrome الشخصي. تتم معالجة كل شيء محليًا داخل متصفحك."
+  },
+  "checking": {
+    "message": "جارٍ الفحص…"
+  },
+  "connectWithToken": {
+    "message": "الاتصال باستخدام رمز"
+  },
+  "tokenHelp": {
+    "message": "استخدم هذا الخيار إذا تعذّر على الموقع ربط الإضافة تلقائيًا. انسخ الرمز من صفحة حسابك."
+  },
+  "connect": {
+    "message": "اتصال"
+  },
+  "resetDefaults": {
+    "message": "إعادة الضبط إلى الإعدادات الافتراضية"
+  },
+  "keyboardShortcutsEllipsis": {
+    "message": "اختصارات لوحة المفاتيح…"
+  },
+  "saved": {
+    "message": "تم الحفظ ✓"
+  },
+  "accountLoadFail": {
+    "message": "تعذّر تحميل حسابك الآن."
+  },
+  "connectedAs": {
+    "message": "متصل باسم {email} · {plan}"
+  },
+  "planFreeShort": {
+    "message": "الخطة المجانية"
+  },
+  "planProUnlimited": {
+    "message": "{plan} · تصدير غير محدود"
+  },
+  "manageBilling": {
+    "message": "إدارة الفوترة"
+  },
+  "disconnect": {
+    "message": "قطع الاتصال"
+  },
+  "freeLeftConnect": {
+    "message": "الخطة المجانية · المتبقي هذا الشهر: {full} تصدير كامل و{single} تصدير جزئي. اربط حسابك إذا قمت بالترقية."
+  },
+  "connectAccount": {
+    "message": "ربط الحساب"
+  },
+  "connecting": {
+    "message": "جارٍ الاتصال…"
+  },
+  "connected": {
+    "message": "تم الاتصال."
+  },
+  "connectFail": {
+    "message": "تعذّر الاتصال."
+  },
+  "docContents": {
+    "message": "المحتويات"
+  },
+  "docThoughtProcess": {
+    "message": "عملية التفكير"
+  },
+  "docSources": {
+    "message": "المصادر"
+  },
+  "docAttachments": {
+    "message": "المرفقات"
+  },
+  "docExportedWith": {
+    "message": "تم التصدير باستخدام Chat Exporter"
+  },
+  "pvDocTitle": {
+    "message": "ChatGPT Exporter — معاينة"
+  },
+  "pvPreview": {
+    "message": "معاينة"
+  },
+  "pvPreparing": {
+    "message": "جارٍ التحضير…"
+  },
+  "jobExpired": {
+    "message": "انتهت صلاحية مهمة التصدير هذه. ارجع إلى المحادثة وصدّر مرة أخرى."
+  },
+  "pvWidthPx": {
+    "message": "العرض (px)"
+  },
+  "pvScale": {
+    "message": "المقياس"
+  },
+  "pvRendering": {
+    "message": "جارٍ عرض الجزء {i} من {n}…"
+  },
+  "pvPacking": {
+    "message": "جارٍ تجميع {n} صورة…"
+  },
+  "pvSavedZip": {
+    "message": "تم حفظ {n} صورة بصيغة ZIP"
+  },
+  "pvSaved": {
+    "message": "تم حفظ {name}"
+  },
+  "pvFastNote": {
+    "message": "(1× للحفاظ على سرعة المحادثات الطويلة)"
+  },
+  "pvPrintSave": {
+    "message": "طباعة / حفظ بصيغة PDF"
+  },
+  "pvChooseSave": {
+    "message": "اختر «حفظ بصيغة PDF» كوجهة."
+  },
+  "pvDownloadPng": {
+    "message": "تنزيل PNG"
+  },
+  "pvFailed": {
+    "message": "فشل: {msg}"
+  },
+  "pvRenderFail": {
+    "message": "تعذّر عرض هذا التصدير: {msg}"
+  },
+  "sec_general": {
+    "message": "عام"
+  },
+  "f_language": {
+    "message": "لغة الواجهة"
+  },
+  "f_theme": {
+    "message": "مظهر اللوحة"
+  },
+  "o_theme_auto": {
+    "message": "تلقائي"
+  },
+  "o_theme_dark": {
+    "message": "داكن"
+  },
+  "o_theme_light": {
+    "message": "فاتح"
+  },
+  "f_showLauncher": {
+    "message": "إظهار زرَّي التحديد / التصدير في صفحة المحادثة"
+  },
+  "f_rememberSelection": {
+    "message": "تذكّر اختياري المسبق للتحديد (الكل / الأسئلة / الإجابات)"
+  },
+  "f_closePanelAfterExport": {
+    "message": "إغلاق اللوحة الجانبية بعد التصدير"
+  },
+  "f_showToasts": {
+    "message": "إظهار تأكيد بعد التصدير"
+  },
+  "sec_content": {
+    "message": "المحتوى"
+  },
+  "f_includeThoughts": {
+    "message": "تضمين عملية التفكير / الاستدلال"
+  },
+  "f_includeSources": {
+    "message": "تضمين مصادر واقتباسات البحث على الويب"
+  },
+  "f_includeCanvas": {
+    "message": "تضمين Canvas / العناصر المُنشأة"
+  },
+  "f_includeImages": {
+    "message": "تضمين الصور"
+  },
+  "f_embedImages": {
+    "message": "تضمين الصور داخل الملف (PDF وHTML وWord وPNG)"
+  },
+  "f_includeToolOutputs": {
+    "message": "تضمين استدعاءات الأدوات ومخرجات مفسّر الأكواد"
+  },
+  "f_includeTimestamps": {
+    "message": "إظهار الطابع الزمني لكل رسالة"
+  },
+  "f_showRoleIcons": {
+    "message": "إظهار أيقونات / رموز الأدوار"
+  },
+  "f_userName": {
+    "message": "اسمك (يظهر في ترويسة التصدير)"
+  },
+  "f_userEmail": {
+    "message": "بريدك الإلكتروني (يظهر في ترويسة التصدير)"
+  },
+  "f_userLabel": {
+    "message": "تسمية رسائلك (الافتراضي: أنت)"
+  },
+  "f_assistantLabel": {
+    "message": "تسمية رسائل الذكاء الاصطناعي (الافتراضي: اسم المنصة)"
+  },
+  "f_showDate": {
+    "message": "إظهار تاريخ المحادثة"
+  },
+  "f_dateSource": {
+    "message": "مصدر التاريخ"
+  },
+  "o_dateSource_created": {
+    "message": "تاريخ الإنشاء"
+  },
+  "o_dateSource_updated": {
+    "message": "آخر تعديل"
+  },
+  "o_dateSource_export": {
+    "message": "وقت التصدير"
+  },
+  "f_dateFormat": {
+    "message": "تنسيق التاريخ"
+  },
+  "o_dateFormat_locale": {
+    "message": "إعدادات المنطقة في المتصفح"
+  },
+  "f_branding": {
+    "message": "إضافة تذييل «تم التصدير باستخدام Chat Exporter»"
+  },
+  "sec_files": {
+    "message": "الملفات"
+  },
+  "f_filenameTemplate": {
+    "message": "قالب اسم الملف — {title} {date} {time} {platform} {model} {id}"
+  },
+  "f_filenamePrefix": {
+    "message": "بادئة اسم الملف"
+  },
+  "f_downloadSubfolder": {
+    "message": "مجلد فرعي للتنزيل (داخل مجلد التنزيلات)"
+  },
+  "f_mdFrontMatter": {
+    "message": "إضافة YAML front matter"
+  },
+  "f_mdThinkingStyle": {
+    "message": "نمط عرض عملية التفكير"
+  },
+  "o_mdThinkingStyle_blockquote": {
+    "message": "كتلة اقتباس"
+  },
+  "o_mdThinkingStyle_details": {
+    "message": "<details> قابل للطي"
+  },
+  "sec_dataformats": {
+    "message": "JSON وCSV"
+  },
+  "f_jsonPretty": {
+    "message": "تنسيق JSON بشكل مقروء"
+  },
+  "f_csvDelimiter": {
+    "message": "فاصل CSV"
+  },
+  "o_csvDelimiter_comma": {
+    "message": "فاصلة ,"
+  },
+  "o_csvDelimiter_semicolon": {
+    "message": "فاصلة منقوطة ;"
+  },
+  "o_csvDelimiter_tab": {
+    "message": "مسافة جدولة"
+  },
+  "sec_pdf": {
+    "message": "PDF / HTML / صورة"
+  },
+  "f_pdfTitle": {
+    "message": "عنوان المحتوى (فارغ = عنوان المحادثة)"
+  },
+  "f_pdfPageSize": {
+    "message": "حجم الصفحة"
+  },
+  "f_pdfOrientation": {
+    "message": "الاتجاه"
+  },
+  "o_pdfOrientation_portrait": {
+    "message": "عمودي"
+  },
+  "o_pdfOrientation_landscape": {
+    "message": "أفقي"
+  },
+  "f_pdfTheme": {
+    "message": "المظهر"
+  },
+  "o_pdfTheme_light": {
+    "message": "فاتح"
+  },
+  "o_pdfTheme_dark": {
+    "message": "داكن"
+  },
+  "f_pdfMargins": {
+    "message": "الهوامش"
+  },
+  "o_pdfMargins_narrow": {
+    "message": "ضيقة"
+  },
+  "o_pdfMargins_normal": {
+    "message": "عادية"
+  },
+  "o_pdfMargins_wide": {
+    "message": "واسعة"
+  },
+  "f_pdfFontScale": {
+    "message": "حجم الخط (% من الافتراضي)"
+  },
+  "f_pdfFontFamily": {
+    "message": "نوع الخط"
+  },
+  "o_pdfFontFamily_sans": {
+    "message": "بدون زوائد"
+  },
+  "o_pdfFontFamily_serif": {
+    "message": "بزوائد"
+  },
+  "o_pdfFontFamily_mono": {
+    "message": "أحادي المسافة"
+  },
+  "f_pdfPageNumbers": {
+    "message": "أرقام الصفحات"
+  },
+  "f_pdfToc": {
+    "message": "جدول المحتويات"
+  },
+  "f_pdfPageBreakPerPrompt": {
+    "message": "بدء كل مطالبة في صفحة جديدة"
+  },
+  "f_pdfWrapCode": {
+    "message": "التفاف أسطر الأكواد الطويلة"
+  },
+  "f_pdfAutoPrint": {
+    "message": "فتح مربع حوار الطباعة تلقائيًا"
+  }
+}

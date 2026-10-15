@@ -82,7 +82,16 @@
       });
       window.addEventListener('resize', () => P.closeMenus());
 
-      CE.settings.onChange(() => { P.applySettings(); P.render(); });
+      let shownLang = CE.i18n.get();
+      CE.settings.onChange(() => {
+        P.applySettings();
+        // A language change must also redraw the settings form, which is only built when opened.
+        if (CE.i18n.get() !== shownLang) {
+          shownLang = CE.i18n.get();
+          if (P.state.view === 'settings') P.setView('settings');
+        }
+        P.render();
+      });
       P.applySettings();
       P.render();
       P.watchMount();
@@ -134,7 +143,7 @@
       $.expMain = h('button', { class: 'main', onclick: () => P.exportNow(CE.settings.get().format) });
       $.expCaret = h('button', { class: 'caret', html: ICONS.caret, title: t('exportAs'), onclick: (e) => P.toggleMenu('export', e.currentTarget.parentElement) });
       $.toggle = h('button', {
-        class: 'toggle', title: 'ChatGPT Exporter: show or hide the export buttons',
+        class: 'toggle',
         onclick: () => CE.settings.set({ launcherCollapsed: !CE.settings.get().launcherCollapsed })
       });
       $.toggle.append(h('img', { src: CE.ui.brandIcon, alt: 'ChatGPT Exporter', draggable: 'false' }));
@@ -149,7 +158,7 @@
       const $ = P.$;
       $.title = h('h2');
       $.hIcon = h('span', { class: 'ico', html: ICONS.sidebar });
-      $.backBtn = h('button', { class: 'iconbtn', html: ICONS.back, onclick: () => P.setView('select') });
+      $.backBtn = h('button', { class: 'iconbtn back', html: ICONS.back, onclick: () => P.setView('select') });
       $.refreshBtn = h('button', { class: 'iconbtn', html: ICONS.refresh, onclick: () => P.refresh(true) });
       $.closeBtn = h('button', { class: 'iconbtn', html: ICONS.close, onclick: () => P.close() });
       $.head = h('div', { class: 'p-head' }, $.hIcon, $.backBtn, $.title, $.refreshBtn, $.closeBtn);
@@ -214,7 +223,7 @@
         });
         P.menu.append(h('div', { class: 'sep' }));
         CE.FORMATS.filter((f) => f.copy).forEach((f) => {
-          P.menu.append(h('button', { onclick: () => { P.closeMenus(); P.exportNow(f.id, true); } }, t('copyAs', { fmt: f.id === 'html' ? 'rich text' : f.label })));
+          P.menu.append(h('button', { onclick: () => { P.closeMenus(); P.exportNow(f.id, true); } }, t('copyAs', { fmt: f.id === 'html' ? t('richText') : f.label })));
         });
       }
       P.menu.classList.add('open');
@@ -334,6 +343,8 @@
       const $ = P.$;
       const s = CE.settings.get();
       const st = P.state;
+      CE.i18n.applyDir(P.wrap);
+      $.toggle.title = 'ChatGPT Exporter: ' + t('toggleTitle');
       $.selMain.textContent = t('select');
       $.expMain.textContent = t('export');
       $.title.textContent = st.view === 'settings' ? t('settings') : t('selectMessages');
@@ -457,7 +468,7 @@
 
     /** Free-plan limit reached: say so plainly and offer the upgrade. */
     limitToast(e) {
-      P.toast(e.message, 'err', { label: 'See plans', onClick: () => CE.account.openSite('plans') });
+      P.toast(e.message, 'err', { label: t('seePlans'), onClick: () => CE.account.openSite('plans') });
     },
 
     /** Export using the panel selection when the panel is showing a conversation. */

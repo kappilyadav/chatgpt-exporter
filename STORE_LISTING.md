@@ -27,7 +27,7 @@ Takeaways: "Word" is a bigger search than "Markdown" or "text", and the leader d
 **Summary** (manifest `description`, 123 chars, max 132). Rewritten twice after the "excessive keywords" rejection (Yellow Argon, flagged the format list in the Summary): it now has no format list at all.
 `Export any ChatGPT conversation to a clean, shareable file. Pick the messages you want, customize the layout, stay private.`
 
-**Category:** Productivity. **Language:** English.
+**Category:** Productivity. **Language:** English (default). Translated listings for the other 33 store languages are in `STORE_LISTING_TRANSLATIONS.md`.
 **Homepage URL:** https://chatgptexporterfree.com  **Support URL:** https://chatgptexporterfree.com/help
 **Privacy policy URL:** https://chatgptexporterfree.com/privacy
 **Single purpose:** Export the conversation currently open on chatgpt.com to a file or the clipboard.
@@ -50,7 +50,7 @@ COPY INSTEAD OF DOWNLOAD
 Send the conversation straight to your clipboard and paste it into Google Docs, Word or Notion.
 
 MAKE IT YOURS
-Name files with your own template, save into a sub-folder, set your own labels, and use the right-click menu or keyboard shortcuts (Alt+Shift+S to select, Alt+Shift+E to export, Alt+Shift+P for a PDF). The interface is available in English, Spanish, French, German, Portuguese, Hindi, Chinese and Japanese.
+Name files with your own template, save into a sub-folder, set your own labels, and use the right-click menu or keyboard shortcuts (Alt+Shift+S to select, Alt+Shift+E to export, Alt+Shift+P for a PDF). The interface is available in 34 languages.
 
 PRIVATE BY DESIGN
 Conversations are converted inside your browser and are not sent to our servers. There are no ads, no analytics and no remote code.
@@ -109,7 +109,7 @@ Make it yours
 • Name files with your own template and save into a sub-folder
 • Set your own labels for you and the AI
 • Right-click menu and keyboard shortcuts: Alt+Shift+S to select, Alt+Shift+E to export, Alt+Shift+P for a PDF
-• Interface in English, Spanish, French, German, Portuguese, Hindi, Chinese and Japanese
+• Interface available in 34 languages
 
 PRIVATE BY DESIGN
 Conversations are converted inside your browser and are not sent to our servers. There are no ads, no analytics and no remote code. An optional account only checks your plan status.
@@ -149,6 +149,6 @@ Tick **Authentication information** and **Personally identifiable information** 
 
 ## Before you submit
 1. Deploy the website first: /privacy, /help, the connect flow and /api/extension/status must be live, and Polar switched to live mode (set live product IDs in wrangler.jsonc, POLAR_SERVER=production, live token and webhook, Worker secrets).
-2. Upload `dist/chat-exporter-1.1.2.zip` (`python scripts/package.py` builds and verifies it).
+2. Upload `dist/chat-exporter-1.2.0.zip` (`python scripts/package.py` builds and verifies it).
 3. After the listing exists, set CHROME_STORE_URL and EXTENSION_ID in the website's src/config.ts.
 4. If the name is rejected for the trademark, fall back to "Exporter for ChatGPT: Save Chats to PDF, Word & Markdown".

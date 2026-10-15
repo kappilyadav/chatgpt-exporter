@@ -1,0 +1,578 @@
+{
+  "extName": {
+    "message": "ChatGPT Exporter: spremite ChatGPT u PDF, Word i Markdown"
+  },
+  "extDescription": {
+    "message": "Izvezite bilo koji razgovor iz ChatGPT-a u urednu datoteku za dijeljenje. Odaberite poruke, prilagodite izgled, ostanite privatni."
+  },
+  "extActionTitle": {
+    "message": "ChatGPT Exporter"
+  },
+  "cmdTogglePanel": {
+    "message": "Otvori / zatvori ploču za odabir poruka"
+  },
+  "cmdQuickExport": {
+    "message": "Brzo izvezi trenutačni chat u zadanom formatu"
+  },
+  "cmdExportPdf": {
+    "message": "Izvezi trenutačni chat kao PDF"
+  },
+  "selectMessages": {
+    "message": "Odabir poruka"
+  },
+  "select": {
+    "message": "Odaberi"
+  },
+  "export": {
+    "message": "Izvezi"
+  },
+  "exportAs": {
+    "message": "Izvezi kao"
+  },
+  "all": {
+    "message": "Sve"
+  },
+  "allDefault": {
+    "message": "Sve (zadano)"
+  },
+  "questions": {
+    "message": "Pitanja"
+  },
+  "answers": {
+    "message": "Odgovori"
+  },
+  "none": {
+    "message": "Ništa"
+  },
+  "invert": {
+    "message": "Obrni"
+  },
+  "cancel": {
+    "message": "Odustani"
+  },
+  "copy": {
+    "message": "Kopiraj"
+  },
+  "settings": {
+    "message": "Postavke"
+  },
+  "expand": {
+    "message": "Proširi"
+  },
+  "back": {
+    "message": "Natrag"
+  },
+  "refresh": {
+    "message": "Osvježi"
+  },
+  "retry": {
+    "message": "Pokušaj ponovno"
+  },
+  "loading": {
+    "message": "Učitavanje razgovora…"
+  },
+  "loadingHistory": {
+    "message": "Učitavanje cijele povijesti…"
+  },
+  "tip": {
+    "message": "Savjet: Shift+klik odabire raspon poruka."
+  },
+  "you": {
+    "message": "Vi"
+  },
+  "exportedN": {
+    "message": "Izvezeno poruka: {n} (format: {fmt})"
+  },
+  "copiedN": {
+    "message": "Kopirano poruka: {n} (format: {fmt})"
+  },
+  "nothingSelected": {
+    "message": "Prvo odaberite barem jednu poruku."
+  },
+  "noConversation": {
+    "message": "Na ovoj stranici nije pronađen razgovor."
+  },
+  "failed": {
+    "message": "Izvoz nije uspio: {msg}"
+  },
+  "pdfHint": {
+    "message": "Otvara se pregled ispisa — odaberite „Spremi kao PDF”."
+  },
+  "exportAll": {
+    "message": "Izvezi sve chatove…"
+  },
+  "bulkTitle": {
+    "message": "Izvoz više chatova"
+  },
+  "searchChats": {
+    "message": "Pretraži chatove"
+  },
+  "selectAll": {
+    "message": "Odaberi sve"
+  },
+  "exportZip": {
+    "message": "Izvezi ZIP"
+  },
+  "progress": {
+    "message": "Izvoz {i} / {n}…"
+  },
+  "bulkDone": {
+    "message": "Chatova izvezenih u ZIP datoteku: {n}"
+  },
+  "bulkUnsupported": {
+    "message": "Skupni izvoz još nije dostupan za ovu stranicu. Otvorite chat i upotrijebite Izvezi."
+  },
+  "chatsFound": {
+    "message": "Chatova: {n}"
+  },
+  "copyAs": {
+    "message": "Kopiraj kao {fmt}"
+  },
+  "quickExport": {
+    "message": "Brzi izvoz"
+  },
+  "openPanel": {
+    "message": "Odaberi poruke…"
+  },
+  "unsupportedSite": {
+    "message": "Otvorite ChatGPT kako biste izvezli razgovor."
+  },
+  "selectedOf": {
+    "message": "{a}/{b}"
+  },
+  "messages": {
+    "message": "poruka"
+  },
+  "richText": {
+    "message": "formatirani tekst"
+  },
+  "fmtText": {
+    "message": "Tekst"
+  },
+  "fmtPng": {
+    "message": "Slika (PNG)"
+  },
+  "toggleTitle": {
+    "message": "Prikaži ili sakrij gumbe za izvoz"
+  },
+  "autoBrowser": {
+    "message": "Automatski (preglednik)"
+  },
+  "close": {
+    "message": "Zatvori"
+  },
+  "ctxExportChat": {
+    "message": "Izvezi ovaj chat"
+  },
+  "ctxExportAs": {
+    "message": "Izvezi kao {fmt}"
+  },
+  "seePlans": {
+    "message": "Pogledaj planove"
+  },
+  "upgrade": {
+    "message": "Nadogradi"
+  },
+  "accountHeading": {
+    "message": "Račun"
+  },
+  "limitFull": {
+    "message": "Iskoristili ste ograničenje besplatnih izvoza cijelih chatova za ovaj mjesec ({limit}). Nadogradite za neograničen izvoz."
+  },
+  "limitPartial": {
+    "message": "Iskoristili ste ograničenje besplatnih djelomičnih izvoza za ovaj mjesec ({limit}). Nadogradite za neograničen izvoz."
+  },
+  "bulkFreeLeft": {
+    "message": "Besplatni plan: ovaj mjesec preostaje izvoza cijelih chatova: {left}, a odabrali ste chatova: {n}. Odaberite manje chatova ili nadogradite za neograničen izvoz."
+  },
+  "tokenInvalidFormat": {
+    "message": "Ovo ne izgleda kao valjan token."
+  },
+  "tokenExpired": {
+    "message": "Ovaj token više nije valjan. Izradite novi u svojem računu."
+  },
+  "serverUnreachable": {
+    "message": "Poslužitelj nije dostupan. Provjerite vezu i pokušajte ponovno."
+  },
+  "notSignedIn": {
+    "message": "Niste prijavljeni"
+  },
+  "sessionFailed": {
+    "message": "Zahtjev za sesiju nije uspio ({status})"
+  },
+  "popupChecking": {
+    "message": "Provjera kartice…"
+  },
+  "conversationDetected": {
+    "message": "Otkriven razgovor u aplikaciji {name}"
+  },
+  "openAConversation": {
+    "message": "{name} — otvorite razgovor"
+  },
+  "worksOn": {
+    "message": "Radi na chatgpt.com"
+  },
+  "popupInactive": {
+    "message": "Otvorite razgovor u ChatGPT-u pa ponovno kliknite proširenje:"
+  },
+  "formatLabel": {
+    "message": "Format"
+  },
+  "keyboardShortcuts": {
+    "message": "Tipkovnički prečaci"
+  },
+  "planPro": {
+    "message": "Pro · {plan} · neograničen izvoz"
+  },
+  "planYear": {
+    "message": "Godišnji plan"
+  },
+  "planMonth": {
+    "message": "Mjesečni plan"
+  },
+  "planProName": {
+    "message": "Pro"
+  },
+  "planFreeLeft": {
+    "message": "Besplatno · ovaj mjesec preostaje izvoza: cijelih {full}, djelomičnih {single}"
+  },
+  "exporting": {
+    "message": "Izvoz u tijeku…"
+  },
+  "doneSeePage": {
+    "message": "Gotovo — pojedinosti pogledajte na stranici."
+  },
+  "copiedClipboard": {
+    "message": "Kopirano u međuspremnik."
+  },
+  "failedShort": {
+    "message": "Nije uspjelo"
+  },
+  "optionsTitle": {
+    "message": "ChatGPT Exporter — Postavke"
+  },
+  "optionsIntro": {
+    "message": "Postavke se spremaju automatski i sinkroniziraju s vašim Chrome profilom. Sve se obrađuje lokalno u vašem pregledniku."
+  },
+  "checking": {
+    "message": "Provjera…"
+  },
+  "connectWithToken": {
+    "message": "Poveži pomoću tokena"
+  },
+  "tokenHelp": {
+    "message": "Upotrijebite ovo ako web-stranica nije mogla automatski povezati proširenje. Kopirajte token sa stranice svojeg računa."
+  },
+  "connect": {
+    "message": "Poveži"
+  },
+  "resetDefaults": {
+    "message": "Vrati zadane postavke"
+  },
+  "keyboardShortcutsEllipsis": {
+    "message": "Tipkovnički prečaci…"
+  },
+  "saved": {
+    "message": "Spremljeno ✓"
+  },
+  "accountLoadFail": {
+    "message": "Vaš račun trenutačno nije moguće učitati."
+  },
+  "connectedAs": {
+    "message": "Povezano kao {email} · {plan}"
+  },
+  "planFreeShort": {
+    "message": "Besplatni plan"
+  },
+  "planProUnlimited": {
+    "message": "{plan} · neograničen izvoz"
+  },
+  "manageBilling": {
+    "message": "Upravljaj naplatom"
+  },
+  "disconnect": {
+    "message": "Prekini vezu"
+  },
+  "freeLeftConnect": {
+    "message": "Besplatni plan · ovaj mjesec preostaje izvoza: cijelih {full}, djelomičnih {single}. Povežite račun ako ste nadogradili plan."
+  },
+  "connectAccount": {
+    "message": "Poveži račun"
+  },
+  "connecting": {
+    "message": "Povezivanje…"
+  },
+  "connected": {
+    "message": "Povezano."
+  },
+  "connectFail": {
+    "message": "Povezivanje nije uspjelo."
+  },
+  "docContents": {
+    "message": "Sadržaj"
+  },
+  "docThoughtProcess": {
+    "message": "Tijek razmišljanja"
+  },
+  "docSources": {
+    "message": "Izvori"
+  },
+  "docAttachments": {
+    "message": "Privitci"
+  },
+  "docExportedWith": {
+    "message": "Izvezeno pomoću Chat Exportera"
+  },
+  "pvDocTitle": {
+    "message": "ChatGPT Exporter — Pregled"
+  },
+  "pvPreview": {
+    "message": "Pregled"
+  },
+  "pvPreparing": {
+    "message": "Priprema…"
+  },
+  "jobExpired": {
+    "message": "Ovaj je izvoz istekao. Vratite se u chat i ponovno izvezite."
+  },
+  "pvWidthPx": {
+    "message": "Širina (px)"
+  },
+  "pvScale": {
+    "message": "Mjerilo"
+  },
+  "pvRendering": {
+    "message": "Iscrtavanje dijela {i} od {n}…"
+  },
+  "pvPacking": {
+    "message": "Pakiranje slika: {n}…"
+  },
+  "pvSavedZip": {
+    "message": "Slika spremljenih u ZIP: {n}"
+  },
+  "pvSaved": {
+    "message": "Spremljeno: {name}"
+  },
+  "pvFastNote": {
+    "message": "(1×, kako bi dugi chat ostao brz)"
+  },
+  "pvPrintSave": {
+    "message": "Ispiši / Spremi kao PDF"
+  },
+  "pvChooseSave": {
+    "message": "Kao odredište odaberite „Spremi kao PDF”."
+  },
+  "pvDownloadPng": {
+    "message": "Preuzmi PNG"
+  },
+  "pvFailed": {
+    "message": "Nije uspjelo: {msg}"
+  },
+  "pvRenderFail": {
+    "message": "Ovaj izvoz nije moguće iscrtati: {msg}"
+  },
+  "sec_general": {
+    "message": "Općenito"
+  },
+  "f_language": {
+    "message": "Jezik sučelja"
+  },
+  "f_theme": {
+    "message": "Tema ploče"
+  },
+  "o_theme_auto": {
+    "message": "Automatski"
+  },
+  "o_theme_dark": {
+    "message": "Tamna"
+  },
+  "o_theme_light": {
+    "message": "Svijetla"
+  },
+  "f_showLauncher": {
+    "message": "Prikaži gumbe Odaberi / Izvezi na stranici chata"
+  },
+  "f_rememberSelection": {
+    "message": "Zapamti moju zadanu selekciju (Sve / Pitanja / Odgovori)"
+  },
+  "f_closePanelAfterExport": {
+    "message": "Zatvori bočnu ploču nakon izvoza"
+  },
+  "f_showToasts": {
+    "message": "Prikaži potvrdu nakon izvoza"
+  },
+  "sec_content": {
+    "message": "Sadržaj"
+  },
+  "f_includeThoughts": {
+    "message": "Uključi tijek razmišljanja"
+  },
+  "f_includeSources": {
+    "message": "Uključi izvore i citate s web-pretraživanja"
+  },
+  "f_includeCanvas": {
+    "message": "Uključi Canvas / artefakte"
+  },
+  "f_includeImages": {
+    "message": "Uključi slike"
+  },
+  "f_embedImages": {
+    "message": "Ugradi slike u datoteku (PDF, HTML, Word, PNG)"
+  },
+  "f_includeToolOutputs": {
+    "message": "Uključi pozive alata i izlaz interpretera koda"
+  },
+  "f_includeTimestamps": {
+    "message": "Prikaži vremensku oznaku za svaku poruku"
+  },
+  "f_showRoleIcons": {
+    "message": "Prikaži ikone / emotikone uloga"
+  },
+  "f_userName": {
+    "message": "Vaše ime (prikazuje se u zaglavlju izvoza)"
+  },
+  "f_userEmail": {
+    "message": "Vaš e-mail (prikazuje se u zaglavlju izvoza)"
+  },
+  "f_userLabel": {
+    "message": "Oznaka vaših poruka (zadano: Vi)"
+  },
+  "f_assistantLabel": {
+    "message": "Oznaka poruka umjetne inteligencije (zadano: naziv platforme)"
+  },
+  "f_showDate": {
+    "message": "Prikaži datum razgovora"
+  },
+  "f_dateSource": {
+    "message": "Izvor datuma"
+  },
+  "o_dateSource_created": {
+    "message": "Stvoreno"
+  },
+  "o_dateSource_updated": {
+    "message": "Zadnja izmjena"
+  },
+  "o_dateSource_export": {
+    "message": "Vrijeme izvoza"
+  },
+  "f_dateFormat": {
+    "message": "Format datuma"
+  },
+  "o_dateFormat_locale": {
+    "message": "Regionalne postavke preglednika"
+  },
+  "f_branding": {
+    "message": "Dodaj podnožje „Izvezeno pomoću Chat Exportera”"
+  },
+  "sec_files": {
+    "message": "Datoteke"
+  },
+  "f_filenameTemplate": {
+    "message": "Predložak naziva datoteke — {title} {date} {time} {platform} {model} {id}"
+  },
+  "f_filenamePrefix": {
+    "message": "Prefiks naziva datoteke"
+  },
+  "f_downloadSubfolder": {
+    "message": "Podmapa za preuzimanje (unutar mape Preuzimanja)"
+  },
+  "f_mdFrontMatter": {
+    "message": "Dodaj YAML front matter"
+  },
+  "f_mdThinkingStyle": {
+    "message": "Stil prikaza tijeka razmišljanja"
+  },
+  "o_mdThinkingStyle_blockquote": {
+    "message": "Blok citata"
+  },
+  "o_mdThinkingStyle_details": {
+    "message": "Sklopivi <details>"
+  },
+  "sec_dataformats": {
+    "message": "JSON i CSV"
+  },
+  "f_jsonPretty": {
+    "message": "Formatiraj JSON"
+  },
+  "f_csvDelimiter": {
+    "message": "CSV razdjelnik"
+  },
+  "o_csvDelimiter_comma": {
+    "message": "Zarez ,"
+  },
+  "o_csvDelimiter_semicolon": {
+    "message": "Točka-zarez ;"
+  },
+  "o_csvDelimiter_tab": {
+    "message": "Tabulator"
+  },
+  "sec_pdf": {
+    "message": "PDF / HTML / Slika"
+  },
+  "f_pdfTitle": {
+    "message": "Naslov sadržaja (prazno = naslov chata)"
+  },
+  "f_pdfPageSize": {
+    "message": "Veličina stranice"
+  },
+  "f_pdfOrientation": {
+    "message": "Orijentacija"
+  },
+  "o_pdfOrientation_portrait": {
+    "message": "Okomito"
+  },
+  "o_pdfOrientation_landscape": {
+    "message": "Vodoravno"
+  },
+  "f_pdfTheme": {
+    "message": "Tema"
+  },
+  "o_pdfTheme_light": {
+    "message": "Svijetla"
+  },
+  "o_pdfTheme_dark": {
+    "message": "Tamna"
+  },
+  "f_pdfMargins": {
+    "message": "Margine"
+  },
+  "o_pdfMargins_narrow": {
+    "message": "Uske"
+  },
+  "o_pdfMargins_normal": {
+    "message": "Normalne"
+  },
+  "o_pdfMargins_wide": {
+    "message": "Široke"
+  },
+  "f_pdfFontScale": {
+    "message": "Veličina fonta (% zadane)"
+  },
+  "f_pdfFontFamily": {
+    "message": "Obitelj fonta"
+  },
+  "o_pdfFontFamily_sans": {
+    "message": "Bez serifa"
+  },
+  "o_pdfFontFamily_serif": {
+    "message": "Serifni"
+  },
+  "o_pdfFontFamily_mono": {
+    "message": "Jednake širine"
+  },
+  "f_pdfPageNumbers": {
+    "message": "Brojevi stranica"
+  },
+  "f_pdfToc": {
+    "message": "Sadržaj"
+  },
+  "f_pdfPageBreakPerPrompt": {
+    "message": "Započni svaki prompt na novoj stranici"
+  },
+  "f_pdfWrapCode": {
+    "message": "Prelomi duge retke koda"
+  },
+  "f_pdfAutoPrint": {
+    "message": "Automatski otvori dijalog ispisa"
+  }
+}

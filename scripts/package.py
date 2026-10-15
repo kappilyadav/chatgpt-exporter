@@ -11,21 +11,33 @@ Web Store requires (Windows' built-in "Send to > Compressed folder" gets this wr
 import json
 import os
 import re
+import subprocess
 import sys
 import zipfile
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 os.chdir(ROOT)
 
-TOP = ['manifest.json', 'background.js', 'icons', 'options', 'popup', 'print', 'src', 'vendor']
-MAX_DESCRIPTION = 132  # Chrome Web Store limit for manifest "description"
+TOP = ['manifest.json', 'background.js', '_locales', 'icons', 'options', 'popup', 'print', 'src', 'vendor']
+MAX_NAME = 75          # Chrome Web Store limit for the name
+MAX_DESCRIPTION = 132  # Chrome Web Store limit for the summary
 
 
 def main():
+    # Rebuild _locales/ and src/core/locales.js from scripts/i18n/*.json; fails on a missing key or broken placeholder.
+    subprocess.check_call([sys.executable, os.path.join('scripts', 'build_locales.py')])
     manifest = json.load(open('manifest.json', encoding='utf-8'))
     ver = manifest['version']
-    if len(manifest.get('description', '')) > MAX_DESCRIPTION:
-        sys.exit('manifest description is longer than %d characters' % MAX_DESCRIPTION)
+    en = json.load(open('_locales/en/messages.json', encoding='utf-8'))
+    for code in sorted(os.listdir('_locales')):  # includes the nb alias folder
+        msgs = json.load(open('_locales/%s/messages.json' % code, encoding='utf-8'))
+        if len(msgs['extName']['message']) > MAX_NAME:
+            sys.exit('%s: extName is longer than %d characters' % (code, MAX_NAME))
+        if len(msgs['extDescription']['message']) > MAX_DESCRIPTION:
+            sys.exit('%s: extDescription is longer than %d characters' % (code, MAX_DESCRIPTION))
+    for ref in re.findall(r'__MSG_(\w+)__', open('manifest.json', encoding='utf-8').read()):
+        if ref not in en:
+            sys.exit('manifest uses __MSG_%s__ but _locales/en has no such key' % ref)
 
     os.makedirs('dist', exist_ok=True)
     out = 'dist/chat-exporter-%s.zip' % ver
@@ -74,7 +86,9 @@ def main():
                 missing.append('%s -> %s' % (page, ref))
     if missing:
         sys.exit('missing references: %s' % missing)
-    print('verified: manifest at root, all references present, description %d chars' % len(m['description']))
+    locales = sorted(n.split('/')[1] for n in names if n.startswith('_locales/') and n.endswith('/messages.json'))
+    assert m['default_locale'] in locales, 'default_locale folder missing from the zip'
+    print('verified: manifest at root, all references present, %d locales' % len(locales))
 
 
 if __name__ == '__main__':

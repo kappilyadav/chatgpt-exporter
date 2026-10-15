@@ -1,0 +1,578 @@
+{
+  "extName": {
+    "message": "ChatGPT Exporter: сохраняйте ChatGPT в PDF, Word и Markdown"
+  },
+  "extDescription": {
+    "message": "Экспортируйте любой диалог ChatGPT в аккуратный файл. Выбирайте сообщения, настраивайте оформление, сохраняйте приватность."
+  },
+  "extActionTitle": {
+    "message": "ChatGPT Exporter"
+  },
+  "cmdTogglePanel": {
+    "message": "Открыть / закрыть панель выбора сообщений"
+  },
+  "cmdQuickExport": {
+    "message": "Быстро экспортировать текущий чат в формате по умолчанию"
+  },
+  "cmdExportPdf": {
+    "message": "Экспортировать текущий чат в PDF"
+  },
+  "selectMessages": {
+    "message": "Выбор сообщений"
+  },
+  "select": {
+    "message": "Выбрать"
+  },
+  "export": {
+    "message": "Экспорт"
+  },
+  "exportAs": {
+    "message": "Экспортировать как"
+  },
+  "all": {
+    "message": "Все"
+  },
+  "allDefault": {
+    "message": "Все (по умолчанию)"
+  },
+  "questions": {
+    "message": "Вопросы"
+  },
+  "answers": {
+    "message": "Ответы"
+  },
+  "none": {
+    "message": "Ничего"
+  },
+  "invert": {
+    "message": "Инвертировать"
+  },
+  "cancel": {
+    "message": "Отмена"
+  },
+  "copy": {
+    "message": "Копировать"
+  },
+  "settings": {
+    "message": "Настройки"
+  },
+  "expand": {
+    "message": "Развернуть"
+  },
+  "back": {
+    "message": "Назад"
+  },
+  "refresh": {
+    "message": "Обновить"
+  },
+  "retry": {
+    "message": "Повторить"
+  },
+  "loading": {
+    "message": "Загрузка диалога…"
+  },
+  "loadingHistory": {
+    "message": "Загрузка всей истории…"
+  },
+  "tip": {
+    "message": "Совет: Shift+щелчок выделяет диапазон сообщений."
+  },
+  "you": {
+    "message": "Вы"
+  },
+  "exportedN": {
+    "message": "Экспортировано сообщений: {n} (формат: {fmt})"
+  },
+  "copiedN": {
+    "message": "Скопировано сообщений: {n} (формат: {fmt})"
+  },
+  "nothingSelected": {
+    "message": "Сначала выберите хотя бы одно сообщение."
+  },
+  "noConversation": {
+    "message": "На этой странице не найден диалог."
+  },
+  "failed": {
+    "message": "Не удалось экспортировать: {msg}"
+  },
+  "pdfHint": {
+    "message": "Открывается предварительный просмотр печати — выберите «Сохранить как PDF»."
+  },
+  "exportAll": {
+    "message": "Экспортировать все чаты…"
+  },
+  "bulkTitle": {
+    "message": "Экспорт нескольких чатов"
+  },
+  "searchChats": {
+    "message": "Поиск по чатам"
+  },
+  "selectAll": {
+    "message": "Выбрать все"
+  },
+  "exportZip": {
+    "message": "Экспорт в ZIP"
+  },
+  "progress": {
+    "message": "Экспорт {i} / {n}…"
+  },
+  "bulkDone": {
+    "message": "Чатов экспортировано в ZIP-файл: {n}"
+  },
+  "bulkUnsupported": {
+    "message": "Массовый экспорт для этого сайта пока недоступен. Откройте чат и используйте «Экспорт»."
+  },
+  "chatsFound": {
+    "message": "Чатов: {n}"
+  },
+  "copyAs": {
+    "message": "Копировать как {fmt}"
+  },
+  "quickExport": {
+    "message": "Быстрый экспорт"
+  },
+  "openPanel": {
+    "message": "Выбрать сообщения…"
+  },
+  "unsupportedSite": {
+    "message": "Откройте ChatGPT, чтобы экспортировать диалог."
+  },
+  "selectedOf": {
+    "message": "{a}/{b}"
+  },
+  "messages": {
+    "message": "сообщ."
+  },
+  "richText": {
+    "message": "форматированный текст"
+  },
+  "fmtText": {
+    "message": "Текст"
+  },
+  "fmtPng": {
+    "message": "Изображение (PNG)"
+  },
+  "toggleTitle": {
+    "message": "Показать или скрыть кнопки экспорта"
+  },
+  "autoBrowser": {
+    "message": "Авто (как в браузере)"
+  },
+  "close": {
+    "message": "Закрыть"
+  },
+  "ctxExportChat": {
+    "message": "Экспортировать этот чат"
+  },
+  "ctxExportAs": {
+    "message": "Экспортировать как {fmt}"
+  },
+  "seePlans": {
+    "message": "Посмотреть тарифы"
+  },
+  "upgrade": {
+    "message": "Повысить тариф"
+  },
+  "accountHeading": {
+    "message": "Аккаунт"
+  },
+  "limitFull": {
+    "message": "Вы исчерпали лимит бесплатных экспортов целых чатов на этот месяц ({limit}). Повысьте тариф для безлимитного экспорта."
+  },
+  "limitPartial": {
+    "message": "Вы исчерпали лимит бесплатных частичных экспортов на этот месяц ({limit}). Повысьте тариф для безлимитного экспорта."
+  },
+  "bulkFreeLeft": {
+    "message": "Бесплатный тариф: в этом месяце осталось экспортов целых чатов: {left}, а вы выбрали чатов: {n}. Выберите меньше чатов или повысьте тариф для безлимитного экспорта."
+  },
+  "tokenInvalidFormat": {
+    "message": "Это не похоже на действительный токен."
+  },
+  "tokenExpired": {
+    "message": "Этот токен больше не действует. Создайте новый в своём аккаунте."
+  },
+  "serverUnreachable": {
+    "message": "Не удалось связаться с сервером. Проверьте подключение и повторите попытку."
+  },
+  "notSignedIn": {
+    "message": "Вход не выполнен"
+  },
+  "sessionFailed": {
+    "message": "Не удалось выполнить запрос сессии ({status})"
+  },
+  "popupChecking": {
+    "message": "Проверка вкладки…"
+  },
+  "conversationDetected": {
+    "message": "Обнаружен диалог {name}"
+  },
+  "openAConversation": {
+    "message": "{name} — откройте диалог"
+  },
+  "worksOn": {
+    "message": "Работает на chatgpt.com"
+  },
+  "popupInactive": {
+    "message": "Откройте диалог в ChatGPT и снова нажмите на расширение:"
+  },
+  "formatLabel": {
+    "message": "Формат"
+  },
+  "keyboardShortcuts": {
+    "message": "Сочетания клавиш"
+  },
+  "planPro": {
+    "message": "Pro · {plan} · безлимитный экспорт"
+  },
+  "planYear": {
+    "message": "Годовой тариф"
+  },
+  "planMonth": {
+    "message": "Месячный тариф"
+  },
+  "planProName": {
+    "message": "Pro"
+  },
+  "planFreeLeft": {
+    "message": "Бесплатно · в этом месяце осталось экспортов: целых — {full}, частичных — {single}"
+  },
+  "exporting": {
+    "message": "Экспорт…"
+  },
+  "doneSeePage": {
+    "message": "Готово — подробности на странице."
+  },
+  "copiedClipboard": {
+    "message": "Скопировано в буфер обмена."
+  },
+  "failedShort": {
+    "message": "Ошибка"
+  },
+  "optionsTitle": {
+    "message": "ChatGPT Exporter — Настройки"
+  },
+  "optionsIntro": {
+    "message": "Настройки сохраняются автоматически и синхронизируются с вашим профилем Chrome. Всё обрабатывается локально в браузере."
+  },
+  "checking": {
+    "message": "Проверка…"
+  },
+  "connectWithToken": {
+    "message": "Подключиться с помощью токена"
+  },
+  "tokenHelp": {
+    "message": "Используйте, если сайт не смог подключить расширение автоматически. Скопируйте токен на странице своего аккаунта."
+  },
+  "connect": {
+    "message": "Подключить"
+  },
+  "resetDefaults": {
+    "message": "Сбросить настройки"
+  },
+  "keyboardShortcutsEllipsis": {
+    "message": "Сочетания клавиш…"
+  },
+  "saved": {
+    "message": "Сохранено ✓"
+  },
+  "accountLoadFail": {
+    "message": "Сейчас не удаётся загрузить ваш аккаунт."
+  },
+  "connectedAs": {
+    "message": "Подключено как {email} · {plan}"
+  },
+  "planFreeShort": {
+    "message": "Бесплатный тариф"
+  },
+  "planProUnlimited": {
+    "message": "{plan} · безлимитный экспорт"
+  },
+  "manageBilling": {
+    "message": "Управление оплатой"
+  },
+  "disconnect": {
+    "message": "Отключить"
+  },
+  "freeLeftConnect": {
+    "message": "Бесплатный тариф · в этом месяце осталось экспортов: целых — {full}, частичных — {single}. Подключите аккаунт, если вы повысили тариф."
+  },
+  "connectAccount": {
+    "message": "Подключить аккаунт"
+  },
+  "connecting": {
+    "message": "Подключение…"
+  },
+  "connected": {
+    "message": "Подключено."
+  },
+  "connectFail": {
+    "message": "Не удалось подключиться."
+  },
+  "docContents": {
+    "message": "Содержание"
+  },
+  "docThoughtProcess": {
+    "message": "Ход рассуждений"
+  },
+  "docSources": {
+    "message": "Источники"
+  },
+  "docAttachments": {
+    "message": "Вложения"
+  },
+  "docExportedWith": {
+    "message": "Экспортировано с помощью Chat Exporter"
+  },
+  "pvDocTitle": {
+    "message": "ChatGPT Exporter — Предпросмотр"
+  },
+  "pvPreview": {
+    "message": "Предпросмотр"
+  },
+  "pvPreparing": {
+    "message": "Подготовка…"
+  },
+  "jobExpired": {
+    "message": "Срок этого экспорта истёк. Вернитесь в чат и экспортируйте снова."
+  },
+  "pvWidthPx": {
+    "message": "Ширина (px)"
+  },
+  "pvScale": {
+    "message": "Масштаб"
+  },
+  "pvRendering": {
+    "message": "Отрисовка части {i} из {n}…"
+  },
+  "pvPacking": {
+    "message": "Упаковка изображений: {n}…"
+  },
+  "pvSavedZip": {
+    "message": "Изображений сохранено в ZIP: {n}"
+  },
+  "pvSaved": {
+    "message": "Сохранено: {name}"
+  },
+  "pvFastNote": {
+    "message": "(1×, чтобы длинный чат обрабатывался быстро)"
+  },
+  "pvPrintSave": {
+    "message": "Печать / Сохранить как PDF"
+  },
+  "pvChooseSave": {
+    "message": "В качестве назначения выберите «Сохранить как PDF»."
+  },
+  "pvDownloadPng": {
+    "message": "Скачать PNG"
+  },
+  "pvFailed": {
+    "message": "Ошибка: {msg}"
+  },
+  "pvRenderFail": {
+    "message": "Не удалось отрисовать этот экспорт: {msg}"
+  },
+  "sec_general": {
+    "message": "Общие"
+  },
+  "f_language": {
+    "message": "Язык интерфейса"
+  },
+  "f_theme": {
+    "message": "Тема панели"
+  },
+  "o_theme_auto": {
+    "message": "Авто"
+  },
+  "o_theme_dark": {
+    "message": "Тёмная"
+  },
+  "o_theme_light": {
+    "message": "Светлая"
+  },
+  "f_showLauncher": {
+    "message": "Показывать кнопки «Выбрать» / «Экспорт» на странице чата"
+  },
+  "f_rememberSelection": {
+    "message": "Запоминать выбранный набор (Все / Вопросы / Ответы)"
+  },
+  "f_closePanelAfterExport": {
+    "message": "Закрывать боковую панель после экспорта"
+  },
+  "f_showToasts": {
+    "message": "Показывать подтверждение после экспорта"
+  },
+  "sec_content": {
+    "message": "Содержимое"
+  },
+  "f_includeThoughts": {
+    "message": "Включать ход рассуждений"
+  },
+  "f_includeSources": {
+    "message": "Включать источники и цитаты веб-поиска"
+  },
+  "f_includeCanvas": {
+    "message": "Включать Canvas / артефакты"
+  },
+  "f_includeImages": {
+    "message": "Включать изображения"
+  },
+  "f_embedImages": {
+    "message": "Встраивать изображения в файл (PDF, HTML, Word, PNG)"
+  },
+  "f_includeToolOutputs": {
+    "message": "Включать вызовы инструментов и вывод интерпретатора кода"
+  },
+  "f_includeTimestamps": {
+    "message": "Показывать время у каждого сообщения"
+  },
+  "f_showRoleIcons": {
+    "message": "Показывать значки / эмодзи ролей"
+  },
+  "f_userName": {
+    "message": "Ваше имя (в заголовке экспорта)"
+  },
+  "f_userEmail": {
+    "message": "Ваш e-mail (в заголовке экспорта)"
+  },
+  "f_userLabel": {
+    "message": "Подпись ваших сообщений (по умолчанию: Вы)"
+  },
+  "f_assistantLabel": {
+    "message": "Подпись сообщений ИИ (по умолчанию: название платформы)"
+  },
+  "f_showDate": {
+    "message": "Показывать дату диалога"
+  },
+  "f_dateSource": {
+    "message": "Источник даты"
+  },
+  "o_dateSource_created": {
+    "message": "Создание"
+  },
+  "o_dateSource_updated": {
+    "message": "Последнее изменение"
+  },
+  "o_dateSource_export": {
+    "message": "Время экспорта"
+  },
+  "f_dateFormat": {
+    "message": "Формат даты"
+  },
+  "o_dateFormat_locale": {
+    "message": "Региональные настройки браузера"
+  },
+  "f_branding": {
+    "message": "Добавлять подвал «Экспортировано с помощью Chat Exporter»"
+  },
+  "sec_files": {
+    "message": "Файлы"
+  },
+  "f_filenameTemplate": {
+    "message": "Шаблон имени файла — {title} {date} {time} {platform} {model} {id}"
+  },
+  "f_filenamePrefix": {
+    "message": "Префикс имени файла"
+  },
+  "f_downloadSubfolder": {
+    "message": "Подпапка загрузки (внутри папки «Загрузки»)"
+  },
+  "f_mdFrontMatter": {
+    "message": "Добавлять YAML front matter"
+  },
+  "f_mdThinkingStyle": {
+    "message": "Оформление хода рассуждений"
+  },
+  "o_mdThinkingStyle_blockquote": {
+    "message": "Блок цитаты"
+  },
+  "o_mdThinkingStyle_details": {
+    "message": "Сворачиваемый <details>"
+  },
+  "sec_dataformats": {
+    "message": "JSON и CSV"
+  },
+  "f_jsonPretty": {
+    "message": "Форматировать JSON"
+  },
+  "f_csvDelimiter": {
+    "message": "Разделитель CSV"
+  },
+  "o_csvDelimiter_comma": {
+    "message": "Запятая ,"
+  },
+  "o_csvDelimiter_semicolon": {
+    "message": "Точка с запятой ;"
+  },
+  "o_csvDelimiter_tab": {
+    "message": "Табуляция"
+  },
+  "sec_pdf": {
+    "message": "PDF / HTML / Изображение"
+  },
+  "f_pdfTitle": {
+    "message": "Заголовок содержимого (пусто = название чата)"
+  },
+  "f_pdfPageSize": {
+    "message": "Размер страницы"
+  },
+  "f_pdfOrientation": {
+    "message": "Ориентация"
+  },
+  "o_pdfOrientation_portrait": {
+    "message": "Книжная"
+  },
+  "o_pdfOrientation_landscape": {
+    "message": "Альбомная"
+  },
+  "f_pdfTheme": {
+    "message": "Тема"
+  },
+  "o_pdfTheme_light": {
+    "message": "Светлая"
+  },
+  "o_pdfTheme_dark": {
+    "message": "Тёмная"
+  },
+  "f_pdfMargins": {
+    "message": "Поля"
+  },
+  "o_pdfMargins_narrow": {
+    "message": "Узкие"
+  },
+  "o_pdfMargins_normal": {
+    "message": "Обычные"
+  },
+  "o_pdfMargins_wide": {
+    "message": "Широкие"
+  },
+  "f_pdfFontScale": {
+    "message": "Размер шрифта (% от стандартного)"
+  },
+  "f_pdfFontFamily": {
+    "message": "Семейство шрифтов"
+  },
+  "o_pdfFontFamily_sans": {
+    "message": "Без засечек"
+  },
+  "o_pdfFontFamily_serif": {
+    "message": "С засечками"
+  },
+  "o_pdfFontFamily_mono": {
+    "message": "Моноширинный"
+  },
+  "f_pdfPageNumbers": {
+    "message": "Номера страниц"
+  },
+  "f_pdfToc": {
+    "message": "Оглавление"
+  },
+  "f_pdfPageBreakPerPrompt": {
+    "message": "Начинать каждый запрос с новой страницы"
+  },
+  "f_pdfWrapCode": {
+    "message": "Переносить длинные строки кода"
+  },
+  "f_pdfAutoPrint": {
+    "message": "Автоматически открывать диалог печати"
+  }
+}

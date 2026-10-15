@@ -1,0 +1,578 @@
+{
+  "extName": {
+    "message": "ChatGPT Exporter: บันทึก ChatGPT เป็น PDF, Word และ Markdown"
+  },
+  "extDescription": {
+    "message": "ส่งออกบทสนทนา ChatGPT เป็นไฟล์ที่เรียบร้อยและแชร์ได้ง่าย เลือกข้อความที่ต้องการ ปรับเลย์เอาต์ และรักษาความเป็นส่วนตัว"
+  },
+  "extActionTitle": {
+    "message": "ChatGPT Exporter"
+  },
+  "cmdTogglePanel": {
+    "message": "เปิด / ปิดแผงเลือกข้อความ"
+  },
+  "cmdQuickExport": {
+    "message": "ส่งออกแชตปัจจุบันอย่างรวดเร็วในรูปแบบเริ่มต้น"
+  },
+  "cmdExportPdf": {
+    "message": "ส่งออกแชตปัจจุบันเป็น PDF"
+  },
+  "selectMessages": {
+    "message": "เลือกข้อความ"
+  },
+  "select": {
+    "message": "เลือก"
+  },
+  "export": {
+    "message": "ส่งออก"
+  },
+  "exportAs": {
+    "message": "ส่งออกเป็น"
+  },
+  "all": {
+    "message": "ทั้งหมด"
+  },
+  "allDefault": {
+    "message": "ทั้งหมด (ค่าเริ่มต้น)"
+  },
+  "questions": {
+    "message": "คำถาม"
+  },
+  "answers": {
+    "message": "คำตอบ"
+  },
+  "none": {
+    "message": "ไม่เลือก"
+  },
+  "invert": {
+    "message": "สลับการเลือก"
+  },
+  "cancel": {
+    "message": "ยกเลิก"
+  },
+  "copy": {
+    "message": "คัดลอก"
+  },
+  "settings": {
+    "message": "การตั้งค่า"
+  },
+  "expand": {
+    "message": "ขยาย"
+  },
+  "back": {
+    "message": "กลับ"
+  },
+  "refresh": {
+    "message": "รีเฟรช"
+  },
+  "retry": {
+    "message": "ลองอีกครั้ง"
+  },
+  "loading": {
+    "message": "กำลังโหลดบทสนทนา…"
+  },
+  "loadingHistory": {
+    "message": "กำลังโหลดประวัติทั้งหมด…"
+  },
+  "tip": {
+    "message": "เคล็ดลับ: กด Shift+คลิกเพื่อเลือกข้อความเป็นช่วง"
+  },
+  "you": {
+    "message": "คุณ"
+  },
+  "exportedN": {
+    "message": "ส่งออก {n} ข้อความเป็น {fmt} แล้ว"
+  },
+  "copiedN": {
+    "message": "คัดลอก {n} ข้อความเป็น {fmt} แล้ว"
+  },
+  "nothingSelected": {
+    "message": "โปรดเลือกอย่างน้อยหนึ่งข้อความก่อน"
+  },
+  "noConversation": {
+    "message": "ไม่พบบทสนทนาในหน้านี้"
+  },
+  "failed": {
+    "message": "ส่งออกไม่สำเร็จ: {msg}"
+  },
+  "pdfHint": {
+    "message": "กำลังเปิดตัวอย่างก่อนพิมพ์ — เลือก “บันทึกเป็น PDF”"
+  },
+  "exportAll": {
+    "message": "ส่งออกแชตทั้งหมด…"
+  },
+  "bulkTitle": {
+    "message": "ส่งออกหลายแชต"
+  },
+  "searchChats": {
+    "message": "ค้นหาแชต"
+  },
+  "selectAll": {
+    "message": "เลือกทั้งหมด"
+  },
+  "exportZip": {
+    "message": "ส่งออกเป็น ZIP"
+  },
+  "progress": {
+    "message": "กำลังส่งออก {i} / {n}…"
+  },
+  "bulkDone": {
+    "message": "ส่งออก {n} แชตเป็นไฟล์ ZIP แล้ว"
+  },
+  "bulkUnsupported": {
+    "message": "เว็บไซต์นี้ยังไม่รองรับการส่งออกหลายแชต เปิดแชตหนึ่งแล้วใช้ส่งออก"
+  },
+  "chatsFound": {
+    "message": "{n} แชต"
+  },
+  "copyAs": {
+    "message": "คัดลอกเป็น {fmt}"
+  },
+  "quickExport": {
+    "message": "ส่งออกด่วน"
+  },
+  "openPanel": {
+    "message": "เลือกข้อความ…"
+  },
+  "unsupportedSite": {
+    "message": "เปิด ChatGPT เพื่อส่งออกบทสนทนา"
+  },
+  "selectedOf": {
+    "message": "{a}/{b}"
+  },
+  "messages": {
+    "message": "ข้อความ"
+  },
+  "richText": {
+    "message": "ข้อความที่มีรูปแบบ"
+  },
+  "fmtText": {
+    "message": "ข้อความ"
+  },
+  "fmtPng": {
+    "message": "รูปภาพ (PNG)"
+  },
+  "toggleTitle": {
+    "message": "แสดงหรือซ่อนปุ่มส่งออก"
+  },
+  "autoBrowser": {
+    "message": "อัตโนมัติ (ตามเบราว์เซอร์)"
+  },
+  "close": {
+    "message": "ปิด"
+  },
+  "ctxExportChat": {
+    "message": "ส่งออกแชตนี้"
+  },
+  "ctxExportAs": {
+    "message": "ส่งออกเป็น {fmt}"
+  },
+  "seePlans": {
+    "message": "ดูแพ็กเกจ"
+  },
+  "upgrade": {
+    "message": "อัปเกรด"
+  },
+  "accountHeading": {
+    "message": "บัญชี"
+  },
+  "limitFull": {
+    "message": "คุณใช้สิทธิ์ส่งออกแชตแบบเต็มฟรีครบ {limit} ครั้งของเดือนนี้แล้ว อัปเกรดเพื่อส่งออกได้ไม่จำกัด"
+  },
+  "limitPartial": {
+    "message": "คุณใช้สิทธิ์ส่งออกบางส่วนฟรีครบ {limit} ครั้งของเดือนนี้แล้ว อัปเกรดเพื่อส่งออกได้ไม่จำกัด"
+  },
+  "bulkFreeLeft": {
+    "message": "แพ็กเกจฟรี: เดือนนี้เหลือสิทธิ์ส่งออกแบบเต็ม {left} ครั้ง แต่คุณเลือกไว้ {n} แชต เลือกให้น้อยลงหรืออัปเกรดเพื่อส่งออกได้ไม่จำกัด"
+  },
+  "tokenInvalidFormat": {
+    "message": "สิ่งนี้ดูไม่เหมือนโทเค็นที่ถูกต้อง"
+  },
+  "tokenExpired": {
+    "message": "โทเค็นนี้ใช้ไม่ได้อีกต่อไป โปรดสร้างโทเค็นใหม่จากบัญชีของคุณ"
+  },
+  "serverUnreachable": {
+    "message": "ไม่สามารถเชื่อมต่อกับเซิร์ฟเวอร์ได้ ตรวจสอบการเชื่อมต่อแล้วลองอีกครั้ง"
+  },
+  "notSignedIn": {
+    "message": "ยังไม่ได้ลงชื่อเข้าใช้"
+  },
+  "sessionFailed": {
+    "message": "คำขอเซสชันไม่สำเร็จ ({status})"
+  },
+  "popupChecking": {
+    "message": "กำลังตรวจสอบแท็บ…"
+  },
+  "conversationDetected": {
+    "message": "พบบทสนทนา {name}"
+  },
+  "openAConversation": {
+    "message": "{name} — โปรดเปิดบทสนทนา"
+  },
+  "worksOn": {
+    "message": "ใช้งานได้บน chatgpt.com"
+  },
+  "popupInactive": {
+    "message": "เปิดบทสนทนา ChatGPT แล้วคลิกส่วนขยายอีกครั้ง:"
+  },
+  "formatLabel": {
+    "message": "รูปแบบ"
+  },
+  "keyboardShortcuts": {
+    "message": "แป้นพิมพ์ลัด"
+  },
+  "planPro": {
+    "message": "Pro · {plan} · ส่งออกไม่จำกัด"
+  },
+  "planYear": {
+    "message": "แพ็กเกจรายปี"
+  },
+  "planMonth": {
+    "message": "แพ็กเกจรายเดือน"
+  },
+  "planProName": {
+    "message": "Pro"
+  },
+  "planFreeLeft": {
+    "message": "ฟรี · เดือนนี้เหลือสิทธิ์ส่งออกแบบเต็ม {full} ครั้งและบางส่วน {single} ครั้ง"
+  },
+  "exporting": {
+    "message": "กำลังส่งออก…"
+  },
+  "doneSeePage": {
+    "message": "เสร็จแล้ว — ดูรายละเอียดในหน้า"
+  },
+  "copiedClipboard": {
+    "message": "คัดลอกไปยังคลิปบอร์ดแล้ว"
+  },
+  "failedShort": {
+    "message": "ไม่สำเร็จ"
+  },
+  "optionsTitle": {
+    "message": "ChatGPT Exporter — การตั้งค่า"
+  },
+  "optionsIntro": {
+    "message": "ระบบบันทึกการตั้งค่าอัตโนมัติและซิงค์กับโปรไฟล์ Chrome ของคุณ ทุกอย่างประมวลผลภายในเบราว์เซอร์ของคุณ"
+  },
+  "checking": {
+    "message": "กำลังตรวจสอบ…"
+  },
+  "connectWithToken": {
+    "message": "เชื่อมต่อด้วยโทเค็น"
+  },
+  "tokenHelp": {
+    "message": "ใช้วิธีนี้หากเว็บไซต์เชื่อมต่อส่วนขยายให้อัตโนมัติไม่ได้ คัดลอกโทเค็นจากหน้าบัญชีของคุณ"
+  },
+  "connect": {
+    "message": "เชื่อมต่อ"
+  },
+  "resetDefaults": {
+    "message": "รีเซ็ตเป็นค่าเริ่มต้น"
+  },
+  "keyboardShortcutsEllipsis": {
+    "message": "แป้นพิมพ์ลัด…"
+  },
+  "saved": {
+    "message": "บันทึกแล้ว ✓"
+  },
+  "accountLoadFail": {
+    "message": "ไม่สามารถโหลดบัญชีของคุณได้ในขณะนี้"
+  },
+  "connectedAs": {
+    "message": "เชื่อมต่อในชื่อ {email} · {plan}"
+  },
+  "planFreeShort": {
+    "message": "แพ็กเกจฟรี"
+  },
+  "planProUnlimited": {
+    "message": "{plan} · ส่งออกไม่จำกัด"
+  },
+  "manageBilling": {
+    "message": "จัดการการเรียกเก็บเงิน"
+  },
+  "disconnect": {
+    "message": "ยกเลิกการเชื่อมต่อ"
+  },
+  "freeLeftConnect": {
+    "message": "แพ็กเกจฟรี · เดือนนี้เหลือสิทธิ์ส่งออกแบบเต็ม {full} ครั้งและบางส่วน {single} ครั้ง หากอัปเกรดแล้วให้เชื่อมต่อบัญชีของคุณ"
+  },
+  "connectAccount": {
+    "message": "เชื่อมต่อบัญชี"
+  },
+  "connecting": {
+    "message": "กำลังเชื่อมต่อ…"
+  },
+  "connected": {
+    "message": "เชื่อมต่อแล้ว"
+  },
+  "connectFail": {
+    "message": "เชื่อมต่อไม่ได้"
+  },
+  "docContents": {
+    "message": "สารบัญ"
+  },
+  "docThoughtProcess": {
+    "message": "กระบวนการคิด"
+  },
+  "docSources": {
+    "message": "แหล่งที่มา"
+  },
+  "docAttachments": {
+    "message": "ไฟล์แนบ"
+  },
+  "docExportedWith": {
+    "message": "ส่งออกด้วย Chat Exporter"
+  },
+  "pvDocTitle": {
+    "message": "ChatGPT Exporter — ตัวอย่าง"
+  },
+  "pvPreview": {
+    "message": "ตัวอย่าง"
+  },
+  "pvPreparing": {
+    "message": "กำลังเตรียม…"
+  },
+  "jobExpired": {
+    "message": "งานส่งออกนี้หมดอายุแล้ว โปรดกลับไปที่แชตแล้วส่งออกอีกครั้ง"
+  },
+  "pvWidthPx": {
+    "message": "ความกว้าง (px)"
+  },
+  "pvScale": {
+    "message": "มาตราส่วน"
+  },
+  "pvRendering": {
+    "message": "กำลังเรนเดอร์ส่วนที่ {i} จาก {n}…"
+  },
+  "pvPacking": {
+    "message": "กำลังแพ็กรูปภาพ {n} รูป…"
+  },
+  "pvSavedZip": {
+    "message": "บันทึกรูปภาพ {n} รูปเป็น ZIP แล้ว"
+  },
+  "pvSaved": {
+    "message": "บันทึก {name} แล้ว"
+  },
+  "pvFastNote": {
+    "message": "(1× เพื่อให้แชตยาว ๆ ยังคงเร็ว)"
+  },
+  "pvPrintSave": {
+    "message": "พิมพ์ / บันทึกเป็น PDF"
+  },
+  "pvChooseSave": {
+    "message": "เลือก “บันทึกเป็น PDF” เป็นปลายทาง"
+  },
+  "pvDownloadPng": {
+    "message": "ดาวน์โหลด PNG"
+  },
+  "pvFailed": {
+    "message": "ไม่สำเร็จ: {msg}"
+  },
+  "pvRenderFail": {
+    "message": "ไม่สามารถเรนเดอร์การส่งออกนี้ได้: {msg}"
+  },
+  "sec_general": {
+    "message": "ทั่วไป"
+  },
+  "f_language": {
+    "message": "ภาษาของส่วนติดต่อ"
+  },
+  "f_theme": {
+    "message": "ธีมของแผง"
+  },
+  "o_theme_auto": {
+    "message": "อัตโนมัติ"
+  },
+  "o_theme_dark": {
+    "message": "มืด"
+  },
+  "o_theme_light": {
+    "message": "สว่าง"
+  },
+  "f_showLauncher": {
+    "message": "แสดงปุ่มเลือก / ส่งออกบนหน้าแชต"
+  },
+  "f_rememberSelection": {
+    "message": "จำค่าการเลือกที่ตั้งไว้ (ทั้งหมด / คำถาม / คำตอบ)"
+  },
+  "f_closePanelAfterExport": {
+    "message": "ปิดแผงด้านข้างหลังส่งออก"
+  },
+  "f_showToasts": {
+    "message": "แสดงการยืนยันหลังส่งออก"
+  },
+  "sec_content": {
+    "message": "เนื้อหา"
+  },
+  "f_includeThoughts": {
+    "message": "รวมกระบวนการคิด / การให้เหตุผล"
+  },
+  "f_includeSources": {
+    "message": "รวมแหล่งที่มาและการอ้างอิงจากการค้นหาเว็บ"
+  },
+  "f_includeCanvas": {
+    "message": "รวม Canvas / Artifacts"
+  },
+  "f_includeImages": {
+    "message": "รวมรูปภาพ"
+  },
+  "f_embedImages": {
+    "message": "ฝังรูปภาพไว้ในไฟล์ (PDF, HTML, Word, PNG)"
+  },
+  "f_includeToolOutputs": {
+    "message": "รวมการเรียกใช้เครื่องมือและผลลัพธ์จากตัวแปลโค้ด"
+  },
+  "f_includeTimestamps": {
+    "message": "แสดงเวลาของทุกข้อความ"
+  },
+  "f_showRoleIcons": {
+    "message": "แสดงไอคอน / อีโมจิของบทบาท"
+  },
+  "f_userName": {
+    "message": "ชื่อของคุณ (แสดงในส่วนหัวของไฟล์ที่ส่งออก)"
+  },
+  "f_userEmail": {
+    "message": "อีเมลของคุณ (แสดงในส่วนหัวของไฟล์ที่ส่งออก)"
+  },
+  "f_userLabel": {
+    "message": "ป้ายชื่อข้อความของคุณ (ค่าเริ่มต้น: คุณ)"
+  },
+  "f_assistantLabel": {
+    "message": "ป้ายชื่อข้อความของ AI (ค่าเริ่มต้น: ชื่อแพลตฟอร์ม)"
+  },
+  "f_showDate": {
+    "message": "แสดงวันที่ของบทสนทนา"
+  },
+  "f_dateSource": {
+    "message": "แหล่งที่มาของวันที่"
+  },
+  "o_dateSource_created": {
+    "message": "วันที่สร้าง"
+  },
+  "o_dateSource_updated": {
+    "message": "แก้ไขล่าสุด"
+  },
+  "o_dateSource_export": {
+    "message": "เวลาที่ส่งออก"
+  },
+  "f_dateFormat": {
+    "message": "รูปแบบวันที่"
+  },
+  "o_dateFormat_locale": {
+    "message": "ภาษาและภูมิภาคของเบราว์เซอร์"
+  },
+  "f_branding": {
+    "message": "เพิ่มท้ายกระดาษ “ส่งออกด้วย Chat Exporter”"
+  },
+  "sec_files": {
+    "message": "ไฟล์"
+  },
+  "f_filenameTemplate": {
+    "message": "รูปแบบชื่อไฟล์ — {title} {date} {time} {platform} {model} {id}"
+  },
+  "f_filenamePrefix": {
+    "message": "คำนำหน้าชื่อไฟล์"
+  },
+  "f_downloadSubfolder": {
+    "message": "โฟลเดอร์ย่อยสำหรับดาวน์โหลด (ภายในโฟลเดอร์ดาวน์โหลด)"
+  },
+  "f_mdFrontMatter": {
+    "message": "เพิ่ม YAML front matter"
+  },
+  "f_mdThinkingStyle": {
+    "message": "รูปแบบการแสดงกระบวนการคิด"
+  },
+  "o_mdThinkingStyle_blockquote": {
+    "message": "บล็อกคำพูด"
+  },
+  "o_mdThinkingStyle_details": {
+    "message": "<details> ที่ยุบได้"
+  },
+  "sec_dataformats": {
+    "message": "JSON และ CSV"
+  },
+  "f_jsonPretty": {
+    "message": "จัดรูปแบบ JSON ให้อ่านง่าย"
+  },
+  "f_csvDelimiter": {
+    "message": "ตัวคั่น CSV"
+  },
+  "o_csvDelimiter_comma": {
+    "message": "จุลภาค ,"
+  },
+  "o_csvDelimiter_semicolon": {
+    "message": "อัฒภาค ;"
+  },
+  "o_csvDelimiter_tab": {
+    "message": "แท็บ"
+  },
+  "sec_pdf": {
+    "message": "PDF / HTML / รูปภาพ"
+  },
+  "f_pdfTitle": {
+    "message": "ชื่อเนื้อหา (ว่าง = ชื่อแชต)"
+  },
+  "f_pdfPageSize": {
+    "message": "ขนาดหน้า"
+  },
+  "f_pdfOrientation": {
+    "message": "การวางแนว"
+  },
+  "o_pdfOrientation_portrait": {
+    "message": "แนวตั้ง"
+  },
+  "o_pdfOrientation_landscape": {
+    "message": "แนวนอน"
+  },
+  "f_pdfTheme": {
+    "message": "ธีม"
+  },
+  "o_pdfTheme_light": {
+    "message": "สว่าง"
+  },
+  "o_pdfTheme_dark": {
+    "message": "มืด"
+  },
+  "f_pdfMargins": {
+    "message": "ขอบกระดาษ"
+  },
+  "o_pdfMargins_narrow": {
+    "message": "แคบ"
+  },
+  "o_pdfMargins_normal": {
+    "message": "ปกติ"
+  },
+  "o_pdfMargins_wide": {
+    "message": "กว้าง"
+  },
+  "f_pdfFontScale": {
+    "message": "ขนาดฟอนต์ (% ของค่าเริ่มต้น)"
+  },
+  "f_pdfFontFamily": {
+    "message": "ตระกูลฟอนต์"
+  },
+  "o_pdfFontFamily_sans": {
+    "message": "ไม่มีหัว"
+  },
+  "o_pdfFontFamily_serif": {
+    "message": "มีหัว"
+  },
+  "o_pdfFontFamily_mono": {
+    "message": "ความกว้างคงที่"
+  },
+  "f_pdfPageNumbers": {
+    "message": "เลขหน้า"
+  },
+  "f_pdfToc": {
+    "message": "สารบัญ"
+  },
+  "f_pdfPageBreakPerPrompt": {
+    "message": "เริ่มทุกพรอมต์ในหน้าใหม่"
+  },
+  "f_pdfWrapCode": {
+    "message": "ตัดบรรทัดโค้ดที่ยาว"
+  },
+  "f_pdfAutoPrint": {
+    "message": "เปิดกล่องโต้ตอบการพิมพ์โดยอัตโนมัติ"
+  }
+}

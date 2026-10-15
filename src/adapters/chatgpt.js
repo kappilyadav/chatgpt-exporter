@@ -281,9 +281,9 @@
     async _auth() {
       if (A._tok && Date.now() < A._tok.exp) return A._tok;
       const r = await fetch('/api/auth/session', { credentials: 'include' });
-      if (!r.ok) throw new Error('Session request failed (' + r.status + ')');
+      if (!r.ok) throw new Error(CE.t('sessionFailed', { status: r.status }));
       const j = await r.json();
-      if (!j || !j.accessToken) throw new Error('Not signed in');
+      if (!j || !j.accessToken) throw new Error(CE.t('notSignedIn'));
       A._tok = { token: j.accessToken, user: j.user || {}, exp: Date.now() + 4 * 60 * 1000 };
       return A._tok;
     },

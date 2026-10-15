@@ -1,0 +1,578 @@
+{
+  "extName": {
+    "message": "ChatGPT Exporter: desa ChatGPT en PDF, Word i Markdown"
+  },
+  "extDescription": {
+    "message": "Exporta qualsevol conversa de ChatGPT a un fitxer net per compartir. Tria els missatges, ajusta el disseny, mantén la privadesa."
+  },
+  "extActionTitle": {
+    "message": "ChatGPT Exporter"
+  },
+  "cmdTogglePanel": {
+    "message": "Obre / tanca el tauler Selecciona missatges"
+  },
+  "cmdQuickExport": {
+    "message": "Exporta ràpidament el xat actual en el format per defecte"
+  },
+  "cmdExportPdf": {
+    "message": "Exporta el xat actual com a PDF"
+  },
+  "selectMessages": {
+    "message": "Selecciona missatges"
+  },
+  "select": {
+    "message": "Selecciona"
+  },
+  "export": {
+    "message": "Exporta"
+  },
+  "exportAs": {
+    "message": "Exporta com a"
+  },
+  "all": {
+    "message": "Tots"
+  },
+  "allDefault": {
+    "message": "Tots (per defecte)"
+  },
+  "questions": {
+    "message": "Preguntes"
+  },
+  "answers": {
+    "message": "Respostes"
+  },
+  "none": {
+    "message": "Cap"
+  },
+  "invert": {
+    "message": "Inverteix"
+  },
+  "cancel": {
+    "message": "Cancel·la"
+  },
+  "copy": {
+    "message": "Copia"
+  },
+  "settings": {
+    "message": "Configuració"
+  },
+  "expand": {
+    "message": "Expandeix"
+  },
+  "back": {
+    "message": "Enrere"
+  },
+  "refresh": {
+    "message": "Actualitza"
+  },
+  "retry": {
+    "message": "Torna-ho a provar"
+  },
+  "loading": {
+    "message": "S’està carregant la conversa…"
+  },
+  "loadingHistory": {
+    "message": "S’està carregant tot l’historial…"
+  },
+  "tip": {
+    "message": "Consell: Maj+clic selecciona un interval de missatges."
+  },
+  "you": {
+    "message": "Tu"
+  },
+  "exportedN": {
+    "message": "{n} missatges exportats com a {fmt}"
+  },
+  "copiedN": {
+    "message": "{n} missatges copiats com a {fmt}"
+  },
+  "nothingSelected": {
+    "message": "Selecciona primer almenys un missatge."
+  },
+  "noConversation": {
+    "message": "No s’ha trobat cap conversa en aquesta pàgina."
+  },
+  "failed": {
+    "message": "Error en exportar: {msg}"
+  },
+  "pdfHint": {
+    "message": "S’obre la vista prèvia d’impressió: tria «Desa com a PDF»."
+  },
+  "exportAll": {
+    "message": "Exporta tots els xats…"
+  },
+  "bulkTitle": {
+    "message": "Exporta diversos xats"
+  },
+  "searchChats": {
+    "message": "Cerca xats"
+  },
+  "selectAll": {
+    "message": "Selecciona-ho tot"
+  },
+  "exportZip": {
+    "message": "Exporta ZIP"
+  },
+  "progress": {
+    "message": "S’està exportant {i} / {n}…"
+  },
+  "bulkDone": {
+    "message": "{n} xats exportats a un fitxer ZIP"
+  },
+  "bulkUnsupported": {
+    "message": "L’exportació massiva encara no està disponible per a aquest lloc. Obre un xat i utilitza Exporta."
+  },
+  "chatsFound": {
+    "message": "{n} xats"
+  },
+  "copyAs": {
+    "message": "Copia com a {fmt}"
+  },
+  "quickExport": {
+    "message": "Exportació ràpida"
+  },
+  "openPanel": {
+    "message": "Selecciona missatges…"
+  },
+  "unsupportedSite": {
+    "message": "Obre ChatGPT per exportar una conversa."
+  },
+  "selectedOf": {
+    "message": "{a}/{b}"
+  },
+  "messages": {
+    "message": "missatges"
+  },
+  "richText": {
+    "message": "text enriquit"
+  },
+  "fmtText": {
+    "message": "Text"
+  },
+  "fmtPng": {
+    "message": "Imatge (PNG)"
+  },
+  "toggleTitle": {
+    "message": "Mostra o amaga els botons d’exportació"
+  },
+  "autoBrowser": {
+    "message": "Automàtic (navegador)"
+  },
+  "close": {
+    "message": "Tanca"
+  },
+  "ctxExportChat": {
+    "message": "Exporta aquest xat"
+  },
+  "ctxExportAs": {
+    "message": "Exporta com a {fmt}"
+  },
+  "seePlans": {
+    "message": "Mostra els plans"
+  },
+  "upgrade": {
+    "message": "Millora el pla"
+  },
+  "accountHeading": {
+    "message": "Compte"
+  },
+  "limitFull": {
+    "message": "Has esgotat el límit d’exportacions completes gratuïtes d’aquest mes ({limit}). Millora el pla per exportar sense límit."
+  },
+  "limitPartial": {
+    "message": "Has esgotat el límit d’exportacions parcials gratuïtes d’aquest mes ({limit}). Millora el pla per exportar sense límit."
+  },
+  "bulkFreeLeft": {
+    "message": "Pla gratuït: aquest mes et queden {left} exportacions completes, però has seleccionat {n} xats. Selecciona menys xats o millora el pla per exportar sense límit."
+  },
+  "tokenInvalidFormat": {
+    "message": "Això no sembla un testimoni vàlid."
+  },
+  "tokenExpired": {
+    "message": "Aquest testimoni ja no és vàlid. Crea’n un de nou des del teu compte."
+  },
+  "serverUnreachable": {
+    "message": "No s’ha pogut contactar amb el servidor. Comprova la connexió i torna-ho a provar."
+  },
+  "notSignedIn": {
+    "message": "No has iniciat la sessió"
+  },
+  "sessionFailed": {
+    "message": "Ha fallat la sol·licitud de sessió ({status})"
+  },
+  "popupChecking": {
+    "message": "S’està comprovant la pestanya…"
+  },
+  "conversationDetected": {
+    "message": "S’ha detectat una conversa de {name}"
+  },
+  "openAConversation": {
+    "message": "{name}: obre una conversa"
+  },
+  "worksOn": {
+    "message": "Funciona a chatgpt.com"
+  },
+  "popupInactive": {
+    "message": "Obre una conversa de ChatGPT i torna a fer clic a l’extensió:"
+  },
+  "formatLabel": {
+    "message": "Format"
+  },
+  "keyboardShortcuts": {
+    "message": "Dreceres de teclat"
+  },
+  "planPro": {
+    "message": "Pro · {plan} · exportacions il·limitades"
+  },
+  "planYear": {
+    "message": "Pla anual"
+  },
+  "planMonth": {
+    "message": "Pla mensual"
+  },
+  "planProName": {
+    "message": "Pro"
+  },
+  "planFreeLeft": {
+    "message": "Gratuït · aquest mes et queden {full} exportacions completes i {single} de parcials"
+  },
+  "exporting": {
+    "message": "S’està exportant…"
+  },
+  "doneSeePage": {
+    "message": "Fet: consulta la pàgina per veure’n els detalls."
+  },
+  "copiedClipboard": {
+    "message": "Copiat al porta-retalls."
+  },
+  "failedShort": {
+    "message": "Error"
+  },
+  "optionsTitle": {
+    "message": "ChatGPT Exporter: configuració"
+  },
+  "optionsIntro": {
+    "message": "La configuració es desa automàticament i se sincronitza amb el teu perfil de Chrome. Tot es processa localment al teu navegador."
+  },
+  "checking": {
+    "message": "S’està comprovant…"
+  },
+  "connectWithToken": {
+    "message": "Connecta amb un testimoni"
+  },
+  "tokenHelp": {
+    "message": "Utilitza-ho si el lloc web no ha pogut connectar l’extensió automàticament. Copia el testimoni de la pàgina del teu compte."
+  },
+  "connect": {
+    "message": "Connecta"
+  },
+  "resetDefaults": {
+    "message": "Restableix els valors per defecte"
+  },
+  "keyboardShortcutsEllipsis": {
+    "message": "Dreceres de teclat…"
+  },
+  "saved": {
+    "message": "Desat ✓"
+  },
+  "accountLoadFail": {
+    "message": "Ara mateix no s’ha pogut carregar el teu compte."
+  },
+  "connectedAs": {
+    "message": "Connectat com a {email} · {plan}"
+  },
+  "planFreeShort": {
+    "message": "Pla gratuït"
+  },
+  "planProUnlimited": {
+    "message": "{plan} · exportacions il·limitades"
+  },
+  "manageBilling": {
+    "message": "Gestiona la facturació"
+  },
+  "disconnect": {
+    "message": "Desconnecta"
+  },
+  "freeLeftConnect": {
+    "message": "Pla gratuït · aquest mes et queden {full} exportacions completes i {single} de parcials. Connecta el compte si has millorat el pla."
+  },
+  "connectAccount": {
+    "message": "Connecta el compte"
+  },
+  "connecting": {
+    "message": "S’està connectant…"
+  },
+  "connected": {
+    "message": "Connectat."
+  },
+  "connectFail": {
+    "message": "No s’ha pogut connectar."
+  },
+  "docContents": {
+    "message": "Contingut"
+  },
+  "docThoughtProcess": {
+    "message": "Procés de raonament"
+  },
+  "docSources": {
+    "message": "Fonts"
+  },
+  "docAttachments": {
+    "message": "Fitxers adjunts"
+  },
+  "docExportedWith": {
+    "message": "Exportat amb Chat Exporter"
+  },
+  "pvDocTitle": {
+    "message": "ChatGPT Exporter: vista prèvia"
+  },
+  "pvPreview": {
+    "message": "Vista prèvia"
+  },
+  "pvPreparing": {
+    "message": "S’està preparant…"
+  },
+  "jobExpired": {
+    "message": "Aquesta exportació ha caducat. Torna al xat i exporta de nou."
+  },
+  "pvWidthPx": {
+    "message": "Amplada (px)"
+  },
+  "pvScale": {
+    "message": "Escala"
+  },
+  "pvRendering": {
+    "message": "S’està renderitzant la part {i} de {n}…"
+  },
+  "pvPacking": {
+    "message": "S’estan empaquetant {n} imatges…"
+  },
+  "pvSavedZip": {
+    "message": "{n} imatges desades com a ZIP"
+  },
+  "pvSaved": {
+    "message": "{name} desat"
+  },
+  "pvFastNote": {
+    "message": "(1× perquè un xat llarg es mantingui ràpid)"
+  },
+  "pvPrintSave": {
+    "message": "Imprimeix / Desa com a PDF"
+  },
+  "pvChooseSave": {
+    "message": "Tria «Desa com a PDF» com a destinació."
+  },
+  "pvDownloadPng": {
+    "message": "Baixa el PNG"
+  },
+  "pvFailed": {
+    "message": "Error: {msg}"
+  },
+  "pvRenderFail": {
+    "message": "No s’ha pogut renderitzar aquesta exportació: {msg}"
+  },
+  "sec_general": {
+    "message": "General"
+  },
+  "f_language": {
+    "message": "Idioma de la interfície"
+  },
+  "f_theme": {
+    "message": "Tema del tauler"
+  },
+  "o_theme_auto": {
+    "message": "Automàtic"
+  },
+  "o_theme_dark": {
+    "message": "Fosc"
+  },
+  "o_theme_light": {
+    "message": "Clar"
+  },
+  "f_showLauncher": {
+    "message": "Mostra els botons Selecciona / Exporta a la pàgina del xat"
+  },
+  "f_rememberSelection": {
+    "message": "Recorda el meu predefinit de selecció (Tots / Preguntes / Respostes)"
+  },
+  "f_closePanelAfterExport": {
+    "message": "Tanca el tauler lateral després d’exportar"
+  },
+  "f_showToasts": {
+    "message": "Mostra una confirmació després d’exportar"
+  },
+  "sec_content": {
+    "message": "Contingut"
+  },
+  "f_includeThoughts": {
+    "message": "Inclou el procés de raonament"
+  },
+  "f_includeSources": {
+    "message": "Inclou les fonts i cites de la cerca web"
+  },
+  "f_includeCanvas": {
+    "message": "Inclou Canvas / artefactes"
+  },
+  "f_includeImages": {
+    "message": "Inclou les imatges"
+  },
+  "f_embedImages": {
+    "message": "Incrusta les imatges al fitxer (PDF, HTML, Word, PNG)"
+  },
+  "f_includeToolOutputs": {
+    "message": "Inclou les crides a eines i la sortida de l’intèrpret de codi"
+  },
+  "f_includeTimestamps": {
+    "message": "Mostra la data i l’hora de cada missatge"
+  },
+  "f_showRoleIcons": {
+    "message": "Mostra icones / emojis de rol"
+  },
+  "f_userName": {
+    "message": "El teu nom (es mostra a la capçalera de l’exportació)"
+  },
+  "f_userEmail": {
+    "message": "El teu correu electrònic (es mostra a la capçalera de l’exportació)"
+  },
+  "f_userLabel": {
+    "message": "Etiqueta dels teus missatges (per defecte: Tu)"
+  },
+  "f_assistantLabel": {
+    "message": "Etiqueta dels missatges de la IA (per defecte: nom de la plataforma)"
+  },
+  "f_showDate": {
+    "message": "Mostra la data de la conversa"
+  },
+  "f_dateSource": {
+    "message": "Origen de la data"
+  },
+  "o_dateSource_created": {
+    "message": "Creació"
+  },
+  "o_dateSource_updated": {
+    "message": "Última modificació"
+  },
+  "o_dateSource_export": {
+    "message": "Hora d’exportació"
+  },
+  "f_dateFormat": {
+    "message": "Format de la data"
+  },
+  "o_dateFormat_locale": {
+    "message": "Configuració regional del navegador"
+  },
+  "f_branding": {
+    "message": "Afegeix el peu «Exportat amb Chat Exporter»"
+  },
+  "sec_files": {
+    "message": "Fitxers"
+  },
+  "f_filenameTemplate": {
+    "message": "Plantilla del nom del fitxer — {title} {date} {time} {platform} {model} {id}"
+  },
+  "f_filenamePrefix": {
+    "message": "Prefix del nom del fitxer"
+  },
+  "f_downloadSubfolder": {
+    "message": "Subcarpeta de baixada (dins de la carpeta Baixades)"
+  },
+  "f_mdFrontMatter": {
+    "message": "Afegeix front matter YAML"
+  },
+  "f_mdThinkingStyle": {
+    "message": "Estil del procés de raonament"
+  },
+  "o_mdThinkingStyle_blockquote": {
+    "message": "Cita en bloc"
+  },
+  "o_mdThinkingStyle_details": {
+    "message": "<details> desplegable"
+  },
+  "sec_dataformats": {
+    "message": "JSON i CSV"
+  },
+  "f_jsonPretty": {
+    "message": "Dona format al JSON"
+  },
+  "f_csvDelimiter": {
+    "message": "Delimitador del CSV"
+  },
+  "o_csvDelimiter_comma": {
+    "message": "Coma ,"
+  },
+  "o_csvDelimiter_semicolon": {
+    "message": "Punt i coma ;"
+  },
+  "o_csvDelimiter_tab": {
+    "message": "Tabulació"
+  },
+  "sec_pdf": {
+    "message": "PDF / HTML / Imatge"
+  },
+  "f_pdfTitle": {
+    "message": "Títol del contingut (buit = títol del xat)"
+  },
+  "f_pdfPageSize": {
+    "message": "Mida de la pàgina"
+  },
+  "f_pdfOrientation": {
+    "message": "Orientació"
+  },
+  "o_pdfOrientation_portrait": {
+    "message": "Vertical"
+  },
+  "o_pdfOrientation_landscape": {
+    "message": "Horitzontal"
+  },
+  "f_pdfTheme": {
+    "message": "Tema"
+  },
+  "o_pdfTheme_light": {
+    "message": "Clar"
+  },
+  "o_pdfTheme_dark": {
+    "message": "Fosc"
+  },
+  "f_pdfMargins": {
+    "message": "Marges"
+  },
+  "o_pdfMargins_narrow": {
+    "message": "Estrets"
+  },
+  "o_pdfMargins_normal": {
+    "message": "Normals"
+  },
+  "o_pdfMargins_wide": {
+    "message": "Amplis"
+  },
+  "f_pdfFontScale": {
+    "message": "Mida de la lletra (% de la predeterminada)"
+  },
+  "f_pdfFontFamily": {
+    "message": "Família de lletra"
+  },
+  "o_pdfFontFamily_sans": {
+    "message": "Sense serifa"
+  },
+  "o_pdfFontFamily_serif": {
+    "message": "Amb serifa"
+  },
+  "o_pdfFontFamily_mono": {
+    "message": "Monoespaiada"
+  },
+  "f_pdfPageNumbers": {
+    "message": "Números de pàgina"
+  },
+  "f_pdfToc": {
+    "message": "Taula de continguts"
+  },
+  "f_pdfPageBreakPerPrompt": {
+    "message": "Comença cada prompt en una pàgina nova"
+  },
+  "f_pdfWrapCode": {
+    "message": "Ajusta les línies de codi llargues"
+  },
+  "f_pdfAutoPrint": {
+    "message": "Obre automàticament el diàleg d’impressió"
+  }
+}

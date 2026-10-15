@@ -1,0 +1,578 @@
+{
+  "extName": {
+    "message": "ChatGPT Exporter: ukládejte ChatGPT do PDF, Wordu a Markdownu"
+  },
+  "extDescription": {
+    "message": "Exportujte jakoukoli konverzaci ChatGPT do čistého souboru ke sdílení. Vyberte zprávy, upravte vzhled, zůstaňte v soukromí."
+  },
+  "extActionTitle": {
+    "message": "ChatGPT Exporter"
+  },
+  "cmdTogglePanel": {
+    "message": "Otevřít / zavřít panel výběru zpráv"
+  },
+  "cmdQuickExport": {
+    "message": "Rychle exportovat aktuální chat ve výchozím formátu"
+  },
+  "cmdExportPdf": {
+    "message": "Exportovat aktuální chat jako PDF"
+  },
+  "selectMessages": {
+    "message": "Výběr zpráv"
+  },
+  "select": {
+    "message": "Vybrat"
+  },
+  "export": {
+    "message": "Exportovat"
+  },
+  "exportAs": {
+    "message": "Exportovat jako"
+  },
+  "all": {
+    "message": "Všechny"
+  },
+  "allDefault": {
+    "message": "Všechny (výchozí)"
+  },
+  "questions": {
+    "message": "Otázky"
+  },
+  "answers": {
+    "message": "Odpovědi"
+  },
+  "none": {
+    "message": "Žádné"
+  },
+  "invert": {
+    "message": "Invertovat"
+  },
+  "cancel": {
+    "message": "Zrušit"
+  },
+  "copy": {
+    "message": "Kopírovat"
+  },
+  "settings": {
+    "message": "Nastavení"
+  },
+  "expand": {
+    "message": "Rozbalit"
+  },
+  "back": {
+    "message": "Zpět"
+  },
+  "refresh": {
+    "message": "Obnovit"
+  },
+  "retry": {
+    "message": "Zkusit znovu"
+  },
+  "loading": {
+    "message": "Načítání konverzace…"
+  },
+  "loadingHistory": {
+    "message": "Načítání celé historie…"
+  },
+  "tip": {
+    "message": "Tip: Shift+klepnutí vybere rozsah zpráv."
+  },
+  "you": {
+    "message": "Vy"
+  },
+  "exportedN": {
+    "message": "Exportováno zpráv: {n} (formát: {fmt})"
+  },
+  "copiedN": {
+    "message": "Zkopírováno zpráv: {n} (formát: {fmt})"
+  },
+  "nothingSelected": {
+    "message": "Nejprve vyberte alespoň jednu zprávu."
+  },
+  "noConversation": {
+    "message": "Na této stránce nebyla nalezena žádná konverzace."
+  },
+  "failed": {
+    "message": "Export se nezdařil: {msg}"
+  },
+  "pdfHint": {
+    "message": "Otevírá se náhled tisku — vyberte „Uložit jako PDF“."
+  },
+  "exportAll": {
+    "message": "Exportovat všechny chaty…"
+  },
+  "bulkTitle": {
+    "message": "Export více chatů"
+  },
+  "searchChats": {
+    "message": "Hledat v chatech"
+  },
+  "selectAll": {
+    "message": "Vybrat vše"
+  },
+  "exportZip": {
+    "message": "Exportovat ZIP"
+  },
+  "progress": {
+    "message": "Export {i} / {n}…"
+  },
+  "bulkDone": {
+    "message": "Chatů exportovaných do souboru ZIP: {n}"
+  },
+  "bulkUnsupported": {
+    "message": "Hromadný export zatím není pro tento web k dispozici. Otevřete chat a použijte Exportovat."
+  },
+  "chatsFound": {
+    "message": "Chatů: {n}"
+  },
+  "copyAs": {
+    "message": "Kopírovat jako {fmt}"
+  },
+  "quickExport": {
+    "message": "Rychlý export"
+  },
+  "openPanel": {
+    "message": "Vybrat zprávy…"
+  },
+  "unsupportedSite": {
+    "message": "Otevřete ChatGPT a exportujte konverzaci."
+  },
+  "selectedOf": {
+    "message": "{a}/{b}"
+  },
+  "messages": {
+    "message": "zpráv"
+  },
+  "richText": {
+    "message": "formátovaný text"
+  },
+  "fmtText": {
+    "message": "Text"
+  },
+  "fmtPng": {
+    "message": "Obrázek (PNG)"
+  },
+  "toggleTitle": {
+    "message": "Zobrazit nebo skrýt tlačítka exportu"
+  },
+  "autoBrowser": {
+    "message": "Automaticky (prohlížeč)"
+  },
+  "close": {
+    "message": "Zavřít"
+  },
+  "ctxExportChat": {
+    "message": "Exportovat tento chat"
+  },
+  "ctxExportAs": {
+    "message": "Exportovat jako {fmt}"
+  },
+  "seePlans": {
+    "message": "Zobrazit tarify"
+  },
+  "upgrade": {
+    "message": "Upgradovat"
+  },
+  "accountHeading": {
+    "message": "Účet"
+  },
+  "limitFull": {
+    "message": "Vyčerpali jste limit bezplatných exportů celých chatů pro tento měsíc ({limit}). Pro neomezený export upgradujte."
+  },
+  "limitPartial": {
+    "message": "Vyčerpali jste limit bezplatných částečných exportů pro tento měsíc ({limit}). Pro neomezený export upgradujte."
+  },
+  "bulkFreeLeft": {
+    "message": "Bezplatný tarif: tento měsíc zbývá exportů celých chatů: {left}, ale vybrali jste chatů: {n}. Vyberte méně chatů nebo upgradujte pro neomezený export."
+  },
+  "tokenInvalidFormat": {
+    "message": "Tohle nevypadá jako platný token."
+  },
+  "tokenExpired": {
+    "message": "Tento token už není platný. Vytvořte si nový ve svém účtu."
+  },
+  "serverUnreachable": {
+    "message": "Server není dostupný. Zkontrolujte připojení a zkuste to znovu."
+  },
+  "notSignedIn": {
+    "message": "Nejste přihlášeni"
+  },
+  "sessionFailed": {
+    "message": "Požadavek na relaci se nezdařil ({status})"
+  },
+  "popupChecking": {
+    "message": "Kontrola karty…"
+  },
+  "conversationDetected": {
+    "message": "Zjištěna konverzace {name}"
+  },
+  "openAConversation": {
+    "message": "{name} — otevřete konverzaci"
+  },
+  "worksOn": {
+    "message": "Funguje na chatgpt.com"
+  },
+  "popupInactive": {
+    "message": "Otevřete konverzaci ChatGPT a znovu klepněte na rozšíření:"
+  },
+  "formatLabel": {
+    "message": "Formát"
+  },
+  "keyboardShortcuts": {
+    "message": "Klávesové zkratky"
+  },
+  "planPro": {
+    "message": "Pro · {plan} · neomezené exporty"
+  },
+  "planYear": {
+    "message": "Roční tarif"
+  },
+  "planMonth": {
+    "message": "Měsíční tarif"
+  },
+  "planProName": {
+    "message": "Pro"
+  },
+  "planFreeLeft": {
+    "message": "Zdarma · tento měsíc zbývá exportů: celých {full}, částečných {single}"
+  },
+  "exporting": {
+    "message": "Exportuje se…"
+  },
+  "doneSeePage": {
+    "message": "Hotovo — podrobnosti najdete na stránce."
+  },
+  "copiedClipboard": {
+    "message": "Zkopírováno do schránky."
+  },
+  "failedShort": {
+    "message": "Nezdařilo se"
+  },
+  "optionsTitle": {
+    "message": "ChatGPT Exporter — Nastavení"
+  },
+  "optionsIntro": {
+    "message": "Nastavení se ukládá automaticky a synchronizuje s vaším profilem Chrome. Vše se zpracovává lokálně ve vašem prohlížeči."
+  },
+  "checking": {
+    "message": "Kontrola…"
+  },
+  "connectWithToken": {
+    "message": "Připojit pomocí tokenu"
+  },
+  "tokenHelp": {
+    "message": "Použijte, pokud web nedokázal rozšíření připojit automaticky. Zkopírujte token ze stránky svého účtu."
+  },
+  "connect": {
+    "message": "Připojit"
+  },
+  "resetDefaults": {
+    "message": "Obnovit výchozí hodnoty"
+  },
+  "keyboardShortcutsEllipsis": {
+    "message": "Klávesové zkratky…"
+  },
+  "saved": {
+    "message": "Uloženo ✓"
+  },
+  "accountLoadFail": {
+    "message": "Váš účet se právě nepodařilo načíst."
+  },
+  "connectedAs": {
+    "message": "Připojeno jako {email} · {plan}"
+  },
+  "planFreeShort": {
+    "message": "Bezplatný tarif"
+  },
+  "planProUnlimited": {
+    "message": "{plan} · neomezené exporty"
+  },
+  "manageBilling": {
+    "message": "Spravovat fakturaci"
+  },
+  "disconnect": {
+    "message": "Odpojit"
+  },
+  "freeLeftConnect": {
+    "message": "Bezplatný tarif · tento měsíc zbývá exportů: celých {full}, částečných {single}. Pokud jste upgradovali, připojte svůj účet."
+  },
+  "connectAccount": {
+    "message": "Připojit účet"
+  },
+  "connecting": {
+    "message": "Připojování…"
+  },
+  "connected": {
+    "message": "Připojeno."
+  },
+  "connectFail": {
+    "message": "Připojení se nezdařilo."
+  },
+  "docContents": {
+    "message": "Obsah"
+  },
+  "docThoughtProcess": {
+    "message": "Postup uvažování"
+  },
+  "docSources": {
+    "message": "Zdroje"
+  },
+  "docAttachments": {
+    "message": "Přílohy"
+  },
+  "docExportedWith": {
+    "message": "Exportováno pomocí Chat Exporter"
+  },
+  "pvDocTitle": {
+    "message": "ChatGPT Exporter — Náhled"
+  },
+  "pvPreview": {
+    "message": "Náhled"
+  },
+  "pvPreparing": {
+    "message": "Příprava…"
+  },
+  "jobExpired": {
+    "message": "Platnost tohoto exportu vypršela. Vraťte se do chatu a exportujte znovu."
+  },
+  "pvWidthPx": {
+    "message": "Šířka (px)"
+  },
+  "pvScale": {
+    "message": "Měřítko"
+  },
+  "pvRendering": {
+    "message": "Vykreslování části {i} z {n}…"
+  },
+  "pvPacking": {
+    "message": "Balení obrázků: {n}…"
+  },
+  "pvSavedZip": {
+    "message": "Obrázků uložených do ZIP: {n}"
+  },
+  "pvSaved": {
+    "message": "Uloženo: {name}"
+  },
+  "pvFastNote": {
+    "message": "(1×, aby dlouhý chat zůstal rychlý)"
+  },
+  "pvPrintSave": {
+    "message": "Tisk / Uložit jako PDF"
+  },
+  "pvChooseSave": {
+    "message": "Jako cíl vyberte „Uložit jako PDF“."
+  },
+  "pvDownloadPng": {
+    "message": "Stáhnout PNG"
+  },
+  "pvFailed": {
+    "message": "Nezdařilo se: {msg}"
+  },
+  "pvRenderFail": {
+    "message": "Tento export se nepodařilo vykreslit: {msg}"
+  },
+  "sec_general": {
+    "message": "Obecné"
+  },
+  "f_language": {
+    "message": "Jazyk rozhraní"
+  },
+  "f_theme": {
+    "message": "Motiv panelu"
+  },
+  "o_theme_auto": {
+    "message": "Automaticky"
+  },
+  "o_theme_dark": {
+    "message": "Tmavý"
+  },
+  "o_theme_light": {
+    "message": "Světlý"
+  },
+  "f_showLauncher": {
+    "message": "Zobrazit tlačítka Vybrat / Exportovat na stránce chatu"
+  },
+  "f_rememberSelection": {
+    "message": "Pamatovat si moji předvolbu výběru (Všechny / Otázky / Odpovědi)"
+  },
+  "f_closePanelAfterExport": {
+    "message": "Po exportu zavřít boční panel"
+  },
+  "f_showToasts": {
+    "message": "Po exportu zobrazit potvrzení"
+  },
+  "sec_content": {
+    "message": "Obsah"
+  },
+  "f_includeThoughts": {
+    "message": "Zahrnout postup uvažování"
+  },
+  "f_includeSources": {
+    "message": "Zahrnout zdroje a citace z vyhledávání na webu"
+  },
+  "f_includeCanvas": {
+    "message": "Zahrnout Canvas / artefakty"
+  },
+  "f_includeImages": {
+    "message": "Zahrnout obrázky"
+  },
+  "f_embedImages": {
+    "message": "Vložit obrázky do souboru (PDF, HTML, Word, PNG)"
+  },
+  "f_includeToolOutputs": {
+    "message": "Zahrnout volání nástrojů a výstup interpretu kódu"
+  },
+  "f_includeTimestamps": {
+    "message": "Zobrazit časové razítko u každé zprávy"
+  },
+  "f_showRoleIcons": {
+    "message": "Zobrazit ikony / emoji rolí"
+  },
+  "f_userName": {
+    "message": "Vaše jméno (zobrazí se v záhlaví exportu)"
+  },
+  "f_userEmail": {
+    "message": "Váš e-mail (zobrazí se v záhlaví exportu)"
+  },
+  "f_userLabel": {
+    "message": "Popisek vašich zpráv (výchozí: Vy)"
+  },
+  "f_assistantLabel": {
+    "message": "Popisek zpráv AI (výchozí: název platformy)"
+  },
+  "f_showDate": {
+    "message": "Zobrazit datum konverzace"
+  },
+  "f_dateSource": {
+    "message": "Zdroj data"
+  },
+  "o_dateSource_created": {
+    "message": "Vytvoření"
+  },
+  "o_dateSource_updated": {
+    "message": "Poslední změna"
+  },
+  "o_dateSource_export": {
+    "message": "Čas exportu"
+  },
+  "f_dateFormat": {
+    "message": "Formát data"
+  },
+  "o_dateFormat_locale": {
+    "message": "Místní nastavení prohlížeče"
+  },
+  "f_branding": {
+    "message": "Přidat zápatí „Exportováno pomocí Chat Exporter“"
+  },
+  "sec_files": {
+    "message": "Soubory"
+  },
+  "f_filenameTemplate": {
+    "message": "Šablona názvu souboru — {title} {date} {time} {platform} {model} {id}"
+  },
+  "f_filenamePrefix": {
+    "message": "Předpona názvu souboru"
+  },
+  "f_downloadSubfolder": {
+    "message": "Podsložka pro stahování (ve složce Stažené soubory)"
+  },
+  "f_mdFrontMatter": {
+    "message": "Přidat YAML front matter"
+  },
+  "f_mdThinkingStyle": {
+    "message": "Styl postupu uvažování"
+  },
+  "o_mdThinkingStyle_blockquote": {
+    "message": "Citační blok"
+  },
+  "o_mdThinkingStyle_details": {
+    "message": "Sbalitelný <details>"
+  },
+  "sec_dataformats": {
+    "message": "JSON a CSV"
+  },
+  "f_jsonPretty": {
+    "message": "Formátovat JSON"
+  },
+  "f_csvDelimiter": {
+    "message": "Oddělovač CSV"
+  },
+  "o_csvDelimiter_comma": {
+    "message": "Čárka ,"
+  },
+  "o_csvDelimiter_semicolon": {
+    "message": "Středník ;"
+  },
+  "o_csvDelimiter_tab": {
+    "message": "Tabulátor"
+  },
+  "sec_pdf": {
+    "message": "PDF / HTML / Obrázek"
+  },
+  "f_pdfTitle": {
+    "message": "Název obsahu (prázdné = název chatu)"
+  },
+  "f_pdfPageSize": {
+    "message": "Velikost stránky"
+  },
+  "f_pdfOrientation": {
+    "message": "Orientace"
+  },
+  "o_pdfOrientation_portrait": {
+    "message": "Na výšku"
+  },
+  "o_pdfOrientation_landscape": {
+    "message": "Na šířku"
+  },
+  "f_pdfTheme": {
+    "message": "Motiv"
+  },
+  "o_pdfTheme_light": {
+    "message": "Světlý"
+  },
+  "o_pdfTheme_dark": {
+    "message": "Tmavý"
+  },
+  "f_pdfMargins": {
+    "message": "Okraje"
+  },
+  "o_pdfMargins_narrow": {
+    "message": "Úzké"
+  },
+  "o_pdfMargins_normal": {
+    "message": "Normální"
+  },
+  "o_pdfMargins_wide": {
+    "message": "Široké"
+  },
+  "f_pdfFontScale": {
+    "message": "Velikost písma (% výchozí)"
+  },
+  "f_pdfFontFamily": {
+    "message": "Rodina písma"
+  },
+  "o_pdfFontFamily_sans": {
+    "message": "Bezpatkové"
+  },
+  "o_pdfFontFamily_serif": {
+    "message": "Patkové"
+  },
+  "o_pdfFontFamily_mono": {
+    "message": "Neproporcionální"
+  },
+  "f_pdfPageNumbers": {
+    "message": "Čísla stránek"
+  },
+  "f_pdfToc": {
+    "message": "Obsah"
+  },
+  "f_pdfPageBreakPerPrompt": {
+    "message": "Začínat každý prompt na nové stránce"
+  },
+  "f_pdfWrapCode": {
+    "message": "Zalamovat dlouhé řádky kódu"
+  },
+  "f_pdfAutoPrint": {
+    "message": "Automaticky otevřít dialog tisku"
+  }
+}

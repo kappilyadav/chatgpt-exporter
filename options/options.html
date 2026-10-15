@@ -3,38 +3,39 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ChatGPT Exporter — Settings</title>
+  <title data-i18n="optionsTitle">ChatGPT Exporter — Settings</title>
   <link rel="stylesheet" href="options.css" />
 </head>
 <body>
   <div class="page">
     <header>
       <h1>ChatGPT Exporter</h1>
-      <p class="muted">Settings are saved automatically and synced with your Chrome profile. Everything is processed locally in your browser.</p>
+      <p class="muted" data-i18n="optionsIntro">Settings are saved automatically and synced with your Chrome profile. Everything is processed locally in your browser.</p>
     </header>
     <section id="account" class="account" aria-labelledby="account-h">
-      <h2 id="account-h">Account</h2>
-      <p id="account-status" class="muted">Checking…</p>
+      <h2 id="account-h" data-i18n="accountHeading">Account</h2>
+      <p id="account-status" class="muted" data-i18n="checking">Checking…</p>
       <div id="account-actions" class="acct-row"></div>
       <details class="acct-token">
-        <summary>Connect with a token</summary>
-        <p class="muted">Use this if the website could not connect the extension automatically. Copy the token from your account page.</p>
+        <summary data-i18n="connectWithToken">Connect with a token</summary>
+        <p class="muted" data-i18n="tokenHelp">Use this if the website could not connect the extension automatically. Copy the token from your account page.</p>
         <div class="acct-row">
           <input id="token" type="text" placeholder="cgx_…" autocomplete="off" spellcheck="false" />
-          <button id="token-go" class="btn">Connect</button>
+          <button id="token-go" class="btn" data-i18n="connect">Connect</button>
         </div>
         <p id="token-msg" class="muted" role="status"></p>
       </details>
     </section>
     <div id="form" class="settings"></div>
     <footer>
-      <button id="reset" class="btn">Reset to defaults</button>
-      <button id="shortcuts" class="btn">Keyboard shortcuts…</button>
+      <button id="reset" class="btn" data-i18n="resetDefaults">Reset to defaults</button>
+      <button id="shortcuts" class="btn" data-i18n="keyboardShortcutsEllipsis">Keyboard shortcuts…</button>
       <span id="saved" class="muted" aria-live="polite"></span>
     </footer>
   </div>
   <script src="../src/core/ns.js"></script>
   <script src="../src/core/account.js"></script>
+  <script src="../src/core/locales.js"></script>
   <script src="../src/core/i18n.js"></script>
   <script src="../src/core/util.js"></script>
   <script src="../src/core/settings.js"></script>

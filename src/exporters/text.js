@@ -22,15 +22,15 @@
         const time = X.msgTimeStr(m, s);
         out.push('[' + X.labelFor(m, convo, s) + ']' + (time ? ' ' + time : ''));
         const th = X.thinking(m, s);
-        if (th) out.push('(Thought process)\n' + CE.md.toText(th).split('\n').map((l) => '  ' + l).join('\n'));
+        if (th) out.push('(' + CE.t('docThoughtProcess') + ')\n' + CE.md.toText(th).split('\n').map((l) => '  ' + l).join('\n'));
         if (m.markdown) out.push(m.role === 'user' ? plainUser(m.markdown) : CE.md.toText(m.markdown, {}));
         const atts = X.attachments(m);
-        if (atts.length) out.push('Attachments: ' + atts.map((a) => a.name).join(', '));
+        if (atts.length) out.push(CE.t('docAttachments') + ': ' + atts.map((a) => a.name).join(', '));
         const src = X.sources(m, s);
-        if (src.length) out.push('Sources:\n' + src.map((x) => '  [' + x.n + '] ' + x.title + ' - ' + x.url).join('\n'));
+        if (src.length) out.push(CE.t('docSources') + ':\n' + src.map((x) => '  [' + x.n + '] ' + x.title + ' - ' + x.url).join('\n'));
         out.push('', '-'.repeat(40), '');
       });
-      if (s.branding) out.push('Exported with Chat Exporter');
+      if (s.branding) out.push(CE.t('docExportedWith'));
       return { text: out.join('\n').replace(/\n{4,}/g, '\n\n\n').trimEnd() + '\n', mime: 'text/plain;charset=utf-8', filename: X.filename(convo, s, 'txt') };
     }
   };

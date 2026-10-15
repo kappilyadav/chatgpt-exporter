@@ -28,8 +28,7 @@
     refund: (kind, count) => send({ type: 'quota-refund', kind, count: count || 1 }),
 
     limitMessage(q) {
-      const what = q.kind === 'full' ? 'full-chat exports' : 'partial exports';
-      return 'You have used all ' + q.limit + ' free ' + what + ' this month. Upgrade for unlimited exports.';
+      return CE.t(q.kind === 'full' ? 'limitFull' : 'limitPartial', { limit: q.limit });
     }
   };
 

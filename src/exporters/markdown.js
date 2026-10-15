@@ -44,8 +44,8 @@
 
         const th = X.thinking(m, s);
         if (th) {
-          if (s.mdThinkingStyle === 'details') parts.push('<details>\n<summary>Thought process</summary>\n\n' + th + '\n\n</details>');
-          else parts.push(quote('**Thought process**\n\n' + th));
+          if (s.mdThinkingStyle === 'details') parts.push('<details>\n<summary>' + CE.t('docThoughtProcess') + '</summary>\n\n' + th + '\n\n</details>');
+          else parts.push(quote('**' + CE.t('docThoughtProcess') + '**\n\n' + th));
         }
         if (m.markdown) parts.push(m.markdown);
 
@@ -53,13 +53,13 @@
         if (atts.length) parts.push(atts.map((a) => '📎 *' + a.name + '*').join('  \n'));
 
         const src = X.sources(m, s);
-        if (src.length) parts.push('**Sources**\n\n' + src.map((x) => x.n + '. [' + x.title.replace(/[\[\]]/g, '') + '](' + x.url + ')').join('\n'));
+        if (src.length) parts.push('**' + CE.t('docSources') + '**\n\n' + src.map((x) => x.n + '. [' + x.title.replace(/[\[\]]/g, '') + '](' + x.url + ')').join('\n'));
 
         out.push(parts.join('\n\n'));
         out.push('---');
       });
 
-      if (s.branding) out.push('*Exported with Chat Exporter*');
+      if (s.branding) out.push('*' + CE.t('docExportedWith') + '*');
       const text = out.join('\n\n').replace(/\n{3,}/g, '\n\n').replace(/(?:\n---\s*)+$/, '').trimEnd() + '\n';
       return { text, mime: 'text/markdown;charset=utf-8', filename: X.filename(convo, s, 'md') };
     }

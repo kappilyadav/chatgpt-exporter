@@ -1,0 +1,578 @@
+{
+  "extName": {
+    "message": "ChatGPT Exporter：将 ChatGPT 保存为 PDF、Word 和 Markdown"
+  },
+  "extDescription": {
+    "message": "将任意 ChatGPT 对话导出为整洁、便于分享的文件。自选消息、自定义版式，并保护隐私。"
+  },
+  "extActionTitle": {
+    "message": "ChatGPT Exporter"
+  },
+  "cmdTogglePanel": {
+    "message": "打开 / 关闭“选择消息”面板"
+  },
+  "cmdQuickExport": {
+    "message": "以默认格式快速导出当前对话"
+  },
+  "cmdExportPdf": {
+    "message": "将当前对话导出为 PDF"
+  },
+  "selectMessages": {
+    "message": "选择消息"
+  },
+  "select": {
+    "message": "选择"
+  },
+  "export": {
+    "message": "导出"
+  },
+  "exportAs": {
+    "message": "导出为"
+  },
+  "all": {
+    "message": "全部"
+  },
+  "allDefault": {
+    "message": "全部（默认）"
+  },
+  "questions": {
+    "message": "提问"
+  },
+  "answers": {
+    "message": "回答"
+  },
+  "none": {
+    "message": "无"
+  },
+  "invert": {
+    "message": "反选"
+  },
+  "cancel": {
+    "message": "取消"
+  },
+  "copy": {
+    "message": "复制"
+  },
+  "settings": {
+    "message": "设置"
+  },
+  "expand": {
+    "message": "展开"
+  },
+  "back": {
+    "message": "返回"
+  },
+  "refresh": {
+    "message": "刷新"
+  },
+  "retry": {
+    "message": "重试"
+  },
+  "loading": {
+    "message": "正在加载对话…"
+  },
+  "loadingHistory": {
+    "message": "正在加载完整历史记录…"
+  },
+  "tip": {
+    "message": "提示：按住 Shift 点击可选择一段消息。"
+  },
+  "you": {
+    "message": "你"
+  },
+  "exportedN": {
+    "message": "已将 {n} 条消息导出为 {fmt}"
+  },
+  "copiedN": {
+    "message": "已将 {n} 条消息复制为 {fmt}"
+  },
+  "nothingSelected": {
+    "message": "请先至少选择一条消息。"
+  },
+  "noConversation": {
+    "message": "在此页面上未找到对话。"
+  },
+  "failed": {
+    "message": "导出失败：{msg}"
+  },
+  "pdfHint": {
+    "message": "正在打开打印预览，请选择“另存为 PDF”。"
+  },
+  "exportAll": {
+    "message": "导出所有对话…"
+  },
+  "bulkTitle": {
+    "message": "导出多个对话"
+  },
+  "searchChats": {
+    "message": "搜索对话"
+  },
+  "selectAll": {
+    "message": "全选"
+  },
+  "exportZip": {
+    "message": "导出 ZIP"
+  },
+  "progress": {
+    "message": "正在导出 {i} / {n}…"
+  },
+  "bulkDone": {
+    "message": "已将 {n} 个对话导出为 ZIP 文件"
+  },
+  "bulkUnsupported": {
+    "message": "此网站暂不支持批量导出。请打开一个对话后使用“导出”。"
+  },
+  "chatsFound": {
+    "message": "{n} 个对话"
+  },
+  "copyAs": {
+    "message": "复制为 {fmt}"
+  },
+  "quickExport": {
+    "message": "快速导出"
+  },
+  "openPanel": {
+    "message": "选择消息…"
+  },
+  "unsupportedSite": {
+    "message": "请打开 ChatGPT 以导出对话。"
+  },
+  "selectedOf": {
+    "message": "{a}/{b}"
+  },
+  "messages": {
+    "message": "条消息"
+  },
+  "richText": {
+    "message": "富文本"
+  },
+  "fmtText": {
+    "message": "文本"
+  },
+  "fmtPng": {
+    "message": "图片（PNG）"
+  },
+  "toggleTitle": {
+    "message": "显示或隐藏导出按钮"
+  },
+  "autoBrowser": {
+    "message": "自动（跟随浏览器）"
+  },
+  "close": {
+    "message": "关闭"
+  },
+  "ctxExportChat": {
+    "message": "导出此对话"
+  },
+  "ctxExportAs": {
+    "message": "导出为 {fmt}"
+  },
+  "seePlans": {
+    "message": "查看方案"
+  },
+  "upgrade": {
+    "message": "升级"
+  },
+  "accountHeading": {
+    "message": "账号"
+  },
+  "limitFull": {
+    "message": "你已用完本月 {limit} 次免费完整对话导出。升级即可无限次导出。"
+  },
+  "limitPartial": {
+    "message": "你已用完本月 {limit} 次免费部分导出。升级即可无限次导出。"
+  },
+  "bulkFreeLeft": {
+    "message": "免费方案：本月还剩 {left} 次完整导出，但你选择了 {n} 个对话。请减少所选对话，或升级以无限次导出。"
+  },
+  "tokenInvalidFormat": {
+    "message": "这看起来不是有效的令牌。"
+  },
+  "tokenExpired": {
+    "message": "此令牌已失效。请在你的账号中创建新令牌。"
+  },
+  "serverUnreachable": {
+    "message": "无法连接到服务器。请检查网络连接后重试。"
+  },
+  "notSignedIn": {
+    "message": "尚未登录"
+  },
+  "sessionFailed": {
+    "message": "会话请求失败（{status}）"
+  },
+  "popupChecking": {
+    "message": "正在检查标签页…"
+  },
+  "conversationDetected": {
+    "message": "已检测到 {name} 对话"
+  },
+  "openAConversation": {
+    "message": "{name} — 请打开一个对话"
+  },
+  "worksOn": {
+    "message": "适用于 chatgpt.com"
+  },
+  "popupInactive": {
+    "message": "请打开 ChatGPT 对话，然后再次点击此扩展程序："
+  },
+  "formatLabel": {
+    "message": "格式"
+  },
+  "keyboardShortcuts": {
+    "message": "键盘快捷键"
+  },
+  "planPro": {
+    "message": "Pro · {plan} · 无限次导出"
+  },
+  "planYear": {
+    "message": "年度方案"
+  },
+  "planMonth": {
+    "message": "月度方案"
+  },
+  "planProName": {
+    "message": "Pro"
+  },
+  "planFreeLeft": {
+    "message": "免费 · 本月还剩 {full} 次完整导出和 {single} 次部分导出"
+  },
+  "exporting": {
+    "message": "正在导出…"
+  },
+  "doneSeePage": {
+    "message": "完成，详情请查看页面。"
+  },
+  "copiedClipboard": {
+    "message": "已复制到剪贴板。"
+  },
+  "failedShort": {
+    "message": "失败"
+  },
+  "optionsTitle": {
+    "message": "ChatGPT Exporter — 设置"
+  },
+  "optionsIntro": {
+    "message": "设置会自动保存，并与你的 Chrome 个人资料同步。所有内容都在你的浏览器中本地处理。"
+  },
+  "checking": {
+    "message": "正在检查…"
+  },
+  "connectWithToken": {
+    "message": "使用令牌连接"
+  },
+  "tokenHelp": {
+    "message": "如果网站无法自动连接扩展程序，请使用此方式。从你的账号页面复制令牌。"
+  },
+  "connect": {
+    "message": "连接"
+  },
+  "resetDefaults": {
+    "message": "恢复默认设置"
+  },
+  "keyboardShortcutsEllipsis": {
+    "message": "键盘快捷键…"
+  },
+  "saved": {
+    "message": "已保存 ✓"
+  },
+  "accountLoadFail": {
+    "message": "暂时无法加载你的账号。"
+  },
+  "connectedAs": {
+    "message": "已连接为 {email} · {plan}"
+  },
+  "planFreeShort": {
+    "message": "免费方案"
+  },
+  "planProUnlimited": {
+    "message": "{plan} · 无限次导出"
+  },
+  "manageBilling": {
+    "message": "管理账单"
+  },
+  "disconnect": {
+    "message": "断开连接"
+  },
+  "freeLeftConnect": {
+    "message": "免费方案 · 本月还剩 {full} 次完整导出和 {single} 次部分导出。如果你已升级，请连接你的账号。"
+  },
+  "connectAccount": {
+    "message": "连接账号"
+  },
+  "connecting": {
+    "message": "正在连接…"
+  },
+  "connected": {
+    "message": "已连接。"
+  },
+  "connectFail": {
+    "message": "无法连接。"
+  },
+  "docContents": {
+    "message": "目录"
+  },
+  "docThoughtProcess": {
+    "message": "思考过程"
+  },
+  "docSources": {
+    "message": "来源"
+  },
+  "docAttachments": {
+    "message": "附件"
+  },
+  "docExportedWith": {
+    "message": "由 Chat Exporter 导出"
+  },
+  "pvDocTitle": {
+    "message": "ChatGPT Exporter — 预览"
+  },
+  "pvPreview": {
+    "message": "预览"
+  },
+  "pvPreparing": {
+    "message": "正在准备…"
+  },
+  "jobExpired": {
+    "message": "此导出任务已过期。请返回对话后重新导出。"
+  },
+  "pvWidthPx": {
+    "message": "宽度（px）"
+  },
+  "pvScale": {
+    "message": "缩放"
+  },
+  "pvRendering": {
+    "message": "正在渲染第 {i} 部分（共 {n} 部分）…"
+  },
+  "pvPacking": {
+    "message": "正在打包 {n} 张图片…"
+  },
+  "pvSavedZip": {
+    "message": "已将 {n} 张图片保存为 ZIP"
+  },
+  "pvSaved": {
+    "message": "已保存 {name}"
+  },
+  "pvFastNote": {
+    "message": "（使用 1× 以保证长对话的速度）"
+  },
+  "pvPrintSave": {
+    "message": "打印 / 另存为 PDF"
+  },
+  "pvChooseSave": {
+    "message": "请选择“另存为 PDF”作为目标。"
+  },
+  "pvDownloadPng": {
+    "message": "下载 PNG"
+  },
+  "pvFailed": {
+    "message": "失败：{msg}"
+  },
+  "pvRenderFail": {
+    "message": "无法渲染此导出内容：{msg}"
+  },
+  "sec_general": {
+    "message": "常规"
+  },
+  "f_language": {
+    "message": "界面语言"
+  },
+  "f_theme": {
+    "message": "面板主题"
+  },
+  "o_theme_auto": {
+    "message": "自动"
+  },
+  "o_theme_dark": {
+    "message": "深色"
+  },
+  "o_theme_light": {
+    "message": "浅色"
+  },
+  "f_showLauncher": {
+    "message": "在对话页面显示“选择 / 导出”按钮"
+  },
+  "f_rememberSelection": {
+    "message": "记住我的选择预设（全部 / 提问 / 回答）"
+  },
+  "f_closePanelAfterExport": {
+    "message": "导出后关闭侧边面板"
+  },
+  "f_showToasts": {
+    "message": "导出后显示确认提示"
+  },
+  "sec_content": {
+    "message": "内容"
+  },
+  "f_includeThoughts": {
+    "message": "包含思考过程 / 推理"
+  },
+  "f_includeSources": {
+    "message": "包含网页搜索来源和引用"
+  },
+  "f_includeCanvas": {
+    "message": "包含 Canvas / 工件"
+  },
+  "f_includeImages": {
+    "message": "包含图片"
+  },
+  "f_embedImages": {
+    "message": "将图片嵌入文件（PDF、HTML、Word、PNG）"
+  },
+  "f_includeToolOutputs": {
+    "message": "包含工具调用和代码解释器输出"
+  },
+  "f_includeTimestamps": {
+    "message": "为每条消息显示时间戳"
+  },
+  "f_showRoleIcons": {
+    "message": "显示角色图标 / 表情符号"
+  },
+  "f_userName": {
+    "message": "你的姓名（显示在导出文件页眉）"
+  },
+  "f_userEmail": {
+    "message": "你的电子邮箱（显示在导出文件页眉）"
+  },
+  "f_userLabel": {
+    "message": "你的消息的标签（默认：你）"
+  },
+  "f_assistantLabel": {
+    "message": "AI 消息的标签（默认：平台名称）"
+  },
+  "f_showDate": {
+    "message": "显示对话日期"
+  },
+  "f_dateSource": {
+    "message": "日期来源"
+  },
+  "o_dateSource_created": {
+    "message": "创建时间"
+  },
+  "o_dateSource_updated": {
+    "message": "最后修改时间"
+  },
+  "o_dateSource_export": {
+    "message": "导出时间"
+  },
+  "f_dateFormat": {
+    "message": "日期格式"
+  },
+  "o_dateFormat_locale": {
+    "message": "浏览器区域设置"
+  },
+  "f_branding": {
+    "message": "添加“由 Chat Exporter 导出”页脚"
+  },
+  "sec_files": {
+    "message": "文件"
+  },
+  "f_filenameTemplate": {
+    "message": "文件名模板 — {title} {date} {time} {platform} {model} {id}"
+  },
+  "f_filenamePrefix": {
+    "message": "文件名前缀"
+  },
+  "f_downloadSubfolder": {
+    "message": "下载子文件夹（位于“下载”文件夹内）"
+  },
+  "f_mdFrontMatter": {
+    "message": "添加 YAML front matter"
+  },
+  "f_mdThinkingStyle": {
+    "message": "思考过程样式"
+  },
+  "o_mdThinkingStyle_blockquote": {
+    "message": "引用块"
+  },
+  "o_mdThinkingStyle_details": {
+    "message": "可折叠的 <details>"
+  },
+  "sec_dataformats": {
+    "message": "JSON 和 CSV"
+  },
+  "f_jsonPretty": {
+    "message": "格式化 JSON"
+  },
+  "f_csvDelimiter": {
+    "message": "CSV 分隔符"
+  },
+  "o_csvDelimiter_comma": {
+    "message": "逗号 ,"
+  },
+  "o_csvDelimiter_semicolon": {
+    "message": "分号 ;"
+  },
+  "o_csvDelimiter_tab": {
+    "message": "制表符"
+  },
+  "sec_pdf": {
+    "message": "PDF / HTML / 图片"
+  },
+  "f_pdfTitle": {
+    "message": "内容标题（留空 = 对话标题）"
+  },
+  "f_pdfPageSize": {
+    "message": "页面大小"
+  },
+  "f_pdfOrientation": {
+    "message": "方向"
+  },
+  "o_pdfOrientation_portrait": {
+    "message": "纵向"
+  },
+  "o_pdfOrientation_landscape": {
+    "message": "横向"
+  },
+  "f_pdfTheme": {
+    "message": "主题"
+  },
+  "o_pdfTheme_light": {
+    "message": "浅色"
+  },
+  "o_pdfTheme_dark": {
+    "message": "深色"
+  },
+  "f_pdfMargins": {
+    "message": "页边距"
+  },
+  "o_pdfMargins_narrow": {
+    "message": "窄"
+  },
+  "o_pdfMargins_normal": {
+    "message": "正常"
+  },
+  "o_pdfMargins_wide": {
+    "message": "宽"
+  },
+  "f_pdfFontScale": {
+    "message": "字号（默认值的百分比）"
+  },
+  "f_pdfFontFamily": {
+    "message": "字体"
+  },
+  "o_pdfFontFamily_sans": {
+    "message": "无衬线"
+  },
+  "o_pdfFontFamily_serif": {
+    "message": "衬线"
+  },
+  "o_pdfFontFamily_mono": {
+    "message": "等宽"
+  },
+  "f_pdfPageNumbers": {
+    "message": "页码"
+  },
+  "f_pdfToc": {
+    "message": "目录"
+  },
+  "f_pdfPageBreakPerPrompt": {
+    "message": "每个提示词另起一页"
+  },
+  "f_pdfWrapCode": {
+    "message": "自动换行显示过长的代码行"
+  },
+  "f_pdfAutoPrint": {
+    "message": "自动打开打印对话框"
+  }
+}

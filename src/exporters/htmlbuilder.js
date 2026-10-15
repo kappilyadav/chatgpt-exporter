@@ -112,9 +112,9 @@ html{background:${s.pdfTheme === 'dark' ? '#16171b' : '#ffffff'};-webkit-print-c
       messages.forEach((m, i) => {
         if (m.role !== 'user') return;
         const t = CE.util.truncate(CE.util.plainFromMarkdownLine(m.markdown), 110) || '(' + CE.t('you') + ')';
-        items.push('<li><a href="#m' + i + '">' + esc(t) + '</a></li>');
+        items.push('<li><a href="#m' + i + '" dir="auto">' + esc(t) + '</a></li>');
       });
-      if (items.length) toc = '<nav class="toc"><h2>Contents</h2><ol>' + items.join('') + '</ol></nav>';
+      if (items.length) toc = '<nav class="toc"><h2>' + esc(CE.t('docContents')) + '</h2><ol>' + items.join('') + '</ol></nav>';
     }
 
     let firstUser = true;
@@ -131,16 +131,16 @@ html{background:${s.pdfTheme === 'dark' ? '#16171b' : '#ffffff'};-webkit-print-c
       const mdHtml = CE.md.toHtml(m.markdown || '', { breaks: isUser, headingOffset: 0 });
       return '<section class="' + cls + '" id="m' + i + '">' +
         '<div class="msg-head">' + icon + '<span class="who">' + esc(label) + '</span>' + (time ? '<span class="time">' + esc(time) + '</span>' : '') + '</div>' +
-        (thinking ? '<details class="thinking"' + (opts.detailsOpen === false ? '' : ' open="open"') + '><summary>Thought process</summary>' + CE.md.toHtml(thinking, {}) + '</details>' : '') +
-        '<div class="msg-body">' + mdHtml + '</div>' +
+        (thinking ? '<details class="thinking" dir="auto"' + (opts.detailsOpen === false ? '' : ' open="open"') + '><summary>' + esc(CE.t('docThoughtProcess')) + '</summary>' + CE.md.toHtml(thinking, {}) + '</details>' : '') +
+        '<div class="msg-body" dir="auto">' + mdHtml + '</div>' +
         (atts.length ? '<div class="attachments">' + atts.map((a) => '📎 ' + esc(a.name)).join(' &#160; ') + '</div>' : '') +
-        (sources.length ? '<div class="sources"><div class="label">Sources</div><ol>' + sources.map((x) => '<li value="' + x.n + '"><a href="' + esc(CE.md.safeUrl(x.url)) + '">' + esc(x.title) + '</a></li>').join('') + '</ol></div>' : '') +
+        (sources.length ? '<div class="sources"><div class="label">' + esc(CE.t('docSources')) + '</div><ol>' + sources.map((x) => '<li value="' + x.n + '" dir="auto"><a href="' + esc(CE.md.safeUrl(x.url)) + '">' + esc(x.title) + '</a></li>').join('') + '</ol></div>' : '') +
         '</section>';
     }).join('\n');
 
-    const head = '<header class="doc-head"><h1 class="doc-title">' + esc(title) + '</h1><div class="meta">' + meta.join('') + '</div>' +
+    const head = '<header class="doc-head"><h1 class="doc-title" dir="auto">' + esc(title) + '</h1><div class="meta">' + meta.join('') + '</div>' +
       (convo.url && /^https?:/.test(convo.url) ? '<div class="meta"><a href="' + esc(convo.url) + '">' + esc(convo.url) + '</a></div>' : '') + '</header>';
-    const brand = s.branding ? '<div class="brand">Exported with Chat Exporter</div>' : '';
+    const brand = s.branding ? '<div class="brand">' + esc(CE.t('docExportedWith')) + '</div>' : '';
 
     return { css: css(s, mode), body: head + toc + msgs + brand, title, theme };
   }
@@ -153,7 +153,7 @@ html{background:${s.pdfTheme === 'dark' ? '#16171b' : '#ffffff'};-webkit-print-c
         '<script defer="defer" src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>' +
         '<script>document.addEventListener("DOMContentLoaded",function(){var t=0;(function w(){if(window.katex){document.querySelectorAll(".math").forEach(function(e){try{window.katex.render(e.getAttribute("data-tex"),e,{displayMode:e.classList.contains("math-block"),throwOnError:false});e.classList.add("rendered")}catch(x){}})}else if(t++<40)setTimeout(w,150)})()});</script>'
       : '';
-    return '<!DOCTYPE html>\n<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>' + esc(p.title) + '</title>' +
+    return '<!DOCTYPE html>\n<html lang="' + CE.i18n.htmlLang() + '"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>' + esc(p.title) + '</title>' +
       '<style>html,body{margin:0}' + (opts.page ? pageCss(ctx.settings) : '') + '\n' + p.css + (opts.extraCss || '') + '</style>' + mathScript +
       '</head><body class="ce-body theme-' + p.theme + '">' + (opts.bodyWrap ? opts.bodyWrap(p.body) : (opts.wrapMax === false ? p.body : '<main style="max-width:860px;margin:0 auto;padding:32px 20px 60px">' + p.body + '</main>')) + '</body></html>';
   }

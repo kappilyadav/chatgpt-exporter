@@ -1,0 +1,578 @@
+{
+  "extName": {
+    "message": "ChatGPT Exporter：將 ChatGPT 儲存為 PDF、Word 和 Markdown"
+  },
+  "extDescription": {
+    "message": "將任何 ChatGPT 對話匯出成整潔、方便分享的檔案。自選訊息、自訂版面，並保護隱私。"
+  },
+  "extActionTitle": {
+    "message": "ChatGPT Exporter"
+  },
+  "cmdTogglePanel": {
+    "message": "開啟 / 關閉「選取訊息」面板"
+  },
+  "cmdQuickExport": {
+    "message": "以預設格式快速匯出目前的對話"
+  },
+  "cmdExportPdf": {
+    "message": "將目前的對話匯出為 PDF"
+  },
+  "selectMessages": {
+    "message": "選取訊息"
+  },
+  "select": {
+    "message": "選取"
+  },
+  "export": {
+    "message": "匯出"
+  },
+  "exportAs": {
+    "message": "匯出為"
+  },
+  "all": {
+    "message": "全部"
+  },
+  "allDefault": {
+    "message": "全部（預設）"
+  },
+  "questions": {
+    "message": "提問"
+  },
+  "answers": {
+    "message": "回答"
+  },
+  "none": {
+    "message": "無"
+  },
+  "invert": {
+    "message": "反向選取"
+  },
+  "cancel": {
+    "message": "取消"
+  },
+  "copy": {
+    "message": "複製"
+  },
+  "settings": {
+    "message": "設定"
+  },
+  "expand": {
+    "message": "展開"
+  },
+  "back": {
+    "message": "返回"
+  },
+  "refresh": {
+    "message": "重新整理"
+  },
+  "retry": {
+    "message": "重試"
+  },
+  "loading": {
+    "message": "正在載入對話…"
+  },
+  "loadingHistory": {
+    "message": "正在載入完整記錄…"
+  },
+  "tip": {
+    "message": "提示：按住 Shift 並點選即可選取一段訊息。"
+  },
+  "you": {
+    "message": "你"
+  },
+  "exportedN": {
+    "message": "已將 {n} 則訊息匯出為 {fmt}"
+  },
+  "copiedN": {
+    "message": "已將 {n} 則訊息複製為 {fmt}"
+  },
+  "nothingSelected": {
+    "message": "請先至少選取一則訊息。"
+  },
+  "noConversation": {
+    "message": "在此頁面上找不到對話。"
+  },
+  "failed": {
+    "message": "匯出失敗：{msg}"
+  },
+  "pdfHint": {
+    "message": "正在開啟列印預覽，請選擇「另存為 PDF」。"
+  },
+  "exportAll": {
+    "message": "匯出所有對話…"
+  },
+  "bulkTitle": {
+    "message": "匯出多個對話"
+  },
+  "searchChats": {
+    "message": "搜尋對話"
+  },
+  "selectAll": {
+    "message": "全選"
+  },
+  "exportZip": {
+    "message": "匯出 ZIP"
+  },
+  "progress": {
+    "message": "正在匯出 {i} / {n}…"
+  },
+  "bulkDone": {
+    "message": "已將 {n} 個對話匯出為 ZIP 檔案"
+  },
+  "bulkUnsupported": {
+    "message": "此網站目前尚不支援批次匯出。請開啟一個對話後使用「匯出」。"
+  },
+  "chatsFound": {
+    "message": "{n} 個對話"
+  },
+  "copyAs": {
+    "message": "複製為 {fmt}"
+  },
+  "quickExport": {
+    "message": "快速匯出"
+  },
+  "openPanel": {
+    "message": "選取訊息…"
+  },
+  "unsupportedSite": {
+    "message": "請開啟 ChatGPT 以匯出對話。"
+  },
+  "selectedOf": {
+    "message": "{a}/{b}"
+  },
+  "messages": {
+    "message": "則訊息"
+  },
+  "richText": {
+    "message": "格式化文字"
+  },
+  "fmtText": {
+    "message": "文字"
+  },
+  "fmtPng": {
+    "message": "圖片（PNG）"
+  },
+  "toggleTitle": {
+    "message": "顯示或隱藏匯出按鈕"
+  },
+  "autoBrowser": {
+    "message": "自動（依瀏覽器）"
+  },
+  "close": {
+    "message": "關閉"
+  },
+  "ctxExportChat": {
+    "message": "匯出此對話"
+  },
+  "ctxExportAs": {
+    "message": "匯出為 {fmt}"
+  },
+  "seePlans": {
+    "message": "查看方案"
+  },
+  "upgrade": {
+    "message": "升級"
+  },
+  "accountHeading": {
+    "message": "帳戶"
+  },
+  "limitFull": {
+    "message": "你已用完本月 {limit} 次免費完整對話匯出。升級即可無限次匯出。"
+  },
+  "limitPartial": {
+    "message": "你已用完本月 {limit} 次免費部分匯出。升級即可無限次匯出。"
+  },
+  "bulkFreeLeft": {
+    "message": "免費方案：本月還剩 {left} 次完整匯出，但你選取了 {n} 個對話。請減少選取的對話，或升級以無限次匯出。"
+  },
+  "tokenInvalidFormat": {
+    "message": "這看起來不是有效的權杖。"
+  },
+  "tokenExpired": {
+    "message": "此權杖已失效。請在你的帳戶中建立新的權杖。"
+  },
+  "serverUnreachable": {
+    "message": "無法連線到伺服器。請檢查網路連線後再試一次。"
+  },
+  "notSignedIn": {
+    "message": "尚未登入"
+  },
+  "sessionFailed": {
+    "message": "工作階段要求失敗（{status}）"
+  },
+  "popupChecking": {
+    "message": "正在檢查分頁…"
+  },
+  "conversationDetected": {
+    "message": "已偵測到 {name} 對話"
+  },
+  "openAConversation": {
+    "message": "{name} — 請開啟一個對話"
+  },
+  "worksOn": {
+    "message": "適用於 chatgpt.com"
+  },
+  "popupInactive": {
+    "message": "請開啟 ChatGPT 對話，然後再次點選此擴充功能："
+  },
+  "formatLabel": {
+    "message": "格式"
+  },
+  "keyboardShortcuts": {
+    "message": "鍵盤快速鍵"
+  },
+  "planPro": {
+    "message": "Pro · {plan} · 無限次匯出"
+  },
+  "planYear": {
+    "message": "年度方案"
+  },
+  "planMonth": {
+    "message": "月度方案"
+  },
+  "planProName": {
+    "message": "Pro"
+  },
+  "planFreeLeft": {
+    "message": "免費 · 本月還剩 {full} 次完整匯出和 {single} 次部分匯出"
+  },
+  "exporting": {
+    "message": "正在匯出…"
+  },
+  "doneSeePage": {
+    "message": "完成，詳細資訊請查看頁面。"
+  },
+  "copiedClipboard": {
+    "message": "已複製到剪貼簿。"
+  },
+  "failedShort": {
+    "message": "失敗"
+  },
+  "optionsTitle": {
+    "message": "ChatGPT Exporter — 設定"
+  },
+  "optionsIntro": {
+    "message": "設定會自動儲存，並與你的 Chrome 設定檔同步。所有內容都在你的瀏覽器中於本機處理。"
+  },
+  "checking": {
+    "message": "正在檢查…"
+  },
+  "connectWithToken": {
+    "message": "使用權杖連線"
+  },
+  "tokenHelp": {
+    "message": "如果網站無法自動連接擴充功能，請使用此方式。從你的帳戶頁面複製權杖。"
+  },
+  "connect": {
+    "message": "連線"
+  },
+  "resetDefaults": {
+    "message": "還原為預設值"
+  },
+  "keyboardShortcutsEllipsis": {
+    "message": "鍵盤快速鍵…"
+  },
+  "saved": {
+    "message": "已儲存 ✓"
+  },
+  "accountLoadFail": {
+    "message": "目前無法載入你的帳戶。"
+  },
+  "connectedAs": {
+    "message": "已連線為 {email} · {plan}"
+  },
+  "planFreeShort": {
+    "message": "免費方案"
+  },
+  "planProUnlimited": {
+    "message": "{plan} · 無限次匯出"
+  },
+  "manageBilling": {
+    "message": "管理帳單"
+  },
+  "disconnect": {
+    "message": "中斷連線"
+  },
+  "freeLeftConnect": {
+    "message": "免費方案 · 本月還剩 {full} 次完整匯出和 {single} 次部分匯出。如果你已升級，請連結你的帳戶。"
+  },
+  "connectAccount": {
+    "message": "連結帳戶"
+  },
+  "connecting": {
+    "message": "正在連線…"
+  },
+  "connected": {
+    "message": "已連線。"
+  },
+  "connectFail": {
+    "message": "無法連線。"
+  },
+  "docContents": {
+    "message": "目錄"
+  },
+  "docThoughtProcess": {
+    "message": "思考過程"
+  },
+  "docSources": {
+    "message": "來源"
+  },
+  "docAttachments": {
+    "message": "附件"
+  },
+  "docExportedWith": {
+    "message": "由 Chat Exporter 匯出"
+  },
+  "pvDocTitle": {
+    "message": "ChatGPT Exporter — 預覽"
+  },
+  "pvPreview": {
+    "message": "預覽"
+  },
+  "pvPreparing": {
+    "message": "正在準備…"
+  },
+  "jobExpired": {
+    "message": "此匯出工作已過期。請返回對話後重新匯出。"
+  },
+  "pvWidthPx": {
+    "message": "寬度（px）"
+  },
+  "pvScale": {
+    "message": "縮放"
+  },
+  "pvRendering": {
+    "message": "正在轉譯第 {i} 部分（共 {n} 部分）…"
+  },
+  "pvPacking": {
+    "message": "正在封裝 {n} 張圖片…"
+  },
+  "pvSavedZip": {
+    "message": "已將 {n} 張圖片儲存為 ZIP"
+  },
+  "pvSaved": {
+    "message": "已儲存 {name}"
+  },
+  "pvFastNote": {
+    "message": "（使用 1× 以維持長對話的速度）"
+  },
+  "pvPrintSave": {
+    "message": "列印 / 另存為 PDF"
+  },
+  "pvChooseSave": {
+    "message": "請選擇「另存為 PDF」作為目的地。"
+  },
+  "pvDownloadPng": {
+    "message": "下載 PNG"
+  },
+  "pvFailed": {
+    "message": "失敗：{msg}"
+  },
+  "pvRenderFail": {
+    "message": "無法轉譯此匯出內容：{msg}"
+  },
+  "sec_general": {
+    "message": "一般"
+  },
+  "f_language": {
+    "message": "介面語言"
+  },
+  "f_theme": {
+    "message": "面板主題"
+  },
+  "o_theme_auto": {
+    "message": "自動"
+  },
+  "o_theme_dark": {
+    "message": "深色"
+  },
+  "o_theme_light": {
+    "message": "淺色"
+  },
+  "f_showLauncher": {
+    "message": "在對話頁面顯示「選取 / 匯出」按鈕"
+  },
+  "f_rememberSelection": {
+    "message": "記住我的選取預設（全部 / 提問 / 回答）"
+  },
+  "f_closePanelAfterExport": {
+    "message": "匯出後關閉側邊面板"
+  },
+  "f_showToasts": {
+    "message": "匯出後顯示確認提示"
+  },
+  "sec_content": {
+    "message": "內容"
+  },
+  "f_includeThoughts": {
+    "message": "包含思考過程 / 推理"
+  },
+  "f_includeSources": {
+    "message": "包含網頁搜尋來源和引用"
+  },
+  "f_includeCanvas": {
+    "message": "包含 Canvas / 成品"
+  },
+  "f_includeImages": {
+    "message": "包含圖片"
+  },
+  "f_embedImages": {
+    "message": "將圖片內嵌於檔案（PDF、HTML、Word、PNG）"
+  },
+  "f_includeToolOutputs": {
+    "message": "包含工具呼叫和程式碼解譯器輸出"
+  },
+  "f_includeTimestamps": {
+    "message": "為每則訊息顯示時間戳記"
+  },
+  "f_showRoleIcons": {
+    "message": "顯示角色圖示 / 表情符號"
+  },
+  "f_userName": {
+    "message": "你的姓名（顯示在匯出檔案的頁首）"
+  },
+  "f_userEmail": {
+    "message": "你的電子郵件（顯示在匯出檔案的頁首）"
+  },
+  "f_userLabel": {
+    "message": "你的訊息標籤（預設：你）"
+  },
+  "f_assistantLabel": {
+    "message": "AI 訊息標籤（預設：平台名稱）"
+  },
+  "f_showDate": {
+    "message": "顯示對話日期"
+  },
+  "f_dateSource": {
+    "message": "日期來源"
+  },
+  "o_dateSource_created": {
+    "message": "建立時間"
+  },
+  "o_dateSource_updated": {
+    "message": "最後修改時間"
+  },
+  "o_dateSource_export": {
+    "message": "匯出時間"
+  },
+  "f_dateFormat": {
+    "message": "日期格式"
+  },
+  "o_dateFormat_locale": {
+    "message": "瀏覽器地區設定"
+  },
+  "f_branding": {
+    "message": "新增「由 Chat Exporter 匯出」頁尾"
+  },
+  "sec_files": {
+    "message": "檔案"
+  },
+  "f_filenameTemplate": {
+    "message": "檔名範本 — {title} {date} {time} {platform} {model} {id}"
+  },
+  "f_filenamePrefix": {
+    "message": "檔名前置詞"
+  },
+  "f_downloadSubfolder": {
+    "message": "下載子資料夾（位於「下載」資料夾內）"
+  },
+  "f_mdFrontMatter": {
+    "message": "新增 YAML front matter"
+  },
+  "f_mdThinkingStyle": {
+    "message": "思考過程樣式"
+  },
+  "o_mdThinkingStyle_blockquote": {
+    "message": "引用區塊"
+  },
+  "o_mdThinkingStyle_details": {
+    "message": "可摺疊的 <details>"
+  },
+  "sec_dataformats": {
+    "message": "JSON 和 CSV"
+  },
+  "f_jsonPretty": {
+    "message": "格式化 JSON"
+  },
+  "f_csvDelimiter": {
+    "message": "CSV 分隔符號"
+  },
+  "o_csvDelimiter_comma": {
+    "message": "逗號 ,"
+  },
+  "o_csvDelimiter_semicolon": {
+    "message": "分號 ;"
+  },
+  "o_csvDelimiter_tab": {
+    "message": "Tab 字元"
+  },
+  "sec_pdf": {
+    "message": "PDF / HTML / 圖片"
+  },
+  "f_pdfTitle": {
+    "message": "內容標題（留空 = 對話標題）"
+  },
+  "f_pdfPageSize": {
+    "message": "頁面大小"
+  },
+  "f_pdfOrientation": {
+    "message": "方向"
+  },
+  "o_pdfOrientation_portrait": {
+    "message": "直向"
+  },
+  "o_pdfOrientation_landscape": {
+    "message": "橫向"
+  },
+  "f_pdfTheme": {
+    "message": "主題"
+  },
+  "o_pdfTheme_light": {
+    "message": "淺色"
+  },
+  "o_pdfTheme_dark": {
+    "message": "深色"
+  },
+  "f_pdfMargins": {
+    "message": "邊界"
+  },
+  "o_pdfMargins_narrow": {
+    "message": "窄"
+  },
+  "o_pdfMargins_normal": {
+    "message": "標準"
+  },
+  "o_pdfMargins_wide": {
+    "message": "寬"
+  },
+  "f_pdfFontScale": {
+    "message": "字型大小（預設值的百分比）"
+  },
+  "f_pdfFontFamily": {
+    "message": "字型"
+  },
+  "o_pdfFontFamily_sans": {
+    "message": "無襯線"
+  },
+  "o_pdfFontFamily_serif": {
+    "message": "襯線"
+  },
+  "o_pdfFontFamily_mono": {
+    "message": "等寬"
+  },
+  "f_pdfPageNumbers": {
+    "message": "頁碼"
+  },
+  "f_pdfToc": {
+    "message": "目錄"
+  },
+  "f_pdfPageBreakPerPrompt": {
+    "message": "每個提示詞另起一頁"
+  },
+  "f_pdfWrapCode": {
+    "message": "自動換行顯示過長的程式碼行"
+  },
+  "f_pdfAutoPrint": {
+    "message": "自動開啟列印對話方塊"
+  }
+}

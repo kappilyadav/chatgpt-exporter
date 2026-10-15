@@ -126,8 +126,8 @@
       const q = await CE.account.consume('full', ids.length);
       if (!q.ok) {
         const left = Math.max(0, q.limit - q.used);
-        B.msg.textContent = 'Free plan: ' + left + ' full export' + (left === 1 ? '' : 's') + ' left this month, but you selected ' + ids.length + '. Select fewer chats or upgrade for unlimited.';
-        P.toast(CE.account.limitMessage(q), 'err', { label: 'See plans', onClick: () => CE.account.openSite('plans') });
+        B.msg.textContent = t('bulkFreeLeft', { left, n: ids.length });
+        P.toast(CE.account.limitMessage(q), 'err', { label: t('seePlans'), onClick: () => CE.account.openSite('plans') });
         return;
       }
       let used = 0;

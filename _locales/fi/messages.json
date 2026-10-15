@@ -1,0 +1,578 @@
+{
+  "extName": {
+    "message": "ChatGPT Exporter: tallenna ChatGPT PDF-, Word- ja Markdown-muotoon"
+  },
+  "extDescription": {
+    "message": "Vie mikä tahansa ChatGPT-keskustelu siistiksi, jaettavaksi tiedostoksi. Valitse viestit, muokkaa ulkoasua, pysy yksityisenä."
+  },
+  "extActionTitle": {
+    "message": "ChatGPT Exporter"
+  },
+  "cmdTogglePanel": {
+    "message": "Avaa / sulje Valitse viestit -paneeli"
+  },
+  "cmdQuickExport": {
+    "message": "Vie nykyinen keskustelu nopeasti oletusmuodossa"
+  },
+  "cmdExportPdf": {
+    "message": "Vie nykyinen keskustelu PDF-tiedostona"
+  },
+  "selectMessages": {
+    "message": "Valitse viestit"
+  },
+  "select": {
+    "message": "Valitse"
+  },
+  "export": {
+    "message": "Vie"
+  },
+  "exportAs": {
+    "message": "Vie muodossa"
+  },
+  "all": {
+    "message": "Kaikki"
+  },
+  "allDefault": {
+    "message": "Kaikki (oletus)"
+  },
+  "questions": {
+    "message": "Kysymykset"
+  },
+  "answers": {
+    "message": "Vastaukset"
+  },
+  "none": {
+    "message": "Ei mitään"
+  },
+  "invert": {
+    "message": "Käännä"
+  },
+  "cancel": {
+    "message": "Peruuta"
+  },
+  "copy": {
+    "message": "Kopioi"
+  },
+  "settings": {
+    "message": "Asetukset"
+  },
+  "expand": {
+    "message": "Laajenna"
+  },
+  "back": {
+    "message": "Takaisin"
+  },
+  "refresh": {
+    "message": "Päivitä"
+  },
+  "retry": {
+    "message": "Yritä uudelleen"
+  },
+  "loading": {
+    "message": "Ladataan keskustelua…"
+  },
+  "loadingHistory": {
+    "message": "Ladataan koko historiaa…"
+  },
+  "tip": {
+    "message": "Vinkki: Vaihto+napsautus valitsee viestialueen."
+  },
+  "you": {
+    "message": "Sinä"
+  },
+  "exportedN": {
+    "message": "Viestejä viety: {n} (muoto: {fmt})"
+  },
+  "copiedN": {
+    "message": "Viestejä kopioitu: {n} (muoto: {fmt})"
+  },
+  "nothingSelected": {
+    "message": "Valitse ensin vähintään yksi viesti."
+  },
+  "noConversation": {
+    "message": "Tältä sivulta ei löytynyt keskustelua."
+  },
+  "failed": {
+    "message": "Vienti epäonnistui: {msg}"
+  },
+  "pdfHint": {
+    "message": "Avataan tulostuksen esikatselu — valitse ”Tallenna PDF-tiedostona”."
+  },
+  "exportAll": {
+    "message": "Vie kaikki keskustelut…"
+  },
+  "bulkTitle": {
+    "message": "Vie useita keskusteluja"
+  },
+  "searchChats": {
+    "message": "Hae keskusteluja"
+  },
+  "selectAll": {
+    "message": "Valitse kaikki"
+  },
+  "exportZip": {
+    "message": "Vie ZIP-tiedostoon"
+  },
+  "progress": {
+    "message": "Viedään {i} / {n}…"
+  },
+  "bulkDone": {
+    "message": "Keskusteluja viety ZIP-tiedostoon: {n}"
+  },
+  "bulkUnsupported": {
+    "message": "Massavienti ei ole vielä käytettävissä tällä sivustolla. Avaa keskustelu ja käytä Vie-toimintoa."
+  },
+  "chatsFound": {
+    "message": "Keskusteluja: {n}"
+  },
+  "copyAs": {
+    "message": "Kopioi muodossa {fmt}"
+  },
+  "quickExport": {
+    "message": "Pikavienti"
+  },
+  "openPanel": {
+    "message": "Valitse viestit…"
+  },
+  "unsupportedSite": {
+    "message": "Avaa ChatGPT viedäksesi keskustelun."
+  },
+  "selectedOf": {
+    "message": "{a}/{b}"
+  },
+  "messages": {
+    "message": "viestiä"
+  },
+  "richText": {
+    "message": "muotoiltu teksti"
+  },
+  "fmtText": {
+    "message": "Teksti"
+  },
+  "fmtPng": {
+    "message": "Kuva (PNG)"
+  },
+  "toggleTitle": {
+    "message": "Näytä tai piilota vientipainikkeet"
+  },
+  "autoBrowser": {
+    "message": "Automaattinen (selain)"
+  },
+  "close": {
+    "message": "Sulje"
+  },
+  "ctxExportChat": {
+    "message": "Vie tämä keskustelu"
+  },
+  "ctxExportAs": {
+    "message": "Vie muodossa {fmt}"
+  },
+  "seePlans": {
+    "message": "Näytä tilaukset"
+  },
+  "upgrade": {
+    "message": "Päivitä"
+  },
+  "accountHeading": {
+    "message": "Tili"
+  },
+  "limitFull": {
+    "message": "Olet käyttänyt tämän kuun ilmaisten koko keskustelun vientien rajan ({limit}). Päivitä rajattomiin vienteihin."
+  },
+  "limitPartial": {
+    "message": "Olet käyttänyt tämän kuun ilmaisten osittaisvientien rajan ({limit}). Päivitä rajattomiin vienteihin."
+  },
+  "bulkFreeLeft": {
+    "message": "Ilmainen tilaus: tässä kuussa jäljellä koko keskustelun vientejä: {left}, mutta valitsit keskusteluja: {n}. Valitse vähemmän keskusteluja tai päivitä rajattomiin vienteihin."
+  },
+  "tokenInvalidFormat": {
+    "message": "Tämä ei näytä kelvolliselta tunnukselta."
+  },
+  "tokenExpired": {
+    "message": "Tämä tunnus ei ole enää voimassa. Luo uusi tililtäsi."
+  },
+  "serverUnreachable": {
+    "message": "Palvelimeen ei saatu yhteyttä. Tarkista yhteytesi ja yritä uudelleen."
+  },
+  "notSignedIn": {
+    "message": "Et ole kirjautunut sisään"
+  },
+  "sessionFailed": {
+    "message": "Istuntopyyntö epäonnistui ({status})"
+  },
+  "popupChecking": {
+    "message": "Tarkistetaan välilehteä…"
+  },
+  "conversationDetected": {
+    "message": "{name}-keskustelu havaittu"
+  },
+  "openAConversation": {
+    "message": "{name} — avaa keskustelu"
+  },
+  "worksOn": {
+    "message": "Toimii sivustolla chatgpt.com"
+  },
+  "popupInactive": {
+    "message": "Avaa ChatGPT-keskustelu ja napsauta laajennusta uudelleen:"
+  },
+  "formatLabel": {
+    "message": "Muoto"
+  },
+  "keyboardShortcuts": {
+    "message": "Pikanäppäimet"
+  },
+  "planPro": {
+    "message": "Pro · {plan} · rajaton vienti"
+  },
+  "planYear": {
+    "message": "Vuositilaus"
+  },
+  "planMonth": {
+    "message": "Kuukausitilaus"
+  },
+  "planProName": {
+    "message": "Pro"
+  },
+  "planFreeLeft": {
+    "message": "Ilmainen · tässä kuussa jäljellä: {full} koko ja {single} osittaista vientiä"
+  },
+  "exporting": {
+    "message": "Viedään…"
+  },
+  "doneSeePage": {
+    "message": "Valmis — katso lisätiedot sivulta."
+  },
+  "copiedClipboard": {
+    "message": "Kopioitu leikepöydälle."
+  },
+  "failedShort": {
+    "message": "Epäonnistui"
+  },
+  "optionsTitle": {
+    "message": "ChatGPT Exporter — Asetukset"
+  },
+  "optionsIntro": {
+    "message": "Asetukset tallentuvat automaattisesti ja synkronoituvat Chrome-profiilisi kanssa. Kaikki käsitellään paikallisesti selaimessasi."
+  },
+  "checking": {
+    "message": "Tarkistetaan…"
+  },
+  "connectWithToken": {
+    "message": "Yhdistä tunnuksella"
+  },
+  "tokenHelp": {
+    "message": "Käytä tätä, jos sivusto ei pystynyt yhdistämään laajennusta automaattisesti. Kopioi tunnus tilisivultasi."
+  },
+  "connect": {
+    "message": "Yhdistä"
+  },
+  "resetDefaults": {
+    "message": "Palauta oletukset"
+  },
+  "keyboardShortcutsEllipsis": {
+    "message": "Pikanäppäimet…"
+  },
+  "saved": {
+    "message": "Tallennettu ✓"
+  },
+  "accountLoadFail": {
+    "message": "Tiliäsi ei voitu ladata juuri nyt."
+  },
+  "connectedAs": {
+    "message": "Yhdistetty käyttäjänä {email} · {plan}"
+  },
+  "planFreeShort": {
+    "message": "Ilmainen tilaus"
+  },
+  "planProUnlimited": {
+    "message": "{plan} · rajaton vienti"
+  },
+  "manageBilling": {
+    "message": "Hallitse laskutusta"
+  },
+  "disconnect": {
+    "message": "Katkaise yhteys"
+  },
+  "freeLeftConnect": {
+    "message": "Ilmainen tilaus · tässä kuussa jäljellä: {full} koko ja {single} osittaista vientiä. Yhdistä tilisi, jos olet päivittänyt tilauksen."
+  },
+  "connectAccount": {
+    "message": "Yhdistä tili"
+  },
+  "connecting": {
+    "message": "Yhdistetään…"
+  },
+  "connected": {
+    "message": "Yhdistetty."
+  },
+  "connectFail": {
+    "message": "Yhdistäminen ei onnistunut."
+  },
+  "docContents": {
+    "message": "Sisältö"
+  },
+  "docThoughtProcess": {
+    "message": "Ajatteluprosessi"
+  },
+  "docSources": {
+    "message": "Lähteet"
+  },
+  "docAttachments": {
+    "message": "Liitteet"
+  },
+  "docExportedWith": {
+    "message": "Viety Chat Exporterilla"
+  },
+  "pvDocTitle": {
+    "message": "ChatGPT Exporter — Esikatselu"
+  },
+  "pvPreview": {
+    "message": "Esikatselu"
+  },
+  "pvPreparing": {
+    "message": "Valmistellaan…"
+  },
+  "jobExpired": {
+    "message": "Tämä vientitehtävä on vanhentunut. Palaa keskusteluun ja vie uudelleen."
+  },
+  "pvWidthPx": {
+    "message": "Leveys (px)"
+  },
+  "pvScale": {
+    "message": "Mittakaava"
+  },
+  "pvRendering": {
+    "message": "Hahmonnetaan osaa {i}/{n}…"
+  },
+  "pvPacking": {
+    "message": "Pakataan kuvia: {n}…"
+  },
+  "pvSavedZip": {
+    "message": "Kuvia tallennettu ZIP-tiedostoon: {n}"
+  },
+  "pvSaved": {
+    "message": "Tallennettu: {name}"
+  },
+  "pvFastNote": {
+    "message": "(1×, jotta pitkä keskustelu pysyy nopeana)"
+  },
+  "pvPrintSave": {
+    "message": "Tulosta / Tallenna PDF-tiedostona"
+  },
+  "pvChooseSave": {
+    "message": "Valitse kohteeksi ”Tallenna PDF-tiedostona”."
+  },
+  "pvDownloadPng": {
+    "message": "Lataa PNG"
+  },
+  "pvFailed": {
+    "message": "Epäonnistui: {msg}"
+  },
+  "pvRenderFail": {
+    "message": "Tätä vientiä ei voitu hahmontaa: {msg}"
+  },
+  "sec_general": {
+    "message": "Yleiset"
+  },
+  "f_language": {
+    "message": "Käyttöliittymän kieli"
+  },
+  "f_theme": {
+    "message": "Paneelin teema"
+  },
+  "o_theme_auto": {
+    "message": "Automaattinen"
+  },
+  "o_theme_dark": {
+    "message": "Tumma"
+  },
+  "o_theme_light": {
+    "message": "Vaalea"
+  },
+  "f_showLauncher": {
+    "message": "Näytä Valitse / Vie -painikkeet keskustelusivulla"
+  },
+  "f_rememberSelection": {
+    "message": "Muista valintaesiasetukseni (Kaikki / Kysymykset / Vastaukset)"
+  },
+  "f_closePanelAfterExport": {
+    "message": "Sulje sivupaneeli viennin jälkeen"
+  },
+  "f_showToasts": {
+    "message": "Näytä vahvistus viennin jälkeen"
+  },
+  "sec_content": {
+    "message": "Sisältö"
+  },
+  "f_includeThoughts": {
+    "message": "Sisällytä ajatteluprosessi"
+  },
+  "f_includeSources": {
+    "message": "Sisällytä verkkohaun lähteet ja viittaukset"
+  },
+  "f_includeCanvas": {
+    "message": "Sisällytä Canvas / artefaktit"
+  },
+  "f_includeImages": {
+    "message": "Sisällytä kuvat"
+  },
+  "f_embedImages": {
+    "message": "Upota kuvat tiedostoon (PDF, HTML, Word, PNG)"
+  },
+  "f_includeToolOutputs": {
+    "message": "Sisällytä työkalukutsut ja koodintulkin tuloste"
+  },
+  "f_includeTimestamps": {
+    "message": "Näytä aikaleima jokaisessa viestissä"
+  },
+  "f_showRoleIcons": {
+    "message": "Näytä roolikuvakkeet / emojit"
+  },
+  "f_userName": {
+    "message": "Nimesi (näkyy viennin otsikossa)"
+  },
+  "f_userEmail": {
+    "message": "Sähköpostiosoitteesi (näkyy viennin otsikossa)"
+  },
+  "f_userLabel": {
+    "message": "Viestiesi nimike (oletus: Sinä)"
+  },
+  "f_assistantLabel": {
+    "message": "Tekoälyn viestien nimike (oletus: alustan nimi)"
+  },
+  "f_showDate": {
+    "message": "Näytä keskustelun päivämäärä"
+  },
+  "f_dateSource": {
+    "message": "Päivämäärän lähde"
+  },
+  "o_dateSource_created": {
+    "message": "Luotu"
+  },
+  "o_dateSource_updated": {
+    "message": "Viimeksi muokattu"
+  },
+  "o_dateSource_export": {
+    "message": "Viennin aika"
+  },
+  "f_dateFormat": {
+    "message": "Päivämäärän muoto"
+  },
+  "o_dateFormat_locale": {
+    "message": "Selaimen kieliasetus"
+  },
+  "f_branding": {
+    "message": "Lisää alatunniste ”Viety Chat Exporterilla”"
+  },
+  "sec_files": {
+    "message": "Tiedostot"
+  },
+  "f_filenameTemplate": {
+    "message": "Tiedostonimen malli — {title} {date} {time} {platform} {model} {id}"
+  },
+  "f_filenamePrefix": {
+    "message": "Tiedostonimen etuliite"
+  },
+  "f_downloadSubfolder": {
+    "message": "Latauksen alikansio (Lataukset-kansion sisällä)"
+  },
+  "f_mdFrontMatter": {
+    "message": "Lisää YAML-etuosa (front matter)"
+  },
+  "f_mdThinkingStyle": {
+    "message": "Ajatteluprosessin tyyli"
+  },
+  "o_mdThinkingStyle_blockquote": {
+    "message": "Lainauslohko"
+  },
+  "o_mdThinkingStyle_details": {
+    "message": "Laajennettava <details>"
+  },
+  "sec_dataformats": {
+    "message": "JSON ja CSV"
+  },
+  "f_jsonPretty": {
+    "message": "Muotoile JSON"
+  },
+  "f_csvDelimiter": {
+    "message": "CSV-erotin"
+  },
+  "o_csvDelimiter_comma": {
+    "message": "Pilkku ,"
+  },
+  "o_csvDelimiter_semicolon": {
+    "message": "Puolipiste ;"
+  },
+  "o_csvDelimiter_tab": {
+    "message": "Sarkain"
+  },
+  "sec_pdf": {
+    "message": "PDF / HTML / Kuva"
+  },
+  "f_pdfTitle": {
+    "message": "Sisällön otsikko (tyhjä = keskustelun otsikko)"
+  },
+  "f_pdfPageSize": {
+    "message": "Sivukoko"
+  },
+  "f_pdfOrientation": {
+    "message": "Suunta"
+  },
+  "o_pdfOrientation_portrait": {
+    "message": "Pysty"
+  },
+  "o_pdfOrientation_landscape": {
+    "message": "Vaaka"
+  },
+  "f_pdfTheme": {
+    "message": "Teema"
+  },
+  "o_pdfTheme_light": {
+    "message": "Vaalea"
+  },
+  "o_pdfTheme_dark": {
+    "message": "Tumma"
+  },
+  "f_pdfMargins": {
+    "message": "Marginaalit"
+  },
+  "o_pdfMargins_narrow": {
+    "message": "Kapeat"
+  },
+  "o_pdfMargins_normal": {
+    "message": "Normaalit"
+  },
+  "o_pdfMargins_wide": {
+    "message": "Leveät"
+  },
+  "f_pdfFontScale": {
+    "message": "Fonttikoko (% oletuksesta)"
+  },
+  "f_pdfFontFamily": {
+    "message": "Fonttiperhe"
+  },
+  "o_pdfFontFamily_sans": {
+    "message": "Päätteetön"
+  },
+  "o_pdfFontFamily_serif": {
+    "message": "Päätteellinen"
+  },
+  "o_pdfFontFamily_mono": {
+    "message": "Tasalevyinen"
+  },
+  "f_pdfPageNumbers": {
+    "message": "Sivunumerot"
+  },
+  "f_pdfToc": {
+    "message": "Sisällysluettelo"
+  },
+  "f_pdfPageBreakPerPrompt": {
+    "message": "Aloita jokainen kehote uudelta sivulta"
+  },
+  "f_pdfWrapCode": {
+    "message": "Rivitä pitkät koodirivit"
+  },
+  "f_pdfAutoPrint": {
+    "message": "Avaa tulostusikkuna automaattisesti"
+  }
+}

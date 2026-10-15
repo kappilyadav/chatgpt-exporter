@@ -4,8 +4,10 @@
   const saved = document.getElementById('saved');
   let timer;
 
+  const t = (...a) => CE.t(...a);
+
   function flash() {
-    saved.textContent = 'Saved ✓';
+    saved.textContent = t('saved');
     clearTimeout(timer);
     timer = setTimeout(() => { saved.textContent = ''; }, 1500);
   }
@@ -41,29 +43,42 @@
   async function drawAccount() {
     actions.textContent = '';
     const a = await CE.account.get(true);
-    if (!a) { status.textContent = 'Could not load your account right now.'; return; }
+    if (!a) { status.textContent = t('accountLoadFail'); return; }
     if (a.signedIn) {
-      const plan = a.pro ? (a.plan === 'year' ? 'Year Plan' : a.plan === 'month' ? 'Month Plan' : 'Pro') + ' · unlimited exports' : 'Free plan';
-      status.textContent = 'Connected as ' + a.email + ' · ' + plan;
-      if (a.pro) act('Manage billing', () => CE.account.openSite('account'));
-      else act('Upgrade', () => CE.account.openSite('plans'), true);
-      act('Disconnect', async () => { await CE.account.disconnect(); drawAccount(); });
+      const plan = a.pro ? t('planProUnlimited', { plan: a.plan === 'year' ? t('planYear') : a.plan === 'month' ? t('planMonth') : t('planProName') }) : t('planFreeShort');
+      status.textContent = t('connectedAs', { email: a.email, plan });
+      if (a.pro) act(t('manageBilling'), () => CE.account.openSite('account'));
+      else act(t('upgrade'), () => CE.account.openSite('plans'), true);
+      act(t('disconnect'), async () => { await CE.account.disconnect(); drawAccount(); });
     } else {
       const left = (k) => Math.max(0, a.limits[k] - a.usage[k]);
-      status.textContent = 'Free plan · ' + left('full') + ' full and ' + left('single') + ' partial exports left this month. Connect your account if you have upgraded.';
-      act('Connect account', () => CE.account.openSite('connect'), true);
-      act('See plans', () => CE.account.openSite('plans'));
+      status.textContent = t('freeLeftConnect', { full: left('full'), single: left('single') });
+      act(t('connectAccount'), () => CE.account.openSite('connect'), true);
+      act(t('seePlans'), () => CE.account.openSite('plans'));
     }
   }
 
   document.getElementById('token-go').addEventListener('click', async () => {
     const msg = document.getElementById('token-msg');
-    msg.textContent = 'Connecting…';
+    msg.textContent = t('connecting');
     const r = await CE.account.connect(document.getElementById('token').value);
-    msg.textContent = r && r.ok ? 'Connected.' : (r && r.error) || 'Could not connect.';
+    msg.textContent = r && r.ok ? t('connected') : (r && r.error) || t('connectFail');
     if (r && r.ok) { document.getElementById('token').value = ''; drawAccount(); }
   });
 
+  // Language changes (from the picker here, or another window) repaint the whole page.
+  let shownLang = null;
+  function repaint() {
+    shownLang = CE.i18n.get();
+    CE.i18n.apply();
+    drawAccount();
+    draw();
+  }
+  CE.settings.onChange(() => { if (CE.i18n.get() !== shownLang) repaint(); });
+
+  await CE.settings.load();
+  CE.i18n.apply();
+  shownLang = CE.i18n.get();
   drawAccount();
   await draw();
 })();

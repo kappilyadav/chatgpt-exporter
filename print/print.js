@@ -17,9 +17,11 @@
     const r = await chrome.storage.local.get(key);
     job = r[key];
   } catch (e) { /* handled below */ }
-  if (!job) return fail('This export job has expired. Go back to the chat and export again.');
-
   await CE.settings.load();
+  CE.i18n.apply();
+  const t = (...a) => CE.t(...a);
+  if (!job) return fail(t('jobExpired'));
+
   const mode = job.mode === 'png' ? 'png' : 'pdf';
   let s = Object.assign({}, job.settings);
   let pngWidth = 900;
@@ -111,29 +113,30 @@
     return n;
   }
 
-  ctl('Theme', select('pdfTheme', [['light', 'Light'], ['dark', 'Dark']]));
-  ctl('Font', select('pdfFontFamily', [['sans', 'Sans'], ['serif', 'Serif'], ['mono', 'Mono']]));
-  ctl('Size %', number('pdfFontScale', 50, 300, 5));
+  const opt = (key, values) => values.map((v) => [v, t('o_' + key + '_' + v)]);
+  ctl(t('f_pdfTheme'), select('pdfTheme', opt('pdfTheme', ['light', 'dark'])));
+  ctl(t('f_pdfFontFamily'), select('pdfFontFamily', opt('pdfFontFamily', ['sans', 'serif', 'mono'])));
+  ctl(t('f_pdfFontScale'), number('pdfFontScale', 50, 300, 5));
   if (mode === 'pdf') {
-    ctl('Page', select('pdfPageSize', [['A4', 'A4'], ['Letter', 'Letter'], ['Legal', 'Legal'], ['A3', 'A3'], ['A5', 'A5']]));
-    ctl('Orientation', select('pdfOrientation', [['portrait', 'Portrait'], ['landscape', 'Landscape']]));
-    ctl('Margins', select('pdfMargins', [['narrow', 'Narrow'], ['normal', 'Normal'], ['wide', 'Wide']]));
-    ctl('Page numbers', check('pdfPageNumbers'));
-    ctl('Contents', check('pdfToc'));
-    ctl('Page break per prompt', check('pdfPageBreakPerPrompt'));
+    ctl(t('f_pdfPageSize'), select('pdfPageSize', [['A4', 'A4'], ['Letter', 'Letter'], ['Legal', 'Legal'], ['A3', 'A3'], ['A5', 'A5']]));
+    ctl(t('f_pdfOrientation'), select('pdfOrientation', opt('pdfOrientation', ['portrait', 'landscape'])));
+    ctl(t('f_pdfMargins'), select('pdfMargins', opt('pdfMargins', ['narrow', 'normal', 'wide'])));
+    ctl(t('f_pdfPageNumbers'), check('pdfPageNumbers'));
+    ctl(t('f_pdfToc'), check('pdfToc'));
+    ctl(t('f_pdfPageBreakPerPrompt'), check('pdfPageBreakPerPrompt'));
   } else {
     const w = document.createElement('input');
     w.type = 'number'; w.min = 480; w.max = 2000; w.step = 20; w.value = pngWidth;
     w.addEventListener('change', () => { pngWidth = Math.max(480, Math.min(2000, Number(w.value) || 900)); render(); });
-    ctl('Width px', w);
+    ctl(t('pvWidthPx'), w);
     const sc = document.createElement('select');
     [['1', '1×'], ['2', '2×'], ['3', '3×']].forEach(([v, t]) => { const o = document.createElement('option'); o.value = v; o.textContent = t; sc.append(o); });
     sc.value = String(pngScale);
     sc.addEventListener('change', () => { pngScale = Number(sc.value); });
-    ctl('Scale', sc);
+    ctl(t('pvScale'), sc);
   }
 
-  $('tb-title').textContent = job.convo.title || 'Preview';
+  $('tb-title').textContent = job.convo.title || t('pvPreview');
   $('tb-close').addEventListener('click', async () => {
     try { await chrome.storage.local.remove(key); } catch (e) { /* ignore */ }
     window.close();
@@ -185,7 +188,7 @@
       let imageCount = 0;
 
       for (let pi = 0; pi < parts.length; pi++) {
-        $('tb-hint').textContent = 'Rendering part ' + (pi + 1) + ' of ' + parts.length + '…';
+        $('tb-hint').textContent = t('pvRendering', { i: pi + 1, n: parts.length });
         await tick();
 
         // Measure this part exactly in the live page (same CSS), then serialise it.
@@ -233,7 +236,7 @@
         out = rendered[0];
         name = baseName() + '.png';
       } else {
-        $('tb-hint').textContent = 'Packing ' + rendered.length + ' images…';
+        $('tb-hint').textContent = t('pvPacking', { n: rendered.length });
         await tick();
         const files = [];
         for (let i = 0; i < rendered.length; i++) {
@@ -250,7 +253,7 @@
       a.click();
       a.remove();
       setTimeout(() => URL.revokeObjectURL(url), 60000);
-      $('tb-hint').textContent = (imageCount > 1 ? 'Saved ' + imageCount + ' images as ZIP' : 'Saved ' + name) + (scale !== pngScale ? ' (1× to keep it fast for a long chat)' : '');
+      $('tb-hint').textContent = (imageCount > 1 ? t('pvSavedZip', { n: imageCount }) : t('pvSaved', { name })) + (scale !== pngScale ? ' ' + t('pvFastNote') : '');
     } finally {
       busy = false;
       $('tb-action').disabled = false;
@@ -262,19 +265,19 @@
     status.hidden = true;
     $('toolbar').hidden = false;
     if (mode === 'pdf') {
-      $('tb-action').textContent = 'Print / Save as PDF';
-      $('tb-hint').textContent = 'Choose “Save as PDF” as the destination.';
+      $('tb-action').textContent = t('pvPrintSave');
+      $('tb-hint').textContent = t('pvChooseSave');
       $('tb-action').addEventListener('click', () => window.print());
       await render();
       if (s.pdfAutoPrint !== false) setTimeout(() => window.print(), 350);
     } else {
-      $('tb-action').textContent = 'Download PNG';
-      $('tb-action').addEventListener('click', () => exportPng().catch((e) => { $('tb-hint').textContent = 'Failed: ' + e.message; }));
+      $('tb-action').textContent = t('pvDownloadPng');
+      $('tb-action').addEventListener('click', () => exportPng().catch((e) => { $('tb-hint').textContent = t('pvFailed', { msg: e.message }); }));
       await render();
-      exportPng().catch((e) => { $('tb-hint').textContent = 'Failed: ' + e.message; });
+      exportPng().catch((e) => { $('tb-hint').textContent = t('pvFailed', { msg: e.message }); });
     }
   } catch (e) {
-    fail('Could not render this export: ' + e.message);
+    fail(t('pvRenderFail', { msg: e.message }));
   }
   void FONT_FAMILY;
 })();

@@ -9,6 +9,15 @@
     return e;
   }
 
+  const OPT_KEY = { ',': 'comma', ';': 'semicolon', '\t': 'tab' };
+  const T = (key, fallback) => (CE.tx ? CE.tx(key, fallback) : fallback);
+
+  /** Options for a select field: translated labels, and the full language list for the language picker. */
+  function optionsFor(f) {
+    if (f.key === 'language') return [['auto', T('autoBrowser', 'Auto (browser)')]].concat(CE.i18n.options());
+    return f.options.map(([v, label]) => [v, T('o_' + f.key + '_' + (OPT_KEY[v] || v), label)]);
+  }
+
   /**
    * @param {HTMLElement} container
    * @param {object} values   current settings
@@ -18,10 +27,10 @@
     container.textContent = '';
     CE.SETTINGS_SCHEMA.forEach((section) => {
       const sec = el('section', 'cf-section');
-      sec.appendChild(el('h3', 'cf-title', section.title));
+      sec.appendChild(el('h3', 'cf-title', T('sec_' + section.id, section.title)));
       section.fields.forEach((f) => {
         const row = el('label', 'cf-row cf-' + f.type);
-        const lab = el('span', 'cf-label', f.label);
+        const lab = el('span', 'cf-label', T('f_' + f.key, f.label));
         let input;
         if (f.type === 'bool') {
           input = el('input');
@@ -32,7 +41,7 @@
           row.appendChild(lab);
         } else if (f.type === 'select') {
           input = el('select');
-          f.options.forEach(([v, t]) => {
+          optionsFor(f).forEach(([v, t]) => {
             const o = el('option', '', t);
             o.value = v;
             input.appendChild(o);

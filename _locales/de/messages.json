@@ -1,0 +1,578 @@
+{
+  "extName": {
+    "message": "ChatGPT Exporter: ChatGPT als PDF, Word & Markdown speichern"
+  },
+  "extDescription": {
+    "message": "Exportiere jede ChatGPT-Unterhaltung in eine saubere, teilbare Datei. Nachrichten auswählen, Layout anpassen, privat bleiben."
+  },
+  "extActionTitle": {
+    "message": "ChatGPT Exporter"
+  },
+  "cmdTogglePanel": {
+    "message": "Bereich „Nachrichten auswählen“ öffnen / schließen"
+  },
+  "cmdQuickExport": {
+    "message": "Aktuellen Chat im Standardformat schnell exportieren"
+  },
+  "cmdExportPdf": {
+    "message": "Aktuellen Chat als PDF exportieren"
+  },
+  "selectMessages": {
+    "message": "Nachrichten auswählen"
+  },
+  "select": {
+    "message": "Auswählen"
+  },
+  "export": {
+    "message": "Exportieren"
+  },
+  "exportAs": {
+    "message": "Exportieren als"
+  },
+  "all": {
+    "message": "Alle"
+  },
+  "allDefault": {
+    "message": "Alle (Standard)"
+  },
+  "questions": {
+    "message": "Fragen"
+  },
+  "answers": {
+    "message": "Antworten"
+  },
+  "none": {
+    "message": "Keine"
+  },
+  "invert": {
+    "message": "Umkehren"
+  },
+  "cancel": {
+    "message": "Abbrechen"
+  },
+  "copy": {
+    "message": "Kopieren"
+  },
+  "settings": {
+    "message": "Einstellungen"
+  },
+  "expand": {
+    "message": "Erweitern"
+  },
+  "back": {
+    "message": "Zurück"
+  },
+  "refresh": {
+    "message": "Aktualisieren"
+  },
+  "retry": {
+    "message": "Erneut versuchen"
+  },
+  "loading": {
+    "message": "Unterhaltung wird geladen…"
+  },
+  "loadingHistory": {
+    "message": "Gesamter Verlauf wird geladen…"
+  },
+  "tip": {
+    "message": "Tipp: Mit Umschalt+Klick wählst du einen Bereich von Nachrichten aus."
+  },
+  "you": {
+    "message": "Du"
+  },
+  "exportedN": {
+    "message": "{n} Nachrichten als {fmt} exportiert"
+  },
+  "copiedN": {
+    "message": "{n} Nachrichten als {fmt} kopiert"
+  },
+  "nothingSelected": {
+    "message": "Wähle zuerst mindestens eine Nachricht aus."
+  },
+  "noConversation": {
+    "message": "Auf dieser Seite wurde keine Unterhaltung gefunden."
+  },
+  "failed": {
+    "message": "Export fehlgeschlagen: {msg}"
+  },
+  "pdfHint": {
+    "message": "Druckvorschau wird geöffnet – wähle „Als PDF speichern“."
+  },
+  "exportAll": {
+    "message": "Alle Chats exportieren…"
+  },
+  "bulkTitle": {
+    "message": "Mehrere Chats exportieren"
+  },
+  "searchChats": {
+    "message": "Chats durchsuchen"
+  },
+  "selectAll": {
+    "message": "Alle auswählen"
+  },
+  "exportZip": {
+    "message": "ZIP exportieren"
+  },
+  "progress": {
+    "message": "Export {i} / {n}…"
+  },
+  "bulkDone": {
+    "message": "{n} Chats als ZIP-Datei exportiert"
+  },
+  "bulkUnsupported": {
+    "message": "Der Sammelexport ist für diese Website noch nicht verfügbar. Öffne einen Chat und nutze „Exportieren“."
+  },
+  "chatsFound": {
+    "message": "{n} Chats"
+  },
+  "copyAs": {
+    "message": "Als {fmt} kopieren"
+  },
+  "quickExport": {
+    "message": "Schnellexport"
+  },
+  "openPanel": {
+    "message": "Nachrichten auswählen…"
+  },
+  "unsupportedSite": {
+    "message": "Öffne ChatGPT, um eine Unterhaltung zu exportieren."
+  },
+  "selectedOf": {
+    "message": "{a}/{b}"
+  },
+  "messages": {
+    "message": "Nachrichten"
+  },
+  "richText": {
+    "message": "Rich Text"
+  },
+  "fmtText": {
+    "message": "Text"
+  },
+  "fmtPng": {
+    "message": "Bild (PNG)"
+  },
+  "toggleTitle": {
+    "message": "Export-Schaltflächen ein- oder ausblenden"
+  },
+  "autoBrowser": {
+    "message": "Automatisch (Browser)"
+  },
+  "close": {
+    "message": "Schließen"
+  },
+  "ctxExportChat": {
+    "message": "Diesen Chat exportieren"
+  },
+  "ctxExportAs": {
+    "message": "Als {fmt} exportieren"
+  },
+  "seePlans": {
+    "message": "Tarife ansehen"
+  },
+  "upgrade": {
+    "message": "Upgrade"
+  },
+  "accountHeading": {
+    "message": "Konto"
+  },
+  "limitFull": {
+    "message": "Du hast alle {limit} kostenlosen Komplett-Exporte dieses Monats verbraucht. Upgrade für unbegrenzte Exporte."
+  },
+  "limitPartial": {
+    "message": "Du hast alle {limit} kostenlosen Teil-Exporte dieses Monats verbraucht. Upgrade für unbegrenzte Exporte."
+  },
+  "bulkFreeLeft": {
+    "message": "Kostenloser Tarif: Noch {left} Komplett-Exporte in diesem Monat, aber du hast {n} Chats ausgewählt. Wähle weniger Chats oder upgrade für unbegrenzte Exporte."
+  },
+  "tokenInvalidFormat": {
+    "message": "Das sieht nicht wie ein gültiges Token aus."
+  },
+  "tokenExpired": {
+    "message": "Dieses Token ist nicht mehr gültig. Erstelle in deinem Konto ein neues."
+  },
+  "serverUnreachable": {
+    "message": "Der Server ist nicht erreichbar. Prüfe deine Verbindung und versuche es erneut."
+  },
+  "notSignedIn": {
+    "message": "Nicht angemeldet"
+  },
+  "sessionFailed": {
+    "message": "Sitzungsanfrage fehlgeschlagen ({status})"
+  },
+  "popupChecking": {
+    "message": "Tab wird geprüft…"
+  },
+  "conversationDetected": {
+    "message": "{name}-Unterhaltung erkannt"
+  },
+  "openAConversation": {
+    "message": "{name} – öffne eine Unterhaltung"
+  },
+  "worksOn": {
+    "message": "Funktioniert auf chatgpt.com"
+  },
+  "popupInactive": {
+    "message": "Öffne eine ChatGPT-Unterhaltung und klicke dann erneut auf die Erweiterung:"
+  },
+  "formatLabel": {
+    "message": "Format"
+  },
+  "keyboardShortcuts": {
+    "message": "Tastenkürzel"
+  },
+  "planPro": {
+    "message": "Pro · {plan} · unbegrenzte Exporte"
+  },
+  "planYear": {
+    "message": "Jahrestarif"
+  },
+  "planMonth": {
+    "message": "Monatstarif"
+  },
+  "planProName": {
+    "message": "Pro"
+  },
+  "planFreeLeft": {
+    "message": "Kostenlos · noch {full} Komplett- und {single} Teil-Exporte in diesem Monat"
+  },
+  "exporting": {
+    "message": "Wird exportiert…"
+  },
+  "doneSeePage": {
+    "message": "Fertig – Details siehst du auf der Seite."
+  },
+  "copiedClipboard": {
+    "message": "In die Zwischenablage kopiert."
+  },
+  "failedShort": {
+    "message": "Fehlgeschlagen"
+  },
+  "optionsTitle": {
+    "message": "ChatGPT Exporter – Einstellungen"
+  },
+  "optionsIntro": {
+    "message": "Einstellungen werden automatisch gespeichert und mit deinem Chrome-Profil synchronisiert. Alles wird lokal in deinem Browser verarbeitet."
+  },
+  "checking": {
+    "message": "Wird geprüft…"
+  },
+  "connectWithToken": {
+    "message": "Mit einem Token verbinden"
+  },
+  "tokenHelp": {
+    "message": "Nutze dies, wenn die Website die Erweiterung nicht automatisch verbinden konnte. Kopiere das Token von deiner Kontoseite."
+  },
+  "connect": {
+    "message": "Verbinden"
+  },
+  "resetDefaults": {
+    "message": "Auf Standard zurücksetzen"
+  },
+  "keyboardShortcutsEllipsis": {
+    "message": "Tastenkürzel…"
+  },
+  "saved": {
+    "message": "Gespeichert ✓"
+  },
+  "accountLoadFail": {
+    "message": "Dein Konto konnte gerade nicht geladen werden."
+  },
+  "connectedAs": {
+    "message": "Verbunden als {email} · {plan}"
+  },
+  "planFreeShort": {
+    "message": "Kostenloser Tarif"
+  },
+  "planProUnlimited": {
+    "message": "{plan} · unbegrenzte Exporte"
+  },
+  "manageBilling": {
+    "message": "Abrechnung verwalten"
+  },
+  "disconnect": {
+    "message": "Trennen"
+  },
+  "freeLeftConnect": {
+    "message": "Kostenloser Tarif · noch {full} Komplett- und {single} Teil-Exporte in diesem Monat. Verbinde dein Konto, falls du ein Upgrade gemacht hast."
+  },
+  "connectAccount": {
+    "message": "Konto verbinden"
+  },
+  "connecting": {
+    "message": "Verbindung wird hergestellt…"
+  },
+  "connected": {
+    "message": "Verbunden."
+  },
+  "connectFail": {
+    "message": "Verbindung nicht möglich."
+  },
+  "docContents": {
+    "message": "Inhalt"
+  },
+  "docThoughtProcess": {
+    "message": "Denkprozess"
+  },
+  "docSources": {
+    "message": "Quellen"
+  },
+  "docAttachments": {
+    "message": "Anhänge"
+  },
+  "docExportedWith": {
+    "message": "Exportiert mit Chat Exporter"
+  },
+  "pvDocTitle": {
+    "message": "ChatGPT Exporter – Vorschau"
+  },
+  "pvPreview": {
+    "message": "Vorschau"
+  },
+  "pvPreparing": {
+    "message": "Wird vorbereitet…"
+  },
+  "jobExpired": {
+    "message": "Dieser Exportauftrag ist abgelaufen. Gehe zurück zum Chat und exportiere erneut."
+  },
+  "pvWidthPx": {
+    "message": "Breite (px)"
+  },
+  "pvScale": {
+    "message": "Skalierung"
+  },
+  "pvRendering": {
+    "message": "Teil {i} von {n} wird gerendert…"
+  },
+  "pvPacking": {
+    "message": "{n} Bilder werden gepackt…"
+  },
+  "pvSavedZip": {
+    "message": "{n} Bilder als ZIP gespeichert"
+  },
+  "pvSaved": {
+    "message": "{name} gespeichert"
+  },
+  "pvFastNote": {
+    "message": "(1×, damit ein langer Chat schnell bleibt)"
+  },
+  "pvPrintSave": {
+    "message": "Drucken / Als PDF speichern"
+  },
+  "pvChooseSave": {
+    "message": "Wähle „Als PDF speichern“ als Ziel."
+  },
+  "pvDownloadPng": {
+    "message": "PNG herunterladen"
+  },
+  "pvFailed": {
+    "message": "Fehlgeschlagen: {msg}"
+  },
+  "pvRenderFail": {
+    "message": "Dieser Export konnte nicht gerendert werden: {msg}"
+  },
+  "sec_general": {
+    "message": "Allgemein"
+  },
+  "f_language": {
+    "message": "Oberflächensprache"
+  },
+  "f_theme": {
+    "message": "Design des Bereichs"
+  },
+  "o_theme_auto": {
+    "message": "Automatisch"
+  },
+  "o_theme_dark": {
+    "message": "Dunkel"
+  },
+  "o_theme_light": {
+    "message": "Hell"
+  },
+  "f_showLauncher": {
+    "message": "Schaltflächen „Auswählen“ / „Exportieren“ auf der Chat-Seite anzeigen"
+  },
+  "f_rememberSelection": {
+    "message": "Meine Auswahl-Voreinstellung merken (Alle / Fragen / Antworten)"
+  },
+  "f_closePanelAfterExport": {
+    "message": "Seitenbereich nach dem Export schließen"
+  },
+  "f_showToasts": {
+    "message": "Nach dem Export eine Bestätigung anzeigen"
+  },
+  "sec_content": {
+    "message": "Inhalt"
+  },
+  "f_includeThoughts": {
+    "message": "Denkprozess / Begründung einbeziehen"
+  },
+  "f_includeSources": {
+    "message": "Websuche-Quellen und Zitate einbeziehen"
+  },
+  "f_includeCanvas": {
+    "message": "Canvas / Artefakte einbeziehen"
+  },
+  "f_includeImages": {
+    "message": "Bilder einbeziehen"
+  },
+  "f_embedImages": {
+    "message": "Bilder in die Datei einbetten (PDF, HTML, Word, PNG)"
+  },
+  "f_includeToolOutputs": {
+    "message": "Tool-Aufrufe und Code-Interpreter-Ausgaben einbeziehen"
+  },
+  "f_includeTimestamps": {
+    "message": "Zeitstempel für jede Nachricht anzeigen"
+  },
+  "f_showRoleIcons": {
+    "message": "Rollensymbole / Emojis anzeigen"
+  },
+  "f_userName": {
+    "message": "Dein Name (im Kopf des Exports)"
+  },
+  "f_userEmail": {
+    "message": "Deine E-Mail (im Kopf des Exports)"
+  },
+  "f_userLabel": {
+    "message": "Bezeichnung für deine Nachrichten (Standard: Du)"
+  },
+  "f_assistantLabel": {
+    "message": "Bezeichnung für KI-Nachrichten (Standard: Name der Plattform)"
+  },
+  "f_showDate": {
+    "message": "Datum der Unterhaltung anzeigen"
+  },
+  "f_dateSource": {
+    "message": "Datumsquelle"
+  },
+  "o_dateSource_created": {
+    "message": "Erstellt"
+  },
+  "o_dateSource_updated": {
+    "message": "Zuletzt geändert"
+  },
+  "o_dateSource_export": {
+    "message": "Exportzeitpunkt"
+  },
+  "f_dateFormat": {
+    "message": "Datumsformat"
+  },
+  "o_dateFormat_locale": {
+    "message": "Browser-Sprachumgebung"
+  },
+  "f_branding": {
+    "message": "Fußzeile „Exportiert mit Chat Exporter“ hinzufügen"
+  },
+  "sec_files": {
+    "message": "Dateien"
+  },
+  "f_filenameTemplate": {
+    "message": "Dateinamen-Vorlage – {title} {date} {time} {platform} {model} {id}"
+  },
+  "f_filenamePrefix": {
+    "message": "Dateinamen-Präfix"
+  },
+  "f_downloadSubfolder": {
+    "message": "Download-Unterordner (im Ordner „Downloads“)"
+  },
+  "f_mdFrontMatter": {
+    "message": "YAML-Front-Matter hinzufügen"
+  },
+  "f_mdThinkingStyle": {
+    "message": "Darstellung des Denkprozesses"
+  },
+  "o_mdThinkingStyle_blockquote": {
+    "message": "Zitatblock"
+  },
+  "o_mdThinkingStyle_details": {
+    "message": "Einklappbares <details>"
+  },
+  "sec_dataformats": {
+    "message": "JSON & CSV"
+  },
+  "f_jsonPretty": {
+    "message": "JSON formatiert ausgeben"
+  },
+  "f_csvDelimiter": {
+    "message": "CSV-Trennzeichen"
+  },
+  "o_csvDelimiter_comma": {
+    "message": "Komma ,"
+  },
+  "o_csvDelimiter_semicolon": {
+    "message": "Semikolon ;"
+  },
+  "o_csvDelimiter_tab": {
+    "message": "Tabulator"
+  },
+  "sec_pdf": {
+    "message": "PDF / HTML / Bild"
+  },
+  "f_pdfTitle": {
+    "message": "Titel des Inhalts (leer = Chat-Titel)"
+  },
+  "f_pdfPageSize": {
+    "message": "Seitengröße"
+  },
+  "f_pdfOrientation": {
+    "message": "Ausrichtung"
+  },
+  "o_pdfOrientation_portrait": {
+    "message": "Hochformat"
+  },
+  "o_pdfOrientation_landscape": {
+    "message": "Querformat"
+  },
+  "f_pdfTheme": {
+    "message": "Design"
+  },
+  "o_pdfTheme_light": {
+    "message": "Hell"
+  },
+  "o_pdfTheme_dark": {
+    "message": "Dunkel"
+  },
+  "f_pdfMargins": {
+    "message": "Ränder"
+  },
+  "o_pdfMargins_narrow": {
+    "message": "Schmal"
+  },
+  "o_pdfMargins_normal": {
+    "message": "Normal"
+  },
+  "o_pdfMargins_wide": {
+    "message": "Breit"
+  },
+  "f_pdfFontScale": {
+    "message": "Schriftgröße (% des Standards)"
+  },
+  "f_pdfFontFamily": {
+    "message": "Schriftart"
+  },
+  "o_pdfFontFamily_sans": {
+    "message": "Serifenlos"
+  },
+  "o_pdfFontFamily_serif": {
+    "message": "Serifen"
+  },
+  "o_pdfFontFamily_mono": {
+    "message": "Festbreite"
+  },
+  "f_pdfPageNumbers": {
+    "message": "Seitenzahlen"
+  },
+  "f_pdfToc": {
+    "message": "Inhaltsverzeichnis"
+  },
+  "f_pdfPageBreakPerPrompt": {
+    "message": "Jeden Prompt auf einer neuen Seite beginnen"
+  },
+  "f_pdfWrapCode": {
+    "message": "Lange Codezeilen umbrechen"
+  },
+  "f_pdfAutoPrint": {
+    "message": "Druckdialog automatisch öffnen"
+  }
+}

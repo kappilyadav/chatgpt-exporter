@@ -1,9 +1,10 @@
 {
   "manifest_version": 3,
-  "name": "ChatGPT Exporter: Save ChatGPT to PDF, Word & Markdown",
+  "name": "__MSG_extName__",
   "short_name": "ChatGPT Exporter",
-  "version": "1.1.2",
-  "description": "Export any ChatGPT conversation to a clean, shareable file. Pick the messages you want, customize the layout, stay private.",
+  "default_locale": "en",
+  "version": "1.2.0",
+  "description": "__MSG_extDescription__",
   "minimum_chrome_version": "110",
   "homepage_url": "https://chatgptexporterfree.com",
   "icons": {
@@ -13,7 +14,7 @@
     "128": "icons/icon128.png"
   },
   "action": {
-    "default_title": "ChatGPT Exporter",
+    "default_title": "__MSG_extActionTitle__",
     "default_popup": "popup/popup.html"
   },
   "options_ui": {
@@ -43,6 +44,7 @@
       ],
       "js": [
         "src/core/ns.js",
+        "src/core/locales.js",
         "src/core/i18n.js",
         "src/core/util.js",
         "src/core/settings.js",
@@ -76,19 +78,19 @@
       "suggested_key": {
         "default": "Alt+Shift+S"
       },
-      "description": "Open / close the Select Messages panel"
+      "description": "__MSG_cmdTogglePanel__"
     },
     "quick-export": {
       "suggested_key": {
         "default": "Alt+Shift+E"
       },
-      "description": "Quick export the current chat in the default format"
+      "description": "__MSG_cmdQuickExport__"
     },
     "export-pdf": {
       "suggested_key": {
         "default": "Alt+Shift+P"
       },
-      "description": "Export the current chat as PDF"
+      "description": "__MSG_cmdExportPdf__"
     }
   },
   "externally_connectable": {

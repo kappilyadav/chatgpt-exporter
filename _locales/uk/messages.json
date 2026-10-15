@@ -1,0 +1,578 @@
+{
+  "extName": {
+    "message": "ChatGPT Exporter: зберігайте ChatGPT у PDF, Word і Markdown"
+  },
+  "extDescription": {
+    "message": "Експортуйте будь-яку розмову ChatGPT в охайний файл. Обирайте повідомлення, налаштовуйте вигляд, зберігайте приватність."
+  },
+  "extActionTitle": {
+    "message": "ChatGPT Exporter"
+  },
+  "cmdTogglePanel": {
+    "message": "Відкрити / закрити панель вибору повідомлень"
+  },
+  "cmdQuickExport": {
+    "message": "Швидко експортувати поточний чат у типовому форматі"
+  },
+  "cmdExportPdf": {
+    "message": "Експортувати поточний чат у PDF"
+  },
+  "selectMessages": {
+    "message": "Вибір повідомлень"
+  },
+  "select": {
+    "message": "Вибрати"
+  },
+  "export": {
+    "message": "Експорт"
+  },
+  "exportAs": {
+    "message": "Експортувати як"
+  },
+  "all": {
+    "message": "Усі"
+  },
+  "allDefault": {
+    "message": "Усі (типово)"
+  },
+  "questions": {
+    "message": "Запитання"
+  },
+  "answers": {
+    "message": "Відповіді"
+  },
+  "none": {
+    "message": "Жодного"
+  },
+  "invert": {
+    "message": "Інвертувати"
+  },
+  "cancel": {
+    "message": "Скасувати"
+  },
+  "copy": {
+    "message": "Копіювати"
+  },
+  "settings": {
+    "message": "Налаштування"
+  },
+  "expand": {
+    "message": "Розгорнути"
+  },
+  "back": {
+    "message": "Назад"
+  },
+  "refresh": {
+    "message": "Оновити"
+  },
+  "retry": {
+    "message": "Повторити"
+  },
+  "loading": {
+    "message": "Завантаження розмови…"
+  },
+  "loadingHistory": {
+    "message": "Завантаження всієї історії…"
+  },
+  "tip": {
+    "message": "Порада: Shift+клацання виділяє діапазон повідомлень."
+  },
+  "you": {
+    "message": "Ви"
+  },
+  "exportedN": {
+    "message": "Експортовано повідомлень: {n} (формат: {fmt})"
+  },
+  "copiedN": {
+    "message": "Скопійовано повідомлень: {n} (формат: {fmt})"
+  },
+  "nothingSelected": {
+    "message": "Спочатку виберіть хоча б одне повідомлення."
+  },
+  "noConversation": {
+    "message": "На цій сторінці не знайдено розмови."
+  },
+  "failed": {
+    "message": "Не вдалося експортувати: {msg}"
+  },
+  "pdfHint": {
+    "message": "Відкривається попередній перегляд друку — виберіть «Зберегти як PDF»."
+  },
+  "exportAll": {
+    "message": "Експортувати всі чати…"
+  },
+  "bulkTitle": {
+    "message": "Експорт кількох чатів"
+  },
+  "searchChats": {
+    "message": "Пошук чатів"
+  },
+  "selectAll": {
+    "message": "Вибрати все"
+  },
+  "exportZip": {
+    "message": "Експорт у ZIP"
+  },
+  "progress": {
+    "message": "Експорт {i} / {n}…"
+  },
+  "bulkDone": {
+    "message": "Чатів експортовано у ZIP-файл: {n}"
+  },
+  "bulkUnsupported": {
+    "message": "Масовий експорт для цього сайту ще недоступний. Відкрийте чат і скористайтеся «Експорт»."
+  },
+  "chatsFound": {
+    "message": "Чатів: {n}"
+  },
+  "copyAs": {
+    "message": "Копіювати як {fmt}"
+  },
+  "quickExport": {
+    "message": "Швидкий експорт"
+  },
+  "openPanel": {
+    "message": "Вибрати повідомлення…"
+  },
+  "unsupportedSite": {
+    "message": "Відкрийте ChatGPT, щоб експортувати розмову."
+  },
+  "selectedOf": {
+    "message": "{a}/{b}"
+  },
+  "messages": {
+    "message": "повідомл."
+  },
+  "richText": {
+    "message": "форматований текст"
+  },
+  "fmtText": {
+    "message": "Текст"
+  },
+  "fmtPng": {
+    "message": "Зображення (PNG)"
+  },
+  "toggleTitle": {
+    "message": "Показати або сховати кнопки експорту"
+  },
+  "autoBrowser": {
+    "message": "Авто (як у браузері)"
+  },
+  "close": {
+    "message": "Закрити"
+  },
+  "ctxExportChat": {
+    "message": "Експортувати цей чат"
+  },
+  "ctxExportAs": {
+    "message": "Експортувати як {fmt}"
+  },
+  "seePlans": {
+    "message": "Переглянути тарифи"
+  },
+  "upgrade": {
+    "message": "Підвищити тариф"
+  },
+  "accountHeading": {
+    "message": "Обліковий запис"
+  },
+  "limitFull": {
+    "message": "Ви вичерпали ліміт безкоштовних експортів цілих чатів на цей місяць ({limit}). Підвищте тариф для необмеженого експорту."
+  },
+  "limitPartial": {
+    "message": "Ви вичерпали ліміт безкоштовних часткових експортів на цей місяць ({limit}). Підвищте тариф для необмеженого експорту."
+  },
+  "bulkFreeLeft": {
+    "message": "Безкоштовний тариф: цього місяця залишилося експортів цілих чатів: {left}, а ви вибрали чатів: {n}. Виберіть менше чатів або підвищте тариф для необмеженого експорту."
+  },
+  "tokenInvalidFormat": {
+    "message": "Це не схоже на дійсний токен."
+  },
+  "tokenExpired": {
+    "message": "Цей токен більше не дійсний. Створіть новий у своєму обліковому записі."
+  },
+  "serverUnreachable": {
+    "message": "Не вдалося зв’язатися із сервером. Перевірте підключення та спробуйте ще раз."
+  },
+  "notSignedIn": {
+    "message": "Вхід не виконано"
+  },
+  "sessionFailed": {
+    "message": "Не вдалося виконати запит сесії ({status})"
+  },
+  "popupChecking": {
+    "message": "Перевірка вкладки…"
+  },
+  "conversationDetected": {
+    "message": "Виявлено розмову {name}"
+  },
+  "openAConversation": {
+    "message": "{name} — відкрийте розмову"
+  },
+  "worksOn": {
+    "message": "Працює на chatgpt.com"
+  },
+  "popupInactive": {
+    "message": "Відкрийте розмову в ChatGPT і знову натисніть розширення:"
+  },
+  "formatLabel": {
+    "message": "Формат"
+  },
+  "keyboardShortcuts": {
+    "message": "Комбінації клавіш"
+  },
+  "planPro": {
+    "message": "Pro · {plan} · необмежений експорт"
+  },
+  "planYear": {
+    "message": "Річний тариф"
+  },
+  "planMonth": {
+    "message": "Місячний тариф"
+  },
+  "planProName": {
+    "message": "Pro"
+  },
+  "planFreeLeft": {
+    "message": "Безкоштовно · цього місяця залишилося експортів: цілих — {full}, часткових — {single}"
+  },
+  "exporting": {
+    "message": "Експорт…"
+  },
+  "doneSeePage": {
+    "message": "Готово — подробиці на сторінці."
+  },
+  "copiedClipboard": {
+    "message": "Скопійовано в буфер обміну."
+  },
+  "failedShort": {
+    "message": "Помилка"
+  },
+  "optionsTitle": {
+    "message": "ChatGPT Exporter — Налаштування"
+  },
+  "optionsIntro": {
+    "message": "Налаштування зберігаються автоматично та синхронізуються з вашим профілем Chrome. Усе обробляється локально у браузері."
+  },
+  "checking": {
+    "message": "Перевірка…"
+  },
+  "connectWithToken": {
+    "message": "Підключитися за допомогою токена"
+  },
+  "tokenHelp": {
+    "message": "Скористайтеся цим, якщо сайт не зміг автоматично підключити розширення. Скопіюйте токен зі сторінки свого облікового запису."
+  },
+  "connect": {
+    "message": "Підключити"
+  },
+  "resetDefaults": {
+    "message": "Скинути налаштування"
+  },
+  "keyboardShortcutsEllipsis": {
+    "message": "Комбінації клавіш…"
+  },
+  "saved": {
+    "message": "Збережено ✓"
+  },
+  "accountLoadFail": {
+    "message": "Зараз не вдається завантажити ваш обліковий запис."
+  },
+  "connectedAs": {
+    "message": "Підключено як {email} · {plan}"
+  },
+  "planFreeShort": {
+    "message": "Безкоштовний тариф"
+  },
+  "planProUnlimited": {
+    "message": "{plan} · необмежений експорт"
+  },
+  "manageBilling": {
+    "message": "Керування оплатою"
+  },
+  "disconnect": {
+    "message": "Відключити"
+  },
+  "freeLeftConnect": {
+    "message": "Безкоштовний тариф · цього місяця залишилося експортів: цілих — {full}, часткових — {single}. Підключіть обліковий запис, якщо ви підвищили тариф."
+  },
+  "connectAccount": {
+    "message": "Підключити обліковий запис"
+  },
+  "connecting": {
+    "message": "Підключення…"
+  },
+  "connected": {
+    "message": "Підключено."
+  },
+  "connectFail": {
+    "message": "Не вдалося підключитися."
+  },
+  "docContents": {
+    "message": "Зміст"
+  },
+  "docThoughtProcess": {
+    "message": "Хід міркувань"
+  },
+  "docSources": {
+    "message": "Джерела"
+  },
+  "docAttachments": {
+    "message": "Вкладення"
+  },
+  "docExportedWith": {
+    "message": "Експортовано за допомогою Chat Exporter"
+  },
+  "pvDocTitle": {
+    "message": "ChatGPT Exporter — Попередній перегляд"
+  },
+  "pvPreview": {
+    "message": "Попередній перегляд"
+  },
+  "pvPreparing": {
+    "message": "Підготовка…"
+  },
+  "jobExpired": {
+    "message": "Термін дії цього експорту минув. Поверніться до чату й експортуйте знову."
+  },
+  "pvWidthPx": {
+    "message": "Ширина (px)"
+  },
+  "pvScale": {
+    "message": "Масштаб"
+  },
+  "pvRendering": {
+    "message": "Відтворення частини {i} з {n}…"
+  },
+  "pvPacking": {
+    "message": "Пакування зображень: {n}…"
+  },
+  "pvSavedZip": {
+    "message": "Зображень збережено в ZIP: {n}"
+  },
+  "pvSaved": {
+    "message": "Збережено: {name}"
+  },
+  "pvFastNote": {
+    "message": "(1×, щоб довгий чат оброблявся швидко)"
+  },
+  "pvPrintSave": {
+    "message": "Друк / Зберегти як PDF"
+  },
+  "pvChooseSave": {
+    "message": "Як пункт призначення виберіть «Зберегти як PDF»."
+  },
+  "pvDownloadPng": {
+    "message": "Завантажити PNG"
+  },
+  "pvFailed": {
+    "message": "Помилка: {msg}"
+  },
+  "pvRenderFail": {
+    "message": "Не вдалося відтворити цей експорт: {msg}"
+  },
+  "sec_general": {
+    "message": "Загальні"
+  },
+  "f_language": {
+    "message": "Мова інтерфейсу"
+  },
+  "f_theme": {
+    "message": "Тема панелі"
+  },
+  "o_theme_auto": {
+    "message": "Авто"
+  },
+  "o_theme_dark": {
+    "message": "Темна"
+  },
+  "o_theme_light": {
+    "message": "Світла"
+  },
+  "f_showLauncher": {
+    "message": "Показувати кнопки «Вибрати» / «Експорт» на сторінці чату"
+  },
+  "f_rememberSelection": {
+    "message": "Запам’ятовувати мій набір вибору (Усі / Запитання / Відповіді)"
+  },
+  "f_closePanelAfterExport": {
+    "message": "Закривати бічну панель після експорту"
+  },
+  "f_showToasts": {
+    "message": "Показувати підтвердження після експорту"
+  },
+  "sec_content": {
+    "message": "Вміст"
+  },
+  "f_includeThoughts": {
+    "message": "Включати хід міркувань"
+  },
+  "f_includeSources": {
+    "message": "Включати джерела й цитати вебпошуку"
+  },
+  "f_includeCanvas": {
+    "message": "Включати Canvas / артефакти"
+  },
+  "f_includeImages": {
+    "message": "Включати зображення"
+  },
+  "f_embedImages": {
+    "message": "Вбудовувати зображення у файл (PDF, HTML, Word, PNG)"
+  },
+  "f_includeToolOutputs": {
+    "message": "Включати виклики інструментів і вивід інтерпретатора коду"
+  },
+  "f_includeTimestamps": {
+    "message": "Показувати час біля кожного повідомлення"
+  },
+  "f_showRoleIcons": {
+    "message": "Показувати значки / емодзі ролей"
+  },
+  "f_userName": {
+    "message": "Ваше ім’я (у заголовку експорту)"
+  },
+  "f_userEmail": {
+    "message": "Ваша e-mail-адреса (у заголовку експорту)"
+  },
+  "f_userLabel": {
+    "message": "Підпис ваших повідомлень (типово: Ви)"
+  },
+  "f_assistantLabel": {
+    "message": "Підпис повідомлень ШІ (типово: назва платформи)"
+  },
+  "f_showDate": {
+    "message": "Показувати дату розмови"
+  },
+  "f_dateSource": {
+    "message": "Джерело дати"
+  },
+  "o_dateSource_created": {
+    "message": "Створення"
+  },
+  "o_dateSource_updated": {
+    "message": "Остання зміна"
+  },
+  "o_dateSource_export": {
+    "message": "Час експорту"
+  },
+  "f_dateFormat": {
+    "message": "Формат дати"
+  },
+  "o_dateFormat_locale": {
+    "message": "Регіональні налаштування браузера"
+  },
+  "f_branding": {
+    "message": "Додавати нижній колонтитул «Експортовано за допомогою Chat Exporter»"
+  },
+  "sec_files": {
+    "message": "Файли"
+  },
+  "f_filenameTemplate": {
+    "message": "Шаблон імені файлу — {title} {date} {time} {platform} {model} {id}"
+  },
+  "f_filenamePrefix": {
+    "message": "Префікс імені файлу"
+  },
+  "f_downloadSubfolder": {
+    "message": "Підпапка завантаження (всередині папки «Завантаження»)"
+  },
+  "f_mdFrontMatter": {
+    "message": "Додавати YAML front matter"
+  },
+  "f_mdThinkingStyle": {
+    "message": "Оформлення ходу міркувань"
+  },
+  "o_mdThinkingStyle_blockquote": {
+    "message": "Блок цитати"
+  },
+  "o_mdThinkingStyle_details": {
+    "message": "Згортний <details>"
+  },
+  "sec_dataformats": {
+    "message": "JSON і CSV"
+  },
+  "f_jsonPretty": {
+    "message": "Форматувати JSON"
+  },
+  "f_csvDelimiter": {
+    "message": "Роздільник CSV"
+  },
+  "o_csvDelimiter_comma": {
+    "message": "Кома ,"
+  },
+  "o_csvDelimiter_semicolon": {
+    "message": "Крапка з комою ;"
+  },
+  "o_csvDelimiter_tab": {
+    "message": "Табуляція"
+  },
+  "sec_pdf": {
+    "message": "PDF / HTML / Зображення"
+  },
+  "f_pdfTitle": {
+    "message": "Заголовок вмісту (порожньо = назва чату)"
+  },
+  "f_pdfPageSize": {
+    "message": "Розмір сторінки"
+  },
+  "f_pdfOrientation": {
+    "message": "Орієнтація"
+  },
+  "o_pdfOrientation_portrait": {
+    "message": "Книжкова"
+  },
+  "o_pdfOrientation_landscape": {
+    "message": "Альбомна"
+  },
+  "f_pdfTheme": {
+    "message": "Тема"
+  },
+  "o_pdfTheme_light": {
+    "message": "Світла"
+  },
+  "o_pdfTheme_dark": {
+    "message": "Темна"
+  },
+  "f_pdfMargins": {
+    "message": "Поля"
+  },
+  "o_pdfMargins_narrow": {
+    "message": "Вузькі"
+  },
+  "o_pdfMargins_normal": {
+    "message": "Звичайні"
+  },
+  "o_pdfMargins_wide": {
+    "message": "Широкі"
+  },
+  "f_pdfFontScale": {
+    "message": "Розмір шрифту (% від стандартного)"
+  },
+  "f_pdfFontFamily": {
+    "message": "Гарнітура шрифту"
+  },
+  "o_pdfFontFamily_sans": {
+    "message": "Без засічок"
+  },
+  "o_pdfFontFamily_serif": {
+    "message": "З засічками"
+  },
+  "o_pdfFontFamily_mono": {
+    "message": "Моноширинний"
+  },
+  "f_pdfPageNumbers": {
+    "message": "Номери сторінок"
+  },
+  "f_pdfToc": {
+    "message": "Зміст"
+  },
+  "f_pdfPageBreakPerPrompt": {
+    "message": "Починати кожен запит з нової сторінки"
+  },
+  "f_pdfWrapCode": {
+    "message": "Переносити довгі рядки коду"
+  },
+  "f_pdfAutoPrint": {
+    "message": "Автоматично відкривати вікно друку"
+  }
+}

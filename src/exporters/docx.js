@@ -224,7 +224,7 @@
         { keepNext: true, before: 200, after: 60, pageBreakBefore: pb }));
       const th = X.thinking(m, s);
       if (th) {
-        body.push(para(run('Thought process', { b: true, i: true, color: '6B7280', size: 18 }), { keepNext: true, after: 40, bar: 'D1D5DB', left: 200 }));
+        body.push(para(run(CE.t('docThoughtProcess'), { b: true, i: true, color: '6B7280', size: 18 }), { keepNext: true, after: 40, bar: 'D1D5DB', left: 200 }));
         body.push(blocksXml(CE.md.parse(th), { left: 200, f: { i: true, color: '6B7280' }, bar: 'D1D5DB' }));
       }
       body.push(blocksXml(CE.md.parse(m.markdown || ''), { left: 0, f: {}, bar: isUser ? '8B5CF6' : null, breaks: isUser }));
@@ -232,13 +232,13 @@
       if (atts.length) body.push(para(run('📎 ' + atts.map((a) => a.name).join(', '), { color: '6B7280', size: 18 }), { after: 100 }));
       const src = X.sources(m, s);
       if (src.length) {
-        body.push(para(run('Sources', { b: true, color: '6B7280', size: 18 }), { keepNext: true, after: 40 }));
+        body.push(para(run(CE.t('docSources'), { b: true, color: '6B7280', size: 18 }), { keepNext: true, after: 40 }));
         src.forEach((x) => {
           body.push(para(run('[' + x.n + '] ', { color: '6B7280', size: 18 }) + runsOf([{ t: 'link', href: x.url, c: [{ t: 'text', v: x.title }] }], { size: 18 }), { left: 360, hanging: 360, after: 20 }));
         });
       }
     });
-    if (s.branding) body.push(para(run('Exported with Chat Exporter', { color: '9CA3AF', size: 16 }), { before: 400 }));
+    if (s.branding) body.push(para(run(CE.t('docExportedWith'), { color: '9CA3AF', size: 16 }), { before: 400 }));
 
     const [pw, ph] = PAGE[s.pdfPageSize] || PAGE.A4;
     const land = s.pdfOrientation === 'landscape';

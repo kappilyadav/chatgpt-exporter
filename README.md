@@ -63,14 +63,30 @@ Conversation data stays in the browser. Requests go to chatgpt.com (and its imag
 ```
 manifest.json            MV3 manifest
 background.js            context menu, shortcuts, downloads, cross-origin image fetch, print launcher
-src/core/                namespace+defaults, i18n, utils, settings, html→md, markdown engine, zip, assets
+src/core/                namespace+defaults, i18n (+ generated locales.js), utils, settings, html→md, markdown engine, zip, assets
 src/adapters/            chatgpt.js
 src/exporters/           markdown · text · json · csv · html · docx · pdf/png (render job) · index (pipeline)
 src/ui/                  dock + side panel, settings form, bulk export dialog, styles
 print/                   PDF / PNG render page (KaTeX bundled in vendor/katex)
 popup/  options/         toolbar popup and options page
 scripts/package.py       builds the Chrome Web Store zip into dist/
+scripts/i18n/*.json      translation sources, one flat file per language (en.json is the master list of keys)
+scripts/build_locales.py turns them into _locales/ (for Chrome and the Web Store) and src/core/locales.js (for the UI)
+scripts/test-i18n.js     checks every language, in the real extension inside Chrome
+_locales/                generated; the manifest name/summary come from here
 ```
+
+## Translations
+
+The interface, the right-click menu, exported-file headings and the store name/summary are translated into 35 languages
+(the 34 offered by the Web Store plus Hindi). To change a string or add a language:
+
+1. Edit `scripts/i18n/en.json` (new keys) and the matching `scripts/i18n/<code>.json` files. Use Chrome's locale codes (`pt_BR`, `zh_TW`, ...).
+2. Run `python3 scripts/build_locales.py`. It fails on a missing key, a broken `{placeholder}`, a name over 75 characters or a summary over 132.
+3. Run `node scripts/test-i18n.js` (needs `npm i puppeteer-core` and Google Chrome; `--static` skips the browser part).
+
+Code reads text with `CE.t('key', {vars})`; static HTML uses `data-i18n="key"`. Arabic and Hebrew switch the UI to right-to-left automatically.
+`python scripts/package.py` rebuilds the translations first. `STORE_LISTING_TRANSLATIONS.md` has the translated store listings to paste into the dashboard.
 
 ## Packaging for the Chrome Web Store
 

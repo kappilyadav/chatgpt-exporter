@@ -1,0 +1,578 @@
+{
+  "extName": {
+    "message": "ChatGPT Exporter: ChatGPT를 PDF, Word, Markdown으로 저장"
+  },
+  "extDescription": {
+    "message": "모든 ChatGPT 대화를 깔끔하고 공유하기 쉬운 파일로 내보내세요. 메시지를 고르고, 레이아웃을 설정하고, 개인정보를 지키세요."
+  },
+  "extActionTitle": {
+    "message": "ChatGPT Exporter"
+  },
+  "cmdTogglePanel": {
+    "message": "메시지 선택 패널 열기 / 닫기"
+  },
+  "cmdQuickExport": {
+    "message": "현재 채팅을 기본 형식으로 빠르게 내보내기"
+  },
+  "cmdExportPdf": {
+    "message": "현재 채팅을 PDF로 내보내기"
+  },
+  "selectMessages": {
+    "message": "메시지 선택"
+  },
+  "select": {
+    "message": "선택"
+  },
+  "export": {
+    "message": "내보내기"
+  },
+  "exportAs": {
+    "message": "내보내기 형식"
+  },
+  "all": {
+    "message": "전체"
+  },
+  "allDefault": {
+    "message": "전체(기본값)"
+  },
+  "questions": {
+    "message": "질문"
+  },
+  "answers": {
+    "message": "답변"
+  },
+  "none": {
+    "message": "선택 안 함"
+  },
+  "invert": {
+    "message": "선택 반전"
+  },
+  "cancel": {
+    "message": "취소"
+  },
+  "copy": {
+    "message": "복사"
+  },
+  "settings": {
+    "message": "설정"
+  },
+  "expand": {
+    "message": "펼치기"
+  },
+  "back": {
+    "message": "뒤로"
+  },
+  "refresh": {
+    "message": "새로고침"
+  },
+  "retry": {
+    "message": "다시 시도"
+  },
+  "loading": {
+    "message": "대화를 불러오는 중…"
+  },
+  "loadingHistory": {
+    "message": "전체 기록을 불러오는 중…"
+  },
+  "tip": {
+    "message": "팁: Shift+클릭으로 메시지 범위를 선택할 수 있습니다."
+  },
+  "you": {
+    "message": "나"
+  },
+  "exportedN": {
+    "message": "메시지 {n}개를 {fmt}(으)로 내보냈습니다"
+  },
+  "copiedN": {
+    "message": "메시지 {n}개를 {fmt}(으)로 복사했습니다"
+  },
+  "nothingSelected": {
+    "message": "먼저 메시지를 하나 이상 선택하세요."
+  },
+  "noConversation": {
+    "message": "이 페이지에서 대화를 찾을 수 없습니다."
+  },
+  "failed": {
+    "message": "내보내기 실패: {msg}"
+  },
+  "pdfHint": {
+    "message": "인쇄 미리보기를 여는 중입니다. “PDF로 저장”을 선택하세요."
+  },
+  "exportAll": {
+    "message": "모든 채팅 내보내기…"
+  },
+  "bulkTitle": {
+    "message": "여러 채팅 내보내기"
+  },
+  "searchChats": {
+    "message": "채팅 검색"
+  },
+  "selectAll": {
+    "message": "모두 선택"
+  },
+  "exportZip": {
+    "message": "ZIP으로 내보내기"
+  },
+  "progress": {
+    "message": "내보내는 중 {i} / {n}…"
+  },
+  "bulkDone": {
+    "message": "채팅 {n}개를 ZIP 파일로 내보냈습니다"
+  },
+  "bulkUnsupported": {
+    "message": "이 사이트에서는 아직 일괄 내보내기를 사용할 수 없습니다. 채팅을 열고 내보내기를 사용하세요."
+  },
+  "chatsFound": {
+    "message": "채팅 {n}개"
+  },
+  "copyAs": {
+    "message": "{fmt}(으)로 복사"
+  },
+  "quickExport": {
+    "message": "빠른 내보내기"
+  },
+  "openPanel": {
+    "message": "메시지 선택…"
+  },
+  "unsupportedSite": {
+    "message": "대화를 내보내려면 ChatGPT를 여세요."
+  },
+  "selectedOf": {
+    "message": "{a}/{b}"
+  },
+  "messages": {
+    "message": "메시지"
+  },
+  "richText": {
+    "message": "서식 있는 텍스트"
+  },
+  "fmtText": {
+    "message": "텍스트"
+  },
+  "fmtPng": {
+    "message": "이미지(PNG)"
+  },
+  "toggleTitle": {
+    "message": "내보내기 버튼 표시 또는 숨기기"
+  },
+  "autoBrowser": {
+    "message": "자동(브라우저 설정)"
+  },
+  "close": {
+    "message": "닫기"
+  },
+  "ctxExportChat": {
+    "message": "이 채팅 내보내기"
+  },
+  "ctxExportAs": {
+    "message": "{fmt}(으)로 내보내기"
+  },
+  "seePlans": {
+    "message": "요금제 보기"
+  },
+  "upgrade": {
+    "message": "업그레이드"
+  },
+  "accountHeading": {
+    "message": "계정"
+  },
+  "limitFull": {
+    "message": "이번 달 무료 전체 채팅 내보내기 {limit}회를 모두 사용했습니다. 무제한으로 내보내려면 업그레이드하세요."
+  },
+  "limitPartial": {
+    "message": "이번 달 무료 부분 내보내기 {limit}회를 모두 사용했습니다. 무제한으로 내보내려면 업그레이드하세요."
+  },
+  "bulkFreeLeft": {
+    "message": "무료 요금제: 이번 달 전체 내보내기가 {left}회 남았지만 채팅 {n}개를 선택했습니다. 채팅을 줄여 선택하거나 업그레이드하여 무제한으로 내보내세요."
+  },
+  "tokenInvalidFormat": {
+    "message": "올바른 토큰이 아닌 것 같습니다."
+  },
+  "tokenExpired": {
+    "message": "이 토큰은 더 이상 유효하지 않습니다. 계정에서 새 토큰을 만드세요."
+  },
+  "serverUnreachable": {
+    "message": "서버에 연결할 수 없습니다. 인터넷 연결을 확인하고 다시 시도하세요."
+  },
+  "notSignedIn": {
+    "message": "로그인하지 않았습니다"
+  },
+  "sessionFailed": {
+    "message": "세션 요청 실패({status})"
+  },
+  "popupChecking": {
+    "message": "탭 확인 중…"
+  },
+  "conversationDetected": {
+    "message": "{name} 대화를 감지했습니다"
+  },
+  "openAConversation": {
+    "message": "{name} — 대화를 여세요"
+  },
+  "worksOn": {
+    "message": "chatgpt.com에서 작동합니다"
+  },
+  "popupInactive": {
+    "message": "ChatGPT 대화를 연 다음 확장 프로그램을 다시 클릭하세요:"
+  },
+  "formatLabel": {
+    "message": "형식"
+  },
+  "keyboardShortcuts": {
+    "message": "키보드 단축키"
+  },
+  "planPro": {
+    "message": "Pro · {plan} · 무제한 내보내기"
+  },
+  "planYear": {
+    "message": "연간 요금제"
+  },
+  "planMonth": {
+    "message": "월간 요금제"
+  },
+  "planProName": {
+    "message": "Pro"
+  },
+  "planFreeLeft": {
+    "message": "무료 · 이번 달 전체 내보내기 {full}회, 부분 내보내기 {single}회 남음"
+  },
+  "exporting": {
+    "message": "내보내는 중…"
+  },
+  "doneSeePage": {
+    "message": "완료 — 자세한 내용은 페이지를 확인하세요."
+  },
+  "copiedClipboard": {
+    "message": "클립보드에 복사했습니다."
+  },
+  "failedShort": {
+    "message": "실패"
+  },
+  "optionsTitle": {
+    "message": "ChatGPT Exporter — 설정"
+  },
+  "optionsIntro": {
+    "message": "설정은 자동으로 저장되고 Chrome 프로필과 동기화됩니다. 모든 처리는 브라우저 안에서 로컬로 이루어집니다."
+  },
+  "checking": {
+    "message": "확인 중…"
+  },
+  "connectWithToken": {
+    "message": "토큰으로 연결"
+  },
+  "tokenHelp": {
+    "message": "웹사이트가 확장 프로그램을 자동으로 연결하지 못했을 때 사용하세요. 계정 페이지에서 토큰을 복사하세요."
+  },
+  "connect": {
+    "message": "연결"
+  },
+  "resetDefaults": {
+    "message": "기본값으로 재설정"
+  },
+  "keyboardShortcutsEllipsis": {
+    "message": "키보드 단축키…"
+  },
+  "saved": {
+    "message": "저장됨 ✓"
+  },
+  "accountLoadFail": {
+    "message": "지금은 계정을 불러올 수 없습니다."
+  },
+  "connectedAs": {
+    "message": "{email}(으)로 연결됨 · {plan}"
+  },
+  "planFreeShort": {
+    "message": "무료 요금제"
+  },
+  "planProUnlimited": {
+    "message": "{plan} · 무제한 내보내기"
+  },
+  "manageBilling": {
+    "message": "결제 관리"
+  },
+  "disconnect": {
+    "message": "연결 해제"
+  },
+  "freeLeftConnect": {
+    "message": "무료 요금제 · 이번 달 전체 내보내기 {full}회, 부분 내보내기 {single}회 남음. 업그레이드했다면 계정을 연결하세요."
+  },
+  "connectAccount": {
+    "message": "계정 연결"
+  },
+  "connecting": {
+    "message": "연결 중…"
+  },
+  "connected": {
+    "message": "연결되었습니다."
+  },
+  "connectFail": {
+    "message": "연결할 수 없습니다."
+  },
+  "docContents": {
+    "message": "목차"
+  },
+  "docThoughtProcess": {
+    "message": "사고 과정"
+  },
+  "docSources": {
+    "message": "출처"
+  },
+  "docAttachments": {
+    "message": "첨부 파일"
+  },
+  "docExportedWith": {
+    "message": "Chat Exporter로 내보냄"
+  },
+  "pvDocTitle": {
+    "message": "ChatGPT Exporter — 미리보기"
+  },
+  "pvPreview": {
+    "message": "미리보기"
+  },
+  "pvPreparing": {
+    "message": "준비 중…"
+  },
+  "jobExpired": {
+    "message": "이 내보내기 작업이 만료되었습니다. 채팅으로 돌아가 다시 내보내세요."
+  },
+  "pvWidthPx": {
+    "message": "너비(px)"
+  },
+  "pvScale": {
+    "message": "배율"
+  },
+  "pvRendering": {
+    "message": "{n}개 중 {i}번째 부분 렌더링 중…"
+  },
+  "pvPacking": {
+    "message": "이미지 {n}개 묶는 중…"
+  },
+  "pvSavedZip": {
+    "message": "이미지 {n}개를 ZIP으로 저장했습니다"
+  },
+  "pvSaved": {
+    "message": "{name} 저장됨"
+  },
+  "pvFastNote": {
+    "message": "(긴 채팅도 빠르게 처리하도록 1×)"
+  },
+  "pvPrintSave": {
+    "message": "인쇄 / PDF로 저장"
+  },
+  "pvChooseSave": {
+    "message": "대상으로 “PDF로 저장”을 선택하세요."
+  },
+  "pvDownloadPng": {
+    "message": "PNG 다운로드"
+  },
+  "pvFailed": {
+    "message": "실패: {msg}"
+  },
+  "pvRenderFail": {
+    "message": "이 내보내기를 렌더링할 수 없습니다: {msg}"
+  },
+  "sec_general": {
+    "message": "일반"
+  },
+  "f_language": {
+    "message": "인터페이스 언어"
+  },
+  "f_theme": {
+    "message": "패널 테마"
+  },
+  "o_theme_auto": {
+    "message": "자동"
+  },
+  "o_theme_dark": {
+    "message": "어둡게"
+  },
+  "o_theme_light": {
+    "message": "밝게"
+  },
+  "f_showLauncher": {
+    "message": "채팅 페이지에 선택 / 내보내기 버튼 표시"
+  },
+  "f_rememberSelection": {
+    "message": "선택 프리셋 기억(전체 / 질문 / 답변)"
+  },
+  "f_closePanelAfterExport": {
+    "message": "내보낸 후 측면 패널 닫기"
+  },
+  "f_showToasts": {
+    "message": "내보낸 후 확인 메시지 표시"
+  },
+  "sec_content": {
+    "message": "콘텐츠"
+  },
+  "f_includeThoughts": {
+    "message": "사고 과정 / 추론 포함"
+  },
+  "f_includeSources": {
+    "message": "웹 검색 출처 및 인용 포함"
+  },
+  "f_includeCanvas": {
+    "message": "Canvas / Artifacts 포함"
+  },
+  "f_includeImages": {
+    "message": "이미지 포함"
+  },
+  "f_embedImages": {
+    "message": "파일에 이미지 포함(PDF, HTML, Word, PNG)"
+  },
+  "f_includeToolOutputs": {
+    "message": "도구 호출 및 코드 인터프리터 출력 포함"
+  },
+  "f_includeTimestamps": {
+    "message": "모든 메시지에 시간 표시"
+  },
+  "f_showRoleIcons": {
+    "message": "역할 아이콘 / 이모지 표시"
+  },
+  "f_userName": {
+    "message": "내 이름(내보낸 파일 머리글에 표시)"
+  },
+  "f_userEmail": {
+    "message": "내 이메일(내보낸 파일 머리글에 표시)"
+  },
+  "f_userLabel": {
+    "message": "내 메시지 라벨(기본값: 나)"
+  },
+  "f_assistantLabel": {
+    "message": "AI 메시지 라벨(기본값: 플랫폼 이름)"
+  },
+  "f_showDate": {
+    "message": "대화 날짜 표시"
+  },
+  "f_dateSource": {
+    "message": "날짜 기준"
+  },
+  "o_dateSource_created": {
+    "message": "생성일"
+  },
+  "o_dateSource_updated": {
+    "message": "마지막 수정일"
+  },
+  "o_dateSource_export": {
+    "message": "내보낸 시각"
+  },
+  "f_dateFormat": {
+    "message": "날짜 형식"
+  },
+  "o_dateFormat_locale": {
+    "message": "브라우저 지역 설정"
+  },
+  "f_branding": {
+    "message": "“Chat Exporter로 내보냄” 바닥글 추가"
+  },
+  "sec_files": {
+    "message": "파일"
+  },
+  "f_filenameTemplate": {
+    "message": "파일 이름 템플릿 — {title} {date} {time} {platform} {model} {id}"
+  },
+  "f_filenamePrefix": {
+    "message": "파일 이름 접두사"
+  },
+  "f_downloadSubfolder": {
+    "message": "다운로드 하위 폴더(다운로드 폴더 안)"
+  },
+  "f_mdFrontMatter": {
+    "message": "YAML front matter 추가"
+  },
+  "f_mdThinkingStyle": {
+    "message": "사고 과정 표시 스타일"
+  },
+  "o_mdThinkingStyle_blockquote": {
+    "message": "인용 블록"
+  },
+  "o_mdThinkingStyle_details": {
+    "message": "접을 수 있는 <details>"
+  },
+  "sec_dataformats": {
+    "message": "JSON 및 CSV"
+  },
+  "f_jsonPretty": {
+    "message": "JSON 보기 좋게 정렬"
+  },
+  "f_csvDelimiter": {
+    "message": "CSV 구분자"
+  },
+  "o_csvDelimiter_comma": {
+    "message": "쉼표 ,"
+  },
+  "o_csvDelimiter_semicolon": {
+    "message": "세미콜론 ;"
+  },
+  "o_csvDelimiter_tab": {
+    "message": "탭"
+  },
+  "sec_pdf": {
+    "message": "PDF / HTML / 이미지"
+  },
+  "f_pdfTitle": {
+    "message": "콘텐츠 제목(비워 두면 채팅 제목)"
+  },
+  "f_pdfPageSize": {
+    "message": "페이지 크기"
+  },
+  "f_pdfOrientation": {
+    "message": "방향"
+  },
+  "o_pdfOrientation_portrait": {
+    "message": "세로"
+  },
+  "o_pdfOrientation_landscape": {
+    "message": "가로"
+  },
+  "f_pdfTheme": {
+    "message": "테마"
+  },
+  "o_pdfTheme_light": {
+    "message": "밝게"
+  },
+  "o_pdfTheme_dark": {
+    "message": "어둡게"
+  },
+  "f_pdfMargins": {
+    "message": "여백"
+  },
+  "o_pdfMargins_narrow": {
+    "message": "좁게"
+  },
+  "o_pdfMargins_normal": {
+    "message": "보통"
+  },
+  "o_pdfMargins_wide": {
+    "message": "넓게"
+  },
+  "f_pdfFontScale": {
+    "message": "글꼴 크기(기본값 대비 %)"
+  },
+  "f_pdfFontFamily": {
+    "message": "글꼴 계열"
+  },
+  "o_pdfFontFamily_sans": {
+    "message": "산세리프"
+  },
+  "o_pdfFontFamily_serif": {
+    "message": "세리프"
+  },
+  "o_pdfFontFamily_mono": {
+    "message": "고정폭"
+  },
+  "f_pdfPageNumbers": {
+    "message": "페이지 번호"
+  },
+  "f_pdfToc": {
+    "message": "목차"
+  },
+  "f_pdfPageBreakPerPrompt": {
+    "message": "각 프롬프트를 새 페이지에서 시작"
+  },
+  "f_pdfWrapCode": {
+    "message": "긴 코드 줄 줄바꿈"
+  },
+  "f_pdfAutoPrint": {
+    "message": "인쇄 대화상자 자동으로 열기"
+  }
+}
