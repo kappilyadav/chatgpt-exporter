@@ -35,7 +35,7 @@ async function staticTests() {
   const CE = ctx.CE;
   const runtimeKeys = Object.keys(EN).filter((k) => !/^(ext|cmd)[A-Z]/.test(k));
 
-  eq(fs.readFileSync(path.join(LOCALE_DIR, 'nb/messages.json'), 'utf8'), fs.readFileSync(path.join(LOCALE_DIR, 'no/messages.json'), 'utf8'), '_locales/nb is a copy of _locales/no');
+  [['nb', 'no'], ['iw', 'he']].forEach(([a, b]) => eq(fs.readFileSync(path.join(LOCALE_DIR, a, 'messages.json'), 'utf8'), fs.readFileSync(path.join(LOCALE_DIR, b, 'messages.json'), 'utf8'), '_locales/' + a + ' is a copy of _locales/' + b));
   ok(CE.i18n.available().length === CODES.length, 'bundle has all locales: ' + CE.i18n.available().length + ' vs ' + CODES.length);
   const identical = [];
   CODES.forEach((c) => {
@@ -408,7 +408,7 @@ async function chromeTests() {
 
   // ---------- browser UI language: "Auto" follows it, and the store name/description come from the right locale
   console.log('  browser UI language');
-  for (const [flag, c] of [['de', 'de'], ['ja', 'ja'], ['pt-PT', 'pt_PT'], ['zh-TW', 'zh_TW'], ['ar', 'ar'], ['nb', 'no']]) {
+  for (const [flag, c] of [['de', 'de'], ['ja', 'ja'], ['pt-PT', 'pt_PT'], ['zh-TW', 'zh_TW'], ['ar', 'ar'], ['nb', 'no'], ['he', 'he'], ['iw', 'he']]) {
     const b = await launch(['--lang=' + flag, '-AppleLanguages', '(' + flag + ')']);
     try {
       const t = await b.waitForTarget((x) => x.type() === 'service_worker' && /background\.js$/.test(x.url()), { timeout: 15000 });

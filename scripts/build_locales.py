@@ -5,7 +5,7 @@ Usage:  python3 scripts/build_locales.py          (run from anywhere; --check va
 
 Source:  scripts/i18n/<locale>.json      flat {"key": "text"} files; en.json is the master list of keys.
 Output:  _locales/<locale>/messages.json  Chrome's format (manifest name/description and Web Store listing);
-         _locales/nb is a copy of _locales/no (Chrome's code for Norwegian Bokmål)
+         _locales/nb and _locales/iw are copies of no and he (other codes for the same languages)
          src/core/locales.js              every locale bundled for the content scripts, popup, options and print page
 
 Validation (fails the build): every locale has exactly the keys of en.json, {placeholders} match en.json,
@@ -26,7 +26,8 @@ OUT_JS = os.path.join(ROOT, 'src', 'core', 'locales.js')
 CHROME_CODES = set('''ar am bg bn ca cs da de el en en_AU en_GB en_US es es_419 et fa fi fil fr gu he hi hr hu id it ja kn ko
 lt lv ml mr ms nl no pl pt_BR pt_PT ro ru sk sl sr sv sw ta te th tr uk vi zh_CN zh_TW'''.split())
 # Chrome reports Norwegian Bokmål as "nb" while the Web Store lists Norwegian as "no": ship both folders.
-ALIAS_FOLDERS = {'nb': 'no'}
+# The Web Store dashboard still calls Hebrew "iw" (the old code), so ship that folder too.
+ALIAS_FOLDERS = {'nb': 'no', 'iw': 'he'}
 MANIFEST_ONLY = re.compile(r'^(ext|cmd)[A-Z]')  # only the manifest needs these; keep them out of the runtime bundle
 LIMITS = {'extName': 75, 'extDescription': 132}
 PH = re.compile(r'\{(\w+)\}')

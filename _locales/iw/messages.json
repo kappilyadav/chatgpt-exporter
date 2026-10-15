@@ -1,0 +1,578 @@
+{
+  "extName": {
+    "message": "ChatGPT Exporter: שמרו את ChatGPT כ-PDF, Word ו-Markdown"
+  },
+  "extDescription": {
+    "message": "ייצאו כל שיחה ב-ChatGPT לקובץ נקי וקל לשיתוף. בחרו הודעות, התאימו את הפריסה ושמרו על הפרטיות."
+  },
+  "extActionTitle": {
+    "message": "ChatGPT Exporter"
+  },
+  "cmdTogglePanel": {
+    "message": "פתיחה / סגירה של חלונית בחירת ההודעות"
+  },
+  "cmdQuickExport": {
+    "message": "ייצוא מהיר של הצ׳אט הנוכחי בפורמט ברירת המחדל"
+  },
+  "cmdExportPdf": {
+    "message": "ייצוא הצ׳אט הנוכחי כ-PDF"
+  },
+  "selectMessages": {
+    "message": "בחירת הודעות"
+  },
+  "select": {
+    "message": "בחירה"
+  },
+  "export": {
+    "message": "ייצוא"
+  },
+  "exportAs": {
+    "message": "ייצוא בתור"
+  },
+  "all": {
+    "message": "הכול"
+  },
+  "allDefault": {
+    "message": "הכול (ברירת מחדל)"
+  },
+  "questions": {
+    "message": "שאלות"
+  },
+  "answers": {
+    "message": "תשובות"
+  },
+  "none": {
+    "message": "כלום"
+  },
+  "invert": {
+    "message": "היפוך בחירה"
+  },
+  "cancel": {
+    "message": "ביטול"
+  },
+  "copy": {
+    "message": "העתקה"
+  },
+  "settings": {
+    "message": "הגדרות"
+  },
+  "expand": {
+    "message": "הרחבה"
+  },
+  "back": {
+    "message": "חזרה"
+  },
+  "refresh": {
+    "message": "רענון"
+  },
+  "retry": {
+    "message": "ניסיון חוזר"
+  },
+  "loading": {
+    "message": "טוען את השיחה…"
+  },
+  "loadingHistory": {
+    "message": "טוען את ההיסטוריה המלאה…"
+  },
+  "tip": {
+    "message": "טיפ: Shift+קליק בוחר טווח של הודעות."
+  },
+  "you": {
+    "message": "את/ה"
+  },
+  "exportedN": {
+    "message": "יוצאו {n} הודעות בתור {fmt}"
+  },
+  "copiedN": {
+    "message": "הועתקו {n} הודעות בתור {fmt}"
+  },
+  "nothingSelected": {
+    "message": "בחרו תחילה לפחות הודעה אחת."
+  },
+  "noConversation": {
+    "message": "לא נמצאה שיחה בדף הזה."
+  },
+  "failed": {
+    "message": "הייצוא נכשל: {msg}"
+  },
+  "pdfHint": {
+    "message": "פותח תצוגה מקדימה להדפסה — בחרו ״שמירה כ-PDF״."
+  },
+  "exportAll": {
+    "message": "ייצוא כל הצ׳אטים…"
+  },
+  "bulkTitle": {
+    "message": "ייצוא מספר צ׳אטים"
+  },
+  "searchChats": {
+    "message": "חיפוש צ׳אטים"
+  },
+  "selectAll": {
+    "message": "בחירת הכול"
+  },
+  "exportZip": {
+    "message": "ייצוא ל-ZIP"
+  },
+  "progress": {
+    "message": "מייצא {i} / {n}…"
+  },
+  "bulkDone": {
+    "message": "יוצאו {n} צ׳אטים לקובץ ZIP"
+  },
+  "bulkUnsupported": {
+    "message": "ייצוא מרובה עדיין אינו זמין באתר הזה. פתחו צ׳אט והשתמשו ב״ייצוא״."
+  },
+  "chatsFound": {
+    "message": "{n} צ׳אטים"
+  },
+  "copyAs": {
+    "message": "העתקה בתור {fmt}"
+  },
+  "quickExport": {
+    "message": "ייצוא מהיר"
+  },
+  "openPanel": {
+    "message": "בחירת הודעות…"
+  },
+  "unsupportedSite": {
+    "message": "פתחו את ChatGPT כדי לייצא שיחה."
+  },
+  "selectedOf": {
+    "message": "{a}/{b}"
+  },
+  "messages": {
+    "message": "הודעות"
+  },
+  "richText": {
+    "message": "טקסט מעוצב"
+  },
+  "fmtText": {
+    "message": "טקסט"
+  },
+  "fmtPng": {
+    "message": "תמונה (PNG)"
+  },
+  "toggleTitle": {
+    "message": "הצגה או הסתרה של לחצני הייצוא"
+  },
+  "autoBrowser": {
+    "message": "אוטומטי (לפי הדפדפן)"
+  },
+  "close": {
+    "message": "סגירה"
+  },
+  "ctxExportChat": {
+    "message": "ייצוא הצ׳אט הזה"
+  },
+  "ctxExportAs": {
+    "message": "ייצוא בתור {fmt}"
+  },
+  "seePlans": {
+    "message": "הצגת התוכניות"
+  },
+  "upgrade": {
+    "message": "שדרוג"
+  },
+  "accountHeading": {
+    "message": "חשבון"
+  },
+  "limitFull": {
+    "message": "ניצלתם את מכסת הייצוא החינמי של צ׳אטים שלמים לחודש הזה ({limit}). שדרגו לייצוא ללא הגבלה."
+  },
+  "limitPartial": {
+    "message": "ניצלתם את מכסת הייצוא החלקי החינמי לחודש הזה ({limit}). שדרגו לייצוא ללא הגבלה."
+  },
+  "bulkFreeLeft": {
+    "message": "התוכנית החינמית: נותרו החודש {left} ייצואים מלאים, אבל בחרתם {n} צ׳אטים. בחרו פחות צ׳אטים או שדרגו לייצוא ללא הגבלה."
+  },
+  "tokenInvalidFormat": {
+    "message": "זה לא נראה כמו אסימון תקין."
+  },
+  "tokenExpired": {
+    "message": "האסימון הזה כבר אינו תקף. צרו אסימון חדש מהחשבון שלכם."
+  },
+  "serverUnreachable": {
+    "message": "לא ניתן להגיע לשרת. בדקו את החיבור ונסו שוב."
+  },
+  "notSignedIn": {
+    "message": "לא מחובר/ת"
+  },
+  "sessionFailed": {
+    "message": "בקשת ההפעלה נכשלה ({status})"
+  },
+  "popupChecking": {
+    "message": "בודק את הלשונית…"
+  },
+  "conversationDetected": {
+    "message": "זוהתה שיחה ב-{name}"
+  },
+  "openAConversation": {
+    "message": "{name} — פתחו שיחה"
+  },
+  "worksOn": {
+    "message": "פועל ב-chatgpt.com"
+  },
+  "popupInactive": {
+    "message": "פתחו שיחה ב-ChatGPT ולחצו שוב על התוסף:"
+  },
+  "formatLabel": {
+    "message": "פורמט"
+  },
+  "keyboardShortcuts": {
+    "message": "קיצורי מקלדת"
+  },
+  "planPro": {
+    "message": "Pro · {plan} · ייצוא ללא הגבלה"
+  },
+  "planYear": {
+    "message": "תוכנית שנתית"
+  },
+  "planMonth": {
+    "message": "תוכנית חודשית"
+  },
+  "planProName": {
+    "message": "Pro"
+  },
+  "planFreeLeft": {
+    "message": "חינם · נותרו החודש {full} ייצואים מלאים ו-{single} ייצואים חלקיים"
+  },
+  "exporting": {
+    "message": "מייצא…"
+  },
+  "doneSeePage": {
+    "message": "הסתיים — פרטים בדף."
+  },
+  "copiedClipboard": {
+    "message": "הועתק ללוח."
+  },
+  "failedShort": {
+    "message": "נכשל"
+  },
+  "optionsTitle": {
+    "message": "ChatGPT Exporter — הגדרות"
+  },
+  "optionsIntro": {
+    "message": "ההגדרות נשמרות אוטומטית ומסונכרנות עם פרופיל Chrome שלכם. כל העיבוד מתבצע מקומית בדפדפן שלכם."
+  },
+  "checking": {
+    "message": "בודק…"
+  },
+  "connectWithToken": {
+    "message": "התחברות באמצעות אסימון"
+  },
+  "tokenHelp": {
+    "message": "השתמשו באפשרות הזו אם האתר לא הצליח לחבר את התוסף אוטומטית. העתיקו את האסימון מעמוד החשבון שלכם."
+  },
+  "connect": {
+    "message": "התחברות"
+  },
+  "resetDefaults": {
+    "message": "איפוס לברירות המחדל"
+  },
+  "keyboardShortcutsEllipsis": {
+    "message": "קיצורי מקלדת…"
+  },
+  "saved": {
+    "message": "נשמר ✓"
+  },
+  "accountLoadFail": {
+    "message": "לא ניתן לטעון את החשבון שלכם כרגע."
+  },
+  "connectedAs": {
+    "message": "מחובר בתור {email} · {plan}"
+  },
+  "planFreeShort": {
+    "message": "תוכנית חינמית"
+  },
+  "planProUnlimited": {
+    "message": "{plan} · ייצוא ללא הגבלה"
+  },
+  "manageBilling": {
+    "message": "ניהול חיוב"
+  },
+  "disconnect": {
+    "message": "ניתוק"
+  },
+  "freeLeftConnect": {
+    "message": "תוכנית חינמית · נותרו החודש {full} ייצואים מלאים ו-{single} ייצואים חלקיים. חברו את החשבון שלכם אם שדרגתם."
+  },
+  "connectAccount": {
+    "message": "חיבור חשבון"
+  },
+  "connecting": {
+    "message": "מתחבר…"
+  },
+  "connected": {
+    "message": "מחובר."
+  },
+  "connectFail": {
+    "message": "לא ניתן להתחבר."
+  },
+  "docContents": {
+    "message": "תוכן עניינים"
+  },
+  "docThoughtProcess": {
+    "message": "תהליך החשיבה"
+  },
+  "docSources": {
+    "message": "מקורות"
+  },
+  "docAttachments": {
+    "message": "קבצים מצורפים"
+  },
+  "docExportedWith": {
+    "message": "יוצא באמצעות Chat Exporter"
+  },
+  "pvDocTitle": {
+    "message": "ChatGPT Exporter — תצוגה מקדימה"
+  },
+  "pvPreview": {
+    "message": "תצוגה מקדימה"
+  },
+  "pvPreparing": {
+    "message": "מכין…"
+  },
+  "jobExpired": {
+    "message": "תוקף משימת הייצוא הזו פג. חזרו לצ׳אט וייצאו שוב."
+  },
+  "pvWidthPx": {
+    "message": "רוחב (px)"
+  },
+  "pvScale": {
+    "message": "קנה מידה"
+  },
+  "pvRendering": {
+    "message": "מעבד חלק {i} מתוך {n}…"
+  },
+  "pvPacking": {
+    "message": "אורז {n} תמונות…"
+  },
+  "pvSavedZip": {
+    "message": "נשמרו {n} תמונות כ-ZIP"
+  },
+  "pvSaved": {
+    "message": "{name} נשמר"
+  },
+  "pvFastNote": {
+    "message": "(1× כדי לשמור על מהירות בצ׳אט ארוך)"
+  },
+  "pvPrintSave": {
+    "message": "הדפסה / שמירה כ-PDF"
+  },
+  "pvChooseSave": {
+    "message": "בחרו ״שמירה כ-PDF״ כיעד."
+  },
+  "pvDownloadPng": {
+    "message": "הורדת PNG"
+  },
+  "pvFailed": {
+    "message": "נכשל: {msg}"
+  },
+  "pvRenderFail": {
+    "message": "לא ניתן לעבד את הייצוא הזה: {msg}"
+  },
+  "sec_general": {
+    "message": "כללי"
+  },
+  "f_language": {
+    "message": "שפת הממשק"
+  },
+  "f_theme": {
+    "message": "ערכת הנושא של החלונית"
+  },
+  "o_theme_auto": {
+    "message": "אוטומטי"
+  },
+  "o_theme_dark": {
+    "message": "כהה"
+  },
+  "o_theme_light": {
+    "message": "בהיר"
+  },
+  "f_showLauncher": {
+    "message": "הצגת הלחצנים בחירה / ייצוא בדף הצ׳אט"
+  },
+  "f_rememberSelection": {
+    "message": "זכירת ההגדרה המוגדרת מראש לבחירה (הכול / שאלות / תשובות)"
+  },
+  "f_closePanelAfterExport": {
+    "message": "סגירת החלונית הצדדית אחרי הייצוא"
+  },
+  "f_showToasts": {
+    "message": "הצגת אישור אחרי הייצוא"
+  },
+  "sec_content": {
+    "message": "תוכן"
+  },
+  "f_includeThoughts": {
+    "message": "הכללת תהליך החשיבה / הנימוקים"
+  },
+  "f_includeSources": {
+    "message": "הכללת מקורות וציטוטים מחיפוש באינטרנט"
+  },
+  "f_includeCanvas": {
+    "message": "הכללת Canvas / Artifacts"
+  },
+  "f_includeImages": {
+    "message": "הכללת תמונות"
+  },
+  "f_embedImages": {
+    "message": "הטמעת תמונות בתוך הקובץ (PDF, HTML, Word, PNG)"
+  },
+  "f_includeToolOutputs": {
+    "message": "הכללת קריאות לכלים ופלט של מפרש הקוד"
+  },
+  "f_includeTimestamps": {
+    "message": "הצגת חותמת זמן לכל הודעה"
+  },
+  "f_showRoleIcons": {
+    "message": "הצגת סמלי תפקידים / אמוג׳י"
+  },
+  "f_userName": {
+    "message": "השם שלכם (מוצג בכותרת הייצוא)"
+  },
+  "f_userEmail": {
+    "message": "האימייל שלכם (מוצג בכותרת הייצוא)"
+  },
+  "f_userLabel": {
+    "message": "תווית להודעות שלכם (ברירת מחדל: את/ה)"
+  },
+  "f_assistantLabel": {
+    "message": "תווית להודעות ה-AI (ברירת מחדל: שם הפלטפורמה)"
+  },
+  "f_showDate": {
+    "message": "הצגת תאריך השיחה"
+  },
+  "f_dateSource": {
+    "message": "מקור התאריך"
+  },
+  "o_dateSource_created": {
+    "message": "תאריך יצירה"
+  },
+  "o_dateSource_updated": {
+    "message": "שינוי אחרון"
+  },
+  "o_dateSource_export": {
+    "message": "זמן הייצוא"
+  },
+  "f_dateFormat": {
+    "message": "פורמט תאריך"
+  },
+  "o_dateFormat_locale": {
+    "message": "הגדרות האזור של הדפדפן"
+  },
+  "f_branding": {
+    "message": "הוספת כותרת תחתונה ״יוצא באמצעות Chat Exporter״"
+  },
+  "sec_files": {
+    "message": "קבצים"
+  },
+  "f_filenameTemplate": {
+    "message": "תבנית שם קובץ — {title} {date} {time} {platform} {model} {id}"
+  },
+  "f_filenamePrefix": {
+    "message": "קידומת לשם הקובץ"
+  },
+  "f_downloadSubfolder": {
+    "message": "תיקיית משנה להורדה (בתוך תיקיית ההורדות)"
+  },
+  "f_mdFrontMatter": {
+    "message": "הוספת YAML front matter"
+  },
+  "f_mdThinkingStyle": {
+    "message": "סגנון תצוגת תהליך החשיבה"
+  },
+  "o_mdThinkingStyle_blockquote": {
+    "message": "בלוק ציטוט"
+  },
+  "o_mdThinkingStyle_details": {
+    "message": "<details> מתקפל"
+  },
+  "sec_dataformats": {
+    "message": "JSON ו-CSV"
+  },
+  "f_jsonPretty": {
+    "message": "עיצוב JSON לקריאות"
+  },
+  "f_csvDelimiter": {
+    "message": "מפריד ב-CSV"
+  },
+  "o_csvDelimiter_comma": {
+    "message": "פסיק ,"
+  },
+  "o_csvDelimiter_semicolon": {
+    "message": "נקודה-פסיק ;"
+  },
+  "o_csvDelimiter_tab": {
+    "message": "טאב"
+  },
+  "sec_pdf": {
+    "message": "PDF / HTML / תמונה"
+  },
+  "f_pdfTitle": {
+    "message": "כותרת התוכן (ריק = כותרת הצ׳אט)"
+  },
+  "f_pdfPageSize": {
+    "message": "גודל עמוד"
+  },
+  "f_pdfOrientation": {
+    "message": "כיוון"
+  },
+  "o_pdfOrientation_portrait": {
+    "message": "לאורך"
+  },
+  "o_pdfOrientation_landscape": {
+    "message": "לרוחב"
+  },
+  "f_pdfTheme": {
+    "message": "ערכת נושא"
+  },
+  "o_pdfTheme_light": {
+    "message": "בהיר"
+  },
+  "o_pdfTheme_dark": {
+    "message": "כהה"
+  },
+  "f_pdfMargins": {
+    "message": "שוליים"
+  },
+  "o_pdfMargins_narrow": {
+    "message": "צרים"
+  },
+  "o_pdfMargins_normal": {
+    "message": "רגילים"
+  },
+  "o_pdfMargins_wide": {
+    "message": "רחבים"
+  },
+  "f_pdfFontScale": {
+    "message": "גודל גופן (% מברירת המחדל)"
+  },
+  "f_pdfFontFamily": {
+    "message": "משפחת גופנים"
+  },
+  "o_pdfFontFamily_sans": {
+    "message": "ללא סריפים"
+  },
+  "o_pdfFontFamily_serif": {
+    "message": "עם סריפים"
+  },
+  "o_pdfFontFamily_mono": {
+    "message": "ברוחב קבוע"
+  },
+  "f_pdfPageNumbers": {
+    "message": "מספרי עמודים"
+  },
+  "f_pdfToc": {
+    "message": "תוכן עניינים"
+  },
+  "f_pdfPageBreakPerPrompt": {
+    "message": "התחלת כל פרומפט בעמוד חדש"
+  },
+  "f_pdfWrapCode": {
+    "message": "שבירת שורות קוד ארוכות"
+  },
+  "f_pdfAutoPrint": {
+    "message": "פתיחה אוטומטית של חלון ההדפסה"
+  }
+}

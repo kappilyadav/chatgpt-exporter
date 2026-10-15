@@ -9,7 +9,7 @@ The extension itself speaks 35 languages (the 34 the Web Store offers, plus Hind
 4. Optional: upload screenshots for that language. The screenshots in `store-assets/out` are English; reuse them if you do not have translated ones.
 5. Save the draft, repeat for the other languages, then **Submit for review** once.
 
-Language code for the package folder is shown in brackets. Norwegian is `no` in the package, with `nb` shipped as a copy because Chrome reports Norwegian Bokmål as `nb`.
+Language code for the package folder is shown in brackets. Norwegian is `no` in the package, with `nb` shipped as a copy because Chrome reports Norwegian Bokmål as `nb`. Hebrew is `he`, with `iw` (the code the dashboard shows) shipped as a copy.
 
 Keep the text as written: it follows the Store's rules (natural sentences, the formats named once, no keyword lists). Every description is about 600 to 900 characters; the limit is 16,000.
 
