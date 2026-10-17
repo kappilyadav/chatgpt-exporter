@@ -194,7 +194,7 @@ chrome.runtime.onMessage.addListener((msg, sender, respond) => {
   if (msg.type === 'quota-consume') { consume(msg.kind, Math.max(1, msg.count | 0)).then(respond); return true; }
   if (msg.type === 'quota-refund') { refund(msg.kind, Math.max(1, msg.count | 0)).then(respond); return true; }
   if (msg.type === 'open-site') {
-    const path = msg.page === 'connect' ? '/account/connect?src=extension' : msg.page === 'account' ? '/account' : '/?src=extension#free';
+    const path = msg.page === 'connect' ? '/account/connect?src=extension' : msg.page === 'account' ? '/account' : '/pricing?ref=limit';
     chrome.tabs.create({ url: SITE + path, active: true }).then(() => respond({ ok: true }));
     return true;
   }
