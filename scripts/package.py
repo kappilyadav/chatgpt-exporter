@@ -29,7 +29,7 @@ def main():
     manifest = json.load(open('manifest.json', encoding='utf-8'))
     ver = manifest['version']
     en = json.load(open('_locales/en/messages.json', encoding='utf-8'))
-    for code in sorted(os.listdir('_locales')):  # includes the nb alias folder
+    for code in sorted(c for c in os.listdir('_locales') if os.path.isdir('_locales/' + c)):  # includes the nb alias folder
         msgs = json.load(open('_locales/%s/messages.json' % code, encoding='utf-8'))
         if len(msgs['extName']['message']) > MAX_NAME:
             sys.exit('%s: extName is longer than %d characters' % (code, MAX_NAME))
