@@ -1,10 +1,75 @@
-# ChatGPT Exporter
+<div align="center">
 
-A Manifest V3 Chrome extension that exports **ChatGPT** conversations.
-Exports are built locally in your browser. An optional account (from chatgptexporterfree.com) unlocks unlimited exports; the free plan has a monthly quota.
+# ChatGPT Exporter: Save ChatGPT Conversations to PDF, Word & Markdown
 
-Get the extension: https://chromewebstore.google.com/detail/obkhbkkjfndlphjfmhddogjbdkobhddm
-Website: https://chatgptexporterfree.com
+**A free Chrome extension that exports any ChatGPT chat to PDF, Word (.docx), Markdown, HTML, text, JSON, CSV or PNG, in one click, privately in your browser.**
+
+[![Add to Chrome](https://img.shields.io/badge/Add%20to%20Chrome-Chrome%20Web%20Store-4285F4?logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/obkhbkkjfndlphjfmhddogjbdkobhddm)
+[![Website](https://img.shields.io/badge/Website-chatgptexporterfree.com-111827)](https://chatgptexporterfree.com)
+[![Pricing](https://img.shields.io/badge/Plans-Free%20%26%20Pro-10b981)](https://chatgptexporterfree.com/pricing)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+[**Install from the Chrome Web Store**](https://chromewebstore.google.com/detail/obkhbkkjfndlphjfmhddogjbdkobhddm) · [**Website**](https://chatgptexporterfree.com) · [**Pricing**](https://chatgptexporterfree.com/pricing) · [**Help**](https://chatgptexporterfree.com/help) · [**Privacy**](https://chatgptexporterfree.com/privacy)
+
+</div>
+
+## What is ChatGPT Exporter?
+
+[ChatGPT Exporter](https://chatgptexporterfree.com) is a free Chrome extension that adds an **Export** button to [chatgpt.com](https://chatgpt.com), so you can save any ChatGPT conversation as a clean, shareable file. Open a chat, click Export, pick a format, and the file downloads straight away. There is nothing to copy and paste, and no screenshots to stitch together.
+
+People use it to turn ChatGPT answers into **PDF reports**, **Word documents**, **Markdown notes** for Obsidian, Notion or GitHub, **CSV or JSON** for analysis, and **PNG images** for sharing. It also works as a **ChatGPT backup tool**: export one chat, a selection of messages, or your whole history as a ZIP.
+
+**[Add ChatGPT Exporter to Chrome](https://chromewebstore.google.com/detail/obkhbkkjfndlphjfmhddogjbdkobhddm)** (free to start, no sign-up needed for the free plan).
+
+## Why people choose it
+
+* **Eight export formats.** PDF, Word (.docx), Markdown, HTML, plain text, JSON, CSV and PNG.
+* **Export only what you need.** Tick individual messages, Shift+click for a range, or use presets for questions only, answers only, or everything.
+* **Bulk export.** Save many ChatGPT conversations at once into a single ZIP file.
+* **Your content stays intact.** Code blocks keep their language, tables stay tables, and LaTeX math, images, links, web-search citations, Deep Research reports, Canvas documents and the model's reasoning can each be included or left out.
+* **PDFs your way.** Page size and orientation, margins, light or dark theme, fonts, page numbers, table of contents, and a page break per prompt.
+* **Copy instead of download.** Send a chat to the clipboard as rich text and paste it into Google Docs, Word or Notion.
+* **Private by design.** Conversations are converted inside your browser and are never sent to our servers. No ads, no analytics, no remote code.
+* **Make it yours.** File-name templates, download sub-folders, custom labels, right-click menu, keyboard shortcuts, and a 35-language interface (including right-to-left Arabic and Hebrew).
+* **Free to start.** The free plan has a monthly allowance of exports; an optional account on [chatgptexporterfree.com](https://chatgptexporterfree.com/pricing) unlocks unlimited exports.
+
+## Common questions
+
+**How do I save a ChatGPT conversation as a PDF?**
+Install the [extension](https://chromewebstore.google.com/detail/obkhbkkjfndlphjfmhddogjbdkobhddm), open the chat on chatgpt.com, click **EXPORT**, choose **PDF**, and pick *Save as PDF* in the print dialog (or press `Alt+Shift+P`).
+
+**How do I export ChatGPT to Word?**
+Click **EXPORT** and choose **Word (.docx)**. Headings, lists, tables, code, links and images are kept.
+
+**How do I export ChatGPT to Markdown?**
+Click **EXPORT** and choose **Markdown**, with optional YAML front matter, a source list and the thought process as a block quote.
+
+**Can I download all my ChatGPT chats at once?**
+Yes. Use the box icon to bulk-export many conversations into one ZIP.
+
+**Is it safe and private?**
+Exports are built locally in your browser. The only account request asks chatgptexporterfree.com whether your plan is active. See the [privacy policy](https://chatgptexporterfree.com/privacy).
+
+**Is it free?**
+Yes, to start. See [plans and pricing](https://chatgptexporterfree.com/pricing) for unlimited exports.
+
+## Links
+
+| | |
+| --- | --- |
+| Chrome Web Store | https://chromewebstore.google.com/detail/obkhbkkjfndlphjfmhddogjbdkobhddm |
+| Website | https://chatgptexporterfree.com |
+| Pricing | https://chatgptexporterfree.com/pricing |
+| Help & support | https://chatgptexporterfree.com/help |
+| Privacy policy | https://chatgptexporterfree.com/privacy |
+
+*ChatGPT Exporter is an independent tool, not affiliated with, endorsed by or sponsored by OpenAI. ChatGPT is a trademark of OpenAI.*
+
+---
+
+## For developers
+
+This repository is the source of the extension: a Manifest V3 Chrome extension where exports are built locally in the browser.
 
 ## Install (developer mode)
 
