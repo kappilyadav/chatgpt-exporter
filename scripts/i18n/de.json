@@ -76,6 +76,7 @@
  "planPro": "Pro · {plan} · unbegrenzte Exporte",
  "planYear": "Jahrestarif",
  "planMonth": "Monatstarif",
+ "planLifetime": "Lifetime-Tarif",
  "planProName": "Pro",
  "planFreeLeft": "Kostenlos · noch {full} Komplett- und {single} Teil-Exporte in diesem Monat",
  "exporting": "Wird exportiert…",

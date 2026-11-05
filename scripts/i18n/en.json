@@ -76,6 +76,7 @@
  "planPro": "Pro · {plan} · unlimited exports",
  "planYear": "Year Plan",
  "planMonth": "Month Plan",
+ "planLifetime": "Lifetime Plan",
  "planProName": "Pro",
  "planFreeLeft": "Free · {full} full and {single} partial exports left this month",
  "exporting": "Exporting…",

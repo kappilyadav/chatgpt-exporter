@@ -76,6 +76,7 @@
  "planPro": "Pro · {plan} · neobmedzené exporty",
  "planYear": "Ročný plán",
  "planMonth": "Mesačný plán",
+ "planLifetime": "Doživotný plán",
  "planProName": "Pro",
  "planFreeLeft": "Zadarmo · tento mesiac zostáva exportov: celých {full}, čiastočných {single}",
  "exporting": "Exportuje sa…",

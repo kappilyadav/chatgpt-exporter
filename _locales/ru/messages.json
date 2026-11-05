@@ -230,6 +230,9 @@
   "planMonth": {
     "message": "Месячный тариф"
   },
+  "planLifetime": {
+    "message": "Пожизненный тариф"
+  },
   "planProName": {
     "message": "Pro"
   },

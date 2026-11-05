@@ -76,6 +76,7 @@
  "planPro": "Pro · {plan} · απεριόριστες εξαγωγές",
  "planYear": "Ετήσιο πλάνο",
  "planMonth": "Μηνιαίο πλάνο",
+ "planLifetime": "Πλάνο διά βίου",
  "planProName": "Pro",
  "planFreeLeft": "Δωρεάν · αυτόν τον μήνα απομένουν εξαγωγές: ολόκληρες {full}, μερικές {single}",
  "exporting": "Εξαγωγή…",

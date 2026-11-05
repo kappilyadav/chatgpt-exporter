@@ -230,6 +230,9 @@
   "planMonth": {
     "message": "Plan mensual"
   },
+  "planLifetime": {
+    "message": "Plan de por vida"
+  },
   "planProName": {
     "message": "Pro"
   },

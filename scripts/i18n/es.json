@@ -76,6 +76,7 @@
  "planPro": "Pro · {plan} · exportaciones ilimitadas",
  "planYear": "Plan anual",
  "planMonth": "Plan mensual",
+ "planLifetime": "Plan de por vida",
  "planProName": "Pro",
  "planFreeLeft": "Gratis · te quedan {full} exportaciones completas y {single} parciales este mes",
  "exporting": "Exportando…",

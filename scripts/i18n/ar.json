@@ -76,6 +76,7 @@
  "planPro": "Pro · {plan} · تصدير غير محدود",
  "planYear": "الخطة السنوية",
  "planMonth": "الخطة الشهرية",
+ "planLifetime": "خطة مدى الحياة",
  "planProName": "Pro",
  "planFreeLeft": "مجاني · المتبقي هذا الشهر: {full} تصدير كامل و{single} تصدير جزئي",
  "exporting": "جارٍ التصدير…",

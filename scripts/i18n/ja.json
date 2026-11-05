@@ -76,6 +76,7 @@
  "planPro": "Pro · {plan} · エクスポート無制限",
  "planYear": "年間プラン",
  "planMonth": "月間プラン",
+ "planLifetime": "買い切りプラン",
  "planProName": "Pro",
  "planFreeLeft": "無料 · 今月の残り: 全文エクスポート {full} 回、一部エクスポート {single} 回",
  "exporting": "エクスポート中…",

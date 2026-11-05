@@ -230,6 +230,9 @@
   "planMonth": {
     "message": "Månadsabonnemang"
   },
+  "planLifetime": {
+    "message": "Livstidsabonnemang"
+  },
   "planProName": {
     "message": "Pro"
   },

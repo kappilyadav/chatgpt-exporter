@@ -76,6 +76,7 @@
  "planPro": "Pro · {plan} · nielimitowane eksporty",
  "planYear": "Plan roczny",
  "planMonth": "Plan miesięczny",
+ "planLifetime": "Plan dożywotni",
  "planProName": "Pro",
  "planFreeLeft": "Bezpłatny · w tym miesiącu pozostało eksportów całych rozmów: {full}, częściowych: {single}",
  "exporting": "Eksportowanie…",

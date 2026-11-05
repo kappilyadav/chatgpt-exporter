@@ -45,7 +45,7 @@
     const a = await CE.account.get(true);
     if (!a) { status.textContent = t('accountLoadFail'); return; }
     if (a.signedIn) {
-      const plan = a.pro ? t('planProUnlimited', { plan: a.plan === 'year' ? t('planYear') : a.plan === 'month' ? t('planMonth') : t('planProName') }) : t('planFreeShort');
+      const plan = a.pro ? t('planProUnlimited', { plan: a.plan === 'year' ? t('planYear') : a.plan === 'month' ? t('planMonth') : a.plan === 'lifetime' ? t('planLifetime') : t('planProName') }) : t('planFreeShort');
       status.textContent = t('connectedAs', { email: a.email, plan });
       if (a.pro) act(t('manageBilling'), () => CE.account.openSite('account'));
       else act(t('upgrade'), () => CE.account.openSite('plans'), true);

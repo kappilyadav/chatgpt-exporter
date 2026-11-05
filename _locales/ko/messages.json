@@ -230,6 +230,9 @@
   "planMonth": {
     "message": "월간 요금제"
   },
+  "planLifetime": {
+    "message": "평생 요금제"
+  },
   "planProName": {
     "message": "Pro"
   },

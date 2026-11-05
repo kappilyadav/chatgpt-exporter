@@ -230,6 +230,9 @@
   "planMonth": {
     "message": "Kuukausitilaus"
   },
+  "planLifetime": {
+    "message": "Elinikäinen tilaus"
+  },
   "planProName": {
     "message": "Pro"
   },

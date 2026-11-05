@@ -76,6 +76,7 @@
  "planPro": "Pro · {plan} · exportacions il·limitades",
  "planYear": "Pla anual",
  "planMonth": "Pla mensual",
+ "planLifetime": "Pla de per vida",
  "planProName": "Pro",
  "planFreeLeft": "Gratuït · aquest mes et queden {full} exportacions completes i {single} de parcials",
  "exporting": "S’està exportant…",

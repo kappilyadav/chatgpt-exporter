@@ -76,6 +76,7 @@
  "planPro": "Pro · {plan} · rajaton vienti",
  "planYear": "Vuositilaus",
  "planMonth": "Kuukausitilaus",
+ "planLifetime": "Elinikäinen tilaus",
  "planProName": "Pro",
  "planFreeLeft": "Ilmainen · tässä kuussa jäljellä: {full} koko ja {single} osittaista vientiä",
  "exporting": "Viedään…",

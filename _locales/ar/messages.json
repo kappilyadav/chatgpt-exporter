@@ -230,6 +230,9 @@
   "planMonth": {
     "message": "الخطة الشهرية"
   },
+  "planLifetime": {
+    "message": "خطة مدى الحياة"
+  },
   "planProName": {
     "message": "Pro"
   },

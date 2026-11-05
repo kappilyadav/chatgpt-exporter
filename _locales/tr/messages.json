@@ -230,6 +230,9 @@
   "planMonth": {
     "message": "Aylık plan"
   },
+  "planLifetime": {
+    "message": "Ömür boyu plan"
+  },
   "planProName": {
     "message": "Pro"
   },

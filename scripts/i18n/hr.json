@@ -76,6 +76,7 @@
  "planPro": "Pro · {plan} · neograničen izvoz",
  "planYear": "Godišnji plan",
  "planMonth": "Mjesečni plan",
+ "planLifetime": "Doživotni plan",
  "planProName": "Pro",
  "planFreeLeft": "Besplatno · ovaj mjesec preostaje izvoza: cijelih {full}, djelomičnih {single}",
  "exporting": "Izvoz u tijeku…",

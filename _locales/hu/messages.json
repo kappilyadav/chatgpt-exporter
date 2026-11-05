@@ -230,6 +230,9 @@
   "planMonth": {
     "message": "Havi csomag"
   },
+  "planLifetime": {
+    "message": "Örökös csomag"
+  },
   "planProName": {
     "message": "Pro"
   },

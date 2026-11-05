@@ -76,6 +76,7 @@
  "planPro": "Pro · {plan} · 무제한 내보내기",
  "planYear": "연간 요금제",
  "planMonth": "월간 요금제",
+ "planLifetime": "평생 요금제",
  "planProName": "Pro",
  "planFreeLeft": "무료 · 이번 달 전체 내보내기 {full}회, 부분 내보내기 {single}회 남음",
  "exporting": "내보내는 중…",

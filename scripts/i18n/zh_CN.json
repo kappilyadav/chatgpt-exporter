@@ -76,6 +76,7 @@
  "planPro": "Pro · {plan} · 无限次导出",
  "planYear": "年度方案",
  "planMonth": "月度方案",
+ "planLifetime": "终身方案",
  "planProName": "Pro",
  "planFreeLeft": "免费 · 本月还剩 {full} 次完整导出和 {single} 次部分导出",
  "exporting": "正在导出…",

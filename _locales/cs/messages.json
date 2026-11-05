@@ -230,6 +230,9 @@
   "planMonth": {
     "message": "Měsíční tarif"
   },
+  "planLifetime": {
+    "message": "Doživotní tarif"
+  },
   "planProName": {
     "message": "Pro"
   },

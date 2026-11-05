@@ -230,6 +230,9 @@
   "planMonth": {
     "message": "Plan lunar"
   },
+  "planLifetime": {
+    "message": "Plan pe viață"
+  },
   "planProName": {
     "message": "Pro"
   },

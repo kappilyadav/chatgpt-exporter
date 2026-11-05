@@ -230,6 +230,9 @@
   "planMonth": {
     "message": "แพ็กเกจรายเดือน"
   },
+  "planLifetime": {
+    "message": "แพ็กเกจตลอดชีพ"
+  },
   "planProName": {
     "message": "Pro"
   },

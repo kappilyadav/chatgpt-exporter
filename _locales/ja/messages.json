@@ -230,6 +230,9 @@
   "planMonth": {
     "message": "月間プラン"
   },
+  "planLifetime": {
+    "message": "買い切りプラン"
+  },
   "planProName": {
     "message": "Pro"
   },

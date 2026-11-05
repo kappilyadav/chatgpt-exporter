@@ -76,6 +76,7 @@
  "planPro": "Pro · {plan} · korlátlan exportálás",
  "planYear": "Éves csomag",
  "planMonth": "Havi csomag",
+ "planLifetime": "Örökös csomag",
  "planProName": "Pro",
  "planFreeLeft": "Ingyenes · ebben a hónapban még maradt: {full} teljes és {single} részleges exportálás",
  "exporting": "Exportálás…",

@@ -76,6 +76,7 @@
  "planPro": "Pro · {plan} · onbeperkt exporteren",
  "planYear": "Jaarabonnement",
  "planMonth": "Maandabonnement",
+ "planLifetime": "Levenslang abonnement",
  "planProName": "Pro",
  "planFreeLeft": "Gratis · nog {full} volledige en {single} gedeeltelijke exports deze maand",
  "exporting": "Exporteren…",

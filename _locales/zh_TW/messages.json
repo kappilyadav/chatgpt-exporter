@@ -230,6 +230,9 @@
   "planMonth": {
     "message": "月度方案"
   },
+  "planLifetime": {
+    "message": "終身方案"
+  },
   "planProName": {
     "message": "Pro"
   },

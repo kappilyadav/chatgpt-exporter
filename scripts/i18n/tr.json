@@ -76,6 +76,7 @@
  "planPro": "Pro · {plan} · sınırsız dışa aktarma",
  "planYear": "Yıllık plan",
  "planMonth": "Aylık plan",
+ "planLifetime": "Ömür boyu plan",
  "planProName": "Pro",
  "planFreeLeft": "Ücretsiz · bu ay {full} tam ve {single} kısmi dışa aktarma hakkı kaldı",
  "exporting": "Dışa aktarılıyor…",

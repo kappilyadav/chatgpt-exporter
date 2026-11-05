@@ -76,6 +76,7 @@
  "planPro": "Pro · {plan} · необмежений експорт",
  "planYear": "Річний тариф",
  "planMonth": "Місячний тариф",
+ "planLifetime": "Довічний тариф",
  "planProName": "Pro",
  "planFreeLeft": "Безкоштовно · цього місяця залишилося експортів: цілих — {full}, часткових — {single}",
  "exporting": "Експорт…",

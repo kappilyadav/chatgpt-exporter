@@ -230,6 +230,9 @@
   "planMonth": {
     "message": "मासिक प्लान"
   },
+  "planLifetime": {
+    "message": "लाइफटाइम प्लान"
+  },
   "planProName": {
     "message": "Pro"
   },

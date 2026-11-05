@@ -76,6 +76,7 @@
  "planPro": "Pro · {plan} · ส่งออกไม่จำกัด",
  "planYear": "แพ็กเกจรายปี",
  "planMonth": "แพ็กเกจรายเดือน",
+ "planLifetime": "แพ็กเกจตลอดชีพ",
  "planProName": "Pro",
  "planFreeLeft": "ฟรี · เดือนนี้เหลือสิทธิ์ส่งออกแบบเต็ม {full} ครั้งและบางส่วน {single} ครั้ง",
  "exporting": "กำลังส่งออก…",

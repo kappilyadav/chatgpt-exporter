@@ -230,6 +230,9 @@
   "planMonth": {
     "message": "Месечен план"
   },
+  "planLifetime": {
+    "message": "Доживотен план"
+  },
   "planProName": {
     "message": "Pro"
   },

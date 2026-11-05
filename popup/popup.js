@@ -37,7 +37,7 @@
     const text = $('plan-text');
     const cta = $('plan-cta');
     if (a.pro) {
-      const name = a.plan === 'year' ? t('planYear') : a.plan === 'month' ? t('planMonth') : t('planProName');
+      const name = a.plan === 'year' ? t('planYear') : a.plan === 'month' ? t('planMonth') : a.plan === 'lifetime' ? t('planLifetime') : t('planProName');
       text.textContent = t('planPro', { plan: name });
       cta.textContent = t('accountHeading');
       cta.onclick = () => { CE.account.openSite('account'); window.close(); };
